@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>部落格 on Siddharam</title>
-    <link>/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
+    <link>https://frankyeah.github.io/siddharam/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
     <description>Recent content in 部落格 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://frankyeah.github.io/siddharam/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>用 Hugo 建立部落格 / 網站，每步都有詳細教學</title>
-      <link>/post/20190418/</link>
+      <link>https://frankyeah.github.io/siddharam/post/20190418/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/20190418/</guid>
+      <guid>https://frankyeah.github.io/siddharam/post/20190418/</guid>
       <description>前導
 現在的發文平台很多，不論會不會程式都能輕易的上手。
 而人人皆有的 Facebook、Line、Youtube、IG，它們主要用處還是在於導流。而 Blogger、WordPress 則較為正式，Medium 版型固定。 但因為 wordpress.com 用起來的彈性不高，而 wordpress.org 費用頗高的關係，我才選擇速度極快的 hugo。 在使用前，我曾思考過，是否要從頭到尾自己架設呢？ 在我腦中有三個方案，第一個，是將所有資料存入 Firebase 的 Realtime Database 裡面，只要做好 html 模板後，不同文章就塞不同的資料進去就好， 但發現 SEO 是個問題，所以就被排除掉了。 第二是我自己純粹用 html 把一篇篇文章塞入，但發現這要做標籤、分類、搜尋太麻煩。第三當然就是用 Webpack 或 Gulp 來幫我做標籤、分類的工作，但有點懶。 因此對我來說，找平台的要求就是幫我做好架構，尤其是標籤、分類、搜尋，而設計、交互的彈性要夠大，能夠讓我自行調整。hugo 就是我的最大公約數。 如果是有程式基底的人，hugo 使用起來會較為順暢。我大約花了兩天時間才熟悉結構，其中最需要花費時間研究的就是 Go Template 語法。那我們就進入主題吧。

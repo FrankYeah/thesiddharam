@@ -6,3 +6,11 @@ theme = "hugo-theme-cleanwhite"
 tag = "tags"
 category = "categories"
 series = "series"
+# Set the followings to true as part of your site SEO
+enableRobotsTXT = true
+canonifyURLs = true
+[params]
+  # Sets the meta tag description
+  description = "用兩種語言創作"
+  # Sets the navbarTitle that appears in the top left of the navigation bar
+  navbarTitle = "文字人 程式人"

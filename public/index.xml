@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Siddharam</title>
-    <link>/</link>
+    <link>https://frankyeah.github.io/siddharam/</link>
     <description>Recent content on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://frankyeah.github.io/siddharam/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>工程師日常 - RD 忙什麼？</title>
-      <link>/post/20190420/</link>
+      <link>https://frankyeah.github.io/siddharam/post/20190420/</link>
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/20190420/</guid>
+      <guid>https://frankyeah.github.io/siddharam/post/20190420/</guid>
       <description>新創的真實樣貌
 在新創公司工作，你必須對人事混亂保持鎮定。因為它就是日常。
 舉個例子。五個月前，當我進到公司時，我們 RD 部門共有兩名前端、一名後端，兩名資料科學家，一名 *QA，一名 Team Lead，共七人， 另外還有夥伴公司支援的多位後端。 而現在則有三名前端，三名後端，舊 QA 走了，準備要來一名新 QA，三位資料科學家，Team Lead 也走了，共十人， 而夥伴公司則全面性地與我們合作（遠端）。
@@ -28,10 +28,10 @@
     
     <item>
       <title>用 Hugo 建立部落格 / 網站，每步都有詳細教學</title>
-      <link>/post/20190418/</link>
+      <link>https://frankyeah.github.io/siddharam/post/20190418/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/20190418/</guid>
+      <guid>https://frankyeah.github.io/siddharam/post/20190418/</guid>
       <description>前導
 現在的發文平台很多，不論會不會程式都能輕易的上手。
 而人人皆有的 Facebook、Line、Youtube、IG，它們主要用處還是在於導流。而 Blogger、WordPress 則較為正式，Medium 版型固定。 但因為 wordpress.com 用起來的彈性不高，而 wordpress.org 費用頗高的關係，我才選擇速度極快的 hugo。 在使用前，我曾思考過，是否要從頭到尾自己架設呢？ 在我腦中有三個方案，第一個，是將所有資料存入 Firebase 的 Realtime Database 裡面，只要做好 html 模板後，不同文章就塞不同的資料進去就好， 但發現 SEO 是個問題，所以就被排除掉了。 第二是我自己純粹用 html 把一篇篇文章塞入，但發現這要做標籤、分類、搜尋太麻煩。第三當然就是用 Webpack 或 Gulp 來幫我做標籤、分類的工作，但有點懶。 因此對我來說，找平台的要求就是幫我做好架構，尤其是標籤、分類、搜尋，而設計、交互的彈性要夠大，能夠讓我自行調整。hugo 就是我的最大公約數。 如果是有程式基底的人，hugo 使用起來會較為順暢。我大約花了兩天時間才熟悉結構，其中最需要花費時間研究的就是 Go Template 語法。那我們就進入主題吧。
@@ -46,11 +46,11 @@ npm install hugo
     </item>
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 18 Apr 2019 12:00:20 +0800</pubDate>
+      <title>關於</title>
+      <link>https://frankyeah.github.io/siddharam/about/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://frankyeah.github.io/siddharam/about/</guid>
       <description>這裡是 關於 頁面</description>
     </item>
     
