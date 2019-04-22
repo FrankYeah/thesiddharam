@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Siddharam</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>工程師</title>
+      <link>/tags/%E5%B7%A5%E7%A8%8B%E5%B8%AB/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E5%B7%A5%E7%A8%8B%E5%B8%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>教學</title>
+      <link>/tags/%E6%95%99%E5%AD%B8/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%95%99%E5%AD%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>新創</title>
+      <link>/tags/%E6%96%B0%E5%89%B5/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%96%B0%E5%89%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>日常</title>
+      <link>/tags/%E6%97%A5%E5%B8%B8/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%97%A5%E5%B8%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>部落格</title>
+      <link>/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

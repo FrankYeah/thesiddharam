@@ -1,0 +1,8 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Siddharam"
+theme = "hugo-theme-cleanwhite"
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"

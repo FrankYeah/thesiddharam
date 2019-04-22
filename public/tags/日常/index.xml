@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日常 on Siddharam</title>
+    <link>/tags/%E6%97%A5%E5%B8%B8/</link>
+    <description>Recent content in 日常 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>工程師日常 - 辦公室的一天</title>
+      <link>/post/20190420/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/20190420/</guid>
+      <description> 新創的真實樣貌
+在新創公司工作，你必須對人事混亂保持鎮定。因為它就是日常。
+舉個例子。五個月前，當我進到公司時，我們 RD 部門共有兩名前端、一名後端，兩名資料科學家，一名 QA，一名 Team Lead，共七人， 另外還有夥伴公司支援的多位後端。 而現在則有三名前端，三名後端，舊 QA 走了，準備要來一名新 QA，三位資料科學家，Team Lead 走了，共十人， 而夥伴公司則全面性地與我們合作（遠端）。
+不只我們部門變動。
+當初面試我進來的兩名 HR 都走了，換來一位美女 HR。而行政也走了，換來一位行政和財務，過沒幾周新行政因為搬家到印度也走了，又換了一位來。而一開始和我合作的 PM 也在過年離開，並來了兩位新 PM。另外，據說我們有個部門要成立另一家公司了，這又是另一個故事。
+人事變動大的原因很多，公司和員工都需要適應。而近在眼前的，就是 HR 幾乎天天都有面試，一批批新韭菜被帶進小房間聊天，成功錄取的人，會發現周圍同事幾乎都入職不到一年，每天午餐都要想很久，過幾天公司又會多出一個或少一個人。 一整天都在做什麼？
+因為彈性上班，從早上九點到十一點，都會有人陸續進辦公室，而我總是 RD 裡最早到的，我會先打開 slack，看一下各 channel 有什麼新進度？有沒有 tag？如果沒有急事需要處理，我就會悠閒的去買早餐再回來做事。 通常我買完早餐也沒什麼人到，，同事們的抵達高峰約略是 10 點，最晚有看過 11 點到的，大家也沒太在意，甚至還有過了大半天才發現有人沒來的情形，原來是請假了。 目前團隊運用的工具有：slack，用作即時通訊，可以依照專案來開新的 channel，slack 是根據歷史訊息的存儲來收費，如果沒有付費的話，是看不到一個月以前的歷史訊息。slack 的另一大優點是插建支援多，例如和 GitHub、GitLab 的 CI 匯報，或是 Slackbot 的定時作業提醒等。 另外還有 Trello，是 PM、RD、設計師共同掌握進度的工具，是極致版的 TodoList，我們是將項目分為P、D、C、A，分別代表計畫中、執行中、測試中以及上線共四類。最後則是 RD 的程式碼管理工具－GitLab，雖然大多數公司都是用 GitHub，但實際用下來的差異其實並不大，近半年使用心得，除了 GitLab 的 *UI 色彩較豐富外，發 *MR 時可以看見的 *diff 也蠻清楚的，我們的資深後端則是認為 GitHub 的速度比 GitLab 快多了。 吃完早餐後，我會不定時開 slack，確認我有負責的專案是否有新進度，例如設計師完成 layout 要換我接手了，或者是 PM 那邊有新的需求要我做，或者是後端完成了 *API，要我更新一下 *develop 來串接。 要進入到實作時，我會從 GitLab 開一個 *issue 出來，並描述任務內容，在用 *git 開啟相應的 *branch 開始實作，完成後就會發 *MR 給資深後端或前端，幫忙過一下程式碼，沒問題的話就會 *merge，並 ci 到測試機上讓 QA 可以看一下修改完成的內容。 * UI，使用者介面（User Interface），通常指的是網頁畫面。 * MR，合併請求（Merge Request），類似把在家中新寫的程式碼，掛上主程式前的請求工作。 * API，後端工程師所寫的程式碼（功能），要給前端工程師使用。 * * * * 快問快答  </description>
+    </item>
+    
+  </channel>
+</rss>

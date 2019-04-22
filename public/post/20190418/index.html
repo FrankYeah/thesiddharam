@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="/">
+    <meta property="twitter:image" content="/" />
+    
+
+    
+    <meta name="title" content="用 Hugo 建立部落格 / 網站，每步都有詳細教學" />
+    <meta property="og:title" content="用 Hugo 建立部落格 / 網站，每步都有詳細教學" />
+    <meta property="twitter:title" content="用 Hugo 建立部落格 / 網站，每步都有詳細教學" />
+    
+
+    
+    <meta name="description" content="自從去年學了程式，並開始工作以後，就有想建立部落格，寫下工程師日常的想法。在看了多數人推薦的 Wordpress 與 Google 的 Blogger 後，有了一些比較......">
+    <meta property="og:description" content="自從去年學了程式，並開始工作以後，就有想建立部落格，寫下工程師日常的想法。在看了多數人推薦的 Wordpress 與 Google 的 Blogger 後，有了一些比較......" />
+    <meta property="twitter:description" content="自從去年學了程式，並開始工作以後，就有想建立部落格，寫下工程師日常的想法。在看了多數人推薦的 Wordpress 與 Google 的 Blogger 後，有了一些比較......" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="教學, Hugo, 部落格" name="keywords">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>用 Hugo 建立部落格 / 網站，每步都有詳細教學-</title>
+
+    <link rel="canonical" href="/post/20190418/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Siddharam</a>
+            <a class="navbar-brand" href="/about/">我是誰</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E6%95%99%E5%AD%B8" title="教學">
+                            教學
+                        </a>
+                        
+                        <a class="tag" href="/tags/hugo" title="Hugo">
+                            Hugo
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E9%83%A8%E8%90%BD%E6%A0%BC" title="部落格">
+                            部落格
+                        </a>
+                        
+                    </div>
+                    <h1>用 Hugo 建立部落格 / 網站，每步都有詳細教學</h1>
+                    <h2 class="subheading">Wordpress、Blogger 以外的第三方案，設計彈性更高，並且免費，適合願意學寫程式的人。</h2>
+                    <span class="meta">
+			Posted by 
+			
+			    Siddharam
+			 
+			on 
+			Friday, April 19, 2019
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article>
+
+<h1>前導</h1><br>
+
+現在的發文平台很多，不論會不會程式都能輕易的上手。<br><br>
+而人人皆有的 Facebook、Line、Youtube、IG，它們主要用處還是在於導流。而 Blogger、WordPress 則較為正式，Medium 版型固定。
+但因為 wordpress.com 用起來的彈性不高，而 wordpress.org 費用頗高的關係，我才選擇速度極快的 hugo。
+<br><br>
+在使用前，我曾思考過，是否要從頭到尾自己架設呢？
+<br><br>
+在我腦中有三個方案，第一個，是將所有資料存入 Firebase 的 Realtime Database 裡面，只要做好 html 模板後，不同文章就塞不同的資料進去就好，
+但發現 SEO 是個問題，所以就被排除掉了。
+<br><br>
+第二是我自己純粹用 html 把一篇篇文章塞入，但發現這要做標籤、分類、搜尋太麻煩。第三當然就是用 Webpack 或 Gulp 來幫我做標籤、分類的工作，但有點懶。
+<br><br>
+因此對我來說，找平台的要求就是幫我做好架構，尤其是標籤、分類、搜尋，而設計、交互的彈性要夠大，能夠讓我自行調整。hugo 就是我的最大公約數。
+<br><br>
+如果是有程式基底的人，hugo 使用起來會較為順暢。我大約花了兩天時間才熟悉結構，其中最需要花費時間研究的就是 Go Template 語法。那我們就進入主題吧。<br><br>
+
+
+<h1>實戰開始</h1>
+
+在開始前，先確認有下列安裝：
+<pre>
+IDE（Visual Studio Code）<br>
+npm <br>
+git
+</pre><br>
+
+<h1>安裝</h1><br>
+打開你的編輯器（Visual Studio Code、Atom），切換到任意空資料夾後，開啟終端機並切換到該資料夾目錄，開始 Hugo 實作。<br><br>
+1. 安裝 Hugo<br>
+<code>npm install hugo</code><br>
+<i>* 如果是 mac 的話，可以使用 <code> brew install hugo</code></i><br><br>
+
+2. 安裝 Hugo 環境<br>
+<code>npm new site newsite</code><br>
+<i>* 其中的 newsite 是資料夾名稱，可以自定義。 </i><br><br>
+
+3. 切換目錄<br>
+<code>cd newsite</code><br><br>
+
+<h1>實作</h1><br>
+
+1. 建立文章<br>
+<code>hugo new post01.md</code><br>
+<i>* md 檔會在 <u>/content</u> 中顯示。</i><br><br>
+
+2. 新增樣式模板<br>
+<code>cd themes</code><br>
+<code>git clone https://github.com/zhaohuabing/hugo-theme-cleanwhite.git</code><br>
+<i>* Hugo 官方網站提供許多<a href="https://www.gohugo.org/theme/">樣式模板</a>，上述模板是該頁使用的。</i><br><br>
+
+3. 回到 newsite 目錄，並啟動 Hugo server<br>
+<code>cd newsite</code><br>
+<code>hugo server --theme=hugo_theme_pickles --buildDrafts</code><br>
+在瀏覽器中開啟：<a href="http://localhost:1313">http://localhost:1313</a> 就能進入首頁。<br>hugo server 支援 hot reload，任何 html、css、js 修改經儲存後，都能即時顯示。<br>
+
+<i>* <b>--theme=hugo_theme_pickles</b> 是指定樣式套用 hugo_theme_pickles 模板。<br>
+* <b>--buildDrafts</b>  表示草稿也能被看見。<br>
+</i><br>
+
+4. build<br>
+<code>hugo</code><br>
+<i>* 你就會看到 <u>/public</u> 有了可佈署檔案。</i><br><br>
+
+
+<h1>觀念</h1><br>
+
+我們當前的目錄結構，包含數個資料夾：<br><br>
+<pre>
+/archetypes<br>
+/content<br>
+/data<br>
+/layouts<br>
+/public<br>
+/resources<br>
+/static<br>
+/themes<br>
+/config
+</pre><br>
+
+而我們最常使用到的資料夾有 <u> /content /layouts /public /statics /themes </u>。<br><br>
+<u>/content</u> 是儲存 md 檔的地方，md 是 markdown 的縮寫，現在你所看到的文章內容與樣式，就是在 md 檔中撰寫而成，而可調整的相關配置如下：<br><br>
+<pre>
+title:       "用 Hugo 建立部落格 / 網站，每步都有詳細教學"
+subtitle:    "Wordpress、Blogger 以外的第三方案，設計彈性更高，並且免費，適合願意學寫程式的人。"
+description: "自從去年學了程式，並開始工作以後，就有想建立部落格，寫下工程師日常的想法。在看了多數人推薦的 Wordpress 與 Google 的 Blogger 後，有了一些比較......"
+date:         2019-04-19
+author:      "Siddharam"
+cover:       ""
+image:       ""
+tags:        ["教學", "Hugo", "部落格"]
+categories:  ["技術筆記" ]
+keywords:
+- 教學
+- Hugo
+- 部落格
+draft: false
+</pre><br>
+
+上述配置好後，會需要相對應的 Go Template 來使用，你可以在 themes 裡面的<u> /layouts</u> 中找到相關模板語法，例如：<br><br>
+
+<pre>
+<*meta name="title" content="{{ .Params.title }}" />
+<*meta property="og:title" content="{{ .Params.title }}" />
+<*meta property="twitter:title" content="{{ .Params.title }}" />
+<*meta name="title" content="{{ .Site.Params.title }}" />
+<*meta property="og:title" content="{{ .Site.Params.title }}" />
+<*meta property="twitter:title" content="{{ .Site.Params.title }}" />
+</pre>
+<i>* 上述 * 字可以移除，僅是消除部落格語法。</i>
+<br><br>
+
+<u>/layouts</u> 從上述例子，可以看出它是撰寫模板語法的地方，除了可自定義配置外，還能寫基本的 function、變數。模板包括 list、homepage、Taxonomy、partials、single 頁面。<br><br>
+
+<u>/public</u> 是 build 後的資料夾，可以將之放在 Firebase Hosting 或是 GitHub Page 進行佈署。<br><br>
+
+<u>/static</u> 放置圖片、js、css 等檔案的資料夾。<br><br>
+
+<u>/themes</u> 放置設計模板。<br><br>
+
+<u>/config</u> 是 hugo 默認的站點配置文件。<br><br>
+
+<pre>
+baseURL = ""
+languageCode = "en-us"
+title = "Siddharam"
+theme = "hugo-theme-cleanwhite"
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+</pre>
+
+<i>* 其中的 theme 表示預設的設計模板，有了它，就只需要 <code>hugo server</code> 就能讓 server 套用該樣式模板運行。</i><br><br>
+
+<h1>後記</h1><br>
+
+針對 hugo 的教學就告一段落，下次可能會寫 Go Template 的語法說明，以及如何計算訪客量、站內搜尋等功能，有什麼問題也歡迎來信詢問。<br><br>
+<b>Email: aaa24295234@gmail.com</b><br><br>
+
+</article>
+
+<div id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+&nbsp;&nbsp;
+<div id="busuanzi_container_site_pv">
+  Pv:<span id="busuanzi_value_site_pv"></span>次
+</div>
+&nbsp;
+<div id="busuanzi_container_site_uv">
+  Uv:<span id="busuanzi_value_site_uv"></span>次
+</span>
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/post/20190420/" data-toggle="tooltip" data-placement="top" title="工程師日常 - 辦公室的一天">下一篇
+                             &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
