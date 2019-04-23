@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>工程師日常 on Siddharam</title>
-    <link>/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8/</link>
+    <link>https://siddharam.com.tw/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8/</link>
     <description>Recent content in 工程師日常 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siddharam.com.tw/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>工程師日常 - RD 忙什麼？</title>
-      <link>/post/20190420/</link>
+      <link>https://siddharam.com.tw/post/20190420/</link>
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/20190420/</guid>
+      <guid>https://siddharam.com.tw/post/20190420/</guid>
       <description>新創的真實樣貌
 在新創公司工作，你必須對人事混亂保持鎮定。因為它就是日常。
 舉個例子。五個月前，當我進到公司時，我們 RD 部門共有兩名前端、一名後端，兩名資料科學家，一名 *QA，一名 Team Lead，共七人。

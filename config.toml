@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://siddharam.com.tw/"
 languageCode = "en-us"
 title = "Siddharam"
 theme = "hugo-theme-cleanwhite"
@@ -6,7 +6,6 @@ theme = "hugo-theme-cleanwhite"
 tag = "tags"
 category = "categories"
 series = "series"
-googleAnalytics = "UA-128179606-2"
 # Set the followings to true as part of your site SEO
 enableRobotsTXT = true
 canonifyURLs = true

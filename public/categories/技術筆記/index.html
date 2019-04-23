@@ -10,8 +10,8 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="/">
-    <meta property="twitter:image" content="/" />
+    <meta property="og:image" content="https://siddharam.com.tw//">
+    <meta property="twitter:image" content="https://siddharam.com.tw//" />
     
 
     
@@ -67,6 +67,15 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
     
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -176,25 +185,19 @@
             
 
 <div class="post-preview">
-    <a href="/post/20190423/">
+    <a href="https://siddharam.com.tw/post/20190423/">
         <h2 class="post-title">
             lodash 的程式碼實現
         </h2>
 	
+        <h3 class="post-subtitle">
+            員工訓練之一
+        </h3>
+	
         <div class="post-content-preview">
 	
-            _.dropRight([1, 2, 3], 2);
-// = [1] 
- function drop (array, count) { return array.slice(0, array.length-2) } drop([1,2,3,4,5,6,7,8], 2) // [1, 2, 3, 4, 5, 6]  
-var users = [
-{ 'user': 'barney', 'active': false },
-{ 'user': 'fred', 'active': false },
-{ 'user': 'pebbles', 'active': true }
-];
-_.findIndex(users, function(o) { return o.user == 'barney'; });
-// = 0
-_.findIndex(users, { 'user': 'fred', 'active': false });
-       
+            這次來挑選常用的 lodash function，嘗試自己手寫。lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。
+        
         </div>
     </a>
     <p class="post-meta">
@@ -204,7 +207,7 @@ _.findIndex(users, { 'user': 'fred', 'active': false });
 <hr>
 
 <div class="post-preview">
-    <a href="/post/20190418/">
+    <a href="https://siddharam.com.tw/post/20190418/">
         <h2 class="post-title">
             用 Hugo 建立部落格 / 網站，每步都有詳細教學
         </h2>

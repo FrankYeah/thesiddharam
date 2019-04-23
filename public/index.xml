@@ -2,40 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Siddharam</title>
-    <link>/</link>
+    <link>https://siddharam.com.tw/</link>
     <description>Recent content on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siddharam.com.tw/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>lodash 的程式碼實現</title>
-      <link>/post/20190423/</link>
+      <link>https://siddharam.com.tw/post/20190423/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/20190423/</guid>
-      <description>_.dropRight([1, 2, 3], 2);
-// = [1] 
- function drop (array, count) { return array.slice(0, array.length-2) } drop([1,2,3,4,5,6,7,8], 2) // [1, 2, 3, 4, 5, 6]  
+      <guid>https://siddharam.com.tw/post/20190423/</guid>
+      <description>lodash
+這次來挑選常用的 lodash function，嘗試自己手寫。
+lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。
+ (1) dropRight(array, 從右邊移除多少個數)
+_.dropRight([1, 2, 3], 2);
+// =&amp;gt; [1] 
+ function drop (array, count) { return array.slice(0, array.length-count) } drop([1,2,3,4,5,6,7,8], 2) // [1, 2, 3, 4, 5, 6] 
+ (2) findIndex(array, 找到符合條件的 index)
 var users = [
 { &#39;user&#39;: &#39;barney&#39;, &#39;active&#39;: false },
 { &#39;user&#39;: &#39;fred&#39;, &#39;active&#39;: false },
 { &#39;user&#39;: &#39;pebbles&#39;, &#39;active&#39;: true }
 ];
-_.findIndex(users, function(o) { return o.user == &#39;barney&#39;; });
-// = 0
-_.findIndex(users, { &#39;user&#39;: &#39;fred&#39;, &#39;active&#39;: false });</description>
+_.findIndex(users, function(o) { return o.</description>
     </item>
     
     <item>
       <title>工程師日常 - RD 忙什麼？</title>
-      <link>/post/20190420/</link>
+      <link>https://siddharam.com.tw/post/20190420/</link>
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/20190420/</guid>
+      <guid>https://siddharam.com.tw/post/20190420/</guid>
       <description>新創的真實樣貌
 在新創公司工作，你必須對人事混亂保持鎮定。因為它就是日常。
 舉個例子。五個月前，當我進到公司時，我們 RD 部門共有兩名前端、一名後端，兩名資料科學家，一名 *QA，一名 Team Lead，共七人。
@@ -48,10 +51,10 @@ _.findIndex(users, { &#39;user&#39;: &#39;fred&#39;, &#39;active&#39;: false });
     
     <item>
       <title>用 Hugo 建立部落格 / 網站，每步都有詳細教學</title>
-      <link>/post/20190418/</link>
+      <link>https://siddharam.com.tw/post/20190418/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/20190418/</guid>
+      <guid>https://siddharam.com.tw/post/20190418/</guid>
       <description>前導
 現在的發文平台很多，不論會不會程式都能輕易的上手。
 而人人皆有的 Facebook、Line、Youtube、IG，它們主要用處還是在於導流。而 Blogger、WordPress 則較為正式，Medium 版型固定。 但因為 wordpress.com 用起來的彈性不高，而 wordpress.org 費用頗高的關係，我才選擇速度極快的 hugo。 在使用前，我曾思考過，是否要從頭到尾自己架設呢？ 在我腦中有三個方案，第一個，是將所有資料存入 Firebase 的 Realtime Database 裡面，只要做好 html 模板後，不同文章就塞不同的資料進去就好， 但發現 SEO 是個問題，所以就被排除掉了。 第二是我自己純粹用 html 把一篇篇文章塞入，但發現這要做標籤、分類、搜尋太麻煩。第三當然就是用 Webpack 或 Gulp 來幫我做標籤、分類的工作，但有點懶。 因此對我來說，找平台的要求就是幫我做好架構，尤其是標籤、分類、搜尋，而設計、交互的彈性要夠大，能夠讓我自行調整。hugo 就是我的最大公約數。 如果是有程式基底的人，hugo 使用起來會較為順暢。我大約花了兩天時間才熟悉結構，其中最需要花費時間研究的就是 Go Template 語法。那我們就進入主題吧。
@@ -67,10 +70,10 @@ npm install hugo
     
     <item>
       <title>關於</title>
-      <link>/about/</link>
+      <link>https://siddharam.com.tw/about/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://siddharam.com.tw/about/</guid>
       <description> 介紹
 工業管理系畢業後，在五間媒體產業待了三年，當過電視台網路編輯、新移 / 住民議題的月報記者、新媒體記者、人文歷史雜誌記者、科技線記者。在 2018 年末，轉職成為前端工程師，在一間新創公司工作。 從大學開始，幾乎每年都會往國外跑。 大二第一次自己出國，跑到紐約一個月半，曾被一群高大黑人包圍強賣音樂 CD，被拿走幾十美元後，因為警察來才得救；大三那年，飛到河南找朋友，搭了 26 小時的硬座到他桂林老家，連地上都坐滿了人，火車每小時下一次站、廣播器震耳欲聾，等於不能睡覺，每小時得醒來一次。 大四那年，去了柬埔寨當教育志工，跟大夥一起划船，也下水在洞里薩湖順游好幾公里，學生們住在離地面幾公尺的高腳屋，以防雨季淹水，記得他們的笑容就像四月的螢火蟲一樣燦爛；當兵沒出國，但連續幾周跑到北海岸的龍洞潛水，拿了 PADI，曾看見兩條海蛇在海中纏綿，還和成千上百條沙丁魚共游了一會兒。 工作後，曾去過印尼朋友的老家 - 蘇門答臘，採訪了一個月。用印尼語和村民一起釣魚、賭博，和小孩爬樹、餵羊，看屋頂上的野生鸚鵡，和他們度過人生第一個齋戒月和開齋節，記得當時都在戶外洗澡，只要站起來就會露出半截身材，和鄰居相對眼；床鋪上總有小蟲爬來爬去，還有清真寺的音樂伴我入眠。 有到越南採訪兩周，從北越一路跑到南越，和攝影在夜店裡縱情跳舞，和台商一起去 KTV、Roof Bar 喝酒，也看了老闆正在蓋的南越大型醫院，去了唐人街的華人家裡聊天，一起唱粵語歌。 跑科技線時，曾到舊金山採訪法國軟體大廠的用戶大會，見識了國外版的 COMPUTEX，訪問不少美國公司，也順道逛了好萊塢和聖塔莫尼卡。 後來去了 AppWorks School 學寫前端，成為 RD，用文字和程式語言進行創作。 平常
 對基隆非常非常的熟悉，可以當伴遊噢不，是導遊的那種。
