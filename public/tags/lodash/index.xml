@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lodash on Siddharam</title>
+    <link>/tags/lodash/</link>
+    <description>Recent content in Lodash on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/lodash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>lodash 的程式碼實現</title>
+      <link>/post/20190423/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/20190423/</guid>
+      <description>_.dropRight([1, 2, 3], 2);
+// = [1] 
+ function drop (array, count) { return array.slice(0, array.length-2) } drop([1,2,3,4,5,6,7,8], 2) // [1, 2, 3, 4, 5, 6]  
+var users = [
+{ &#39;user&#39;: &#39;barney&#39;, &#39;active&#39;: false },
+{ &#39;user&#39;: &#39;fred&#39;, &#39;active&#39;: false },
+{ &#39;user&#39;: &#39;pebbles&#39;, &#39;active&#39;: true }
+];
+_.findIndex(users, function(o) { return o.user == &#39;barney&#39;; });
+// = 0
+_.findIndex(users, { &#39;user&#39;: &#39;fred&#39;, &#39;active&#39;: false });</description>
+    </item>
+    
+  </channel>
+</rss>

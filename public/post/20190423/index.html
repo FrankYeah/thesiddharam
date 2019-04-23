@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.52" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="lodash 的程式碼實現" />
+    <meta property="og:title" content="lodash 的程式碼實現" />
+    <meta property="twitter:title" content="lodash 的程式碼實現" />
     
 
     
@@ -31,13 +30,13 @@
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="" name="keywords">
+    <meta content="教學, lodash" name="keywords">
     
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Siddharam-</title>
+    <title>lodash 的程式碼實現-</title>
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/post/20190423/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -146,14 +145,39 @@
 
 
 
-<header class="intro-header" style="background-image: url('/')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Siddharam </h1>
-                    
-		    <span class="subheading"></span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E6%95%99%E5%AD%B8" title="教學">
+                            教學
+                        </a>
+                        
+                        <a class="tag" href="/tags/lodash" title="lodash">
+                            lodash
+                        </a>
+                        
+                    </div>
+                    <h1>lodash 的程式碼實現</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by 
+			
+			    Siddharam
+			 
+			on 
+			Tuesday, April 23, 2019
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -162,122 +186,117 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
 
-<div class="post-preview">
-    <a href="/post/20190423/">
-        <h2 class="post-title">
-            lodash 的程式碼實現
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            _.dropRight([1, 2, 3], 2);
-// = [1] 
- function drop (array, count) { return array.slice(0, array.length-2) } drop([1,2,3,4,5,6,7,8], 2) // [1, 2, 3, 4, 5, 6]  
-var users = [
-{ 'user': 'barney', 'active': false },
-{ 'user': 'fred', 'active': false },
-{ 'user': 'pebbles', 'active': true }
-];
-_.findIndex(users, function(o) { return o.user == 'barney'; });
-// = 0
-_.findIndex(users, { 'user': 'fred', 'active': false });
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by Siddharam Tuesday, April 23, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/post/20190420/">
-        <h2 class="post-title">
-            工程師日常 - RD 忙什麼？
-        </h2>
-	
-        <h3 class="post-subtitle">
-            天天加班？專案做不完？工程師的工作實況報導
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            RD，是我們的代名詞，一天對著電腦打出的符號，比對人說過的話還多；PM 總會用不同的話語問我們：「東西做完了嗎？」語氣仿佛在問客戶：「錢匯好了嗎？」一樣......
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by Siddharam Saturday, April 20, 2019
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/post/20190418/">
-        <h2 class="post-title">
-            用 Hugo 建立部落格 / 網站，每步都有詳細教學
-        </h2>
-	
-        <h3 class="post-subtitle">
-            Wordpress、Blogger 以外的第三方案，設計彈性更高，並且免費，適合願意學寫程式的人。
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            自從去年學了程式，並開始工作以後，就有想建立部落格，寫下工程師日常的想法。在看了多數人推薦的 Wordpress 與 Google 的 Blogger 後，有了一些比較......
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by Siddharam Friday, April 19, 2019
-    </p>
-</div>
-<hr>
-
+<article>
+    <div class="container">
+        <div class="row">
 
             
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article>
+
+<code>
+_.dropRight([1, 2, 3], 2);<br>
+// => [1]
+</code><br><br>
+
+<pre>
+
+function drop (array, count) {
+  return array.slice(0, array.length-2)
+}
+
+drop([1,2,3,4,5,6,7,8], 2)
+
+//  [1, 2, 3, 4, 5, 6]
+
+</pre>
+
+<code><br>
+var users = [<br>
+  { 'user': 'barney',  'active': false },<br>
+  { 'user': 'fred',    'active': false },<br>
+  { 'user': 'pebbles', 'active': true }<br>
+];<br><br>
+ 
+_.findIndex(users, function(o) { return o.user == 'barney'; });<br>
+// => 0<br><br>
+ 
+_.findIndex(users, { 'user': 'fred', 'active': false });<br>
+// => 1<br>
+</code><br><br>
+
+<pre>
+
+var users = [ 
+  { 'user': 'barney',  'active': false },
+  { 'user': 'fred',    'active': false },
+  { 'user': 'pebbles', 'active': true }
+]
+
+function findIndex(array, types){
+
+    for(let i=0; i < array.length; i++){
+
+        if(array[i].user == types.user && array[i].active == types.active){
+            return i
+        }
+
+    } 
+
+}
+
+findIndex(users, { 'user': 'barney', 'active': false })
+// 0
+
+</pre>
+
+
+</article>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20190420/" data-toggle="tooltip" data-placement="top" title="工程師日常 - RD 忙什麼？">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
 
 
 
-       	</div>
-        
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
+                
+                
 
-    
-	
-    
-    
-
-    
-    
-</div>
-
-	</div>
-</div>
-
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 

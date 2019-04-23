@@ -1,4 +1,4 @@
-baseURL = "https://frankyeah.github.io/siddharam/"
+baseURL = ""
 languageCode = "en-us"
 title = "Siddharam"
 theme = "hugo-theme-cleanwhite"
@@ -6,11 +6,12 @@ theme = "hugo-theme-cleanwhite"
 tag = "tags"
 category = "categories"
 series = "series"
+googleAnalytics = "UA-128179606-2"
 # Set the followings to true as part of your site SEO
 enableRobotsTXT = true
 canonifyURLs = true
 [params]
   # Sets the meta tag description
-  description = "用兩種語言創作"
+  description = "用兩種語言創作，一手文字，一手程式。"
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle = "文字人 程式人"
