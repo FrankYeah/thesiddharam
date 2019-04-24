@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Firebase</title>
+      <link>https://siddharam.com.tw/tags/firebase/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/firebase/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hugo</title>
@@ -41,7 +50,7 @@
     <item>
       <title>教學</title>
       <link>https://siddharam.com.tw/tags/%E6%95%99%E5%AD%B8/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E6%95%99%E5%AD%B8/</guid>
       <description></description>

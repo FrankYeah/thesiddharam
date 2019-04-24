@@ -6,10 +6,24 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>firebase 作為後端的運用</title>
+      <link>https://siddharam.com.tw/post/20190424/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190424/</guid>
+      <description> 前言
+firebase 可以說是造福前端工程師的好工具。
+它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供封裝好的程式讓工程師使用。
+另外它也和 GitHub Page 一樣，提供定量的免費 hosting 服務，也像 AWS S3 一樣圖供靜態資源如圖片的儲存空間；其他還有帳號的權限管理、機械學習的嵌入應用、後端程式碼執行空間等，為後端服務提供相對容易的接口。  
+閱讀量次  &amp;nbsp;&amp;nbsp; Pv:次  &amp;nbsp; Uv:次  
+ </description>
+    </item>
     
     <item>
       <title>lodash 的程式碼實現</title>
@@ -20,6 +34,7 @@
       <description>lodash
 這次來挑選常用的 lodash function，嘗試自己手寫。
 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。
+練習
  (1) dropRight(array, 從右邊移除多少個數)
 _.dropRight([1, 2, 3], 2);
 // =&amp;gt; [1] 
@@ -29,8 +44,7 @@ var users = [
 { &#39;user&#39;: &#39;barney&#39;, &#39;active&#39;: false },
 { &#39;user&#39;: &#39;fred&#39;, &#39;active&#39;: false },
 { &#39;user&#39;: &#39;pebbles&#39;, &#39;active&#39;: true }
-];
-_.findIndex(users, function(o) { return o.</description>
+];</description>
     </item>
     
     <item>

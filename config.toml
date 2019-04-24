@@ -2,10 +2,9 @@ baseURL = "https://siddharam.com.tw/"
 languageCode = "en-us"
 title = "Siddharam"
 subhead = "寫程式的文字人"
-slogan = "寫程式的文字人"
-subtitle = "寫程式的文字人"
 description = "右手文字，左腦程式。"
 theme = "hugo-theme-cleanwhite"
+
 [taxonomies]
 tag = "tags"
 category = "categories"
@@ -18,3 +17,5 @@ canonifyURLs = true
   description = "右手文字，左腦程式。"
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle = "寫程式的文字人"
+  slogan = "寫程式的文字人"
+  about_me = "關於"
