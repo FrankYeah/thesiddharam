@@ -1,6 +1,10 @@
 baseURL = "https://siddharam.com.tw/"
 languageCode = "en-us"
 title = "Siddharam"
+subhead = "寫程式的文字人"
+slogan = "寫程式的文字人"
+subtitle = "寫程式的文字人"
+description = "右手文字，左腦程式。"
 theme = "hugo-theme-cleanwhite"
 [taxonomies]
 tag = "tags"
@@ -11,6 +15,6 @@ enableRobotsTXT = true
 canonifyURLs = true
 [params]
   # Sets the meta tag description
-  description = "用兩種語言創作，一手文字，一手程式。"
+  description = "右手文字，左腦程式。"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle = "文字人 程式人"
+  navbarTitle = "寫程式的文字人"
