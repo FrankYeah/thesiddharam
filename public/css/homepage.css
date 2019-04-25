@@ -1,0 +1,12 @@
+.intro-header{
+    background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/indonesia-elephant-with-two-person.jpg?alt=media&token=594f8513-5a47-405d-bfeb-e9be6ad17a33");
+}
+
+
+
+@media screen and (max-width:500px){
+    .intro-header{
+        background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/indonesia-elephant-with-two-person-rwd.jpg?alt=media&token=ce82d655-ad9b-438f-b344-7088cc9ff527");
+    }
+
+}
