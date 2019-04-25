@@ -1,9 +1,11 @@
 baseURL = "https://siddharam.com.tw/"
 languageCode = "en-us"
 title = "Siddharam"
+SEOTitle = "Siddharam | 寫程式的文字人"
 subhead = "寫程式的文字人"
-description = "右手文字，左腦程式。"
+description = "文字紀錄可能性 | 程式創造可能性"
 theme = "hugo-theme-cleanwhite"
+hasCJKLanguage = true
 
 [taxonomies]
 tag = "tags"
@@ -12,10 +14,27 @@ series = "series"
 # Set the followings to true as part of your site SEO
 enableRobotsTXT = true
 canonifyURLs = true
+
 [params]
-  # Sets the meta tag description
-  description = "右手文字，左腦程式。"
-  # Sets the navbarTitle that appears in the top left of the navigation bar
+  description = "文字紀錄可能性 | 程式創造可能性"
+  title = "Siddharam | 寫程式的文字人"
+  SEOTitle = "Siddharam | 寫程式的文字人"
   navbarTitle = "寫程式的文字人"
   slogan = "寫程式的文字人"
   about_me = "關於"
+  image_404 = ""
+  title_404 = "請待會再嘗試一次 :("
+
+  sidebar_about_description = "文字紀錄可能性 | 程式創造可能性"
+
+[params.counter.busuanzi]
+  enable = true
+
+[params.social]
+  email          = "aaa24295234@gmail.com"
+  github         = "https://github.com/FrankYeah"
+
+
+
+
+

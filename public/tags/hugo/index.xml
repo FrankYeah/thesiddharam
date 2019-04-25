@@ -17,17 +17,7 @@
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190418/</guid>
-      <description>前導
-現在的發文平台很多，不論會不會程式都能輕易的上手。
-而人人皆有的 Facebook、Line、Youtube、IG，它們主要用處還是在於導流。而 Blogger、WordPress 則較為正式，Medium 版型固定。 但因為 wordpress.com 用起來的彈性不高，而 wordpress.org 費用頗高的關係，我才選擇速度極快的 hugo。 在使用前，我曾思考過，是否要從頭到尾自己架設呢？ 在我腦中有三個方案，第一個，是將所有資料存入 Firebase 的 Realtime Database 裡面，只要做好 html 模板後，不同文章就塞不同的資料進去就好， 但發現 SEO 是個問題，所以就被排除掉了。 第二是我自己純粹用 html 把一篇篇文章塞入，但發現這要做標籤、分類、搜尋太麻煩。第三當然就是用 Webpack 或 Gulp 來幫我做標籤、分類的工作，但有點懶。 因此對我來說，找平台的要求就是幫我做好架構，尤其是標籤、分類、搜尋，而設計、交互的彈性要夠大，能夠讓我自行調整。hugo 就是我的最大公約數。 如果是有程式基底的人，hugo 使用起來會較為順暢。我大約花了兩天時間才熟悉結構，其中最需要花費時間研究的就是 Go Template 語法。那我們就進入主題吧。
-實戰開始 在開始前，先確認有下列安裝：  IDE（Visual Studio Code）
-npm git 
-安裝
-打開你的編輯器（Visual Studio Code、Atom），切換到任意空資料夾後，開啟終端機並切換到該資料夾目錄，開始 Hugo 實作。
-1. 安裝 Hugo
-npm install hugo
-* 如果是 mac 的話，可以使用  brew install hugo
-2. 安裝 Hugo 環境</description>
+      <description>前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、Youtube、IG，它們主要用處還是在於導流</description>
     </item>
     
   </channel>

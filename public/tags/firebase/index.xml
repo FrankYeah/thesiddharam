@@ -17,12 +17,7 @@
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190424/</guid>
-      <description> 前言
-firebase 可以說是造福前端工程師的好工具。
-它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供封裝好的程式讓工程師使用。
-另外它也和 GitHub Page 一樣，提供定量的免費 hosting 服務，也像 AWS S3 一樣圖供靜態資源如圖片的儲存空間；其他還有帳號的權限管理、機械學習的嵌入應用、後端程式碼執行空間等，為後端服務提供相對容易的接口。  
-閱讀量次  &amp;nbsp;&amp;nbsp; Pv:次  &amp;nbsp; Uv:次  
- </description>
+      <description>前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供封裝好的程式</description>
     </item>
     
   </channel>
