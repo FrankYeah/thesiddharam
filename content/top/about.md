@@ -11,7 +11,7 @@ draft: false
 
 <article>
 
-<h1>介紹</h1><br>
+<h1  class="article-h1-color">介紹</h1><br>
 工業管理系畢業後，在五間媒體產業待了三年，當過電視台網路編輯、新移 / 住民議題的月報記者、新媒體記者、人文歷史雜誌記者、科技線記者。在 2018 年末，轉職成為前端工程師，在一間新創公司工作。
 <br><br>
 從大學開始，幾乎每年都會往國外跑。
@@ -28,13 +28,19 @@ draft: false
 <br><br>
 後來去了 AppWorks School 學寫前端，成為 RD，用文字和程式語言進行創作。
 <br>
-<h1>平常</h1><br>
+<h1 class="article-h1-color">平常</h1><br>
 對基隆非常非常的熟悉，可以當伴遊噢不，是導遊的那種。<br><br>
 喜歡網路小說，現正在追蠱真人、超神機械師、儒道至聖。
 <br>
-<h1>Siddharam</h1><br>
+<h1 class="article-h1-color">Siddharam</h1><br>
 是我最愛的兩本書的合名，流浪者之歌（Siddhartha）、項塔蘭（Shantaram）。<br><br>
-<h1>常說</h1><br>
+<h1 class="article-h1-color">常說</h1><br>
 人永遠不會改變。<br><br>
+<h1 class="article-h1-color">願景</h1><br>
+希望能找出人生更多的可能性，除了親自實現，也分享給全世界。<br><br><br>
+<div >
+    <div style="cursor: pointer;" class="fab fa-github fa-3x"></div>
+    <div style="padding-left:20px; cursor: pointer;" class="fas fa-envelope fa-3x"></div>
+</div>
 
 </article>

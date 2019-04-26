@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>後端 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E5%BE%8C%E7%AB%AF/</link>
+    <description>Recent content in 後端 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E5%BE%8C%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>firebase 作為後端的運用</title>
+      <link>https://siddharam.com.tw/post/20190424/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190424/</guid>
+      <description>前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供封裝好的程式</description>
+    </item>
+    
+  </channel>
+</rss>

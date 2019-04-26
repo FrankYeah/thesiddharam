@@ -1,7 +1,7 @@
 baseURL = "https://siddharam.com.tw/"
 languageCode = "en-us"
 title = "Siddharam"
-SEOTitle = "Siddharam | 寫程式的文字人"
+SEOTitle = "Siddharam | 寫程式的文字人 | 西打藍"
 subhead = "寫程式的文字人"
 description = "文字紀錄可能性 | 程式創造可能性"
 theme = "hugo-theme-cleanwhite"
@@ -17,8 +17,9 @@ canonifyURLs = true
 
 [params]
   description = "文字紀錄可能性 | 程式創造可能性"
-  title = "Siddharam | 寫程式的文字人"
-  SEOTitle = "Siddharam | 寫程式的文字人"
+  title = "Siddharam | 寫程式的文字人 | 西打藍"
+  SEOTitle = "Siddharam | 寫程式的文字人 | 西打藍"
+  keyword = "Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常"
   navbarTitle = "寫程式的文字人"
   slogan = "寫程式的文字人"
   about_me = "關於"
@@ -29,8 +30,8 @@ canonifyURLs = true
 
 
 [params.social]
-  email          = "aaa24295234@gmail.com"
-  github         = "https://github.com/FrankYeah"
+  email          = ""
+  github         = ""
 
 
 
