@@ -59,6 +59,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
     
@@ -111,8 +112,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Siddharam</a>
-            <a class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px" class="navbar-brand" href="/top/about">關於</a>
         </div>
 
         
@@ -197,15 +198,12 @@
                         </a>
                         
                     </div>
-                    <h1>firebase 作為後端的運用</h1>
+                    <p style="margin-bottom:4px"> April 24, 2019</p>
+                    <h1 style="margin:3px auto">firebase 作為後端的運用</h1>
                     <h2 class="subheading">例會分享主題</h2>
                     <span class="meta">
-			Posted by 
 			
-			    Siddharam
-			 
-			on 
-			Wednesday, April 24, 2019
+
                         
                     </span>
                 </div>
@@ -231,19 +229,19 @@
                 
                 
                 
-                <article>
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
 <br>
-<h1 class="article-h1-color">前言</h1><br>
+<h3 class="article-h1-color">前言</h3><br>
 firebase 可以說是造福前端工程師的好工具。<br><br>
 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供封裝好的程式讓工程師使用。<br><br>
 另外它也和 GitHub Page 一樣，提供定量的免費 hosting 服務，也跟 AWS S3 一樣提供靜態資源的儲存空間；其他還有帳號的權限管理、機械學習的嵌入應用、後端程式碼執行空間等，為後端服務提供相對容易的接口。<br><br>
 
-<h1  class="article-h1-color">建立</h1><br>
+<h3 class="article-h1-color">建立</h3><br>
 首先進入到 <a href="https://console.firebase.google.com">firebase</a> 頁面，點選「新增專案」，在進入畫面後，在選擇「新增應用程式」。它目前提供 iOS、Android、Web 三種應用程式的服務，點選後會看到一段 javascript 程式碼，將它複製貼在你的程式碼中，接著就可以使用它們的服務了。
 <img style="margin-bottom:8px" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/firebase_add_app_layout.PNG?alt=media&token=23604a5d-bd81-4eef-beee-f7d7ecf501f8"/>
 <div style="text-align:center; font-weight:bold">firebase console</div><br>
 
-<h1  class="article-h1-color">功能</h1><br>
+<h3 class="article-h1-color">功能</h3><br>
 從最容易使用的 <b>storage</b> 開始，點選「上傳檔案」完成後，就能看見檔案資料。storage 也提供網址使用，只需點選圖片，在點擊「檔案位置」，就能看到下載網址。<br><br>
 接著是 hosting，它共有兩步操作說明：安裝、佈署。<br><br>
 安裝：<code>npm install -g firebase-tools</code><br>
@@ -296,7 +294,7 @@ firebase 可以說是造福前端工程師的好工具。<br><br>
 接著點選「使用者」，你除了可以手動新增使用者外，也能透過內建 function 建立新帳戶，新增後，你就能看見新使用者的登入方式，以及 UID 等資料。UID 就是上述規則中限制讀寫的 auth.uid。<br><br>
 另外，在範本中，也有電子郵件驗證、密碼重設、電子郵件變更、簡訊驗證可以使用，這是我製作的 <a href="https://frankyeah.github.io/Front-Enter/index.html">範例網站</a>，當中使用了 database、authentication、storage 的服務，有興趣可以參考。<br><br>
 
-<h1  class="article-h1-color">應用方法</h1><br>
+<h3 class="article-h1-color">應用方法</h3><br>
 
 database:<br><br>
 <pre>
@@ -467,7 +465,7 @@ storage:<br><br>
 </pre>
 
 <br>
-<h1  class="article-h1-color">後記</h1><br>
+<h3 class="article-h1-color">後記</h3><br>
 針對 firebase 的教學就告一段落，下次會說些 AWS 的相關設定，有什麼問題也歡迎來信詢問。<br><br>
 
 
