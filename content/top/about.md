@@ -39,8 +39,8 @@ draft: false
 <h3 class="article-h1-color">願景</h3><br>
 希望能找出人生更多的可能性，除了親自實現，也分享給全世界。<br><br><br>
 <div >
-    <div style="cursor: pointer;" class="fab fa-github fa-3x"></div>
-    <div style="padding-left:20px; cursor: pointer;" class="fas fa-envelope fa-3x"></div>
+    <a href="https://github.com/FrankYeah"><div style="cursor: pointer;" class="fab fa-github fa-3x"></div></a>
+    <a href="mailto:aaa24295234@gmail.com"><div style="padding-left:20px; cursor: pointer;" class="fas fa-envelope fa-3x"></div></a>
 </div>
 
 </article>
