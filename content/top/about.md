@@ -32,7 +32,7 @@ draft: false
 對基隆非常非常的熟悉，可以當伴遊噢不，是導遊的那種。<br><br>
 喜歡網路小說，現正在追蠱真人、超神機械師、儒道至聖。
 <br>
-<h3 class="article-h1-color">Siddharam</h3><br>
+<h3 class="article-h1-color">Siddharam 西打藍</h3><br>
 是我最愛的兩本書的合名，流浪者之歌（Siddhartha）、項塔蘭（Shantaram）。<br><br>
 <h3 class="article-h1-color">常說</h3><br>
 人永遠不會改變。<br><br>

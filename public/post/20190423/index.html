@@ -112,15 +112,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a style="font-size:12px" class="navbar-brand" href="/">Siddharam</a>
-            <a style="font-size:12px" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/top/about">關於</a>
         </div>
 
         
         
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
 
                     
                     
@@ -194,9 +194,9 @@
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px"> April 23, 2019</p>
-                    <h1 style="margin:3px auto">lodash 的程式碼實現</h1>
-                    <h2 class="subheading">員工訓練之一</h2>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> April 23, 2019</p>
+                    <h1>lodash 的程式碼實現</h1>
+                    <h3 class="subheading">員工訓練之一</h3>
                     <span class="meta">
 			
 
@@ -225,7 +225,26 @@
                 
                 
                 
-                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+                <style>
+  
+/* 首圖照片 */
+.intro-header{
+    background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&token=3affd291-ee19-4ecf-9623-ea18460d83e2");
+}
+
+@media screen and (max-width:500px){
+    .intro-header{
+        background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&token=3affd291-ee19-4ecf-9623-ea18460d83e2");
+    }
+
+}
+
+</style>
+
+<article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / Siddharam 西打藍<br><br>
+
 <h3 class="article-h1-color">lodash</h3><br>
 這次來挑選常用的 <a href='https://lodash.com/'>lodash function</a>，嘗試自己手寫。<br>lodash 的 <a href='https://github.com/lodash/lodash'>GitHub</a> 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。<br><br>
 

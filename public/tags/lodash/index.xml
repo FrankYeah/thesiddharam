@@ -17,7 +17,7 @@
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190423/</guid>
-      <description>lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。 練習 (1) dropRight(array, 從右邊移除多少個數</description>
+      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較</description>
     </item>
     
   </channel>

@@ -24,6 +24,16 @@
     margin-top: 0px!important;
 }
 
+.article-title-size {
+    font-size: 35px;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+.article-head-sub-title-size {
+    font-size: 20px;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
 .article-h1-color{
     color: rgb(2, 186, 192);
     font-weight: 500;
@@ -32,13 +42,15 @@
 
 /* 首圖照片 */
 .intro-header{
-    background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/indonesia-elephant-with-two-person.jpg?alt=media&token=594f8513-5a47-405d-bfeb-e9be6ad17a33");
+    background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/vadim-sherbakov-68-unsplash.jpg?alt=media&token=96ad7503-16fe-4510-bd4e-c4ee547fc281");
 }
 
 @media screen and (max-width:500px){
     .intro-header{
-        background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/indonesia-elephant-with-two-person-rwd.jpg?alt=media&token=ce82d655-ad9b-438f-b344-7088cc9ff527");
+        background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/vadim-sherbakov-68-unsplash.jpg?alt=media&token=96ad7503-16fe-4510-bd4e-c4ee547fc281");
     }
-
+    intro-header .post-heading h1 {
+        font-size: 26px;
+    }
 }
 
