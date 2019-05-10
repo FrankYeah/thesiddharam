@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tensorflow on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/tensorflow/</link>
+    <description>Recent content in Tensorflow on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google 機器學習培訓計劃心得</title>
+      <link>https://siddharam.com.tw/post/20190509/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190509/</guid>
+      <description>文 / Siddharam 西打藍 前言 五月，是科技大廠展演的季節，在 在 2019 Google I/O 大會 期間，同事在 slack 貼了 ML Study Jam 機器學習培訓計劃的活動，想說 Google 的服務只玩過 firebase 和語音 API，</description>
+    </item>
+    
+  </channel>
+</rss>
