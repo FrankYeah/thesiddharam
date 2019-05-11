@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Google 機器學習培訓計劃心得" />
-    <meta property="og:title" content="Google 機器學習培訓計劃心得" />
-    <meta property="twitter:title" content="Google 機器學習培訓計劃心得" />
+    <meta name="title" content="用 python 玩網站爬蟲 | selenium" />
+    <meta property="og:title" content="用 python 玩網站爬蟲 | selenium" />
+    <meta property="twitter:title" content="用 python 玩網站爬蟲 | selenium" />
     
 
     
-    <meta name="description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......">
-    <meta property="og:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
-    <meta property="twitter:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
+    <meta name="description" content="selenium 能自動化操作瀏覽器，不論是自動化測試，或是臉書按讚機器人，都可以做，而且只需要一小時就可以入門，十分簡單......">
+    <meta property="og:description" content="selenium 能自動化操作瀏覽器，不論是自動化測試，或是臉書按讚機器人，都可以做，而且只需要一小時就可以入門，十分簡單......" />
+    <meta property="twitter:description" content="selenium 能自動化操作瀏覽器，不論是自動化測試，或是臉書按讚機器人，都可以做，而且只需要一小時就可以入門，十分簡單......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="機器學習, google, tensorflow" name="keywords">
+    <meta content="selenium, 爬蟲, python" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Google 機器學習培訓計劃心得-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>用 python 玩網站爬蟲 | selenium-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190509/">
+    <link rel="canonical" href="/post/20190510/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -193,22 +193,22 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92" title="機器學習">
-                            機器學習
+                        <a class="tag" href="/tags/selenium" title="selenium">
+                            selenium
                         </a>
                         
-                        <a class="tag" href="/tags/google" title="google">
-                            google
+                        <a class="tag" href="/tags/%E7%88%AC%E8%9F%B2" title="爬蟲">
+                            爬蟲
                         </a>
                         
-                        <a class="tag" href="/tags/tensorflow" title="tensorflow">
-                            tensorflow
+                        <a class="tag" href="/tags/python" title="python">
+                            python
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 9, 2019</p>
-                    <h1>Google 機器學習培訓計劃心得</h1>
-                    <h3 class="subheading">Cloud Vision API 圖片辨識</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 10, 2019</p>
+                    <h1>用 python 玩網站爬蟲 | selenium</h1>
+                    <h3 class="subheading">自動化測試的好夥伴</h3>
                     <span class="meta">
 			
 
@@ -242,185 +242,80 @@
 <br>文 / Siddharam 西打藍<br><br>
 
 <h3 class="article-h1-color">前言</h3><br>
-五月，是科技大廠展演的季節，在 <a href="https://events.google.com/io/">在 2019 Google I/O 大會</a>  期間，同事在 slack 貼了 <a href="https://events.withgoogle.com/ml-study-jam-basic-tw/">ML Study Jam 機器學習培訓計劃</a>的活動，想說 Google 的服務只玩過 <a href="https://siddharam.com.tw/post/20190424/">firebase</a> 和語音 API，這次就試試看其他的吧。<br><br>
+週五晚上突然想玩玩 selenium，它能夠自動幫你跑瀏覽器事件，例如最基本的點擊、輸入，選擇依據是 html 元素。大家一起在夜晚入門這套工具吧。
 
-這次共玩了四個，分別是偵測圖片中的標籤、臉孔以及地標的 <a href="https://google.qwiklabs.com/focuses/1841?parent=catalog">Cloud Vision API</a>，還有將聲音轉成文字稿的 <a href="https://google.qwiklabs.com/focuses/2187?parent=catalog">Cloud Speech API</a>，翻譯文字內容的 <a href="https://google.qwiklabs.com/focuses/697?parent=catalog">Cloud Translation API</a>，以及分類文字內容的 <a href="https://google.qwiklabs.com/focuses/1749?parent=catalog">Cloud Natural Language API</a>。<br><br>
+<h3 class="article-h1-color">環境</h3><br>
+先安裝 <a href="https://www.python.org/downloads/">python</a>，用習慣的編輯器打開一個資料夾，並新增 <i>test.py </i>檔案。建議資料夾「不要」命名為 selenium。<br><br>
+檢查安裝版本：<br>
+<code>python -V</code><br><br>
+安裝 selenium：<br>
+<code>pip install selenium</code><br><br>
+安裝 <a href="https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-win64.zip">Firefox web driver</a><br>
+安裝 <a href="https://chromedriver.storage.googleapis.com/2.38/chromedriver_win32.zip">Chrome web driver</a><br><br>
+接著，把下載的兩份檔案，放在 python 資料夾裡，例如我的位置是在：<br><br>
+<pre>C:\Users\User\AppData\Local\Programs\Python\Python36</pre><br>
+有了上述做法，才能驅動瀏覽器運行。下一節就要進入實作了。<br><br>
 
-跟著它的步驟做，每一個課程約半小時就能做完，需要打的程式幾乎沒有，就算不會寫程式，也能體驗一番，且多數是系統指令。那我們開始吧。<br><br>
-
-<h3 class="article-h1-color">圖片分析 Cloud Vision API</h3><br>
-首先，選擇課程後，點擊右上角的 join，確認有預訂課程後，就能看到內容。<br><br>
-之後開啟 <a href="https://console.cloud.google.com/"> Google Console</a>，接下來，幾乎所有機器學習的操作都會在這裡。<br><br>
-最上方可以建立不同的專案，右上角有個 Cloud Shell，是 Linux 作業環境，支援主流的後端語言，啟動後，右上方有一枝筆，可以打開網頁版 IDE 進行操作。<br><br>
-有幾個指令可以做測試：<br><br>
-1. 顯示帳戶<br><br>
-<code>gcloud auth list</code><br><br>
-2. 顯示專案名稱<br><br>
-<code>gcloud config list project</code>
-接下來，為了要啟用 API，需要先建立憑證（Credentials），接著將它複製，建立環境變數：<br><br>
-<code>export API_KEY=YOUR_API_KEY</code><br><br>
-請自行將 YOUR_API_KEY 取代成自己的。<br><br>
-接下來，我們要建立容器（Bucket），用來存取靜態資料，有點像是 firebase 裡的 storage，或是 AWS 的 S3。請從左欄開啟 Storage，並點選建立容器並取名。<br><br>
-
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-bucket.PNG?alt=media&token=df924c70-938a-4379-8c23-f0f9dd9c4a6a"/>
-<div style="text-align:center;">容器（Bucket）</div><br>
-
-接著，你可以上傳任意一張圖片進行分析，上傳完畢後，要讓它可以對外存取，所以右側開啟權限 Permissions，並新增項目（Add Item），輸入：<br><br>
-Entity: Group<br>
-Name: allUsers<br>
-Access: Reader<br><br>
-輸入完畢後，打開編輯器，建立 request.json：<br><br>
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "LABEL_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-request-json.PNG?alt=media&token=dbb8887f-4ef5-4aed-9732-09f53f73846d"/>
-<div style="text-align:center;">request.json</div><br>
-
-
-儲存後，運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-就會看到圖片的分析結果。<br><br>
-
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-person-result.PNG?alt=media&token=32e3c697-ac19-4f6b-a45a-3a24ce26acb7"/>
-<div style="text-align:center;">圖片分析結果。左側是結果，右側是測試圖片。</div><br>
-
-如果是輸入：<br><br>
+<h3 class="article-h1-color">實作指令</h3><br>
 
 <pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "WEB_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
+# 打開 google 瀏覽器後，根據 html name 找到 q
+# 輸入"氣象局"後提交表單，並點擊「交通部中央氣象局」
 
-</pre><br>
+from selenium import webdriver
+from time import sleep
 
-運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
+# 設定為 Chrome 瀏覽器
+driver = webdriver.Chrome()
+# 前往指定 URL
+driver.get("https://www.google.com")
 
-會看到 Google 從圖片搜尋中，找到的相似圖片。<br><br>
+# 瀏覽器位置
+driver.set_window_position(0,0) 
+# 瀏覽器大小
+driver.set_window_size(700,700) 
+# 停止 3 秒鐘
+time.sleep(3)
+# 視窗最大化
+driver.maximize_window()
 
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-people-result.PNG?alt=media&token=7016c633-a193-4aa1-98cb-62cdf5b77a1f"/>
-<div style="text-align:center;">相似圖片分析結果。左側是結果，右側是測試圖片。</div><br>
+# 找到輸入框
+element = driver.find_element_by_name("q");
+# 輸入內容
+element.send_keys("氣象局");
+# 提交表單
+element.submit();
 
+# 點擊頁面上"交通部中央氣象局"的連結
+driver.find_element_by_link_text('交通部中央氣象局').click() 
 
-最後還有特徵辨識：<br><br>
+# 印出標題
+print(driver.title)
 
-<pre>
+# 關閉視窗
+sleep(3)
+driver.close()
 
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/selfie.png"
-          }
-        },
-        "features": [
-          {
-            "type": "FACE_DETECTION"
-          },
-          {
-            "type": "LANDMARK_DETECTION"
-          }
-        ]
-      }
-  ]
-}
+</pre>
 
-</pre><br>
+WEBDRIVER 提供許多定位方法：<br><br>
 
-運行 API：<br><br>
+<b>
+id<br>
+name<br>
+class name<br>
+link text<br>
+partial link text<br>
+tag name<br>
+xpath<br>
+css selector<br>
+</b><br><br>
 
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
+以上為 selenium 的入門，<a href="https://www.qa-knowhow.com/?p=3811">這裡</a> 有詳細的使用說明。<br><br>
 
-會回傳臉部特徵的 X、Y 軸：<br><br>
-
-<pre>
-
-{
-      "faceAnnotations": [
-        {
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 669,
-                "y": 324
-              },
-              ...
-            ]
-          },
-          "fdBoundingPoly": {
-            ...
-          },
-          "landmarks": [
-            {
-              "type": "LEFT_EYE",
-              "position": {
-                "x": 692.05646,
-                "y": 372.95868,
-                "z": -0.00025268539
-              }
-            },
-            ...
-          ],
-          "rollAngle": 0.21619819,
-          "panAngle": -23.027969,
-          "tiltAngle": -1.5531756,
-          "detectionConfidence": 0.72354823,
-          "landmarkingConfidence": 0.20047489,
-          "joyLikelihood": "POSSIBLE",
-          "sorrowLikelihood": "VERY_UNLIKELY",
-          "angerLikelihood": "VERY_UNLIKELY",
-          "surpriseLikelihood": "VERY_UNLIKELY",
-          "underExposedLikelihood": "VERY_UNLIKELY",
-          "blurredLikelihood": "VERY_UNLIKELY",
-          "headwearLikelihood": "VERY_LIKELY"
-        }
-        ...
-     }
-}
-
-</pre><br>
 
 <h3 class="article-h1-color">後記</h3><br>
-其他的測試，我就沒有截圖，但跑的流程相似，有任何好奇都歡迎來信詢問。
+selenium 用起來，很像以前玩遊戲的自動化設定，之後如果有深入使用，會在補一篇的。有任何好奇都歡迎來信詢問。
 <br><br>
 <b>Email: aaa24295234@gmail.com</b><br><br>
 
@@ -440,13 +335,13 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190510/" data-toggle="tooltip" data-placement="top" title="用 python 玩網站爬蟲 | selenium">&larr;
+                        <a href="/post/20190504/" data-toggle="tooltip" data-placement="top" title="情侶基隆一日遊">&larr;
                             上一篇</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/20190429/" data-toggle="tooltip" data-placement="top" title="尋花問柳">新的一篇
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
                              &rarr;</a>
                     </li>
                     
