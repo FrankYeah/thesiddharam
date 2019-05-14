@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>初學者 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E5%88%9D%E5%AD%B8%E8%80%85/</link>
+    <description>Recent content in 初學者 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E5%88%9D%E5%AD%B8%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>怎麼學程式？ | 前端工程師必備技能</title>
+      <link>https://siddharam.com.tw/post/20190514/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190514/</guid>
+      <description>文 / Siddharam 西打藍 前言 最初，在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。 後來才了解，原來大家都是在 IDE 上寫，我最初是使用 Atom，</description>
+    </item>
+    
+  </channel>
+</rss>

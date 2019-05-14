@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Google 機器學習培訓計劃心得" />
-    <meta property="og:title" content="Google 機器學習培訓計劃心得" />
-    <meta property="twitter:title" content="Google 機器學習培訓計劃心得" />
+    <meta name="title" content="怎麼學程式？ | 前端工程師必備技能" />
+    <meta property="og:title" content="怎麼學程式？ | 前端工程師必備技能" />
+    <meta property="twitter:title" content="怎麼學程式？ | 前端工程師必備技能" />
     
 
     
-    <meta name="description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......">
-    <meta property="og:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
-    <meta property="twitter:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
+    <meta name="description" content="在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。後來爬文才了解，原來大家都是在 IDE（編輯器）上寫。這是為初學者寫的教學文，幫助新手跨出第 0 步，進入 HTML、CSS、JavaScript 的世界......">
+    <meta property="og:description" content="在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。後來爬文才了解，原來大家都是在 IDE（編輯器）上寫。這是為初學者寫的教學文，幫助新手跨出第 0 步，進入 HTML、CSS、JavaScript 的世界......" />
+    <meta property="twitter:description" content="在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。後來爬文才了解，原來大家都是在 IDE（編輯器）上寫。這是為初學者寫的教學文，幫助新手跨出第 0 步，進入 HTML、CSS、JavaScript 的世界......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="機器學習, google, tensorflow" name="keywords">
+    <meta content="教學, 初學者, HTML, CSS, JavaScript" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Google 機器學習培訓計劃心得-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>怎麼學程式？ | 前端工程師必備技能-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190509/">
+    <link rel="canonical" href="/post/20190514/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -193,22 +193,30 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92" title="機器學習">
-                            機器學習
+                        <a class="tag" href="/tags/%E6%95%99%E5%AD%B8" title="教學">
+                            教學
                         </a>
                         
-                        <a class="tag" href="/tags/google" title="google">
-                            google
+                        <a class="tag" href="/tags/%E5%88%9D%E5%AD%B8%E8%80%85" title="初學者">
+                            初學者
                         </a>
                         
-                        <a class="tag" href="/tags/tensorflow" title="tensorflow">
-                            tensorflow
+                        <a class="tag" href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        <a class="tag" href="/tags/css" title="CSS">
+                            CSS
+                        </a>
+                        
+                        <a class="tag" href="/tags/javascript" title="JavaScript">
+                            JavaScript
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 9, 2019</p>
-                    <h1>Google 機器學習培訓計劃心得</h1>
-                    <h3 class="subheading">Cloud Vision API 圖片辨識</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 14, 2019</p>
+                    <h1>怎麼學程式？ | 前端工程師必備技能</h1>
+                    <h3 class="subheading">從 0 到 1 的入門教學</h3>
                     <span class="meta">
 			
 
@@ -242,185 +250,61 @@
 <br>文 / Siddharam 西打藍<br><br>
 
 <h3 class="article-h1-color">前言</h3><br>
-五月，是科技大廠展演的季節，在 <a href="https://events.google.com/io/">在 2019 Google I/O 大會</a>  期間，同事在 slack 貼了 <a href="https://events.withgoogle.com/ml-study-jam-basic-tw/">ML Study Jam 機器學習培訓計劃</a>的活動，想說 Google 的服務只玩過 <a href="https://siddharam.com.tw/post/20190424/">firebase</a> 和語音 API，這次就試試看其他的吧。<br><br>
+最初，在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。<br><br>
+後來才了解，原來大家都是在 IDE 上寫，我最初是使用 Atom，而正式工作後發現，幾乎一半以上的工程師都是使用前端 IDE 神器， VS Code。<br><br>
+安裝<a href="https://code.visualstudio.com/"> VS Code </a>後，你等於跨出寫程式的第 0 步了。<br><br>
 
-這次共玩了四個，分別是偵測圖片中的標籤、臉孔以及地標的 <a href="https://google.qwiklabs.com/focuses/1841?parent=catalog">Cloud Vision API</a>，還有將聲音轉成文字稿的 <a href="https://google.qwiklabs.com/focuses/2187?parent=catalog">Cloud Speech API</a>，翻譯文字內容的 <a href="https://google.qwiklabs.com/focuses/697?parent=catalog">Cloud Translation API</a>，以及分類文字內容的 <a href="https://google.qwiklabs.com/focuses/1749?parent=catalog">Cloud Natural Language API</a>。<br><br>
+<h3 class="article-h1-color">兩步驟</h3><br>
+接下來，你只要完成兩個步驟，就能拿到應徵前端工程師的入場卷，而這兩步是同步進行的。<br><br>
+一是有自己的作品；二是學會市面上的徵才履歷中，前端必會的技術，並且運用在作品上佐證學會。<br><br>
+以人類製造機為例，技術包含：<br><br>
+<b>
+HTML，畫出人的骨架<br>
+CSS，完成皮膚，豐富色彩<br>
+JavaScript，讓人可以動作、跳舞<br>
+RWD，從任何角度看起來，都很得體好看<br>
+AJAX，擁有記憶力，能與腦中資料庫互動<br>
+JSON，與資料庫互動的格式，如電子訊號<br>
+GitHub，人類作品存放區，還能與人 cowork<br>
+Git，存放作品的方法<br>
+Dev Tool，在模擬器中檢視作品，測試並微調。<br><br>
+</b>
+其中，HTML、CSS、JavaScript，需要花你三至五天入門，其他的主題，都只要一天就能入門。接著，我會敘述它們各自需入門的內容。<br><br>
 
-跟著它的步驟做，每一個課程約半小時就能做完，需要打的程式幾乎沒有，就算不會寫程式，也能體驗一番，且多數是系統指令。那我們開始吧。<br><br>
+<h3 class="article-h1-color">前端三大支柱，HTML、CSS、JavaScript</h3><br>
 
-<h3 class="article-h1-color">圖片分析 Cloud Vision API</h3><br>
-首先，選擇課程後，點擊右上角的 join，確認有預訂課程後，就能看到內容。<br><br>
-之後開啟 <a href="https://console.cloud.google.com/"> Google Console</a>，接下來，幾乎所有機器學習的操作都會在這裡。<br><br>
-最上方可以建立不同的專案，右上角有個 Cloud Shell，是 Linux 作業環境，支援主流的後端語言，啟動後，右上方有一枝筆，可以打開網頁版 IDE 進行操作。<br><br>
-有幾個指令可以做測試：<br><br>
-1. 顯示帳戶<br><br>
-<code>gcloud auth list</code><br><br>
-2. 顯示專案名稱<br><br>
-<code>gcloud config list project</code>
-接下來，為了要啟用 API，需要先建立憑證（Credentials），接著將它複製，建立環境變數：<br><br>
-<code>export API_KEY=YOUR_API_KEY</code><br><br>
-請自行將 YOUR_API_KEY 取代成自己的。<br><br>
-接下來，我們要建立容器（Bucket），用來存取靜態資料，有點像是 firebase 裡的 storage，或是 AWS 的 S3。請從左欄開啟 Storage，並點選建立容器並取名。<br><br>
+我做了<a href="https://codepen.io/hbzyhfjp/pen/eaBpmy" >示範程式碼 </a>在 Codepen 中，你只需要在 VS Code 新增檔案，開始練習就行了。<br><br>
+HTML：<br><br>
+<b>
+1. 了解 head，和 body 的區別，各自放置什麼內容。<br>
+2. 如何引入 CSS、JavaScript 檔案。<br>
+3. 怎麼做 SEO？<br>
+4. 有哪些元素會換行，哪些不會？如 div 和 span。<br>
+5. 如何使用 class 和 style。<br><br>
+</b>
 
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-bucket.PNG?alt=media&token=df924c70-938a-4379-8c23-f0f9dd9c4a6a"/>
-<div style="text-align:center;">容器（Bucket）</div><br>
+CSS：<br><br>
+<b>
+1. 了解 margin 和 padding 的區別。前者是元素外，後者是元素內。<br>
+2. 知道 position 怎麼用，知道後再來學 flex，flex 是它的進化版，更好用。<br>
+3. 其它的都很語意化，看就知道怎麼用，例如 color、font-size，需要用在爬文就好。<br>
+4. 學會在 dev tool 開發者工具上調整樣式。<br><br>
+</b>
 
-接著，你可以上傳任意一張圖片進行分析，上傳完畢後，要讓它可以對外存取，所以右側開啟權限 Permissions，並新增項目（Add Item），輸入：<br><br>
-Entity: Group<br>
-Name: allUsers<br>
-Access: Reader<br><br>
-輸入完畢後，打開編輯器，建立 request.json：<br><br>
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "LABEL_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
+JavaScript：<br><br>
+<b>
+1. 如何使用 click、mouseover 等事件<br>
+2. 如何選擇 HTML 元素並改變樣式<br>
+3. 變數 var let const 的區別與使用<br>
+4. function 的使用<br><br>
+</b>
 
-</pre><br>
-
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-request-json.PNG?alt=media&token=dbb8887f-4ef5-4aed-9732-09f53f73846d"/>
-<div style="text-align:center;">request.json</div><br>
-
-
-儲存後，運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-就會看到圖片的分析結果。<br><br>
-
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-person-result.PNG?alt=media&token=32e3c697-ac19-4f6b-a45a-3a24ce26acb7"/>
-<div style="text-align:center;">圖片分析結果。左側是結果，右側是測試圖片。</div><br>
-
-如果是輸入：<br><br>
-
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "WEB_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-
-會看到 Google 從圖片搜尋中，找到的相似圖片。<br><br>
-
-<img style="margin-bottom:8px;" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/google-vision-api-people-result.PNG?alt=media&token=7016c633-a193-4aa1-98cb-62cdf5b77a1f"/>
-<div style="text-align:center;">相似圖片分析結果。左側是結果，右側是測試圖片。</div><br>
-
-
-最後還有特徵辨識：<br><br>
-
-<pre>
-
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/selfie.png"
-          }
-        },
-        "features": [
-          {
-            "type": "FACE_DETECTION"
-          },
-          {
-            "type": "LANDMARK_DETECTION"
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-運行 API：<br><br>
-
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-
-會回傳臉部特徵的 X、Y 軸：<br><br>
-
-<pre>
-
-{
-      "faceAnnotations": [
-        {
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 669,
-                "y": 324
-              },
-              ...
-            ]
-          },
-          "fdBoundingPoly": {
-            ...
-          },
-          "landmarks": [
-            {
-              "type": "LEFT_EYE",
-              "position": {
-                "x": 692.05646,
-                "y": 372.95868,
-                "z": -0.00025268539
-              }
-            },
-            ...
-          ],
-          "rollAngle": 0.21619819,
-          "panAngle": -23.027969,
-          "tiltAngle": -1.5531756,
-          "detectionConfidence": 0.72354823,
-          "landmarkingConfidence": 0.20047489,
-          "joyLikelihood": "POSSIBLE",
-          "sorrowLikelihood": "VERY_UNLIKELY",
-          "angerLikelihood": "VERY_UNLIKELY",
-          "surpriseLikelihood": "VERY_UNLIKELY",
-          "underExposedLikelihood": "VERY_UNLIKELY",
-          "blurredLikelihood": "VERY_UNLIKELY",
-          "headwearLikelihood": "VERY_LIKELY"
-        }
-        ...
-     }
-}
-
-</pre><br>
 
 <h3 class="article-h1-color">後記</h3><br>
-其他的測試，我就沒有截圖，但跑的流程相似，有任何好奇都歡迎來信詢問。
+上述了解完，並且練習後，就可以模仿網站刻出樣式，實現功能，可以以我<a href="https://frankyeah.github.io/Front-Enter/index.html"> 面試作品 </a>來模仿。<br><br>
+過了幾周完成後，就開始思考自己的作品，並將它實現。如電商、遊戲、地圖應用、部落格等。<br><br>
+文章最後，我放上前一次的<a href="https://drive.google.com/open?id=1yvOmDPVTo7eHMCsUQXQBoxXIwWi4-DEQ"> 履歷 </a>，裡頭列舉了相當多的技術，建議你在作品中運用。將來面試時，就能當作學習的證明。<br><br>
+如果想成為前端工程師，可以來信詢問，我會給你一些建議方向。
 <br><br>
 <b>Email: aaa24295234@gmail.com</b><br><br>
 
@@ -440,13 +324,13 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190514/" data-toggle="tooltip" data-placement="top" title="怎麼學程式？ | 前端工程師必備技能">&larr;
+                        <a href="/post/20190510/" data-toggle="tooltip" data-placement="top" title="用 python 玩網站爬蟲 | selenium">&larr;
                             上一篇</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/20190429/" data-toggle="tooltip" data-placement="top" title="尋花問柳">新的一篇
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
                              &rarr;</a>
                     </li>
                     
