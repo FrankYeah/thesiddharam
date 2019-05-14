@@ -53,7 +53,7 @@
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190424/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進</description>
+      <description>文 / Siddharam 西打藍 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190423/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較</description>
+      <description>文 / Siddharam 西打藍 lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。 練習 (1) dropRight(array, 從右邊</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190418/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
+      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg&#34;); } } 文 / Siddharam 西打藍 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
     </item>
     
   </channel>

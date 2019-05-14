@@ -42,12 +42,12 @@
 
 /* 首圖照片 */
 .intro-header{
-    background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/vadim-sherbakov-68-unsplash.jpg?alt=media&token=96ad7503-16fe-4510-bd4e-c4ee547fc281");
+    background-image:url("https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg");
 }
 
 @media screen and (max-width:500px){
     .intro-header{
-        background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/vadim-sherbakov-68-unsplash.jpg?alt=media&token=96ad7503-16fe-4510-bd4e-c4ee547fc281");
+        background-image:url("https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg");
     }
     intro-header .post-heading h1 {
         font-size: 26px;

@@ -17,7 +17,7 @@
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190424/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進</description>
+      <description>文 / Siddharam 西打藍 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供</description>
     </item>
     
   </channel>

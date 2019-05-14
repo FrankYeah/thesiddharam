@@ -53,7 +53,7 @@
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190504/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/keelung-wite-cannon.jpg?alt=media&amp;token=07848638-aa66-423d-8ac2-d9aae9e29d4f&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/keelung-outer-mountain-beach.jpg?alt=media&amp;token=60344a5c-e065-4572-8ffa-7337a2331516&#34;); } } 文 / Siddharam 西打藍 攝影 / 湘 前言 鑒於太多朋友詢問，基隆要怎麼玩的問題。所以決定紀錄，自己平常是如何玩基隆的。 基隆早</description>
+      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/01/keelung-outer-mountain-beach.jpg&#34;); } 文 / Siddharam 西打藍 攝影 / 湘 前言 鑒於太多朋友詢問，基隆要怎麼玩的問題。所以決定紀錄，自己平常是如何玩基隆的。 基隆早午餐 夏天的星期六</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190424/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進</description>
+      <description>文 / Siddharam 西打藍 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190423/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較</description>
+      <description>文 / Siddharam 西打藍 lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。 練習 (1) dropRight(array, 從右邊</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190420/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 新創的真實樣貌 在新創公司工作，你必須對人事混亂保持鎮定。因為它就是日常。 舉個例子。五個月前，當</description>
+      <description>文 / Siddharam 西打藍 新創的真實樣貌 在新創公司工作，你必須對人事混亂保持鎮定。因為它就是日常。 舉個例子。五個月前，當我進到公司時，我們 RD 部門共有兩名前</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190418/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/skill-note-head-photo-rwd.jpg?alt=media&amp;token=3affd291-ee19-4ecf-9623-ea18460d83e2&#34;); } } 文 / Siddharam 西打藍 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
+      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg&#34;); } } 文 / Siddharam 西打藍 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
     </item>
     
   </channel>
