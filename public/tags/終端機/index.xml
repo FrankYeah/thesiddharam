@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>終端機 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E7%B5%82%E7%AB%AF%E6%A9%9F/</link>
+    <description>Recent content in 終端機 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E7%B5%82%E7%AB%AF%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>工作需要會的 Git 指令 | GitHub 教學</title>
+      <link>https://siddharam.com.tw/post/20190515/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190515/</guid>
+      <description>文 / Siddharam 西打藍 前言 這個教學，是列出工作上最常使用的 git 指令，所以你若是自學者，可以參考這一篇，檢視自己能力是否符合業界需求。 git 指令 git 安裝，和 GitHub 註</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -37,7 +37,25 @@ draft: false
 <h3 class="article-h1-color">常說</h3><br>
 人永遠不會改變。<br><br>
 <h3 class="article-h1-color">願景</h3><br>
-希望能找出人生更多的可能性，除了親自實現，也分享給全世界。<br><br><br>
+希望能找出人生更多的可能性，除了親自實現，也分享給全世界。<br><br>
+<h3 class="article-h1-color">作品</h3><br>
+<a href="https://frankyeah.github.io/Front-Enter/index.html">部落格網站</a><br><br>
+<a href="https://stylish-cowork-nafy.firebaseapp.com/">電商網站</a><br><br>
+<a href="https://www.behance.net/SIANG-HUA?fbclid=IwAR1ZnMxo7gGab__tWCIF1GcTT14o7Vb6z-UkcWcA7GHO7jIgzvTCM57wqr8">合作設計師的平面作品</a><br><br>
+現在所看的部落格也是自己架的。<br><br>
+
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+想定期收到技術文章的朋友，建議加入 line 官方帳號，每周最多群發兩次技術與工程相關文章，歡迎關注：<br><br>
+
+<span mailto:"aaa24295234@gmail.com">Email: aaa24295234@gmail.com</span><br><br>
+Line ID：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
+Line QR Code：<br><br>
+<img src="https://qr-official.line.me/sid/M/184railx.png">
+<br><br>
+
 <div >
     <a href="https://github.com/FrankYeah"><div style="cursor: pointer;" class="fab fa-github fa-3x"></div></a>
     <a href="mailto:aaa24295234@gmail.com"><div style="padding-left:20px; cursor: pointer;" class="fas fa-envelope fa-3x"></div></a>
