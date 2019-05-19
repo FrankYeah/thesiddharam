@@ -6,19 +6,10 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>尋花問柳</title>
-      <link>https://siddharam.com.tw/post/20190429/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://siddharam.com.tw/post/20190429/</guid>
-      <description>文 / Siddharam 西打藍 18 禁 邀約 正旻體態勻稱，身高 177，偏黑，其性格猛烈，容易與人起衝突，對自己兄弟卻很好，屬於敢恨敢愛的類型。值得一提的是，女人總會</description>
-    </item>
     
     <item>
       <title>Google 機器學習培訓計劃心得</title>
@@ -27,6 +18,15 @@
       
       <guid>https://siddharam.com.tw/post/20190509/</guid>
       <description>文 / Siddharam 西打藍 前言 五月，是科技大廠展演的季節，在 在 2019 Google I/O 大會 期間，同事在 slack 貼了 ML Study Jam 機器學習培訓計劃的活動，想說 Google 的服務只玩過 firebase 和語音 API，</description>
+    </item>
+    
+    <item>
+      <title>認識 google chrome 開發者工具 dev tool | 不會程式也能看懂網站結構</title>
+      <link>https://siddharam.com.tw/post/20190519/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190519/</guid>
+      <description>文 / Siddharam 西打藍 前言 當初在學 chrome 開發者工具時，幾乎是做中學，在學前端時就碰了 elements、Local Storage、console，正式工作後</description>
     </item>
     
     <item>
@@ -72,6 +72,15 @@
       
       <guid>https://siddharam.com.tw/post/20190502/</guid>
       <description>文 / Siddharam 西打藍 前言 Owl Carousel 的 Doc 和 GitHub。 最近接了室內設計公司的官網外包案，需要做到點擊後，向右換頁的輪播效果，有類似翻書的感覺，並且沒有切換</description>
+    </item>
+    
+    <item>
+      <title>尋花問柳</title>
+      <link>https://siddharam.com.tw/post/20190429/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190429/</guid>
+      <description>文 / Siddharam 西打藍 18 禁 邀約 正旻體態勻稱，身高 177，偏黑，其性格猛烈，容易與人起衝突，對自己兄弟卻很好，屬於敢恨敢愛的類型。值得一提的是，女人總會</description>
     </item>
     
     <item>

@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="前端輪播套件 | Owl Carousel" />
-    <meta property="og:title" content="前端輪播套件 | Owl Carousel" />
-    <meta property="twitter:title" content="前端輪播套件 | Owl Carousel" />
+    <meta name="title" content="認識 google chrome 開發者工具 dev tool | 不會程式也能看懂網站結構" />
+    <meta property="og:title" content="認識 google chrome 開發者工具 dev tool | 不會程式也能看懂網站結構" />
+    <meta property="twitter:title" content="認識 google chrome 開發者工具 dev tool | 不會程式也能看懂網站結構" />
     
 
     
-    <meta name="description" content="Owl Carousel 是 jQuery 的輪播套件，實現多樣性的切換需求，能以最簡便的方式建立輪播......">
-    <meta property="og:description" content="Owl Carousel 是 jQuery 的輪播套件，實現多樣性的切換需求，能以最簡便的方式建立輪播......" />
-    <meta property="twitter:description" content="Owl Carousel 是 jQuery 的輪播套件，實現多樣性的切換需求，能以最簡便的方式建立輪播......" />
+    <meta name="description" content="學會 google chrome 開發者工具，可以一次性學會 RWD、效能查看、網站結構，以及其他瀏覽器（Edge、IE、Firebox）的 dev tool，並且不需要寫程式就能看懂，是一項 CP 值超高的學習技能......">
+    <meta property="og:description" content="學會 google chrome 開發者工具，可以一次性學會 RWD、效能查看、網站結構，以及其他瀏覽器（Edge、IE、Firebox）的 dev tool，並且不需要寫程式就能看懂，是一項 CP 值超高的學習技能......" />
+    <meta property="twitter:description" content="學會 google chrome 開發者工具，可以一次性學會 RWD、效能查看、網站結構，以及其他瀏覽器（Edge、IE、Firebox）的 dev tool，並且不需要寫程式就能看懂，是一項 CP 值超高的學習技能......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="前端, Owl Carousel, jQuery" name="keywords">
+    <meta content="前端, dev tool, 開發者工具, google, chrome, RWD" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>前端輪播套件 | Owl Carousel-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>認識 google chrome 開發者工具 dev tool | 不會程式也能看懂網站結構-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190502/">
+    <link rel="canonical" href="/post/20190519/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -197,18 +197,30 @@
                             前端
                         </a>
                         
-                        <a class="tag" href="/tags/owl-carousel" title="Owl Carousel">
-                            Owl Carousel
+                        <a class="tag" href="/tags/google" title="google">
+                            google
                         </a>
                         
-                        <a class="tag" href="/tags/jquery" title="jQuery">
-                            jQuery
+                        <a class="tag" href="/tags/dev-tool" title="dev tool">
+                            dev tool
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E9%96%8B%E7%99%BC%E8%80%85%E5%B7%A5%E5%85%B7" title="開發者工具">
+                            開發者工具
+                        </a>
+                        
+                        <a class="tag" href="/tags/chrome" title="chrome">
+                            chrome
+                        </a>
+                        
+                        <a class="tag" href="/tags/rwd" title="RWD">
+                            RWD
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 2, 2019</p>
-                    <h1>前端輪播套件 | Owl Carousel</h1>
-                    <h3 class="subheading">支援拖曳、滾動、跨瀏覽器、hash、分頁事件</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 19, 2019</p>
+                    <h1>認識 google chrome 開發者工具 dev tool | 不會程式也能看懂網站結構</h1>
+                    <h3 class="subheading">前後端協作好工具 | 學習 RWD 的必備技能</h3>
                     <span class="meta">
 			
 
@@ -243,73 +255,51 @@
 
 <h3 class="article-h1-color">前言</h3><br>
 
-Owl Carousel 的 <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">Doc</a> 和 <a href="https://github.com/OwlCarousel2/OwlCarousel2" target="_blank">GitHub</a>。<br><br>
-最近接了室內設計公司的官網外包案，需要做到點擊後，向右換頁的輪播效果，有類似翻書的感覺，並且沒有切換 URL。而公司的某個專案正好有用到 Owl Carousel 這個套件，用起來也沒什麼 bug，就繼續採用了。<br><br>
-
-<h3 class="article-h1-color">開始</h3><br>
-首先須下載 Owl Carousel 的套件，另外要記得引入 jQuery，目前是用 CDN 方式引入。請去除空白：<br><br>
-<code>< script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></ script></code><br><br>
-接著，我們就來寫看我所需要的<a href="https://frankyeah.github.io/yand/" target="_blank">效果</a>：<br><br>
-
-<pre>
-// html
-// 因為 markdown 關係，每個標籤都有空格，如需使用，記得移除
-// 當點擊 back，會跳轉到該 hash <br>
-    < div class="owl-carousel" >
-        < div data-hash="slide1" style="background:red;"> Your Content 第一頁
-          < button class="next" >click< /button>    
-        < /div>
-        < div data-hash="slide2" style="background:yellow;"> Your Content 第二頁
-            < button class="next">click< /button>    
-            < a href="index.html#slide1">back< /a>
-        < /div>
-    < div>
-
-</pre>
-
-<br><br>
-
-<pre>
-// javascript<br>
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items: 1,  // 每頁有多少筆
-        loop: false,
-        center: true,
-        mouseDrag: false, // 滑鼠拖曳
-        touchDrag: false, // 觸控拖曳
-        pullDrag: false,
-        URLhashListener: true, //紀錄 a 標籤，如上面的 data-hash="slide1"
-        startPosition: 'URLHash', // 可為 string / number
-        dotsContainer: '.custom-dots', // nav bar 的名稱
-        responsiveRefreshRate: 0, // 每多久計算一次 client 瀏覽器寬度
-        responsive: {   // 不同 width 下的調整
-          0: {
-            margin: 0,
-            autoWidth: false
-          },
-          992: {
-            autoWidth: false
-          }
-        }
-
-    });
-
-    // next.owl.carousel 事件，可以跳轉至下一張 slide
-    $('.next').click(function () {
-        $(".owl-carousel").trigger('next.owl.carousel')
-      
-      })
-
-  });
-
-</pre>
+當初在學 chrome 開發者工具時，幾乎是做中學，在學前端時就碰了 elements、Local Storage、console，正式工作後，才碰到 Network，是為了查 API 的回傳值。下一節就要進入正題，會從常用的功能開始講起。<br><br>
 
 
+<h3 class="article-h1-color">常用功能與操作</h3><br>
+先打開 Chrome 開發者工具：<br><br>
+Mac： <code> Cmmand+Option+I </code><br>
+Windows：<code> F12 </code> 或 <code> Control+Shift+I </code><br>
+通用：右鍵檢查<br><br>
 
 
-<br><br>
-如果 mobile 變化較大，可以另外寫一組 config。接下來若有新的樣式需求，會持續補充。<br><br>
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/05/dev-tool-element.png"/>
+<div style="text-align:center">開發者工具，Elements 區塊</div><br>
+
+1. Elements - 點選：<br>
+打開開發者工具，點選中間箭頭後，就可以選取網頁上的任何元素，同時這也是該網站的組成。點選後，就會看到它的樣式，並能即時修改，如果你在點選的元素上按下<code> H </code>鍵，就會幫你隱藏該元素。幾個月前，google 新增一項功能，在頁面就能看見基本的樣式資訊，如上圖左側的白色框。<br><br>
+
+2. Elements - RWD：<br>
+在頁面上方，有個 Responsive，可以選擇機種尺寸進行調整，若要新增機種，可以從右側開發者工具中的 Settings - Devices 修改。此外，你也可以手動縮放畫面寬高。<br><br><br>
+
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/05/dev-tool-console.png"/>
+<div style="text-align:center">開發者工具，Console 區塊</div><br>
+
+3. Console - 前端除錯工具：<br>
+如果網站的 js 檔，有<code> console.log('XX') </code>的話，其結果就會在這裡顯示。另外，也可以在上面打一些程式，如上圖示範印出 0 - 10。<br><br><br>
+
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/05/dev-tool-network.png"/>
+<div style="text-align:center">開發者工具，Network 區塊</div><br>
+
+4. Network - 載入資源：<br>
+跳過了 Sources，是因為不常使用，它可以看到頁面的資源如 js、css。<br><br>
+而 Network 則能看見依序載入的資源，以及耗費的時間、檔案大小、類型（font、script、gif）、狀態（200、404），點選檔案的話，可以看見表頭訊息（Headers）、回傳訊息（Response）等，是前端確認效能及檢查 API 的好工具。<br><br><br>
+
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/05/dev-tool-application.png"/>
+<div style="text-align:center">開發者工具，Application 區塊</div><br>
+
+5. Application - Cookies、Local Storage 網站儲存<br>
+
+有時候，<a href="https://frankyeah.github.io/Front-Enter/index.html"> 網站 </a>會暫存使用者訊息，如常見的 Cookies，或是長久性儲存的 Local Storage，都能在這裡看見。<br><br><br>
+
+<h3 class="article-h1-color">後記</h3><br>
+補充一個常用快捷鍵，搜尋：<code> ctrl + F</code><br><br>
+如果要尋找快捷鍵，可以到開發者工具中的 Shortuts 尋找。
+
+<br><br><br><br>
+
 
 <h3 class="article-h1-color">技術文章與合作</h3><br>
 
@@ -322,6 +312,10 @@ Line ID：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 
 Line QR Code：<br><br>
 <img src="https://qr-official.line.me/sid/M/184railx.png">
 <br><br>
+
+
+
+
 
 
 </article>
@@ -339,13 +333,13 @@ Line QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190429/" data-toggle="tooltip" data-placement="top" title="尋花問柳">&larr;
+                        <a href="/post/20190515/" data-toggle="tooltip" data-placement="top" title="工作需要會的 Git 指令 | GitHub 教學">&larr;
                             上一篇</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/20190504/" data-toggle="tooltip" data-placement="top" title="情侶基隆一日遊">新的一篇
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
                              &rarr;</a>
                     </li>
                     

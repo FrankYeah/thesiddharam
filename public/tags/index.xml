@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chrome</title>
+      <link>https://siddharam.com.tw/tags/chrome/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/chrome/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Css</title>
@@ -17,6 +26,15 @@
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev Tool</title>
+      <link>https://siddharam.com.tw/tags/dev-tool/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/dev-tool/</guid>
       <description></description>
     </item>
     
@@ -129,6 +147,15 @@
     </item>
     
     <item>
+      <title>Rwd</title>
+      <link>https://siddharam.com.tw/tags/rwd/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/rwd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Selenium</title>
       <link>https://siddharam.com.tw/tags/selenium/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
@@ -167,7 +194,7 @@
     <item>
       <title>前端</title>
       <link>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
@@ -287,6 +314,15 @@
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>開發者工具</title>
+      <link>https://siddharam.com.tw/tags/%E9%96%8B%E7%99%BC%E8%80%85%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/%E9%96%8B%E7%99%BC%E8%80%85%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     
