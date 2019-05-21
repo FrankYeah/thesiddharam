@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/post/20190521/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20190519/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url>
@@ -169,8 +174,20 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/tags/router/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/tags/rwd/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/scss/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -227,6 +244,18 @@
                 hreflang="en"
                 href="https://siddharam.com.tw/true/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/vue/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/vue-cli-2/</loc>
+    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
