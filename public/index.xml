@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>ECharts 繪製柱狀圖 | 以 vue-echarts 為例</title>
+      <link>https://siddharam.com.tw/post/20190603/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190603/</guid>
+      <description>文 / Siddharam 西打藍 前言 這次介紹一個在公司很常使用的套件 - ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常</description>
+    </item>
+    
+    <item>
       <title>google form 表單收集資料 | 無須資料庫</title>
       <link>https://siddharam.com.tw/post/20190528/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>

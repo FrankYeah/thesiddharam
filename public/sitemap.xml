@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/post/20190603/</loc>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20190528/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url>
@@ -97,6 +102,12 @@
   <url>
     <loc>https://siddharam.com.tw/tags/dev-tool/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/echarts/</loc>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -259,7 +270,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/tags/vue/</loc>
-    <lastmod>2019-05-21T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -283,13 +294,19 @@
   
   <url>
     <loc>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://siddharam.com.tw/tags/%E5%8F%8B%E6%83%85/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/%E5%9C%96%E8%A1%A8/</loc>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
