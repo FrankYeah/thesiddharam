@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="ECharts 繪製柱狀圖 | 以 vue-echarts 為例" />
-    <meta property="og:title" content="ECharts 繪製柱狀圖 | 以 vue-echarts 為例" />
-    <meta property="twitter:title" content="ECharts 繪製柱狀圖 | 以 vue-echarts 為例" />
+    <meta name="title" content="前端工程師半年紀錄" />
+    <meta property="og:title" content="前端工程師半年紀錄" />
+    <meta property="twitter:title" content="前端工程師半年紀錄" />
     
 
     
-    <meta name="description" content="ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高......">
-    <meta property="og:description" content="ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高......" />
-    <meta property="twitter:description" content="ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高......" />
+    <meta name="description" content="這篇會紀錄這半年來，擔任前端工程師時冒出的種種想法，希望能給後進者一些方向，也為自己的人生做個紀錄。">
+    <meta property="og:description" content="這篇會紀錄這半年來，擔任前端工程師時冒出的種種想法，希望能給後進者一些方向，也為自己的人生做個紀錄。" />
+    <meta property="twitter:description" content="這篇會紀錄這半年來，擔任前端工程師時冒出的種種想法，希望能給後進者一些方向，也為自己的人生做個紀錄。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="前端, ECharts, 圖表, vue" name="keywords">
+    <meta content="前端, 初學者, 工程師, 日常" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>ECharts 繪製柱狀圖 | 以 vue-echarts 為例-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>前端工程師半年紀錄-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190603/">
+    <link rel="canonical" href="/post/20190606/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -197,22 +197,22 @@
                             前端
                         </a>
                         
-                        <a class="tag" href="/tags/echarts" title="ECharts">
-                            ECharts
+                        <a class="tag" href="/tags/%E5%88%9D%E5%AD%B8%E8%80%85" title="初學者">
+                            初學者
                         </a>
                         
-                        <a class="tag" href="/tags/%E5%9C%96%E8%A1%A8" title="圖表">
-                            圖表
+                        <a class="tag" href="/tags/%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="工程師">
+                            工程師
                         </a>
                         
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/%E6%97%A5%E5%B8%B8" title="日常">
+                            日常
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> June 3, 2019</p>
-                    <h1>ECharts 繪製柱狀圖 | 以 vue-echarts 為例</h1>
-                    <h3 class="subheading">最容易上手的圖表套件</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> June 6, 2019</p>
+                    <h1>前端工程師半年紀錄</h1>
+                    <h3 class="subheading">負責專案 | 設計師 &amp; PM | 心態</h3>
                     <span class="meta">
 			
 
@@ -247,180 +247,72 @@
 
 <h3 class="article-h1-color">前言</h3><br>
 
+明天就是端午節了，在回家的路上，突然想寫下這半年來，擔任前端工程師時的種種想法，希望能給後進者一些方向，也為自己的人生做個紀錄。怕自己太發散，還是先列出大綱：<br><br>
+<h5>
+1. 負責專案<br><br>
+2. 同事間的合作<br><br>
+3. 進步之路<br><br>
+4. 心態<br><br>
+5. 工作之外
+</h5><br><br>
 
-這次介紹一個在公司很常使用的套件 - <a href="https://echarts.baidu.com/">ECharts</a>，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高。<br><br>
+<h3 class="article-h1-color">負責專案</h3><br>
 
-這次就拿公司專案中，設計要我們畫的圖表作為範例吧。因為開發上是以 vue 為主，所以會使用 <a href="https://github.com/ecomfe/vue-echarts">vue-echarts</a>，但跟原生使用起來差異不大。那就開始吧。<br><br>
+A：還記得剛進公司的第一個專案，就是官網的徵才頁面，相當適合練手，所以就丟給我了。<br><br>
+技術棧：Gulp、mustache<br><br>
+公司是用 GitLab 而不是常用的 GitHub，這時才知道，GitLab 中的 issue 有一定的命名方式，和 branch 命名息息相關，而 Wiki 通常用做專案知識分享， ReadMe 則會教你如何啟動專案。<br><br>
+而我在專案採到的第一個笨坑，就是看不懂 gulp，也不去看 README，所以搞了半天專案都沒啟起來哈。<br><br>
+官網算是相對單純的專案，只有職缺有接 API，剩下的就是純粹的靜態網站。而 mustache 是用來解決簡繁英三語的問題，透過 gulp 分別引入三種語言的 json 檔，嵌入 html 中。<br><br>
 
+Ｂ：過了幾周，另一個持續做到現在的專案出現，是金控公司的理財機器人專案。<br><br>
+技術棧：D3、jsp（Java）<br><br>
+這個專案算是開了眼界，原來 java 是用類似模板的方式在寫前端。另外就是本公司其他專案都在使用的圖表工具，D3。它能客製化做出以前 word 常用的圖表，甚至是複雜圖表。<br><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/06/vue-echarts-pie.png"/>
-<div style="text-align:center">柱狀圖表作品。</div><br><br>
+C：中間插進來一個小專案，是一大屏幕系統，可以讓工廠管理者知道物流以及存貨進度，寬度約為兩台大螢幕寬，無須 RWD，裡頭一半是圖表顯示。<br><br>
+技術棧：Vue、Jinja、Vue-ECharts<br><br>
+這是我第一次使用 Vue 框架，對比 React 來說，學習難度的確下降許多，甚至要比原生操作還容易，支援的套件也很多，並能優雅的寫出可重複利用的組件。jinja 則是 python 的模板引擎。<br><br>
 
-<h3 class="article-h1-color">vue-echarts 實戰</h3><br>
-
-先安裝套件：<code>npm install echarts vue-echarts</code><br><br>
-
-接著可以在 <code>main/js</code> 中引入：<br><br>
-
-<pre>
-//按需載入 bar、legend 
-
-import ECharts from 'vue-echarts'
-import 'echarts/lib/chart/bar'
-import 'echarts/lib/component/legend'
-
-</pre><br><br>
-
-在 <code>webpack.base.conf.js</code> 的 babel-loader 中加上：<br><br>
-
-<pre>
-// resize-detector 是自適應工具
-
-resolve('node_modules/vue-echarts'),
-resolve('node_modules/resize-detector')
-
-</pre><br><br>
+D：最近的分析機器人專案，直白來說，就是問卷、身分驗證、圖表的綜合體專案。<br><br>
+技術棧：Vue、Vee-Validate、Vue-ECharts<br><br>
+這和上一則專案用的工具很像，不一樣的地方是，這次專案從環境建置到結束，有八九成都是我自行完成的，而且是個兩周要完成的急件。光是 Vue CLI2 的 Router 和 SCSS Loader 就花了我一下午的時間建置，幸好近期已完成核心功能，只剩細節需要收尾。這個專案非常感謝我們的資深前端，每天幫我做 Code Review，提升我對 Vue 的掌握度。<br><br>
 
 
-直接上程式碼：<br><br>
-<pre>
+<h3 class="article-h1-color">同事間的合作</h3><br>
+ 
+A：前端工程師<br><br>
+目前只有在 Vue 相關的專案上有合作，我們會先把 component 拆分完畢，然後各自選擇要做的部分，最後在透過 git 來合併。<br><br>
+通常會由一位資深帶初階工程師來合作專案，每次完成一項 issue，就會讓資深工程師檢查程式碼，目的是讓整份專案的 coding style 維持一致，也順帶提升初階工程師的 coding 能力。<br><br>
 
-&lt;template>
-  &lt;v-chart class="result-feedback-pie-chart" :options="mainPieSet" ref='echarts' auto-resize/>
-&lt;/template>
 
-&lt;script>
+B：後端工程師<br><br>
+幾乎每個專案都會有合作的後端工程師，最基本的就是開 API 給你，讓你存取資料庫中的資料。前端通常透過 AJAX、AXIOS、FETCH 來存取，其中需要溝通的部分是 JSON 格式，取得的資料要陣列、物件還是字串包裹，都可以由前端事先想好，就可以先在本地模擬假資料，等到後端完成 API 後，就能直接存取使用。<br><br>
 
-  data () {
-    return {
-      mainPieSet: {
-        xAxis: [
-          {
-            type: 'category',
-            data: ['1', '2', '3', '4', '5'],
-            axisLine: {
-              show: false
-            },
-            axisLabel: {
-              textStyle: {
-                color: '#BEC6DB',
-                fontSize: '12'
-              }
-            }
-          }
-        ],
-        yAxis: [
-          {
-            name: '%',
-            splitNumber: 2,
-            nameTextStyle: {
-              color: '#BEC6DB',
-              padding: [0, 28, 0, 0]
-            },
-            type: 'value',
-            axisLine: {
-              show: false
-            },
-            axisLabel: {
-              textStyle: {
-                color: '#BEC6DB',
-                fontSize: '12'
-              }
-            },
-            splitLine: {
-              show: false
-            },
-            axisTick: {
-              show: false
-            }
-          }
-        ],
-        legend: {
-          data: ['你的公司', '其他企業'],
-          right: 100,
-          itemGap: 30,
-          textStyle: {
-            color: '#BEC6DB'
-          }
-        },
-        series: [
-          {
-            data: [],
-            type: 'bar',
-            stack: '總量',
-            barWidth: '25%',
-            color: '#BEC6DB',
-            label: {
-              normal: {
-                show: true,
-                position: 'top'
-              }
-            }
-          },
-          {
-            name: '你的公司',
-            type: 'bar',
-            stack: '總量',
-            color: '#28FFEA',
-            label: {
-              normal: {
-                show: true,
-                position: 'top',
-                color: '#28FFEA',
-                fontSize: 14
-              }
-            },
-            data: ['-', '-', 50, '-', '-']
-          },
-          {
-            name: '其他企業',
-            type: 'bar',
-            stack: '總量',
-            color: '#30394B',
-            label: {
-              normal: {
-                show: false,
-                position: 'bottom',
-                color: '#30394B'
-              }
-            },
-            data: [20, 72, '-', 30, 70]
-          }
-        ]
-      },
-      ready: function () {
-        window.addEventListener('resize', () => {
-        this.$refs.swiperOption.resize()
-        }, false)
-      }
-    }
-  }
 
-&lt;script>
+C：UI/UX 設計師<br><br>
+目前合作的設計軟體有兩種，一是 Zeplin，二是 figma，個人比較喜歡 figma，因為自由度高，又能共編，分層的方式也比較直覺。<br><br>
+合作的時候，工程師可以主動提出參考作法給設計師知道，還有某些效果會花費的預估時間，這都能讓設計師更了解工程製作邏輯，也有助於讓案子在時程之內完成。<br><br>
 
-</pre><br><br>
 
-名詞解釋：<br><br>
-auto-size：按照瀏覽器寬度自動調整圖表寬度。<br>
-xAxis：為 x 軸設定。<br>
-axisLine：是 x 軸線，我將它預設為消失。<br>
-axisLabel：可以修改 x 軸標籤的樣式。<br><br>
+D：專案經理（PM）、行銷<br><br>
+普遍工程師對 PM 都是又愛又恨，恨的地方是，他總是會塞滿任務給你，愛的地方是，他會是你和客戶之間的潤滑劑，會幫你擋掉不合理的需求和時程。我們公司在專案結束後，PM 都會請工程師和設計師吃頓大餐，感謝這次的合作。<br><br>
 
-yAxis：為 y 軸設定，內容同上。<br>
-name：為 y 軸上方名稱。<br>
-nameTextStyle：調整名稱樣式。<br>
-splitNumber：可以選擇顯示的 y 比數。<br><br>
 
-legend：是按需引入的應用之一，顯示上方的文字。<br>
-itemGap：字距。其他的則是樣式的設定。<br><br>
+<h3 class="article-h1-color">進步之路</h3><br>
 
-series：是圖表繪製的核心，因為這次有兩種類別 － 你的公司、其他企業，所以會以物件方式隔開。<br>
-barWidth：調整柱體寬度。<br>
-type：圖表類型，bar 是按需載入的原件之一，柱狀圖表。<br>
-label：調整樣式，以及顯示數值。<br>
-data：填充的數值。<br><br>
+一開始，我以為所謂的進步，就是懂得更多的工具，例如 webpack、vuex 等等，前幾個月才發現設計模式（design pattern）的重要性。設計模式是一種在開發中，解決難題的方法，而要如何聰明的解答，就需要懂得設計模式，雖然直覺上的解法最容易，但經過前人整理認證過的解決方式，才能讓你寫程式的功力大增。軟體界有一段經典名言：「你程式寫得再爛，電腦都看得懂，但重要是要人看得懂。」<br><br>
+在近期，寫程式也會依循著該語言的建議模式來寫，例如 SASS BEM 或是 Vue guide，這能提高程式碼的統一性，有助於其他人看懂你的程式碼。<br><br>
 
-教學到這裡告一段落，也算是紀錄這個圖表應該怎麼畫，目前的設定有很些是多餘的，例如 label 已經不會 show 出來，樣式是可以清除掉的等等，下次換紀錄 D3 的使用吧。
+
+<h3 class="article-h1-color">心態</h3><br>
+
+一直以來，我都是按照自己的節奏來寫程式，喜歡把任務拆成很小很小的任務，寫在筆記本上，每解決一個就打一個勾，遇到解決不了的問題，也因為拆的很小，很容易在網路上就能得到解答，或是得到同事的支援，這種方式也讓我有很大的滿足感，感覺今天做了許多事，學了不少東西。<br><br>
+
+
+<h3 class="article-h1-color">工作之外</h3><br>
+
+因為一直挺喜歡寫文章，所以下班後還弄了個部落格，紀錄一下工作上的所得，希望轉職當工程師後，還能繼續寫字。<br><br>
+此外，我也花了時間接些案子，有活動頁面，也有官方網站，等到完全結案後，可以寫一篇接案心得。此外，近期也會和合作的設計師，一起做個作品，也趁機學些工作上不會用到的技術。
+
 
 <br><br><br><br>
 
@@ -460,13 +352,13 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190528/" data-toggle="tooltip" data-placement="top" title="google form 表單收集資料 | 無須資料庫">&larr;
+                        <a href="/post/20190603/" data-toggle="tooltip" data-placement="top" title="ECharts 繪製柱狀圖 | 以 vue-echarts 為例">&larr;
                             上一篇</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/20190606/" data-toggle="tooltip" data-placement="top" title="前端工程師半年紀錄">新的一篇
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
                              &rarr;</a>
                     </li>
                     
