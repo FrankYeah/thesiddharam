@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Siddharam | 寫程式的文字人 | 西打藍" />
-    <meta property="og:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
-    <meta property="twitter:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
+    <meta name="title" content="Vue axios API 管理的好方法" />
+    <meta property="og:title" content="Vue axios API 管理的好方法" />
+    <meta property="twitter:title" content="Vue axios API 管理的好方法" />
     
 
     
-    <meta name="description" content="文字紀錄可能性 | 程式創造可能性">
-    <meta property="og:description" content="文字紀錄可能性 | 程式創造可能性" />
-    <meta property="twitter:description" content="文字紀錄可能性 | 程式創造可能性" />
+    <meta name="description" content="在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。透過 axios.create 創造實體，能更聰明的管理你的 API...">
+    <meta property="og:description" content="在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。透過 axios.create 創造實體，能更聰明的管理你的 API..." />
+    <meta property="twitter:description" content="在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。透過 axios.create 創造實體，能更聰明的管理你的 API..." />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="" name="keywords">
+    <meta content="前端, vue, axios, API" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>Vue-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>Vue axios API 管理的好方法-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/tags/vue/">
+    <link rel="canonical" href="/post/20190627/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -182,15 +182,42 @@
 
 
 
-<header class="intro-header">
 
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <img style="width: 220px;" src="https://frontenter.files.wordpress.com/2019/05/white-icon-up-siddharam.png" alt="siddharam">
-                    
-		    <span class="subheading">寫程式的文字人</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF" title="前端">
+                            前端
+                        </a>
+                        
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        <a class="tag" href="/tags/axios" title="axios">
+                            axios
+                        </a>
+                        
+                        <a class="tag" href="/tags/api" title="API">
+                            API
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> June 27, 2019</p>
+                    <h1>Vue axios API 管理的好方法</h1>
+                    <h3 class="subheading">axios.create 實體是關鍵</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -199,154 +226,155 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
 
-<div class="post-preview">
-        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">June 27, 2019</h5>
-    <a href="https://siddharam.com.tw/post/20190627/">
-        <h2 class="post-title homepage-post-title">
-            Vue axios API 管理的好方法 
+<article>
+    <div class="container">
+        <div class="row">
+
             
-        </h2>
-	
-        <h3 class="post-subtitle homepage-post-subtitle">
-            axios.create 實體是關鍵
-        </h3>
-	
-        <div class="post-content-preview homepage-post-meta">
-	
-            在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。透過 axios.create 創造實體，能更聰明的管理你的 API...
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-    
-    </p>
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / Siddharam 西打藍<br><br>
+
+<h3 class="article-h1-color">前言</h3><br>
+
+在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。
+透過 axios.create 創造實體，能更聰明的管理你的 API。接下來我們直接操作：
+
+<br><br><h3 class="article-h1-color">程式碼</h3><br>
+
+src/utils/request.js
+<pre>
+
+import axios from 'axios'
+
+# 新增 axios.create 實體，以後路徑有改，直接改這邊就好
+
+export default axios.create({
+  baseURL: 'http://11.22.33.44/api/'
+})
+
+</pre><br><br>
+
+src/API/analyze.js
+<pre>
+
+import request from '@/utils/request'
+
+# 這包也可以寫在 request.js，放這邊也是為了容易管理
+
+export function getJson (data) {
+  return request({
+    url: '/getJson',
+    method: 'POST',
+    data: data
+  })
+}
+
+</pre><br><br>
+
+src/pages/index.vue
+<pre>
+
+import { getJson } from '@/API/analyze'
+...
+...
+...
+mounted () {
+    getJson(
+    data
+    )
+    .then(response => {
+        console.log(response)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+}
+
+</pre>
+
+
+<br><br><br><br>
+
+
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+想定期收到技術文章，或想一起探討前後端程式的朋友，建議加入 line 群組，或是官方帳號，大家可以互相交流，一起學程式，歡迎加入：<br><br>
+
+<span mailto:"aaa24295234@gmail.com">Email: aaa24295234@gmail.com</span><br><br>
+Line 群組：<a href="https://line.me/R/ti/g/i80ChvQ3dt"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">群組</span></a><br><br>
+Line 群組 QR Code：<br><br>
+<img src="https://frontenter.files.wordpress.com/2019/05/line-chat-room.jpg">
+Line 官方帳號：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
+Line 官方帳號 QR Code：<br><br>
+<img src="https://qr-official.line.me/sid/M/184railx.png">
+<br><br>
+
+
+
+
+
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
 </div>
-<hr>
 
-<div class="post-preview">
-        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">June 3, 2019</h5>
-    <a href="https://siddharam.com.tw/post/20190603/">
-        <h2 class="post-title homepage-post-title">
-            ECharts 繪製柱狀圖 | 以 vue-echarts 為例 
-            
-        </h2>
-	
-        <h3 class="post-subtitle homepage-post-subtitle">
-            最容易上手的圖表套件
-        </h3>
-	
-        <div class="post-content-preview homepage-post-meta">
-	
-            ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高......
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-    
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">May 21, 2019</h5>
-    <a href="https://siddharam.com.tw/post/20190521/">
-        <h2 class="post-title homepage-post-title">
-            Vue CLI 2 環境設定 | 全域 SCSS 
-            
-        </h2>
-	
-        <h3 class="post-subtitle homepage-post-subtitle">
-            Router 基本教學
-        </h3>
-	
-        <div class="post-content-preview homepage-post-meta">
-	
-            Vue CLI 2 的環境設定就耗費了我一下午的工作時間，所以將這次經驗紀錄下來，方便對全域 SCSS 以及 Router 有需求的人，有這篇文可以參考......
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-    
-    </p>
-</div>
-<hr>
+<script src="../../js/post.js"></script>
 
 
-            
+                
 
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-
-    
-	
-    <section class="">
-    
-    <hr><h5><a style="color:rgb(2, 186, 192)!important;" href="/top/about">關於</a></h5>
-        <div class="short-about">
-            
-            
-                <p>文字紀錄可能性 | 程式創造可能性</p>
-            
-           
-           <ul class="list-inline"> 
-               
-               
-               
-               
-               
-               
-               
-               
-               
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20190606/" data-toggle="tooltip" data-placement="top" title="前端工程師半年紀錄">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
+                             &rarr;</a>
+                    </li>
+                    
                 </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
             </div>
-            <div id="busuanzi_container_page_pv">
-                    閱讀量：<span id="busuanzi_value_page_pv"></span> 次
-                </div><br>
-                <div id="busuanzi_container_site_uv">
-                    訪客數：<span id="busuanzi_value_site_uv"></span> 次
-                </span>
-    </section>
-	
-    
-    
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-    
-    
-</div>
+                
+                
 
-	</div>
-</div>
-
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 

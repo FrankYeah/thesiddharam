@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Api</title>
+      <link>https://siddharam.com.tw/tags/api/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Axios</title>
+      <link>https://siddharam.com.tw/tags/axios/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/axios/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Chrome</title>
@@ -212,7 +230,7 @@
     <item>
       <title>Vue</title>
       <link>https://siddharam.com.tw/tags/vue/</link>
-      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/vue/</guid>
       <description></description>
@@ -248,7 +266,7 @@
     <item>
       <title>前端</title>
       <link>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
