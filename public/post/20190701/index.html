@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="關於" />
-    <meta property="og:title" content="關於" />
-    <meta property="twitter:title" content="關於" />
+    <meta name="title" content="前端接案心得 | 歷時 40 天" />
+    <meta property="og:title" content="前端接案心得 | 歷時 40 天" />
+    <meta property="twitter:title" content="前端接案心得 | 歷時 40 天" />
     
 
     
@@ -30,13 +30,13 @@
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="" name="keywords">
+    <meta content="前端, 接案, jquery" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>關於-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>前端接案心得 | 歷時 40 天-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/top/about/">
+    <link rel="canonical" href="/post/20190701/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -182,15 +182,38 @@
 
 
 
-<header class="intro-header">
 
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <img style="width: 220px;" src="https://frontenter.files.wordpress.com/2019/05/white-icon-up-siddharam.png" alt="siddharam">
-                    
-		    <span class="subheading">寫程式的文字人</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF" title="前端">
+                            前端
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E6%8E%A5%E6%A1%88" title="接案">
+                            接案
+                        </a>
+                        
+                        <a class="tag" href="/tags/jquery" title="jquery">
+                            jquery
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> July 1, 2019</p>
+                    <h1>前端接案心得 | 歷時 40 天</h1>
+                    <h3 class="subheading">規格、程式碼、收費、心得</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -210,60 +233,116 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	<article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
 
-<h3 class="article-h1-color">介紹</h3><br>
-工業管理系畢業後，在五間媒體產業待了三年，當過電視台網路編輯、新移 / 住民議題的月報記者、新媒體記者、人文歷史雜誌記者、科技線記者。在 2018 年末，轉職成為前端工程師，在一間新創公司工作。
+<br>文 / Siddharam 西打藍<br><br>
+
+<h3 class="article-h1-color">前言</h3><br>
+
+這是我第二次接架站的案子。咦，為什麼沒看到第一次的呢？因為還沒結案。設計要重新出稿，等我結案再來寫一篇。此篇目錄：
+
+<h5>
+1. 接案之初<br><br>
+2. 規格與程式碼<br><br>
+3. 接案心得及心態
+</h5><br><br>
+
+<h3 class="article-h1-color">接案之初</h3><br>
+
+這是個非常規的接案，因為對方只給我看了大概的版型，然後出價、壓時間，就開始做了。可能因為是急件，所以一切就簡。
 <br><br>
-從大學開始，幾乎每年都會往國外跑。
+5/10，我們談妥了價碼（五至七萬），依照動態多寡加錢，最後是實拿六萬，是個不需要後端串接，對方提供設計稿，單純前端頁面切版的案子。原訂5/27 交第一版。
 <br><br>
-大二第一次自己出國，跑到紐約一個月半，曾被一群高大黑人包圍強賣音樂 CD，被拿走幾十美元後，因為警察來才得救；大三那年，飛到河南找朋友，搭了 26 小時的硬座到他桂林老家，連地上都坐滿了人，火車每小時下一次站、廣播器震耳欲聾，等於不能睡覺，每小時得醒來一次。
+先給大家截至目前的<a href="https://frankyeah.github.io/ovenPlus/" target='_blank'> 版本</a>，正式上線後還會在改版，但就換對方工程師接手了。
 <br><br>
-大四那年，去了柬埔寨當教育志工，跟大夥一起划船，也下水在洞里薩湖順游好幾公里，學生們住在離地面幾公尺的高腳屋，以防雨季淹水，記得他們的笑容就像四月的螢火蟲一樣燦爛；當兵沒出國，但連續幾周跑到北海岸的龍洞潛水，拿了 PADI，曾看見兩條海蛇在海中纏綿，還和成千上百條沙丁魚共游了一會兒。
+然而延誤是必然的，5/21 UI/UX 設計師才給版型，而且還缺不少素材，導致網站部分空白，所以我第一次交稿的時間是 5/28（突然發現我速度超快）。
 <br><br>
-工作後，曾去過印尼朋友的老家 - 蘇門答臘，採訪了一個月。用印尼語和村民一起釣魚、賭博，和小孩爬樹、餵羊，看屋頂上的野生鸚鵡，和他們度過人生第一個齋戒月和開齋節，記得當時都在戶外洗澡，只要站起來就會露出半截身材，和鄰居相對眼；床鋪上總有小蟲爬來爬去，還有清真寺的音樂伴我入眠。
+然而事情總不盡人意，到了 6/12，對方突然說設計稿要變動，傳了新版上來，打開後發現，每一屏含手機版幾乎都有調整。
 <br><br>
-有到越南採訪兩周，從北越一路跑到南越，和攝影在夜店裡縱情跳舞，和台商一起去 KTV、Roof Bar 喝酒，也看了老闆正在蓋的南越大型醫院，去了唐人街的華人家裡聊天，一起唱粵語歌。
+記得這時候，我感到超心累。但還是繼續做了。
 <br><br>
-跑科技線時，曾到舊金山採訪法國軟體大廠的用戶大會，見識了國外版的 COMPUTEX，訪問不少美國公司，也順道逛了好萊塢和聖塔莫尼卡。
+我在 6/18 二次調整好桌機版，6/24 完成手機版。接著開始修修改改至六月底。才終於結束收尾。
 <br><br>
-後來去了 AppWorks School 學寫前端，成為 RD，用文字和程式語言進行創作。
-<br>
-<h3 class="article-h1-color">平常</h3><br>
-對基隆非常非常的熟悉，可以當伴遊噢不，是導遊的那種。<br><br>
-喜歡網路小說，現正在追蠱真人、超神機械師、儒道至聖。
-<br>
-<h3 class="article-h1-color">Siddharam 西打藍</h3><br>
-是我最愛的兩本書的合名，流浪者之歌（Siddhartha）、項塔蘭（Shantaram）。<br><br>
-<h3 class="article-h1-color">常說</h3><br>
-人永遠不會改變。<br><br>
-<h3 class="article-h1-color">願景</h3><br>
-希望能找出人生更多的可能性，除了親自實現，也分享給全世界。<br><br>
-<h3 class="article-h1-color">作品</h3><br>
-<a href="https://frankyeah.github.io/Front-Enter/index.html" target='_blank'>部落格網站</a><br><br>
-<a href="https://stylish-cowork-nafy.firebaseapp.com/" target='_blank'>電商網站</a><br><br>
-<a href="https://frankyeah.github.io/ovenPlus/" target='_blank'>國外烤爐接案</a><br><br>
-<a href="https://www.behance.net/SIANG-HUA?fbclid=IwAR1ZnMxo7gGab__tWCIF1GcTT14o7Vb6z-UkcWcA7GHO7jIgzvTCM57wqr8" target='_blank'>合作設計師的平面作品</a><br><br>
-現在所看的部落格也是自己架的。<br><br>
+
+<h3 class="article-h1-color">規格與程式碼</h3><br>
+
+這次抓比較嚴的是 chrome、safari，web、mobile。
+<br><br>
+另外有花時間研究的有：丟電子郵件到 Google sheet、拉霸對比圖、自製 video 容器、翻書效果（正式上線才有）。其他就是一般切版。
+<br><br>
+程式碼部分沒有特別限制。雖然用 vue 很輕鬆，但對 SEO 處理沒特別研究，索性用最簡單的原生 javascript 加 jquery 來寫。
+<br><br>
+因為案子時程很趕，所以套件能套就套，程式碼有點凌亂。
+<br><br>
+
+<h3 class="article-h1-color">接案心得及心態</h3><br>
+
+這部分是我學習的最多的。比程式碼還多（上班要寫的難多了）。
+<br><br>
+第一，我沒想到設計稿會晚給。當時我有另一個案子在跑，時間完全尬在一起了。
+<br><br>
+第二，我平日要上班，只有晚上跟假日時間能做案子，休息時間非常少，一回家就要硬著頭皮開電腦。當初我實在太高估自己了。
+<br><br>
+所以當好不容易做完第一版後，隔幾天收到居然要重改的消息時，我才那麼…想哭。
+<br><br>
+學到最重要一課就是，不要一次接兩個案子，然後設計稿是很可能重改的，要先談妥發生時怎處理，盡量能不改是最好的。
+<br><br>
+我的另外一個案子是有談妥規格的，期待我完成它的那一天，在和大家分享心得。
+
+
+<br><br><br><br>
+
 
 <h3 class="article-h1-color">技術文章與合作</h3><br>
 
 有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
 
-想定期收到技術文章的朋友，建議加入 line 官方帳號，每周最多群發兩次技術與工程相關文章，歡迎關注：<br><br>
+想定期收到技術文章，或想一起探討前後端程式的朋友，建議加入 line 群組，或是官方帳號，大家可以互相交流，一起學程式，歡迎加入：<br><br>
 
 <span mailto:"aaa24295234@gmail.com">Email: aaa24295234@gmail.com</span><br><br>
-Line ID：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
-Line QR Code：<br><br>
+Line 群組：<a href="https://line.me/R/ti/g/i80ChvQ3dt"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">群組</span></a><br><br>
+Line 群組 QR Code：<br><br>
+<img src="https://frontenter.files.wordpress.com/2019/05/line-chat-room.jpg">
+Line 官方帳號：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
+Line 官方帳號 QR Code：<br><br>
 <img src="https://qr-official.line.me/sid/M/184railx.png">
 <br><br>
 
-<div >
-    <a href="https://github.com/FrankYeah"><div style="cursor: pointer;" class="fab fa-github fa-3x"></div></a>
-    <a href="mailto:aaa24295234@gmail.com"><div style="padding-left:20px; cursor: pointer;" class="fas fa-envelope fa-3x"></div></a>
-</div>
+
+
+
+
 
 </article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20190627/" data-toggle="tooltip" data-placement="top" title="Vue axios API 管理的好方法">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
+                             &rarr;</a>
+                    </li>
+                    
+                </ul>
 
                 
 <div id="disqus-comment"></div>

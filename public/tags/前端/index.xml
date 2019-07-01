@@ -6,10 +6,19 @@
     <description>Recent content in 前端 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>前端接案心得 | 歷時 40 天</title>
+      <link>https://siddharam.com.tw/post/20190701/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190701/</guid>
+      <description>文 / Siddharam 西打藍 前言 這是我第二次接架站的案子。咦，為什麼沒看到第一次的呢？因為還沒結案。設計要重新出稿，等我結案再來寫一篇。此篇目錄： 1. 接案之初</description>
+    </item>
     
     <item>
       <title>Vue axios API 管理的好方法</title>
