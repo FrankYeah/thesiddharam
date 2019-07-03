@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="前端接案心得 | 歷時 40 天" />
-    <meta property="og:title" content="前端接案心得 | 歷時 40 天" />
-    <meta property="twitter:title" content="前端接案心得 | 歷時 40 天" />
+    <meta name="title" content="Vue-Analytics 埋 GA  | v-ga directive 使用" />
+    <meta property="og:title" content="Vue-Analytics 埋 GA  | v-ga directive 使用" />
+    <meta property="twitter:title" content="Vue-Analytics 埋 GA  | v-ga directive 使用" />
     
 
     
-    <meta name="description" content="5/10，我們談妥了價碼（五至七萬），是個不需要後端串接，對方提供設計稿，單純前端頁面切版的案子。原訂5/27 交第一版......">
-    <meta property="og:description" content="5/10，我們談妥了價碼（五至七萬），是個不需要後端串接，對方提供設計稿，單純前端頁面切版的案子。原訂5/27 交第一版......" />
-    <meta property="twitter:description" content="5/10，我們談妥了價碼（五至七萬），是個不需要後端串接，對方提供設計稿，單純前端頁面切版的案子。原訂5/27 交第一版......" />
+    <meta name="description" content="如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。因此我選了 vue-analytics 這個套件來處理 Vue 埋 GA 的問題......">
+    <meta property="og:description" content="如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。因此我選了 vue-analytics 這個套件來處理 Vue 埋 GA 的問題......" />
+    <meta property="twitter:description" content="如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。因此我選了 vue-analytics 這個套件來處理 Vue 埋 GA 的問題......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="前端, 接案, jquery" name="keywords">
+    <meta content="前端, vue-analytics, vue, GA" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>前端接案心得 | 歷時 40 天-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>Vue-Analytics 埋 GA  | v-ga directive 使用-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190701/">
+    <link rel="canonical" href="/post/20190703/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -197,18 +197,22 @@
                             前端
                         </a>
                         
-                        <a class="tag" href="/tags/%E6%8E%A5%E6%A1%88" title="接案">
-                            接案
+                        <a class="tag" href="/tags/vue-analytics" title="vue-analytics">
+                            vue-analytics
                         </a>
                         
-                        <a class="tag" href="/tags/jquery" title="jquery">
-                            jquery
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        <a class="tag" href="/tags/ga" title="GA">
+                            GA
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> July 1, 2019</p>
-                    <h1>前端接案心得 | 歷時 40 天</h1>
-                    <h3 class="subheading">規格、程式碼、收費、心得</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> July 3, 2019</p>
+                    <h1>Vue-Analytics 埋 GA  | v-ga directive 使用</h1>
+                    <h3 class="subheading">增加 gtag 點擊事件</h3>
                     <span class="meta">
 			
 
@@ -243,55 +247,73 @@
 
 <h3 class="article-h1-color">前言</h3><br>
 
-這是我第二次接架站的案子。咦，為什麼沒看到第一次的呢？因為還沒結案。設計要重新出稿，等我結案再來寫一篇。此篇目錄：
+如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。<br><br>
+因此我選了<a href="https://github.com/MatteoGabriele/vue-analytics"> vue-analytics </a>這個套件來處理 Vue 埋 GA 的問題，也因行銷那邊需要埋 gtag，這裡也會一併說明。此篇目錄：
 
 <h5>
-1. 接案之初<br><br>
-2. 規格與程式碼<br><br>
-3. 接案心得及心態
+1. vue-analytics<br><br>
+2. directive：v-ga
 </h5><br><br>
 
-<h3 class="article-h1-color">接案之初</h3><br>
+<h3 class="article-h1-color">vue-analytics</h3><br>
 
-這是個非常規的接案，因為對方只給我看了大概的版型，然後出價、壓時間，就開始做了。可能因為是急件，所以一切就簡。
-<br><br>
-5/10，我們談妥了價碼（五至七萬），依照動態多寡加錢，最後是實拿六萬，是個不需要後端串接，對方提供設計稿，單純前端頁面切版的案子。原訂5/27 交第一版。
-<br><br>
-先給大家截至目前的<a href="https://frankyeah.github.io/ovenPlus/" target='_blank'> 版本</a>，正式上線後還會在改版，但就換對方工程師接手了。
-<br><br>
-然而延誤是必然的，5/21 UI/UX 設計師才給版型，而且還缺不少素材，導致網站部分空白，所以我第一次交稿的時間是 5/28（突然發現我速度超快）。
-<br><br>
-然而事情總不盡人意，到了 6/12，對方突然說設計稿要變動，傳了新版上來，打開後發現，每一屏含手機版幾乎都有調整。
-<br><br>
-記得這時候，我感到超心累。但還是繼續做了。
-<br><br>
-我在 6/18 二次調整好桌機版，6/24 完成手機版。接著開始修修改改至六月底。才終於結束收尾。
-<br><br>
+先安裝套件：<br><br>
 
-<h3 class="article-h1-color">規格與程式碼</h3><br>
+<code>npm install vue-analytics</code><br><br>
 
-這次抓比較嚴的是 chrome、safari，web、mobile。
-<br><br>
-另外有花時間研究的有：丟電子郵件到 Google sheet、拉霸對比圖、自製 video 容器、翻書效果（正式上線才有）。其他就是一般切版。
-<br><br>
-程式碼部分沒有特別限制。雖然用 vue 很輕鬆，但對 SEO 處理沒特別研究，索性用最簡單的原生 javascript 加 jquery 來寫。
-<br><br>
-因為案子時程很趕，所以套件能套就套，程式碼有點凌亂。
-<br><br>
+官方文檔的 router 切換設定是放在 router/index.js 底下，但因為我有額外做設定，所以是寫在 main.js：<br><br>
 
-<h3 class="article-h1-color">接案心得及心態</h3><br>
+<pre>
 
-這部分是我學習的最多的。比程式碼還多（上班要寫的難多了）。
-<br><br>
-第一，我沒想到設計稿會晚給。當時我有另一個案子在跑，時間完全尬在一起了。
-<br><br>
-第二，我平日要上班，只有晚上跟假日時間能做案子，休息時間非常少，一回家就要硬著頭皮開電腦。當初我實在太高估自己了。
-<br><br>
-所以當好不容易做完第一版後，隔幾天收到居然要重改的消息時，我才那麼…想哭。
-<br><br>
-學到最重要一課就是，不要一次接兩個案子，然後設計稿是很可能重改的，要先談妥發生時怎處理，盡量能不改是最好的。
-<br><br>
-我的另外一個案子是有談妥規格的，期待我完成它的那一天，在和大家分享心得。
+// main.js
+
+import VueAnalytics from 'vue-analytics'
+
+// GA初始化
+
+Vue.use(VueAnalytics, {
+  id: 'UA-12345678-6', // 讀取 GA id
+  disableScriptLoader: true, // 在 html 中初始化
+  router, // 路由切換統計
+  autoTracking: {
+    pageviewOnLoad: false // 避免 GA onLoad 時重複統計
+  },
+  // 這是我自定義的 gtag 追蹤事件，下方會教大家怎麼用
+  commands: {
+    trackEvent (category = 'unknown', label = 'unknown') {
+      this.$ga.event(category, 'Click', label)
+    }
+  }
+})
+
+</pre><br>
+
+<h3 class="article-h1-color">directive：v-ga</h3><br>
+
+以 header 的 logo 點擊追蹤為例：<br><br>
+
+<pre>
+
+// 使用 v-ga 就能追蹤到自定義的事件，非常方便的 directive
+&lt;img v-ga="$ga.commands.trackEvent.bind(this, '/indexsch', 'S-sis_click')" class="header-logo" src="@/assets/synergies-logo.png" alt="logo">
+
+</pre><br>
+
+你也可以手動一個個綁定事件追蹤：<br><br>
+
+<pre>
+
+onSwipe () {
+    this.$ga.event({
+    eventCategory: '/reportsch',
+    eventAction: 'Click',
+    eventLabel: 'S-sis_click'
+    })
+}
+
+</pre><br>
+
+教學到此告一段落，這個套件沒什麼坑，就是 v-ga 研究了一下而已。然而 GA 的問題之一，就是中國那邊有部分地區跑很慢，追蹤不到，所以接下來會研究當地的追蹤方式。
 
 
 <br><br><br><br>
@@ -332,13 +354,13 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190627/" data-toggle="tooltip" data-placement="top" title="Vue axios API 管理的好方法">&larr;
+                        <a href="/post/20190701/" data-toggle="tooltip" data-placement="top" title="前端接案心得 | 歷時 40 天">&larr;
                             上一篇</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/20190703/" data-toggle="tooltip" data-placement="top" title="Vue-Analytics 埋 GA  | v-ga directive 使用">新的一篇
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
                              &rarr;</a>
                     </li>
                     

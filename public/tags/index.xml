@@ -75,6 +75,15 @@
     </item>
     
     <item>
+      <title>Ga</title>
+      <link>https://siddharam.com.tw/tags/ga/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/ga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>https://siddharam.com.tw/tags/git/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
@@ -230,9 +239,18 @@
     <item>
       <title>Vue</title>
       <link>https://siddharam.com.tw/tags/vue/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue Analytics</title>
+      <link>https://siddharam.com.tw/tags/vue-analytics/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/vue-analytics/</guid>
       <description></description>
     </item>
     
@@ -266,7 +284,7 @@
     <item>
       <title>前端</title>
       <link>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>

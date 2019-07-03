@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Vue-Analytics 埋 GA  | v-ga directive 使用</title>
+      <link>https://siddharam.com.tw/post/20190703/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190703/</guid>
+      <description>文 / Siddharam 西打藍 前言 如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。 因此我選了vue-analytics 這個套件來</description>
+    </item>
+    
+    <item>
       <title>Vue axios API 管理的好方法</title>
       <link>https://siddharam.com.tw/post/20190627/</link>
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
