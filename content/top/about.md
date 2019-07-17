@@ -41,7 +41,7 @@ draft: false
 <h3 class="article-h1-color">作品</h3><br>
 <a href="https://frankyeah.github.io/Front-Enter/index.html" target='_blank'>部落格網站</a><br><br>
 <a href="https://stylish-cowork-nafy.firebaseapp.com/" target='_blank'>電商網站</a><br><br>
-<a href="https://frankyeah.github.io/ovenPlus/" target='_blank'>國外烤爐接案</a><br><br>
+<a href="https://frankyeah.github.io/ovenPlus/" target='_blank'>國外烤爐接案</a>(暫時不公開，等正式上線才能看)<br><br>
 <a href="https://www.behance.net/SIANG-HUA?fbclid=IwAR1ZnMxo7gGab__tWCIF1GcTT14o7Vb6z-UkcWcA7GHO7jIgzvTCM57wqr8" target='_blank'>合作設計師的平面作品</a><br><br>
 現在所看的部落格也是自己架的。<br><br>
 
