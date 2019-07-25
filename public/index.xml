@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>linux 新手常用指令 | ssh 遠端登入</title>
+      <link>https://siddharam.com.tw/post/20190724/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190724/</guid>
+      <description>文 / Siddharam 西打藍 前言 上上週我還是個沒碰過 linux 的前端工程師呢，因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所</description>
+    </item>
+    
+    <item>
       <title>Vue-Analytics 埋 GA  | v-ga directive 使用</title>
       <link>https://siddharam.com.tw/post/20190703/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>

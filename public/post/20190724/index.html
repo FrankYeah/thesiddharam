@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Google 機器學習培訓計劃心得" />
-    <meta property="og:title" content="Google 機器學習培訓計劃心得" />
-    <meta property="twitter:title" content="Google 機器學習培訓計劃心得" />
+    <meta name="title" content="linux 新手常用指令 | ssh 遠端登入" />
+    <meta property="og:title" content="linux 新手常用指令 | ssh 遠端登入" />
+    <meta property="twitter:title" content="linux 新手常用指令 | ssh 遠端登入" />
     
 
     
-    <meta name="description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......">
-    <meta property="og:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
-    <meta property="twitter:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
+    <meta name="description" content="因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所以前端一人負責一台機器的維護，這才進入了 linux 的世界......">
+    <meta property="og:description" content="因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所以前端一人負責一台機器的維護，這才進入了 linux 的世界......" />
+    <meta property="twitter:description" content="因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所以前端一人負責一台機器的維護，這才進入了 linux 的世界......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="機器學習, google, tensorflow" name="keywords">
+    <meta content="dev-ops, linux, nginx, ssh, PuTTY" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>Google 機器學習培訓計劃心得-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>linux 新手常用指令 | ssh 遠端登入-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190509/">
+    <link rel="canonical" href="/post/20190724/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -193,22 +193,30 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92" title="機器學習">
-                            機器學習
+                        <a class="tag" href="/tags/devops" title="DevOps">
+                            DevOps
                         </a>
                         
-                        <a class="tag" href="/tags/google" title="google">
-                            google
+                        <a class="tag" href="/tags/linux" title="linux">
+                            linux
                         </a>
                         
-                        <a class="tag" href="/tags/tensorflow" title="tensorflow">
-                            tensorflow
+                        <a class="tag" href="/tags/nginx" title="nginx">
+                            nginx
+                        </a>
+                        
+                        <a class="tag" href="/tags/putty" title="PuTTY">
+                            PuTTY
+                        </a>
+                        
+                        <a class="tag" href="/tags/ssh" title="ssh">
+                            ssh
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 9, 2019</p>
-                    <h1>Google 機器學習培訓計劃心得</h1>
-                    <h3 class="subheading">Cloud Vision API 圖片辨識</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> July 24, 2019</p>
+                    <h1>linux 新手常用指令 | ssh 遠端登入</h1>
+                    <h3 class="subheading">PuTTY 好幫手</h3>
                     <span class="meta">
 			
 
@@ -242,185 +250,53 @@
 <br>文 / Siddharam 西打藍<br><br>
 
 <h3 class="article-h1-color">前言</h3><br>
-五月，是科技大廠展演的季節，在 <a href="https://events.google.com/io/">在 2019 Google I/O 大會</a>  期間，同事在 slack 貼了 <a href="https://events.withgoogle.com/ml-study-jam-basic-tw/">ML Study Jam 機器學習培訓計劃</a>的活動，想說 Google 的服務只玩過 <a href="https://siddharam.com.tw/post/20190424/">firebase</a> 和語音 API，這次就試試看其他的吧。<br><br>
 
-這次共玩了四個，分別是偵測圖片中的標籤、臉孔以及地標的 <a href="https://google.qwiklabs.com/focuses/1841?parent=catalog">Cloud Vision API</a>，還有將聲音轉成文字稿的 <a href="https://google.qwiklabs.com/focuses/2187?parent=catalog">Cloud Speech API</a>，翻譯文字內容的 <a href="https://google.qwiklabs.com/focuses/697?parent=catalog">Cloud Translation API</a>，以及分類文字內容的 <a href="https://google.qwiklabs.com/focuses/1749?parent=catalog">Cloud Natural Language API</a>。<br><br>
+上上週我還是個沒碰過 linux 的前端工程師呢，因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所以前端一人負責一台機器的維護，這才進入了 linux 的世界。<br><br>
 
-跟著它的步驟做，每一個課程約半小時就能做完，需要打的程式幾乎沒有，就算不會寫程式，也能體驗一番，且多數是系統指令。那我們開始吧。<br><br>
+上週我是從 jenkins 開始，才學會了 ssh 登入以及公私鑰的區別。而這周開始進到 server，要從頭安裝 java、tomcat，並把檔案放到 /var/www 做測試，以及修改 etc/nginx 的 conf，花了不少時間。
 
-<h3 class="article-h1-color">圖片分析 Cloud Vision API</h3><br>
-首先，選擇課程後，點擊右上角的 join，確認有預訂課程後，就能看到內容。<br><br>
-之後開啟 <a href="https://console.cloud.google.com/"> Google Console</a>，接下來，幾乎所有機器學習的操作都會在這裡。<br><br>
-最上方可以建立不同的專案，右上角有個 Cloud Shell，是 Linux 作業環境，支援主流的後端語言，啟動後，右上方有一枝筆，可以打開網頁版 IDE 進行操作。<br><br>
-有幾個指令可以做測試：<br><br>
-1. 顯示帳戶<br><br>
-<code>gcloud auth list</code><br><br>
-2. 顯示專案名稱<br><br>
-<code>gcloud config list project</code>
-接下來，為了要啟用 API，需要先建立憑證（Credentials），接著將它複製，建立環境變數：<br><br>
-<code>export API_KEY=YOUR_API_KEY</code><br><br>
-請自行將 YOUR_API_KEY 取代成自己的。<br><br>
-接下來，我們要建立容器（Bucket），用來存取靜態資料，有點像是 firebase 裡的 storage，或是 AWS 的 S3。請從左欄開啟 Storage，並點選建立容器並取名。<br><br>
+<h3 class="article-h1-color">常用 linux 指令</h3><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-bucket.png"/>
-<div style="text-align:center;">容器（Bucket）</div><br>
+先列出這幾周常用到的 linux 指令：<br><br>
+<b>
+cd .. 切換上一頁目錄<br><br>
+cd /etc 切換到 etc 資料夾<br><br>
+mkdir test 新增資料夾 test<br><br>
+touch index.html 新增檔案<br><br>
+cat index.html 列出 index.html 內容<br><br>
+vim index.html 編輯此檔案<br><br>
+nano index.html 另一種編輯此檔案<br><br>
+ls 列出當前目錄下的檔案<br><br>
+ls -al 列出當前目錄檔案的詳細資料<br><br>
+pwd 顯示當前路徑<br><br>
+sudo vim index.html 用帳號權限執行命令，會要求輸入密碼<br><br>
+su vim index.html 用 root 權限執行命令<br><br>
+apt-get update/upgrade/install 更新/升級/安裝檔案<br><br>
+curl -O https://photo.img 下載 photo.img 檔案<br><br>
+</b>
 
-接著，你可以上傳任意一張圖片進行分析，上傳完畢後，要讓它可以對外存取，所以右側開啟權限 Permissions，並新增項目（Add Item），輸入：<br><br>
-Entity: Group<br>
-Name: allUsers<br>
-Access: Reader<br><br>
-輸入完畢後，打開編輯器，建立 request.json：<br><br>
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "LABEL_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
+<h3 class="article-h1-color">遠端好工具 PuTTY</h3><br>
 
-</pre><br>
+PuTTY 是一套方便的工具，可以幫你 gen 出不同型態 SSH 的 public/private key，可以直接用它遠端到你的主機，架設網站、更改防火牆設定等，前述的 linux 開發，我都是用這套工具執行的。<br><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-request-json.png"/>
-<div style="text-align:center;">request.json</div><br>
+首先你需要自行下載 <a href="https://www.putty.org/">PuTTY</a>，接著我們先 gen 出 SSH key：
+
+<img style="margin-bottom:8px; width:60%;" src="https://frontenter.files.wordpress.com/2019/07/putty-gem.png">
+<div style="text-align:center">點選 generate 生成 public/private key。請將他們保存在安全的地方，未來若有格式上的問題，可以去把 Conversions 把 key export 出來。</div><br><br>
+
+<img style="margin-bottom:8px; width:60%;" src="https://frontenter.files.wordpress.com/2019/07/putty-1.png">
+<div style="text-align:center">接著我們要遠端到 linux 主機，首先需輸入 host name，以及 sessions。</div><br><br>
+<img style="margin-bottom:8px; width:60%;" src="https://frontenter.files.wordpress.com/2019/07/putty-2.png">
+<div style="text-align:center">再來，會綁上 ssh，就可以連線。</div><br><br>
+
+連線成功後，可以試著打上述的指令當作練習。
 
 
-儲存後，運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-就會看到圖片的分析結果。<br><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-person-result.png"/>
-<div style="text-align:center;">圖片分析結果。左側是結果，右側是測試圖片。</div><br>
-
-如果是輸入：<br><br>
-
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "WEB_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-
-會看到 Google 從圖片搜尋中，找到的相似圖片。<br><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/people.png"/>
-<div style="text-align:center;">相似圖片分析結果。左側是結果，右側是測試圖片。</div><br>
 
 
-最後還有特徵辨識：<br><br>
 
-<pre>
+<br><br><br><br>
 
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/selfie.png"
-          }
-        },
-        "features": [
-          {
-            "type": "FACE_DETECTION"
-          },
-          {
-            "type": "LANDMARK_DETECTION"
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-運行 API：<br><br>
-
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-
-會回傳臉部特徵的 X、Y 軸：<br><br>
-
-<pre>
-
-{
-      "faceAnnotations": [
-        {
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 669,
-                "y": 324
-              },
-              ...
-            ]
-          },
-          "fdBoundingPoly": {
-            ...
-          },
-          "landmarks": [
-            {
-              "type": "LEFT_EYE",
-              "position": {
-                "x": 692.05646,
-                "y": 372.95868,
-                "z": -0.00025268539
-              }
-            },
-            ...
-          ],
-          "rollAngle": 0.21619819,
-          "panAngle": -23.027969,
-          "tiltAngle": -1.5531756,
-          "detectionConfidence": 0.72354823,
-          "landmarkingConfidence": 0.20047489,
-          "joyLikelihood": "POSSIBLE",
-          "sorrowLikelihood": "VERY_UNLIKELY",
-          "angerLikelihood": "VERY_UNLIKELY",
-          "surpriseLikelihood": "VERY_UNLIKELY",
-          "underExposedLikelihood": "VERY_UNLIKELY",
-          "blurredLikelihood": "VERY_UNLIKELY",
-          "headwearLikelihood": "VERY_LIKELY"
-        }
-        ...
-     }
-}
-
-</pre><br>
-
-
-其他的測試，我就沒有截圖，但跑的流程相似。<br><br>
 
 <h3 class="article-h1-color">技術文章與合作</h3><br>
 
@@ -438,6 +314,10 @@ Line 官方帳號 QR Code：<br><br>
 <br><br>
 
 
+
+
+
+
 </article>
 
 <div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
@@ -453,10 +333,15 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190724/" data-toggle="tooltip" data-placement="top" title="linux 新手常用指令 | ssh 遠端登入">&larr;
+                        <a href="/post/20190703/" data-toggle="tooltip" data-placement="top" title="Vue-Analytics 埋 GA  | v-ga directive 使用">&larr;
                             上一篇</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
+                             &rarr;</a>
+                    </li>
                     
                 </ul>
 
