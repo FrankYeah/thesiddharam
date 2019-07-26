@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>linux 建立新帳號 useradd | 管理權限 chmod</title>
+      <link>https://siddharam.com.tw/post/20190726/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190726/</guid>
+      <description>文 / Siddharam 西打藍 前言 如果對 linux 指令不熟，可以先看看 這篇，一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳</description>
+    </item>
+    
+    <item>
       <title>linux 新手常用指令 | ssh 遠端登入</title>
       <link>https://siddharam.com.tw/post/20190724/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>

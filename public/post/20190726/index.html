@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Google 機器學習培訓計劃心得" />
-    <meta property="og:title" content="Google 機器學習培訓計劃心得" />
-    <meta property="twitter:title" content="Google 機器學習培訓計劃心得" />
+    <meta name="title" content="linux 建立新帳號 useradd | 管理權限 chmod" />
+    <meta property="og:title" content="linux 建立新帳號 useradd | 管理權限 chmod" />
+    <meta property="twitter:title" content="linux 建立新帳號 useradd | 管理權限 chmod" />
     
 
     
-    <meta name="description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......">
-    <meta property="og:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
-    <meta property="twitter:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
+    <meta name="description" content="一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾......">
+    <meta property="og:description" content="一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾......" />
+    <meta property="twitter:description" content="一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="機器學習, google, tensorflow" name="keywords">
+    <meta content="dev-ops, linux" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>Google 機器學習培訓計劃心得-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>linux 建立新帳號 useradd | 管理權限 chmod-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190509/">
+    <link rel="canonical" href="/post/20190726/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -193,22 +193,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92" title="機器學習">
-                            機器學習
+                        <a class="tag" href="/tags/devops" title="DevOps">
+                            DevOps
                         </a>
                         
-                        <a class="tag" href="/tags/google" title="google">
-                            google
-                        </a>
-                        
-                        <a class="tag" href="/tags/tensorflow" title="tensorflow">
-                            tensorflow
+                        <a class="tag" href="/tags/linux" title="linux">
+                            linux
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 9, 2019</p>
-                    <h1>Google 機器學習培訓計劃心得</h1>
-                    <h3 class="subheading">Cloud Vision API 圖片辨識</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> July 26, 2019</p>
+                    <h1>linux 建立新帳號 useradd | 管理權限 chmod</h1>
+                    <h3 class="subheading">遠端移動檔案 scp</h3>
                     <span class="meta">
 			
 
@@ -242,185 +238,72 @@
 <br>文 / Siddharam 西打藍<br><br>
 
 <h3 class="article-h1-color">前言</h3><br>
-五月，是科技大廠展演的季節，在 <a href="https://events.google.com/io/">在 2019 Google I/O 大會</a>  期間，同事在 slack 貼了 <a href="https://events.withgoogle.com/ml-study-jam-basic-tw/">ML Study Jam 機器學習培訓計劃</a>的活動，想說 Google 的服務只玩過 <a href="https://siddharam.com.tw/post/20190424/">firebase</a> 和語音 API，這次就試試看其他的吧。<br><br>
 
-這次共玩了四個，分別是偵測圖片中的標籤、臉孔以及地標的 <a href="https://google.qwiklabs.com/focuses/1841?parent=catalog">Cloud Vision API</a>，還有將聲音轉成文字稿的 <a href="https://google.qwiklabs.com/focuses/2187?parent=catalog">Cloud Speech API</a>，翻譯文字內容的 <a href="https://google.qwiklabs.com/focuses/697?parent=catalog">Cloud Translation API</a>，以及分類文字內容的 <a href="https://google.qwiklabs.com/focuses/1749?parent=catalog">Cloud Natural Language API</a>。<br><br>
+如果對 linux 指令不熟，可以先看看 <a href="https://siddharam.com.tw/post/20190724/">這篇</a>，一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾。<br><br>
 
-跟著它的步驟做，每一個課程約半小時就能做完，需要打的程式幾乎沒有，就算不會寫程式，也能體驗一番，且多數是系統指令。那我們開始吧。<br><br>
+<h3 class="article-h1-color">建立帳號 / 密碼</h3><br>
 
-<h3 class="article-h1-color">圖片分析 Cloud Vision API</h3><br>
-首先，選擇課程後，點擊右上角的 join，確認有預訂課程後，就能看到內容。<br><br>
-之後開啟 <a href="https://console.cloud.google.com/"> Google Console</a>，接下來，幾乎所有機器學習的操作都會在這裡。<br><br>
-最上方可以建立不同的專案，右上角有個 Cloud Shell，是 Linux 作業環境，支援主流的後端語言，啟動後，右上方有一枝筆，可以打開網頁版 IDE 進行操作。<br><br>
-有幾個指令可以做測試：<br><br>
-1. 顯示帳戶<br><br>
-<code>gcloud auth list</code><br><br>
-2. 顯示專案名稱<br><br>
-<code>gcloud config list project</code>
-接下來，為了要啟用 API，需要先建立憑證（Credentials），接著將它複製，建立環境變數：<br><br>
-<code>export API_KEY=YOUR_API_KEY</code><br><br>
-請自行將 YOUR_API_KEY 取代成自己的。<br><br>
-接下來，我們要建立容器（Bucket），用來存取靜態資料，有點像是 firebase 裡的 storage，或是 AWS 的 S3。請從左欄開啟 Storage，並點選建立容器並取名。<br><br>
+要新增帳號前，需先用 root 帳號登入 linux 主機，才能進行以下操作。<br><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-bucket.png"/>
-<div style="text-align:center;">容器（Bucket）</div><br>
-
-接著，你可以上傳任意一張圖片進行分析，上傳完畢後，要讓它可以對外存取，所以右側開啟權限 Permissions，並新增項目（Add Item），輸入：<br><br>
-Entity: Group<br>
-Name: allUsers<br>
-Access: Reader<br><br>
-輸入完畢後，打開編輯器，建立 request.json：<br><br>
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "LABEL_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
-
+<pre><br>
+# 新增使用者
+sudo useradd test<br>
 </pre><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-request-json.png"/>
-<div style="text-align:center;">request.json</div><br>
+<pre><br>
+# 設定密碼
+sudo passwd 12345<br>
+</pre><br><br>
+
+在建立完帳號後，可以切換至 /home，就能看到新增的使用者 test 了。<br><br>
+
+接著要在 /etc/sudoers 裡，新增一條 <code>test ALL=(ALL) ALL</code>代表 test 用戶可以下達任何指令。<br><br>
+
+建立帳號後，為了方便登入，可以 gen 出 ssh key 後，將公鑰放到 linux 的 <code>.ssh/authorized_keys</code> 位置。<br><br>
+
+<h3 class="article-h1-color">更改權限</h3><br>
+
+<b>
+chgrp ：改變檔案所屬群組<br><br>
+chown ：改變檔案擁有者<br><br>
+chmod ：改變檔案的權限
+</b><br><br>
+
+chgrp，需要在 /etc/group 目錄下存在此群組，才能改變檔案成為此群組。假設 group 底下有群組 goodGroup，要如何改變 test.txt 檔案的群組呢：<br><br>
+
+<pre>chgrp goodGroup test.txt</pre><br>
+
+chown，如果要改變 test.txt 檔案的擁有者為 siddharam，只要這麼寫：<br><br>
+
+<pre>chown siddharam test.txt</pre><br>
+
+chown，是改變檔案的權限，寫法較為複雜，指令會長這樣：<br><br>
+
+<pre>chown 777 test.txt</pre><br>
+
+777 分別代表：owner 擁有者、group 群組、others 其他人，數字是什麼加起來的呢？讀 read（4分）、寫 write（4分）、執行 executive（1分）。<br><br>
 
 
-儲存後，運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-就會看到圖片的分析結果。<br><br>
+<h3 class="article-h1-color">遠端移動檔案 scp 指令</h3><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-person-result.png"/>
-<div style="text-align:center;">圖片分析結果。左側是結果，右側是測試圖片。</div><br>
+有時候會需要把檔案從本機，移動到 linux 之中，如果你的權限不足，可以先移動到 linux 的 tmp 之中，在 mv 到需要的位置。下列示範在本機下的指令：<br><br>
 
-如果是輸入：<br><br>
-
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "WEB_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-
-會看到 Google 從圖片搜尋中，找到的相似圖片。<br><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/people.png"/>
-<div style="text-align:center;">相似圖片分析結果。左側是結果，右側是測試圖片。</div><br>
-
-
-最後還有特徵辨識：<br><br>
-
-<pre>
-
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/selfie.png"
-          }
-        },
-        "features": [
-          {
-            "type": "FACE_DETECTION"
-          },
-          {
-            "type": "LANDMARK_DETECTION"
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-運行 API：<br><br>
-
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-
-會回傳臉部特徵的 X、Y 軸：<br><br>
-
-<pre>
-
-{
-      "faceAnnotations": [
-        {
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 669,
-                "y": 324
-              },
-              ...
-            ]
-          },
-          "fdBoundingPoly": {
-            ...
-          },
-          "landmarks": [
-            {
-              "type": "LEFT_EYE",
-              "position": {
-                "x": 692.05646,
-                "y": 372.95868,
-                "z": -0.00025268539
-              }
-            },
-            ...
-          ],
-          "rollAngle": 0.21619819,
-          "panAngle": -23.027969,
-          "tiltAngle": -1.5531756,
-          "detectionConfidence": 0.72354823,
-          "landmarkingConfidence": 0.20047489,
-          "joyLikelihood": "POSSIBLE",
-          "sorrowLikelihood": "VERY_UNLIKELY",
-          "angerLikelihood": "VERY_UNLIKELY",
-          "surpriseLikelihood": "VERY_UNLIKELY",
-          "underExposedLikelihood": "VERY_UNLIKELY",
-          "blurredLikelihood": "VERY_UNLIKELY",
-          "headwearLikelihood": "VERY_LIKELY"
-        }
-        ...
-     }
-}
-
+<pre><br>
+# scp 可以透過 ssh 連線來完成兩機器間的傳輸
+# private-key 是本機私鑰位置
+# abc.txt 是要傳輸的檔案，tmp 是目標路徑<br>
+scp -r -i C:\Users\User\.ssh\private-key C:\abc.txt frank_yeh@121.40.87.130:/tmp<br>
 </pre><br>
 
 
-其他的測試，我就沒有截圖，但跑的流程相似。<br><br>
+
+
+
+
+
+
+<br><br><br><br>
+
 
 <h3 class="article-h1-color">技術文章與合作</h3><br>
 
@@ -438,6 +321,10 @@ Line 官方帳號 QR Code：<br><br>
 <br><br>
 
 
+
+
+
+
 </article>
 
 <div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
@@ -453,10 +340,15 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190726/" data-toggle="tooltip" data-placement="top" title="linux 建立新帳號 useradd | 管理權限 chmod">&larr;
+                        <a href="/post/20190724/" data-toggle="tooltip" data-placement="top" title="linux 新手常用指令 | ssh 遠端登入">&larr;
                             上一篇</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
+                             &rarr;</a>
+                    </li>
                     
                 </ul>
 
