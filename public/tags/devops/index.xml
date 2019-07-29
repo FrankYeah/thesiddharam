@@ -6,10 +6,19 @@
     <description>Recent content in Devops on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nginx 伺服器安裝教學</title>
+      <link>https://siddharam.com.tw/post/20190729/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190729/</guid>
+      <description>文 / Siddharam 西打藍 前言 在開始前，你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置。 安裝 nginx</description>
+    </item>
     
     <item>
       <title>linux 建立新帳號 useradd | 管理權限 chmod</title>

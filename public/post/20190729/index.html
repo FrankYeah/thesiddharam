@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="linux 建立新帳號 useradd | 管理權限 chmod" />
-    <meta property="og:title" content="linux 建立新帳號 useradd | 管理權限 chmod" />
-    <meta property="twitter:title" content="linux 建立新帳號 useradd | 管理權限 chmod" />
+    <meta name="title" content="nginx 伺服器安裝教學" />
+    <meta property="og:title" content="nginx 伺服器安裝教學" />
+    <meta property="twitter:title" content="nginx 伺服器安裝教學" />
     
 
     
-    <meta name="description" content="一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾......">
-    <meta property="og:description" content="一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾......" />
-    <meta property="twitter:description" content="一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾......" />
+    <meta name="description" content="你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置......">
+    <meta property="og:description" content="你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置......" />
+    <meta property="twitter:description" content="你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="dev-ops, linux" name="keywords">
+    <meta content="dev-ops, linux, nginx" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>linux 建立新帳號 useradd | 管理權限 chmod-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>nginx 伺服器安裝教學-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190726/">
+    <link rel="canonical" href="/post/20190729/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -202,10 +202,14 @@
                             linux
                         </a>
                         
+                        <a class="tag" href="/tags/nginx" title="nginx">
+                            nginx
+                        </a>
+                        
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> July 26, 2019</p>
-                    <h1>linux 建立新帳號 useradd | 管理權限 chmod</h1>
-                    <h3 class="subheading">遠端移動檔案 scp</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> July 29, 2019</p>
+                    <h1>nginx 伺服器安裝教學</h1>
+                    <h3 class="subheading">如何架設網站</h3>
                     <span class="meta">
 			
 
@@ -240,66 +244,160 @@
 
 <h3 class="article-h1-color">前言</h3><br>
 
-如果對 linux 指令不熟，可以先看看 <a href="https://siddharam.com.tw/post/20190724/">這篇</a>，一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳號 / 密碼，以及管理權限，並從外部嘗試新增檔案到 tmp 資料夾。<br><br>
+在開始前，你可能需要先<a href="https://siddharam.com.tw/post/20190724/">熟悉 linux 指令</a>，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置。<br><br>
 
-<h3 class="article-h1-color">建立帳號 / 密碼</h3><br>
 
-要新增帳號前，需先用 root 帳號登入 linux 主機，才能進行以下操作。<br><br>
+<h3 class="article-h1-color">安裝 nginx</h3><br>
 
-<pre><br>
-# 新增使用者
-sudo useradd test<br>
+<pre>
+
+# 檢查有無可用的更新
+sudo apt update  
+
+# 安裝 nginx
+sudo apt install nginx
+
 </pre><br>
 
-<pre><br>
-# 設定密碼
-sudo passwd 12345<br>
-</pre><br><br>
+接著需要調整防火牆，打開 80 port。<br><br>
 
-在建立完帳號後，可以切換至 /home，就能看到新增的使用者 test 了。<br><br>
+<pre>
 
-接著要在 /etc/sudoers 裡，新增一條 <code>test ALL=(ALL) ALL</code>代表 test 用戶可以下達任何指令。<br><br>
+# 打開 HTTP 80 port
+sudo ufw allow 'Nginx HTTP'
 
-建立帳號後，為了方便登入，可以 gen 出 ssh key 後，將公鑰放到 linux 的 <code>.ssh/authorized_keys</code> 位置。<br><br>
+# 檢視更改狀態
+sudo ufw status
 
-<h3 class="article-h1-color">更改權限</h3><br>
+</pre><br>
 
-<b>
-chgrp ：改變檔案所屬群組<br><br>
-chown ：改變檔案擁有者<br><br>
-chmod ：改變檔案的權限
-</b><br><br>
+再來就能嘗試開啟 nginx 了。<br><br>
 
-chgrp，需要在 /etc/group 目錄下存在此群組，才能改變檔案成為此群組。假設 group 底下有群組 goodGroup，要如何改變 test.txt 檔案的群組呢：<br><br>
+<pre>
 
-<pre>chgrp goodGroup test.txt</pre><br>
+# 啟動 nginx 服務器
+sudo systemctl start nginx
 
-chown，如果要改變 test.txt 檔案的擁有者為 siddharam，只要這麼寫：<br><br>
+# 關閉
+sudo systemctl stop nginx
 
-<pre>chown siddharam test.txt</pre><br>
+# 重新啟動
+sudo systemctl restart nginx
 
-chown，是改變檔案的權限，寫法較為複雜，指令會長這樣：<br><br>
+# 如果只是更改配置，可以重新加載
+sudo systemctl reload nginx
 
-<pre>chown 777 test.txt</pre><br>
+</pre><br>
 
-777 分別代表：owner 擁有者、group 群組、others 其他人，數字是什麼加起來的呢？讀 read（4分）、寫 write（4分）、執行 executive（1分）。<br><br>
+這時輸入你的 IP 就能看到畫面了。<br><br>
+
+<h3 class="article-h1-color">佈署靜態資源</h3><br>
+
+我們可以在 /var/www 目錄下，放置你的靜態資源，例如我們在底下新增 test 資料夾，並放上 html 檔案：<br><br>
+
+<pre>
+
+# 建立資料夾
+sudo mkdir -p /var/www/test
+
+# 修改裡頭的 html 檔案
+sudo nano /var/www/test/index.html
+
+&lt;html>
+    &lt;head>
+        &lt;title>Welcome to Siddharam&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;h1>歡迎來到西打藍的教學&lt;/h1>
+    &lt;/body>
+&lt;/html>
 
 
-<h3 class="article-h1-color">遠端移動檔案 scp 指令</h3><br>
+</pre><br>
 
-有時候會需要把檔案從本機，移動到 linux 之中，如果你的權限不足，可以先移動到 linux 的 tmp 之中，在 mv 到需要的位置。下列示範在本機下的指令：<br><br>
+接著，我們要在 /etc/nginx/sites-available/default 修改配置文件：<br><br>
 
-<pre><br>
-# scp 可以透過 ssh 連線來完成兩機器間的傳輸
-# private-key 是本機私鑰位置
-# abc.txt 是要傳輸的檔案，tmp 是目標路徑<br>
-scp -r -i C:\Users\User\.ssh\private-key C:\abc.txt frank_yeh@121.40.87.130:/tmp<br>
+<pre>
+
+sudo nano /etc/nginx/sites-available/default
+
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/test;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name test;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+
+</pre><br>
+
+如果你有 css / js / img 等靜態資源的話，還必須加上下列這段才能讀取的到：<br><br>
+
+<pre>
+
+location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$ #设定访问静态文件直接读取不经过tomcat
+        {
+          expires      30d;
+          root /var/www/analyze-robot/test;
+        }
+
+location ~ .*\.(js|css)?$
+        {
+          expires      1h;
+          root /var/www/analyze-robot/test;
+        }
+
+</pre><br>
+
+最後，我們要啟用 sites-enabled 的鏈接：<br><br>
+
+<pre>
+
+sudo ln -s /etc/nginx/sites-available/test /etc/nginx/sites-enabled/
+
 </pre><br>
 
 
+重啟服務就能看到新的畫面囉：<br><br>
+
+<pre>
+
+sudo systemctl restart nginx
+
+</pre><br>
 
 
+<h3 class="article-h1-color">nginx 目錄解說</h3><br>
 
+最後我們來列舉重要的目錄：<br><br>
+
+<pre>
+
+/var/www/html：實際的 Web 內容（默認情況下僅包含您之前看到的默認 Nginx 頁面）
+是從/var/www/html目錄中提供的。這可以通過更改Nginx配置文件來更改。
+
+/etc/nginx：Nginx 配置目錄。所有 Nginx 配置文件都放在這底下。
+
+/etc/nginx/nginx.conf：主要的 Nginx 配置文件。可以對此修改 Nginx 全局配置。
+
+/etc/nginx/sites-available/：可以存儲每站點服務器塊的目錄。
+除非鏈接到此目錄，否則 Nginx 不會使用此目錄中的配置文件 sites-enabled。
+通常，所有服務器塊配置都在此目錄中完成，然後通過鏈接到其他目錄來啟用。
+
+/etc/nginx/sites-enabled/：存儲已啟用的每站點服務器塊的目錄。
+是通過鏈接到 sites-available 目錄的配置文件來創建的。
+
+/var/log/nginx/access.log：Web 服務器的日誌文件。
+
+/var/log/nginx/error.log：任何 Nginx 錯誤都記錄在此日誌中。
+
+</pre><br>
 
 
 
@@ -341,13 +439,13 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190724/" data-toggle="tooltip" data-placement="top" title="linux 新手常用指令 | ssh 遠端登入">&larr;
+                        <a href="/post/20190726/" data-toggle="tooltip" data-placement="top" title="linux 建立新帳號 useradd | 管理權限 chmod">&larr;
                             上一篇</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/20190729/" data-toggle="tooltip" data-placement="top" title="nginx 伺服器安裝教學">新的一篇
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
                              &rarr;</a>
                     </li>
                     
