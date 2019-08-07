@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/post/20190807/</loc>
+    <lastmod>2019-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20190729/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
   </url>
@@ -243,6 +248,12 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/tags/mysql-workbench/</loc>
+    <lastmod>2019-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/tags/nginx/</loc>
     <lastmod>2019-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -304,6 +315,12 @@
   <url>
     <loc>https://siddharam.com.tw/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/sql/</loc>
+    <lastmod>2019-08-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

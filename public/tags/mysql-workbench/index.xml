@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql Workbench on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/mysql-workbench/</link>
+    <description>Recent content in Mysql Workbench on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/mysql-workbench/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySQL Workbench 基礎教學 | 建立 schema</title>
+      <link>https://siddharam.com.tw/post/20190807/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190807/</guid>
+      <description>文 / Siddharam 西打藍 前言 Workbench 是圖形化管理 MySQL 的介面，可以在裡頭新增 schema 以及 table，也能用來寫 SQL 的執行指令，我們可以用它來管理遠端的資料庫，也能在本機上</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Google 機器學習培訓計劃心得" />
-    <meta property="og:title" content="Google 機器學習培訓計劃心得" />
-    <meta property="twitter:title" content="Google 機器學習培訓計劃心得" />
+    <meta name="title" content="MySQL Workbench 基礎教學 | 建立 schema" />
+    <meta property="og:title" content="MySQL Workbench 基礎教學 | 建立 schema" />
+    <meta property="twitter:title" content="MySQL Workbench 基礎教學 | 建立 schema" />
     
 
     
-    <meta name="description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......">
-    <meta property="og:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
-    <meta property="twitter:description" content="Google 提供線上學習平台 Qwiklabs，讓開發者及一般民眾了解機器學習的運作，免費試用一個月，我選擇了四個教程，分別是圖片辨識、語音轉文字、語言翻譯以及分類篩選......" />
+    <meta name="description" content="Workbench 是圖形化管理 MySQL 的介面，可以在裡頭新增 schema 以及 table，也能用來寫 SQL 的執行指令，我們可以用它來管理遠端的資料庫，也能在本機上做測試......">
+    <meta property="og:description" content="Workbench 是圖形化管理 MySQL 的介面，可以在裡頭新增 schema 以及 table，也能用來寫 SQL 的執行指令，我們可以用它來管理遠端的資料庫，也能在本機上做測試......" />
+    <meta property="twitter:description" content="Workbench 是圖形化管理 MySQL 的介面，可以在裡頭新增 schema 以及 table，也能用來寫 SQL 的執行指令，我們可以用它來管理遠端的資料庫，也能在本機上做測試......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="機器學習, google, tensorflow" name="keywords">
+    <meta content="MySQL Workbench, SQL, schema" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>Google 機器學習培訓計劃心得-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>MySQL Workbench 基礎教學 | 建立 schema-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190509/">
+    <link rel="canonical" href="/post/20190807/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -194,22 +194,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92" title="機器學習">
-                            機器學習
+                        <a class="tag" href="/tags/mysql-workbench" title="MySQL Workbench">
+                            MySQL Workbench
                         </a>
                         
-                        <a class="tag" href="/tags/google" title="google">
-                            google
-                        </a>
-                        
-                        <a class="tag" href="/tags/tensorflow" title="tensorflow">
-                            tensorflow
+                        <a class="tag" href="/tags/sql" title="SQL">
+                            SQL
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 9, 2019</p>
-                    <h1>Google 機器學習培訓計劃心得</h1>
-                    <h3 class="subheading">Cloud Vision API 圖片辨識</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> August 7, 2019</p>
+                    <h1>MySQL Workbench 基礎教學 | 建立 schema</h1>
+                    <h3 class="subheading">SQL 指令</h3>
                     <span class="meta">
 			
 
@@ -243,185 +239,60 @@
 <br>文 / Siddharam 西打藍<br><br>
 
 <h3 class="article-h1-color">前言</h3><br>
-五月，是科技大廠展演的季節，在 <a href="https://events.google.com/io/">在 2019 Google I/O 大會</a>  期間，同事在 slack 貼了 <a href="https://events.withgoogle.com/ml-study-jam-basic-tw/">ML Study Jam 機器學習培訓計劃</a>的活動，想說 Google 的服務只玩過 <a href="https://siddharam.com.tw/post/20190424/">firebase</a> 和語音 API，這次就試試看其他的吧。<br><br>
 
-這次共玩了四個，分別是偵測圖片中的標籤、臉孔以及地標的 <a href="https://google.qwiklabs.com/focuses/1841?parent=catalog">Cloud Vision API</a>，還有將聲音轉成文字稿的 <a href="https://google.qwiklabs.com/focuses/2187?parent=catalog">Cloud Speech API</a>，翻譯文字內容的 <a href="https://google.qwiklabs.com/focuses/697?parent=catalog">Cloud Translation API</a>，以及分類文字內容的 <a href="https://google.qwiklabs.com/focuses/1749?parent=catalog">Cloud Natural Language API</a>。<br><br>
-
-跟著它的步驟做，每一個課程約半小時就能做完，需要打的程式幾乎沒有，就算不會寫程式，也能體驗一番，且多數是系統指令。那我們開始吧。<br><br>
-
-<h3 class="article-h1-color">圖片分析 Cloud Vision API</h3><br>
-首先，選擇課程後，點擊右上角的 join，確認有預訂課程後，就能看到內容。<br><br>
-之後開啟 <a href="https://console.cloud.google.com/"> Google Console</a>，接下來，幾乎所有機器學習的操作都會在這裡。<br><br>
-最上方可以建立不同的專案，右上角有個 Cloud Shell，是 Linux 作業環境，支援主流的後端語言，啟動後，右上方有一枝筆，可以打開網頁版 IDE 進行操作。<br><br>
-有幾個指令可以做測試：<br><br>
-1. 顯示帳戶<br><br>
-<code>gcloud auth list</code><br><br>
-2. 顯示專案名稱<br><br>
-<code>gcloud config list project</code>
-接下來，為了要啟用 API，需要先建立憑證（Credentials），接著將它複製，建立環境變數：<br><br>
-<code>export API_KEY=YOUR_API_KEY</code><br><br>
-請自行將 YOUR_API_KEY 取代成自己的。<br><br>
-接下來，我們要建立容器（Bucket），用來存取靜態資料，有點像是 firebase 裡的 storage，或是 AWS 的 S3。請從左欄開啟 Storage，並點選建立容器並取名。<br><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-bucket.png"/>
-<div style="text-align:center;">容器（Bucket）</div><br>
-
-接著，你可以上傳任意一張圖片進行分析，上傳完畢後，要讓它可以對外存取，所以右側開啟權限 Permissions，並新增項目（Add Item），輸入：<br><br>
-Entity: Group<br>
-Name: allUsers<br>
-Access: Reader<br><br>
-輸入完畢後，打開編輯器，建立 request.json：<br><br>
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "LABEL_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
-
-</pre><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-request-json.png"/>
-<div style="text-align:center;">request.json</div><br>
+Workbench 是圖形化管理 MySQL 的介面，可以在裡頭新增 schema 以及 table，也能用來寫 SQL 的執行指令，我們可以用它來管理遠端的資料庫，也能在本機上做測試。<br><br>
 
 
-儲存後，運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-就會看到圖片的分析結果。<br><br>
+<h3 class="article-h1-color">安裝 MySQL Installer</h3><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-person-result.png"/>
-<div style="text-align:center;">圖片分析結果。左側是結果，右側是測試圖片。</div><br>
+首先到 <a href="https://dev.mysql.com/downloads/installer/">MySQL Installer</a> 安裝軟體，安裝完畢後，請點選 Add 安裝 MySQL 相關套件。如下圖：<br><br>
 
-如果是輸入：<br><br>
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/08/w1.png"/>
+<div style="text-align:center">請點選 Add 安裝 MySQL 相關套件。</div><br><br><br>
 
-<pre>
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/donuts.png"
-          }
-        },
-        "features": [
-          {
-            "type": "WEB_DETECTION",
-            "maxResults": 10
-          }
-        ]
-      }
-  ]
-}
+安裝完成後，就能開啟 workbench。接下來我們要嘗試連接到本機，在 MySQL Connections 字樣旁邊有個 +，點選後開始更改連線設定。<br><br>
+請更改 Connecntion Name，以及選擇 Connection Method 為 <b>Standard(TCP/IP)</b>，然後把 Hostname 指向本機<b>(127.0.0.1)</b>，Port 為 MySQL 預設的 <b>3306</b>，Username 可以填 root，最後在去 Password 填寫安裝時輸入的<b>密碼</b>後，就能測試連線，沒問題的話，就將之開啟。<br><br>
 
-</pre><br>
-
-運行 API：<br><br>
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
-
-會看到 Google 從圖片搜尋中，找到的相似圖片。<br><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/people.png"/>
-<div style="text-align:center;">相似圖片分析結果。左側是結果，右側是測試圖片。</div><br>
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/08/w6.jpg"/>
+<div style="text-align:center">workbench 畫面。</div><br>
 
 
-最後還有特徵辨識：<br><br>
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/08/w3-1.png"/>
+<div style="text-align:center">建立 connections。</div><br>
+
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/08/w4.png"/>
+<div style="text-align:center">進入本機的 MySQL。</div><br>
+
+<h3 class="article-h1-color">建立 schema</h3><br>
+
+第一步，我們在左上方點選圓筒形狀的 icon 來建立 schema，滑鼠移過去會顯示 create a new schema in the connected server，接著取好名字後，就點選右下方的 Apply 執行。完成後，你就能在左方的 schema 看見你的新增了。<br><br>
+接著，我們來建立 table，在你的 schema 點兩下，確認左下方有選到你的 schema 後，在點擊左上方的 create a new SQL tab for executing queries，基本上這裡就是你寫 SQL 的地方，接著我們來建立 productList 的 table（以後會寫一篇 SQL 指令教學）：<br><br>
 
 <pre>
 
-{
-  "requests": [
-      {
-        "image": {
-          "source": {
-              "gcsImageUri": "gs://my-bucket-name/selfie.png"
-          }
-        },
-        "features": [
-          {
-            "type": "FACE_DETECTION"
-          },
-          {
-            "type": "LANDMARK_DETECTION"
-          }
-        ]
-      }
-  ]
-}
+// primary key 是必要給定的
+
+create TABLE productList(
+   product_no VARCHAR(10) NOT NULL,   
+   product_name VARCHAR(100),
+   PRIMARY KEY ( product_no )
+)
 
 </pre><br>
 
-運行 API：<br><br>
+寫完之後，會看到上方有個閃電箭頭(execute the selected  portion of the script)，點下去就能執行，下方的 output 能讓你確認是否執行成功。接著，我們需要重整 schema，可以點選左方的重整字樣，接著就能在 schema 的 tables 看到你的 table。<br><br>
 
-<code>
-curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json  https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}
-</code><br><br>
+如果要看到 table 內容，可以點擊 table 後，滑鼠移過去點擊很像鍵盤上有個閃電的 icon，就能看見你的內容了。這裡可以下各種 SQL 語法，來顯示你的資料。自己嘗試 insert 資料進去吧。
 
-會回傳臉部特徵的 X、Y 軸：<br><br>
+<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/08/w5.png"/>
+<div style="text-align:center">新增的 table。</div><br><br><br>
 
-<pre>
-
-{
-      "faceAnnotations": [
-        {
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 669,
-                "y": 324
-              },
-              ...
-            ]
-          },
-          "fdBoundingPoly": {
-            ...
-          },
-          "landmarks": [
-            {
-              "type": "LEFT_EYE",
-              "position": {
-                "x": 692.05646,
-                "y": 372.95868,
-                "z": -0.00025268539
-              }
-            },
-            ...
-          ],
-          "rollAngle": 0.21619819,
-          "panAngle": -23.027969,
-          "tiltAngle": -1.5531756,
-          "detectionConfidence": 0.72354823,
-          "landmarkingConfidence": 0.20047489,
-          "joyLikelihood": "POSSIBLE",
-          "sorrowLikelihood": "VERY_UNLIKELY",
-          "angerLikelihood": "VERY_UNLIKELY",
-          "surpriseLikelihood": "VERY_UNLIKELY",
-          "underExposedLikelihood": "VERY_UNLIKELY",
-          "blurredLikelihood": "VERY_UNLIKELY",
-          "headwearLikelihood": "VERY_LIKELY"
-        }
-        ...
-     }
-}
-
-</pre><br>
+學到這裡，應該就能玩不少東西了，下一篇會談如何用 nodejs 連接 MySQL 資料庫，並進行查詢、新增、修改、刪除。讓我們一起前往全端邁進吧。
 
 
-其他的測試，我就沒有截圖，但跑的流程相似。<br><br>
+
+<br><br><br><br>
+
 
 <h3 class="article-h1-color">技術文章與合作</h3><br>
 
@@ -439,6 +310,10 @@ Line 官方帳號 QR Code：<br><br>
 <br><br>
 
 
+
+
+
+
 </article>
 
 <div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
@@ -454,10 +329,15 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190807/" data-toggle="tooltip" data-placement="top" title="MySQL Workbench 基礎教學 | 建立 schema">&larr;
+                        <a href="/post/20190729/" data-toggle="tooltip" data-placement="top" title="nginx 伺服器安裝教學">&larr;
                             上一篇</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
+                             &rarr;</a>
+                    </li>
                     
                 </ul>
 
