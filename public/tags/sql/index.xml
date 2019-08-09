@@ -6,10 +6,19 @@
     <description>Recent content in Sql on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nodejs 連接 MySQL 開 API | 使用 workbench 介面</title>
+      <link>https://siddharam.com.tw/post/20190809/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190809/</guid>
+      <description>文 / Siddharam 西打藍 前言 我們這次要來開 API 給自己用，要完成這點，需要許多知識的融合，包含 SQL、後端語言以及 API 設計等，這項工作不簡單。 如果不熟悉 MySQL Workbench 如</description>
+    </item>
     
     <item>
       <title>MySQL Workbench 基礎教學 | 建立 schema</title>

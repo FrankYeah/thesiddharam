@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Api on Siddharam</title>
-    <link>https://siddharam.com.tw/tags/api/</link>
-    <description>Recent content in Api on Siddharam</description>
+    <title>Express on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/express/</link>
+    <description>Recent content in Express on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://siddharam.com.tw/tags/api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siddharam.com.tw/tags/express/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://siddharam.com.tw/post/20190809/</guid>
       <description>文 / Siddharam 西打藍 前言 我們這次要來開 API 給自己用，要完成這點，需要許多知識的融合，包含 SQL、後端語言以及 API 設計等，這項工作不簡單。 如果不熟悉 MySQL Workbench 如</description>
-    </item>
-    
-    <item>
-      <title>Vue axios API 管理的好方法</title>
-      <link>https://siddharam.com.tw/post/20190627/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://siddharam.com.tw/post/20190627/</guid>
-      <description>文 / Siddharam 西打藍 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
     </item>
     
   </channel>
