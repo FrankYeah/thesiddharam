@@ -6,10 +6,19 @@
     <description>Recent content in Vue on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue-i18n 雙語網站 | vue-router 相應調整</title>
+      <link>https://siddharam.com.tw/post/20190821/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190821/</guid>
+      <description>文 / Siddharam 西打藍 前言 公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非</description>
+    </item>
     
     <item>
       <title>Vue-Analytics 埋 GA  | v-ga directive 使用</title>

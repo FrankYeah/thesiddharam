@@ -6,19 +6,10 @@
     <description>Recent content in 工程師日常 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Google 機器學習培訓計劃心得</title>
-      <link>https://siddharam.com.tw/post/20190509/</link>
-      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://siddharam.com.tw/post/20190509/</guid>
-      <description>文 / Siddharam 西打藍 前言 五月，是科技大廠展演的季節，在 在 2019 Google I/O 大會 期間，同事在 slack 貼了 ML Study Jam 機器學習培訓計劃的活動，想說 Google 的服務只玩過 firebase 和語音 API，</description>
-    </item>
     
     <item>
       <title>前端接案心得 | 歷時 40 天</title>
@@ -63,6 +54,15 @@
       
       <guid>https://siddharam.com.tw/post/20190510/</guid>
       <description>文 / Siddharam 西打藍 前言 週五晚上突然想玩玩 selenium，它能夠自動幫你跑瀏覽器事件，例如最基本的點擊、輸入，選擇依據是 html 元素。大家一起在夜晚入門</description>
+    </item>
+    
+    <item>
+      <title>Google 機器學習培訓計劃心得</title>
+      <link>https://siddharam.com.tw/post/20190509/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190509/</guid>
+      <description>文 / Siddharam 西打藍 前言 五月，是科技大廠展演的季節，在 在 2019 Google I/O 大會 期間，同事在 slack 貼了 ML Study Jam 機器學習培訓計劃的活動，想說 Google 的服務只玩過 firebase 和語音 API，</description>
     </item>
     
     <item>

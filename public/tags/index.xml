@@ -131,7 +131,7 @@
     <item>
       <title>Google</title>
       <link>https://siddharam.com.tw/tags/google/</link>
-      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/google/</guid>
       <description></description>
@@ -161,6 +161,15 @@
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I18n</title>
+      <link>https://siddharam.com.tw/tags/i18n/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/i18n/</guid>
       <description></description>
     </item>
     
@@ -257,7 +266,7 @@
     <item>
       <title>Router</title>
       <link>https://siddharam.com.tw/tags/router/</link>
-      <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/router/</guid>
       <description></description>
@@ -320,7 +329,7 @@
     <item>
       <title>Vue</title>
       <link>https://siddharam.com.tw/tags/vue/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/vue/</guid>
       <description></description>

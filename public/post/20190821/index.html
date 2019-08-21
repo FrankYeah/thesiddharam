@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="情侶基隆一日遊" />
-    <meta property="og:title" content="情侶基隆一日遊" />
-    <meta property="twitter:title" content="情侶基隆一日遊" />
+    <meta name="title" content="vue-i18n 雙語網站 | vue-router 相應調整" />
+    <meta property="og:title" content="vue-i18n 雙語網站 | vue-router 相應調整" />
+    <meta property="twitter:title" content="vue-i18n 雙語網站 | vue-router 相應調整" />
     
 
     
-    <meta name="description" content="不知道怎麼帶女友來基隆玩嗎？我來教你怎麼做。夜市？那是最後才去的地方，唯有海邊才能滿足女孩的需求......">
-    <meta property="og:description" content="不知道怎麼帶女友來基隆玩嗎？我來教你怎麼做。夜市？那是最後才去的地方，唯有海邊才能滿足女孩的需求......" />
-    <meta property="twitter:description" content="不知道怎麼帶女友來基隆玩嗎？我來教你怎麼做。夜市？那是最後才去的地方，唯有海邊才能滿足女孩的需求......" />
+    <meta name="description" content="公司某專案是用 vue，最近需要弄成雙語，比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者......">
+    <meta property="og:description" content="公司某專案是用 vue，最近需要弄成雙語，比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者......" />
+    <meta property="twitter:description" content="公司某專案是用 vue，最近需要弄成雙語，比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="基隆, 約會, 景點" name="keywords">
+    <meta content="vue, router, i18n, 雙語, 多語" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>情侶基隆一日遊-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>vue-i18n 雙語網站 | vue-router 相應調整-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190504/">
+    <link rel="canonical" href="/post/20190821/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -194,22 +194,22 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E5%9F%BA%E9%9A%86" title="基隆">
-                            基隆
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
                         </a>
                         
-                        <a class="tag" href="/tags/%E7%B4%84%E6%9C%83" title="約會">
-                            約會
+                        <a class="tag" href="/tags/router" title="router">
+                            router
                         </a>
                         
-                        <a class="tag" href="/tags/%E6%99%AF%E9%BB%9E" title="景點">
-                            景點
+                        <a class="tag" href="/tags/i18n" title="i18n">
+                            i18n
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 4, 2019</p>
-                    <h1>情侶基隆一日遊</h1>
-                    <h3 class="subheading">白米甕、沙灘、生魚片</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> August 21, 2019</p>
+                    <h1>vue-i18n 雙語網站 | vue-router 相應調整</h1>
+                    <h3 class="subheading">瀏覽器預設語言</h3>
                     <span class="meta">
 			
 
@@ -238,85 +238,251 @@
                 
                 
                 
-                <style>
-  
-/* 首圖照片 */
-.intro-header{
-    background-image:url("https://frontenter.files.wordpress.com/2019/01/keelung-outer-mountain-beach.jpg");
-}
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
 
-</style>
-
-<article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
-
-<br>文 / Siddharam 西打藍<br>
-攝影 / 湘<br><br>
+<br>文 / Siddharam 西打藍<br><br>
 
 <h3 class="article-h1-color">前言</h3><br>
-鑒於太多朋友詢問，基隆要怎麼玩的問題。所以決定紀錄，自己平常是如何玩基隆的。<br><br>
 
-<h3 class="article-h1-color">基隆早午餐</h3><br>
-夏天的星期六，有太陽的早晨。我會選擇去<b>三角窗</b>吃餛飩湯、乾麵當作早餐，如果去的店家是<b>東家館</b>，就能在點個蔥油餅加蛋，連午餐都省了。<br><br>
-如果起的晚，我會到<b>仁愛市場</b>二樓找美食。假日時，每一攤都大排長龍，但裡頭還是本地人居多，通常會吃生魚片或燴飯，賣生魚片的吃起來都差不多，都是吃魚背肉，一盤 120 元的生魚飯，共有 7 貫，配上一碗味噌湯就是一頓午餐。<br><br>
-仁愛市場一樓，多是小販在賣生鮮魚貨以及蔬果，因為鄰近市區，房價貴，所以賣的食材也比其他市場貴上許多。<br><br>
-雖然離夜市很近，但還不用那麼早過去，因為後面的攤販、店家還在休息，要在天黑後，才會逐間的開啟。<br><br>
-現在太陽正好，是時候往後火車站的景點前進。<br><br>
+公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非常簡單。<br><br>
 
-<img style="margin-bottom:8px; width:50%;" src="https://frontenter.files.wordpress.com/2019/01/keelung-market-sasimi.jpg"/>
-<div style="text-align:center;">仁愛市場生魚片</div><br>
+比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者，而後者我可能會以 watch 來解決，就不多談。<br><br>
 
-<h3 class="article-h1-color">仙洞拜碼頭</h3><br>
-後火車站沿途都是美景，但因為路口不寬，摩托車方便多了。但因為中午太陽太大，我建議先到<b>仙洞巖</b>避暑一番，它是基隆保存相當完善的海蝕洞，獨具特色。如果還沒吃飽，可以吃鄰近的<b>汕頭牛肉炒麵</b>，其取南洋咖哩，廣汕沙茶混合的口味，是其他縣市難以品嚐得到的。<br><br>
-這一帶被稱為西岸碼頭，是 1970 年代基隆最繁華的地方，舶來品、茶店、大船甚至是輕軌都能看見，而現在港口淤積，已經不再受到政府青睞，只有仙洞巖和一間<b>貴美雜貨店</b>貯立在此。<br><br>
-仙洞巖裡頭相當涼爽，因為它是天然的山洞，牆壁有水氣滲透，時不時也會有冷風刮入，最好玩的是，裡頭有一條狹隘密道可以探險。裡頭格局與外頭相似。<br><br>
-走出仙洞巖後，別就這樣離開了，出寺後向左走，會看到一口<b>山洞</b>，裡頭有以前的人修行的痕跡，洞裡看似岔路多，但都是通向同的地方，在最深處，還能看見佛手印在頂部，充滿著神秘感。<br><br>
+<h3 class="article-h1-color">vue-i18n 使用</h3><br>
 
-<img style="margin-bottom:8px; width:50%;" src="https://frontenter.files.wordpress.com/2019/01/keelung-kandon-beef-noodle.jpg"/>
-<div style="text-align:center;">汕頭牛肉炒麵</div><br>
+專案結構：<br><br>
 
-<h3 class="article-h1-color">最美砲台</h3><br>
-仙洞巖行程結束後，繼續往前走到荷蘭城，在左側路口上山後，就會到<b>白米甕炮台</b>了。<br><br>
-這裡是典型基隆的山巷窄路，車子非常不好開，走路也要走一段時間，所以來的遊客很少，但如果爬到山頂，會看到令人屏息的美景：一側是橋式起重機林立，另一側是媲美「少年 Pi」的蔚藍大海。<br><br>
-雖然說是砲台，但幾乎不見其蹤跡，只能看見輪廓，還有一個年久失修的瞭望台，裡頭經常性的積水。在四五月份，幸運的話，晚上還能看見少量螢火蟲在遊蕩。在大海的方向，會看到上爬的階梯，算是一個小徑，能從另一種角度看向太平洋。<br><br>
+<pre><code>
+src - 
+     /lang/CHS.json
+          /CHT.json
+     /plugins/i18n.js
+     /router/index.js
+     /page/Home/index.vue
+     /components/layout/Header.vue
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/keelung-baimi-bridge.jpg"/>
-<div style="text-align:center;">橋式起重機</div><br>
+main.js
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/keelung-baimi-cannon.jpg"/>
-<div style="text-align:center;">面向太平洋的協和發電廠</div><br>
+</code></pre><br>
 
-<h3 class="article-h1-color">外木山</h3><br>
-下個行程是，可以碰到大海的<b>外木山</b>。有外木山當然也有內木山，但因為軍事管制，連在地人也很少人去。這一代的小孩甚至不知道有內木山。<br><br>
-如果有點餓的話，可以去附近的<b>外木山咖啡</b>坐一下，他們坐享海景，還養了一些動物供小孩餵食，如觀賞魚、白兔、羊等等。<br><br>
-外木山的第一站，是<b>海興游泳池</b>，這裡的海域很淺，並且有很多人協助看顧，適合帶人來練習海泳，往遠處一點游，能看到小丑魚和小螃蟹，一旁還有個石板供人跳水。此外，這裡也提供乾淨水源讓人換洗，以及屋頂讓遊客休憩。<br><br>
-踏完水後，繼續往前騎，會有零星的景點讓你停靠，例如咖啡車、街頭藝人或是下午茶餐廳，騎到底部，你會看見北海岸少數的沙灘，雖然 Google 地圖寫著<b>情人湖沙灘</b>，但基隆人大多叫它外木山沙灘。這裡是外木山的最後一個景點。<br><br>
-沙灘有一道長線，是水過深的標示，因此只要不超出那條線，基本上還是採得到地的。這裡的攤販就多了，我和家人通常會吃<b>小白屋</b>的海鮮，口味算不錯。<br><br>
+語系 json 檔案：<br><br>
 
-<img style="margin-bottom:8px; width:70%;" src="https://frontenter.files.wordpress.com/2019/01/keelung-outer-moutain-beachs.jpg"/>
-<div style="text-align:center;">外木山一景</div><br>
+<pre><code>
+// CHT.json
+// 繁體
 
-<img style="margin-bottom:8px; width:70%;" src="https://frontenter.files.wordpress.com/2019/01/keelung-outer-mountain-coffee.jpg"/>
-<div style="text-align:center;">外木山咖啡向外看</div><br>
+{
+    "test": "測試",
+    "language": "CHT"
+}
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/keelung-outer-mountain-beach.jpg"/>
-<div style="text-align:center;">外木山沙灘</div><br>
+// CHS.json
+// 簡體
 
-<h3 class="article-h1-color">廟口</h3><br>
-玩到這個時間，差不多已經傍晚了，可以回市區來個最後總結。<br><br>
-正<b>廟口</b>的幾家，都是有數十年歷史的餐點，沒有一樣有雷。自己經常吃的有：大麵炒、<b>天一香魯肉飯</b>、廟口正中間的香腸攤，下班的話會外帶廟旁邊的排骨飯，甜點會吃<b>三兄弟豆花</b>。<br><br>
-其他偶爾會吃的：右側赤肉湯，左側果汁店旁的生魚片，據他們說是基隆第一家日式生魚片。<br><br>
-走到正中間，往右邊走，晚餐會去吃東北麵食館，和斜對面另一家牛肉麵輪流吃，別忘了到青草店喝茶。<br><br>
-正中間左側，就是上述提的三兄弟豆花，還有遊樂場外的鍋貼、湯圓，以及往前走幾步的鹹水雞，在來就要過馬路到右側對街，買彰化銀行外的鴨血臭豆腐。<br><br>
-特意不寫名稱，是因為你若問在地人，他們也不會記得攤位，或是名稱，只會記得鄰近地標及餐點，所以你講個彰化銀行的鴨血臭豆腐，基隆人就知道是哪間了。<br><br>
+{
+    "test": "测试",
+    "language": "CHS"
+}
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/keelung-night-market.jpg"/>
-<div style="text-align:center;">廟口夜市</div><br>
+</code></pre><br>
 
-<h3 class="article-h1-color">伴手禮</h3><br>
-伴手禮我經常買：一是<b>李鵠</b>蛋黃酥，二是<b>連珍</b>雪露。<b>美味香</b>肉乾與肉鬆<br><br>
+其實 vue-i18n 也可以直接寫在 main.js 裡，但我還是把它拉出一層，比較直觀些：<br><br>
 
-<h3 class="article-h1-color">後記</h3><br>
-這篇會慢慢補上圖片，最近工作較忙，會盡量每周兩更。<br><br>
+<pre><code>
+// i18n.js
+import Vue from 'vue'
+import VueI18n from 'vue-i18n'
+
+import CHS from '../lang/CHS.json' // 存放簡體
+import CHT from '../lang/CHT.json' // 存放繁體
+
+// i18n
+
+Vue.use(VueI18n)
+
+let browserLanguage = window.navigator.language
+
+// 先塞入瀏覽器預設語言在 i18n
+if (browserLanguage.toLowerCase() === 'zh-cn') {
+  browserLanguage = 'CHS'
+} else if (browserLanguage.toLowerCase() === 'zh-tw') {
+  browserLanguage = 'CHT'
+} else {
+  browserLanguage = 'CHS'
+}
+
+
+// 存放語系 json 
+const messages = {
+  CHS: CHS,
+  CHT: CHT
+}
+
+export const i18n = new VueI18n({
+  locale: browserLanguage, // set locale
+  fallbackLocale: browserLanguage,
+  messages // set locale messages
+})
+
+
+</code></pre><br>
+
+掛載 i18n 在 main.js。<br><br>
+
+<pre><code>
+// i18n.js
+// 引入
+import { i18n } from './plugins/i18n'
+
+...
+...
+
+new Vue({
+  el: '#app',
+  store,
+  router,
+  i18n,
+  components: { App },
+  template: '< App/>'
+})
+
+
+</code></pre><br>
+
+做到這一步，就能在靜態頁面去塞入語系文字了：<br><br>
+
+<pre><code>
+// Home/index.vue
+// 首頁
+&lt;h1>{{ $t("test") }}&lt;/h1>
+
+
+// 如果你的瀏覽器語系是繁體的話，它就會返回：
+
+&lt;h1>測試&lt;/h1>
+
+</code></pre><br>
+
+如果要轉換語系的話，只要更新 $i18n.locale 就好：<br><br>
+
+<pre><code>
+// layout/Header.vue
+
+&lt;template>
+  &lt;header class="header-component">
+    &lt;router-link :to="'/' + $i18n.locale" class="header-logo-link">
+      &lt;img class="header-logo" src="@/assets/synergies-logo.png" alt="logo">
+    &lt;/router-link>
+    &lt;div class="header-language">
+      &lt;a @click="changeLanuage('CHS')" href="javascript:void(0)" class="header-link active">简&lt;/a>
+      &lt;span class="divider">|&lt;/span>
+      &lt;a @click="changeLanuage('CHT')" href="javascript:void(0)" class="header-link">繁&lt;/a>
+    &lt;/div>
+  &lt;/header>
+&lt;/template>
+
+&lt;script>
+export default {
+  name: 'Header',
+  data () {
+    return {
+      currentLanguage: ''
+    }
+  },
+  methods: {
+    changeLanuage (lang) {
+      this.$i18n.locale = lang
+      let currentPage = window.location.href.split('/').pop()
+      if (currentPage === 'CHS' || currentPage === 'CHT') {
+        currentPage = ''
+      }
+      this.$router.push({path: `/${lang}/${currentPage}`})
+    },
+    mounted () {
+      this.currentLanguage = this.$i18n.locale
+    }
+  }
+}
+&lt;/script>
+
+</code></pre><br>
+
+
+
+<h3 class="article-h1-color">vue-router 設定</h3><br>
+
+我這邊做的，是要讓以下網址做好簡繁語系切換：<br><br>
+
+www.test/CHS/question<br>
+www.test/CHT/question<br><br>
+
+如果是以下網址，則會去抓瀏覽器預設語言，在決定顯示 CHS 或是 CHT：<br>
+www.test/1231231<br>
+www.test/index.html<br><br>
+
+
+<pre><code>
+// router/index.js
+
+import Vue from 'vue'
+import Router from 'vue-router'
+import { i18n } from '../plugins/i18n'
+
+Vue.use(Router)
+
+export default new Router({
+  mode: 'history',
+  routes: [
+    {
+      path: '/:lang',
+      component: {
+        template: '<router-view></router-view>'
+      },
+      beforeEnter (to, from, next) {
+        const lang = to.params.lang
+
+        // 如果 URL 非 CHS、CHT 則導至瀏覽器預設語言
+        if (!['CHS', 'CHT'].includes(lang)) {
+          return next(i18n.locale)
+        }
+
+        // 如果 URL 有語系，則置換 i18n 語言
+        if (i18n.locale !== lang) {
+          i18n.locale = lang
+        }
+
+        return next()
+      },
+      children: [
+        {
+          path: '/',
+          name: 'Home',
+          component: () => import('@/pages/Home/Index')
+        },
+        {
+          path: 'question',
+          name: 'Question',
+          component: () => import('@/pages/Question/Index')
+        }
+      ]
+    }
+  ]
+})
+
+</code></pre><br>
+
+上面要注意的是 children question path 的路徑，不能有 /，不然會和首頁衝突。而 beforeEnter 可以想成在點入 URL 之前，針對路徑執行的函式。而 next 會決定最後進入的路徑。<br><br>
+
+如果最後進入 next 的路徑和 to.params.lang 衝突的話，則會顯示錯誤。<br><br>
+
+<h3 class="article-h1-color">結語</h3><br>
+
+在 vue-router 這段的設定，其實還有很多種方法，例如每種語系就給它塞入顯示的 component；或者用動態 id 的方式，來處理 CHS、CHT 的路徑。但都沒有現在這個寫法來的彈性。未來新增語系也很方便，不太需要額外的程式碼做處理。<br><br>
+
+相信做完一次，更熟悉的反而不是 vue-i18n，而是 vue-router，哈。
+
+<br><br><br><br>
+
 
 <h3 class="article-h1-color">技術文章與合作</h3><br>
 
@@ -334,6 +500,10 @@ Line 官方帳號 QR Code：<br><br>
 <br><br>
 
 
+
+
+
+
 </article>
 
 <div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
@@ -349,15 +519,10 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190502/" data-toggle="tooltip" data-placement="top" title="前端輪播套件 | Owl Carousel">&larr;
+                        <a href="/post/20190809/" data-toggle="tooltip" data-placement="top" title="nodejs 連接 MySQL 開 API | 使用 workbench 介面">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20190509/" data-toggle="tooltip" data-placement="top" title="Google 機器學習培訓計劃心得">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
