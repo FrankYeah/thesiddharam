@@ -296,7 +296,7 @@ npm run dev
 
 先看看我的專案結構後，直接上程式碼比較快：<br><br>
 
-<pre>
+<pre><code>
 # 以 question 為例
 # Question.vue
 
@@ -345,7 +345,7 @@ export default new Router({
     }
   ]
 })
-
+</code>
 </pre><br>
 
 在 index.js 設定完後，就能引用 router 了。<br><br>
@@ -354,7 +354,7 @@ export default new Router({
 
 以經常共用的 Header 為例：<br><br>
 
-<pre>
+<pre><code>
 # 我直接放在 App.vue 這隻程式裡，所以每個 component 上方都能看見 Header
 # App.vue
 
@@ -381,8 +381,8 @@ export default {
 
 接著是我研究最久的 SCSS 共用，用那麼久是因為弄錯版本了，如果是 Vue CLI 3，只需要：<br><br>
 
-
-<pre>
+</code>
+<pre><code>
 # 在 build/webpack.base.conf.js 設定就好
 
 {
@@ -400,12 +400,12 @@ export default {
 
     ]
 },
-
+</code>
 </pre><br>
 
 如果是 Vue CLI 2，就有幾個地方要設定：<br><br>
 
-<pre>
+<pre><code>
 
 # 要在 build/util.js 中的 exports.cssLoaders 裡添加 function
 
@@ -444,7 +444,7 @@ sass: generateSassResourceLoader(),
 scss: generateSassResourceLoader(),
 ...
 ...
-</pre><br>
+</code></pre><br>
 
 教學到這裡告一段落。所以，可以共用的 style 會放在全域裡，而無法共用的，其實可以直接寫在 component 裡面就好，反正只會用一次。
 

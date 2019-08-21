@@ -254,7 +254,7 @@
 <br><br><h3 class="article-h1-color">程式碼</h3><br>
 
 src/utils/request.js
-<pre>
+<pre><code>
 
 import axios from 'axios'
 
@@ -264,10 +264,10 @@ export default axios.create({
   baseURL: 'http://11.22.33.44/api/'
 })
 
-</pre><br><br>
+</code></pre><br><br>
 
 src/API/analyze.js
-<pre>
+<pre><code>
 
 import request from '@/utils/request'
 
@@ -281,10 +281,10 @@ export function getJson (data) {
   })
 }
 
-</pre><br><br>
+</code></pre><br><br>
 
 src/pages/index.vue
-<pre>
+<pre><code>
 
 import { getJson } from '@/API/analyze'
 ...
@@ -302,7 +302,7 @@ mounted () {
     })
 }
 
-</pre>
+</code></pre>
 
 
 <br><br><br><br>

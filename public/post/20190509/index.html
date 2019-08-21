@@ -271,7 +271,7 @@ Entity: Group<br>
 Name: allUsers<br>
 Access: Reader<br><br>
 輸入完畢後，打開編輯器，建立 request.json：<br><br>
-<pre>
+<pre><code>
 {
   "requests": [
       {
@@ -289,7 +289,7 @@ Access: Reader<br><br>
       }
   ]
 }
-
+</code>
 </pre><br>
 
 <img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/01/google-vision-api-request-json.png"/>
@@ -307,7 +307,7 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
 
 如果是輸入：<br><br>
 
-<pre>
+<pre><code>
 {
   "requests": [
       {
@@ -325,7 +325,7 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
       }
   ]
 }
-
+</code>
 </pre><br>
 
 運行 API：<br><br>
@@ -341,7 +341,7 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
 
 最後還有特徵辨識：<br><br>
 
-<pre>
+<pre><code>
 
 {
   "requests": [
@@ -362,7 +362,7 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
       }
   ]
 }
-
+</code>
 </pre><br>
 
 運行 API：<br><br>
@@ -373,7 +373,7 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
 
 會回傳臉部特徵的 X、Y 軸：<br><br>
 
-<pre>
+<pre><code>
 
 {
       "faceAnnotations": [
@@ -417,7 +417,7 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
         ...
      }
 }
-
+</code>
 </pre><br>
 
 

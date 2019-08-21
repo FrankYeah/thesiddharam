@@ -269,7 +269,7 @@
 首先，可以用下列 SQL 指令來建立一個產品列表的 table：<br><br>
 
 <pre>
-
+<code>
 CREATE TABLE product_list (
   product_no varchar(10) NOT NULL,
   product_name varchar(100) DEFAULT NULL,
@@ -281,7 +281,7 @@ INSERT INTO product_list VALUES
     ('A01','大芭樂','2019-07-08'),('A02','蛋黃','2019-08-07'),('A03','糖果','2019-08-06'),
     ('A04','肉乾','2019-08-07'),('A05','水果','2019-08-08'),('A06','蛋糕','2019-08-08'),
     ('A07','西瓜','2019-08-08');
-
+</code>
 </pre><br>
 
 完成後，就能看見如下的 table。<br><br>
@@ -305,7 +305,7 @@ npm install body-parser --save<br>
 接著，我們來啟動 server，監聽在 8080 端口。我們全部的程式碼都放在同一個 js 底下：<br><br>
 
 <pre>
-
+<code>
 // server.js
 
 var mysql = require('mysql');
@@ -323,17 +323,17 @@ app.use(bodyParser.urlencoded({
 app.listen(8080, function () {
     console.log('Node app is running on port 8080');
 });
-
+</code>
 </pre><br><br>
 
 此時，可以運行<code> node server </code>來啟動 server，如果懶的每次修改都要重啟的話，可以 <code> npm install nodemon --save</code>，然後到 package.json 進行修改：<br><br>
 
 <pre>
-
+<code>
   "scripts": {
     "serve": "nodemon server.js"
   }
-
+</code>
 </pre><br><br>
 
 然後下 <code>nodemon</code>，之後修改程式都不需要重啟了。<br><br>
@@ -341,16 +341,16 @@ app.listen(8080, function () {
 再來，我們需要回到 workbench 執行一行 SQL，來建立新使用者以符合最新版本 MySQL 的規定：<br><br>
 
 <pre>
-
+<code>
 // 請將 username 以及 password 換成自己的
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password';
-
+</code>
 </pre><br><br>
 
 接著來連線到本地的 MySQL：（workbench 要先確認連線哦，可以參考<a href="https://siddharam.com.tw/post/20190807/" target="_blank">上一篇</a>做法）<br><br>
 
 <pre>
-
+<code>
 // server.js
 
 // db
@@ -364,7 +364,7 @@ var mc = mysql.createConnection({
 });
 
 mc.connect();
-
+</code>
 </pre><br><br>
 
 <h3 class="article-h1-color">撰寫 GET POST PUT DELETE 四種基本 API </h3><br>
@@ -372,7 +372,7 @@ mc.connect();
 有接過 API 的前端工程師就知道，GET 代表的是讀；POST 是新增；PUT 是修改；DELETE 則是刪除。接下來，我們就來寫出這幾支 API 吧：<br><br>
 
 <pre>
-
+<code>
 // server.js
 
 // 讀取
@@ -443,13 +443,13 @@ app.delete('/remove', function (req, res) {
         return res.send({ error: false, data: results, message: 'products delete.' });
     });
 });
-
+</code>
 </pre><br><br>
 
 完成後，可以下載並打開 Postman，去測試以下完成的 API，除了 GET 以外，其他記得要帶入值：<br><br>
 
 <pre>
-
+<code>
 <b>http://localhost:8080/show</b> //不用帶入
 
 
@@ -476,7 +476,7 @@ app.delete('/remove', function (req, res) {
 {
     "product_no": "A02"
 }
-
+</code>
 </pre><br><br>
 
 終於完成了！以前在學前端時，總想自己開 API 給自己，而當時只會用 firebase 的 realtime database。而現在終於成功了，這種開心真的難以言語，希望大家都能成功哦，有任何疑問歡迎跟我說。

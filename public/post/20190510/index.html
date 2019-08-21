@@ -254,12 +254,12 @@
 安裝 <a href="https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-win64.zip">Firefox web driver</a><br>
 安裝 <a href="https://chromedriver.storage.googleapis.com/2.38/chromedriver_win32.zip">Chrome web driver</a><br><br>
 接著，把下載的兩份檔案，放在 python 資料夾裡，例如我的位置是在：<br><br>
-<pre>C:\Users\User\AppData\Local\Programs\Python\Python36</pre><br>
+<pre><code>C:\Users\User\AppData\Local\Programs\Python\Python36</code></pre><br>
 有了上述做法，才能驅動瀏覽器運行。下一節就要進入實作了。<br><br>
 
 <h3 class="article-h1-color">實作指令</h3><br>
 
-<pre>
+<pre><code>
 # 打開 google 瀏覽器後，根據 html name 找到 q
 # 輸入"氣象局"後提交表單，並點擊「交通部中央氣象局」
 
@@ -296,7 +296,7 @@ print(driver.title)
 # 關閉視窗
 sleep(3)
 driver.close()
-
+</code>
 </pre>
 
 WEBDRIVER 提供許多定位方法：<br><br>

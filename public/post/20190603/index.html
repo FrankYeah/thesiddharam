@@ -263,28 +263,28 @@
 
 接著可以在 <code>main/js</code> 中引入：<br><br>
 
-<pre>
+<pre><code>
 //按需載入 bar、legend 
 
 import ECharts from 'vue-echarts'
 import 'echarts/lib/chart/bar'
 import 'echarts/lib/component/legend'
 
-</pre><br><br>
+</code></pre><br><br>
 
 在 <code>webpack.base.conf.js</code> 的 babel-loader 中加上：<br><br>
 
-<pre>
+<pre><code>
 // resize-detector 是自適應工具
 
 resolve('node_modules/vue-echarts'),
 resolve('node_modules/resize-detector')
 
-</pre><br><br>
+</code></pre><br><br>
 
 
 直接上程式碼：<br><br>
-<pre>
+<pre><code>
 
 &lt;template>
   &lt;v-chart class="result-feedback-pie-chart" :options="mainPieSet" ref='echarts' auto-resize/>
@@ -399,7 +399,7 @@ resolve('node_modules/resize-detector')
 
 &lt;script>
 
-</pre><br><br>
+</code></pre><br><br>
 
 名詞解釋：<br><br>
 auto-size：按照瀏覽器寬度自動調整圖表寬度。<br>
