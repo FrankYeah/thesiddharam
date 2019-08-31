@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>人和人的差距是從何開始的？</title>
+      <link>https://siddharam.com.tw/post/20190831/</link>
+      <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20190831/</guid>
+      <description>文 / Siddharam 西打藍 永遠追不上別人 去年在 AppWorks School 學寫程式時，有個領悟讓我很挫折。 當時的夥伴同學，幾乎都是從沒學過程式的白紙。第一天學校要我們學會用 git</description>
+    </item>
     
     <item>
       <title>vue-i18n 雙語網站 | vue-router 相應調整</title>

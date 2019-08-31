@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://siddharam.com.tw/post/20190831/</loc>
+    <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20190821/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url>
@@ -295,7 +300,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/post/</loc>
-    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -342,7 +347,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/</loc>
-    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -433,6 +438,12 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB/</loc>
+    <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/tags/%E5%8F%8B%E6%83%85/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -451,6 +462,12 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/tags/%E5%AD%B8%E7%BF%92/</loc>
+    <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/tags/%E5%B7%A5%E7%A8%8B%E5%B8%AB/</loc>
     <lastmod>2019-06-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -458,7 +475,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

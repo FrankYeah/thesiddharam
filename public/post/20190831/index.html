@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="vue-i18n 雙語網站 | vue-router 相應調整" />
-    <meta property="og:title" content="vue-i18n 雙語網站 | vue-router 相應調整" />
-    <meta property="twitter:title" content="vue-i18n 雙語網站 | vue-router 相應調整" />
+    <meta name="title" content="人和人的差距是從何開始的？" />
+    <meta property="og:title" content="人和人的差距是從何開始的？" />
+    <meta property="twitter:title" content="人和人的差距是從何開始的？" />
     
 
     
-    <meta name="description" content="公司某專案是用 vue，最近需要弄成雙語，比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者......">
-    <meta property="og:description" content="公司某專案是用 vue，最近需要弄成雙語，比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者......" />
-    <meta property="twitter:description" content="公司某專案是用 vue，最近需要弄成雙語，比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者......" />
+    <meta name="description" content="對新手來說，這是件困難的任務，我一天至少花 12 小時寫程式追趕進度。但有些同學卻能準時甚至超額完成作業，然而包括我在內的一些人，就是得努力追趕才能跟上進度。後來發現，事情不是聰慧與否這麼簡單......">
+    <meta property="og:description" content="對新手來說，這是件困難的任務，我一天至少花 12 小時寫程式追趕進度。但有些同學卻能準時甚至超額完成作業，然而包括我在內的一些人，就是得努力追趕才能跟上進度。後來發現，事情不是聰慧與否這麼簡單......" />
+    <meta property="twitter:description" content="對新手來說，這是件困難的任務，我一天至少花 12 小時寫程式追趕進度。但有些同學卻能準時甚至超額完成作業，然而包括我在內的一些人，就是得努力追趕才能跟上進度。後來發現，事情不是聰慧與否這麼簡單......" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="vue, router, i18n, 雙語, 多語" name="keywords">
+    <meta content="學習, 前端工程師, AppWorks School" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>vue-i18n 雙語網站 | vue-router 相應調整-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>人和人的差距是從何開始的？-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190821/">
+    <link rel="canonical" href="/post/20190831/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -194,22 +194,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/%E5%AD%B8%E7%BF%92" title="學習">
+                            學習
                         </a>
                         
-                        <a class="tag" href="/tags/router" title="router">
-                            router
-                        </a>
-                        
-                        <a class="tag" href="/tags/i18n" title="i18n">
-                            i18n
+                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="前端工程師">
+                            前端工程師
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> August 21, 2019</p>
-                    <h1>vue-i18n 雙語網站 | vue-router 相應調整</h1>
-                    <h3 class="subheading">瀏覽器預設語言</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> August 31, 2019</p>
+                    <h1>人和人的差距是從何開始的？</h1>
+                    <h3 class="subheading">軟體工程師的淘汰賽</h3>
                     <span class="meta">
 			
 
@@ -242,244 +238,93 @@
 
 <br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">前言</h3><br>
+<h3 class="article-h1-color">永遠追不上別人</h3><br>
 
-公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非常簡單。<br><br>
+去年在 AppWorks School 學寫程式時，有個領悟讓我很挫折。<br><br>
 
-比較需要額外處理的，包含 vue-router 的調整，以及不重新刷頁面的話，從 API return 回來的資料需要抓另一種語言的版本。此次教學會特別說明前者，而後者我可能會以 watch 來解決，就不多談。<br><br>
+當時的夥伴同學，幾乎都是從沒學過程式的白紙。第一天學校要我們學會用 git，第二天要做完電商網站的首頁 RWD，第三天要串好後台資料等。<br><br>
 
-<h3 class="article-h1-color">vue-i18n 使用</h3><br>
+對新手來說，這是件困難的任務，我一天至少花 12 小時寫程式追趕進度。但有些同學卻能準時甚至超額完成作業，然而包括我在內的一些人，就是得努力追趕才能跟上進度。後來發現，事情不是聰慧與否這麼簡單。<br><br>
 
-專案結構：<br><br>
+在結業之前，那些明顯脫穎而出的同學，除了聰明外，花費在學習的時間，其實都比我還要長。<br><br>
 
-<pre><code>
-src - 
-     /lang/CHS.json
-          /CHT.json
-     /plugins/i18n.js
-     /router/index.js
-     /page/Home/index.vue
-     /components/layout/Header.vue
+我喜歡享受生活，沒下雨的天氣，會找朋友出門晃，或是參加活動湊熱鬧。<b>因此在結業之後，我沒有繼續花百分百力氣在寫程式上，有太多好玩的事想參與，而聰明的同學仍十年如一日的精進。</b><br><br>
 
-main.js
-
-</code></pre><br>
-
-語系 json 檔案：<br><br>
-
-<pre><code>
-// CHT.json
-// 繁體
-
-{
-    "test": "測試",
-    "language": "CHT"
-}
-
-// CHS.json
-// 簡體
-
-{
-    "test": "测试",
-    "language": "CHS"
-}
-
-</code></pre><br>
-
-其實 vue-i18n 也可以直接寫在 main.js 裡，但我還是把它拉出一層，比較直觀些：<br><br>
-
-<pre><code>
-// i18n.js
-import Vue from 'vue'
-import VueI18n from 'vue-i18n'
-
-import CHS from '../lang/CHS.json' // 存放簡體
-import CHT from '../lang/CHT.json' // 存放繁體
-
-// i18n
-
-Vue.use(VueI18n)
-
-let browserLanguage = window.navigator.language
-
-// 先塞入瀏覽器預設語言在 i18n
-if (browserLanguage.toLowerCase() === 'zh-cn') {
-  browserLanguage = 'CHS'
-} else if (browserLanguage.toLowerCase() === 'zh-tw') {
-  browserLanguage = 'CHT'
-} else {
-  browserLanguage = 'CHS'
-}
-
-
-// 存放語系 json 
-const messages = {
-  CHS: CHS,
-  CHT: CHT
-}
-
-export const i18n = new VueI18n({
-  locale: browserLanguage, // set locale
-  fallbackLocale: browserLanguage,
-  messages // set locale messages
-})
-
-
-</code></pre><br>
-
-掛載 i18n 在 main.js。<br><br>
-
-<pre><code>
-// i18n.js
-// 引入
-import { i18n } from './plugins/i18n'
-
-...
-...
-
-new Vue({
-  el: '#app',
-  store,
-  router,
-  i18n,
-  components: { App },
-  template: '< App/>'
-})
-
-
-</code></pre><br>
-
-做到這一步，就能在靜態頁面去塞入語系文字了：<br><br>
-
-<pre><code>
-// Home/index.vue
-// 首頁
-&lt;h1>{{ $t("test") }}&lt;/h1>
-
-
-// 如果你的瀏覽器語系是繁體的話，它就會返回：
-
-&lt;h1>測試&lt;/h1>
-
-</code></pre><br>
-
-如果要轉換語系的話，只要更新 $i18n.locale 就好：<br><br>
-
-<pre><code>
-// layout/Header.vue
-
-&lt;template>
-  &lt;header class="header-component">
-    &lt;router-link :to="'/' + $i18n.locale" class="header-logo-link">
-      &lt;img class="header-logo" src="@/assets/synergies-logo.png" alt="logo">
-    &lt;/router-link>
-    &lt;div class="header-language">
-      &lt;a @click="changeLanuage('CHS')" href="javascript:void(0)" class="header-link active">简&lt;/a>
-      &lt;span class="divider">|&lt;/span>
-      &lt;a @click="changeLanuage('CHT')" href="javascript:void(0)" class="header-link">繁&lt;/a>
-    &lt;/div>
-  &lt;/header>
-&lt;/template>
-
-&lt;script>
-export default {
-  name: 'Header',
-  data () {
-    return {
-      currentLanguage: ''
-    }
-  },
-  methods: {
-    changeLanuage (lang) {
-      this.$i18n.locale = lang
-      let currentPage = window.location.href.split('/').pop()
-      if (currentPage === 'CHS' || currentPage === 'CHT') {
-        currentPage = ''
-      }
-      this.$router.push({path: `/${lang}/${currentPage}`})
-    },
-    mounted () {
-      this.currentLanguage = this.$i18n.locale
-    }
-  }
-}
-&lt;/script>
-
-</code></pre><br>
+有天賦的人，加上努力學習，是會讓他人相形失色的。<br><br>
 
 
 
-<h3 class="article-h1-color">vue-router 設定</h3><br>
+<h3 class="article-h1-color">親見可怕學習力者的震撼</h3><br>
 
-我這邊做的，是要讓以下網址做好簡繁語系切換：<br><br>
+因為用同一起跑點的人作對比，震撼力比較夠，所以我再以學校同學為例，說說強大學習力者有多可怕。<br><br>
 
-www.test/CHS/question<br>
-www.test/CHT/question<br><br>
+我們在結業前的最後一個作品，是自己獨立完成並自訂的。<br><br>
 
-如果是以下網址，則會去抓瀏覽器預設語言，在決定顯示 CHS 或是 CHT：<br>
-www.test/1231231<br>
-www.test/index.html<br><br>
+我做的是一般常見的部落格網站，包含會員的後台發文系統。然而，有同學竟然做出<b>具有多人及電腦對弈的橋牌、類 photoshop 的圖層編輯器</b>，其實還有更多厲害的作品，但只舉最震撼我的兩件。他們是怎麼做到的？<br><br>
+
+據我觀察，在完成前半段課程後，大部分人都有些鬆懈，不再是每天寫程式碼到半夜 12 點，然而聰明的同學仍然每天熬夜，寫程式到半夜，加上他們的高悟性，進步速度相當驚人。<br><br>
+
+而這僅是三四個月的差距，能想像三年、五年後，彼此差距會有多可怕？<br><br>
 
 
-<pre><code>
-// router/index.js
 
-import Vue from 'vue'
-import Router from 'vue-router'
-import { i18n } from '../plugins/i18n'
 
-Vue.use(Router)
+<h3 class="article-h1-color">努力難，學習難</h3><br>
 
-export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/:lang',
-      component: {
-        template: '<router-view></router-view>'
-      },
-      beforeEnter (to, from, next) {
-        const lang = to.params.lang
+有人會問：「那有什麼難，我如果努力學習，也能做到。」<br><br>
 
-        // 如果 URL 非 CHS、CHT 則導至瀏覽器預設語言
-        if (!['CHS', 'CHT'].includes(lang)) {
-          return next(i18n.locale)
-        }
+然後要掌握<b>努力學習</b>這項技能，不是那麼容易。如果努力了，但學習方式不對，會做白工。<br><br>
 
-        // 如果 URL 有語系，則置換 i18n 語言
-        if (i18n.locale !== lang) {
-          i18n.locale = lang
-        }
+關於努力學習，我觀察那些聰明的同學後，發現有兩項關鍵要素，它們深深影響我近年的學習方式，也恰好能回答上述疑問。<br><br><br><br>
 
-        return next()
-      },
-      children: [
-        {
-          path: '/',
-          name: 'Home',
-          component: () => import('@/pages/Home/Index')
-        },
-        {
-          path: 'question',
-          name: 'Question',
-          component: () => import('@/pages/Question/Index')
-        }
-      ]
-    }
-  ]
-})
+<b>一，你真的能學會，今天就能學會。不然你以前是怎麼學會XX的。</b><br><br>
 
-</code></pre><br>
+XX可以帶入以前學得好，又有成就感的技能。例如英文、程式、游泳。這是用來強化自信。<br><br>
 
-上面要注意的是 children question path 的路徑，不能有 /，不然會和首頁衝突。而 beforeEnter 可以想成在點入 URL 之前，針對路徑執行的函式。而 next 會決定最後進入的路徑。<br><br>
+我在新公司時，經常有難題在我看來，是需要兩周時間才能解決的，但資深工程師卻常說，這應該兩天就能搞定。每次聽完後，我都覺得羞愧心想：「對啊，這其實沒那麼難，是我沒有自信罷了。」<br><br><br>
 
-如果最後進入 next 的路徑和 to.params.lang 衝突的話，則會顯示錯誤。<br><br>
+<b>二，做就對了，不會就查，不然就問。</b><br><br>
 
-<h3 class="article-h1-color">結語</h3><br>
+學習最忌諱只看不做，我在進 AppWorks School 之前，大約碰了半年程式，但大多時間是只看不寫，結果我到學校一兩周，就超過半年的溫吞學習。那半年我努力了，但方式不對，完全是浪費時間。<br><br>
 
-在 vue-router 這段的設定，其實還有很多種方法，例如每種語系就給它塞入顯示的 component；或者用動態 id 的方式，來處理 CHS、CHT 的路徑。但都沒有現在這個寫法來的彈性。未來新增語系也很方便，不太需要額外的程式碼做處理。<br><br>
+以英文為例，多少人學了幾十年英文，卻連跟外國人聊個十分鐘都顯困難？<br><br><br>
 
-相信做完一次，更熟悉的反而不是 vue-i18n，而是 vue-router，哈。
+我們可以做個實驗，想想卡住自己的難處是在哪裡：<br><br>
+
+你現在打開<a href="https://frankyeah.github.io/Front-Enter/index.html">這個網站</a>，看了一輪之後，給你兩天時間，做完桌面版和手機版的畫面（在學校是只有一天時間）。<br><br>
+
+在執行過程中，會有哪些考慮點影響你完成這件事，就是你的難處所在。例如會心想：「晚點在說。」或是「我根本不懂前端，怎麼可能寫出來」的心態等等，都是學習時待克服的點。<br><br><br>
+
+
+
+
+
+
+<h3 class="article-h1-color">努力之外，你還能做選擇</h3><br>
+
+以我為例，我既不喜歡學習，又喜歡學習。<br><br>
+
+不喜歡的理由，就是很痛苦。你必須進入到全然陌生的領域，試圖了解它的邏輯和運作。你可以想像把自己丟到柬埔寨一個月，去學會當地語言，透過和柬埔寨人對話達到高效的學習，而非去語言學校的溫吞學習。<br><br>
+
+喜歡的理由是自我挑戰與成就感，當你告訴自己可以做到，並且真的做到時，那種成就感是難以言喻的。最近幾次有這種感覺，是在學校結業時的自豪，以及單獨用 vue 框架做出讓老闆上台 demo 的作品，還有學會用 WorkBench 和 SQL 連接資料庫開 API 的成就感。<br><br>
+
+做個總結。<br><br>
+
+在網路上，我總是聽到要人成為軟體界的頂尖前 5 %，才能安身立命。但事實上，當你進入到中階工程師，能力獲得許可後，就能領到相對其他行業好的薪資。接著只要緩步學習，遲早也能邁入高級工程師的行列。<br><br>
+
+<b>而我則是選擇平時做舒適圈的工作，有挑戰就接下的方式，</b>來實現自我學習。<br><br>
+
+此外，因為我喜歡寫作，所以架了這個平台持續地寫，累積聲量；另一方面也接了不少案，學習與人溝通、自我管理，做些老闆和 PM 會做的事。這是我喜歡的生活方式。<br><br>
+
+總之，千萬別只說，不做。<br><br>
+
+我們不必成為最強，但必須找到屬於自己的方式，別人的成就，很多是努力學習換來的，掌握學習之道，我不相信人會被淘汰。<br><br>
+
+你有多久，沒感受到學習後的成就感了？<br><br>
+
+<!-- 軟體工程師的領域雖然薪資高，但疊代速度相當快，在十年前學的技術，在今年基本上已經不敷使用。你要掌握什麼樣的能力，什麼樣的學習心態，<br><br> -->
+
+<!-- 以前端工程師來說，你只要有能力做出完整網頁，就能入門成為初階前端工程師；而且只要到達中階工程師的程度，就能應付大部分的接案需求。<br><br> -->
 
 <br><br><br><br>
 
@@ -519,15 +364,10 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190809/" data-toggle="tooltip" data-placement="top" title="nodejs 連接 MySQL 開 API | 使用 workbench 介面">&larr;
+                        <a href="/post/20190821/" data-toggle="tooltip" data-placement="top" title="vue-i18n 雙語網站 | vue-router 相應調整">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20190831/" data-toggle="tooltip" data-placement="top" title="人和人的差距是從何開始的？">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
