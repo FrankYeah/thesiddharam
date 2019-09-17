@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="前端奇遇記 | 有人送插電枕頭，有人要我當資訊小顧問？" />
-    <meta property="og:title" content="前端奇遇記 | 有人送插電枕頭，有人要我當資訊小顧問？" />
-    <meta property="twitter:title" content="前端奇遇記 | 有人送插電枕頭，有人要我當資訊小顧問？" />
+    <meta name="title" content="為什麼別人連不到我的本地網頁伺服器？" />
+    <meta property="og:title" content="為什麼別人連不到我的本地網頁伺服器？" />
+    <meta property="twitter:title" content="為什麼別人連不到我的本地網頁伺服器？" />
     
 
     
-    <meta name="description" content="寫程式很有成就感，但工作模式較單一，所以選擇在業餘接案，多認識些朋友；另外也架了部落格，紀錄些好玩的事。今天就挑幾則，自從接案、寫部落格後，遇到的小事來聊聊......">
-    <meta property="og:description" content="寫程式很有成就感，但工作模式較單一，所以選擇在業餘接案，多認識些朋友；另外也架了部落格，紀錄些好玩的事。今天就挑幾則，自從接案、寫部落格後，遇到的小事來聊聊......" />
-    <meta property="twitter:description" content="寫程式很有成就感，但工作模式較單一，所以選擇在業餘接案，多認識些朋友；另外也架了部落格，紀錄些好玩的事。今天就挑幾則，自從接案、寫部落格後，遇到的小事來聊聊......" />
+    <meta name="description" content="剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到此網站，但打自己電腦 IP 時，卻連不上呢？」後來這個疑問，在我玩 Nginx 的時候，獲得了解答。">
+    <meta property="og:description" content="剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到此網站，但打自己電腦 IP 時，卻連不上呢？」後來這個疑問，在我玩 Nginx 的時候，獲得了解答。" />
+    <meta property="twitter:description" content="剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到此網站，但打自己電腦 IP 時，卻連不上呢？」後來這個疑問，在我玩 Nginx 的時候，獲得了解答。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="接案, 前端, 西打藍" name="keywords">
+    <meta content="DevOps, server, DNS, nginx, port, 西打藍" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>前端奇遇記 | 有人送插電枕頭，有人要我當資訊小顧問？-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>為什麼別人連不到我的本地網頁伺服器？-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190907/">
+    <link rel="canonical" href="/post/20190917/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -194,18 +194,14 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E6%8E%A5%E6%A1%88" title="接案">
-                            接案
-                        </a>
-                        
-                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF" title="前端">
-                            前端
+                        <a class="tag" href="/tags/devops" title="DevOps">
+                            DevOps
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> September 7, 2019</p>
-                    <h1>前端奇遇記 | 有人送插電枕頭，有人要我當資訊小顧問？</h1>
-                    <h3 class="subheading">下班找故事</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> September 17, 2019</p>
+                    <h1>為什麼別人連不到我的本地網頁伺服器？</h1>
+                    <h3 class="subheading">port 與防火牆</h3>
                     <span class="meta">
 			
 
@@ -236,94 +232,38 @@
                 
                 <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
 
-<br>文 / Siddharam 西打藍
-<br>攝影 / Siddharam 西打藍<br><br>
+<br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">之前當記者</h3><br>
+<h3 class="article-h1-color">筆電能不能當 server？</h3><br>
 
-有看過<a href="https://siddharam.com.tw/top/about/">關於</a>的讀者，應該都知道，我因為喜歡有趣的生活、喜歡寫文章，所以曾當過三年記者，是去年才轉職當前端工程師的。<br><br>
+剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到；但拿自己電腦當網頁伺服器，連接 IP 時，卻連不上呢？」<br><br>
 
-寫程式很有成就感，但工作模式較單一，所以才在業餘接案，多認識朋友；另外還架了部落格，繼續與文字的前緣。<br><br>
-
-今天就挑幾則，自從接案、寫部落格後，遇到的有趣小事來聊聊。<br><br>
+後來這個疑問，在我玩 Nginx 的時候，獲得了解答。<br><br>
 
 
-<h3 class="article-h1-color">一則解答，插電枕頭回報</h3><br>
 
-我在花蓮<b>海或瘋市集</b>認識一位朋友，當時她和朋友在海邊擺攤，賣祕魯神木外掛鑰匙圈。神木用火燒時，會飄出濃郁的木頭香，我買了一個。每當想到花蓮海或時，都會拿神木來燒，聞聞煙燻味。<br><br>
+<h3 class="article-h1-color">網域與 IP</h3><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/09/sea-market-1.jpg"/>
-<div style="text-align:center">Jane 的攤位</div><br><br><br>
+熟悉網路知識的人都知道，所有的英文網域，在透過 DNS 解析後，都能還原回一串 IP。可以把它看成家裡的門牌。<br><br>
 
-後來，我坐下來和他們閒聊，才發現那個其中一個女生是基隆同鄉，馬上加了好友來認識。<br><br>
+而自己電腦的 IP 位置，則是 localhost，而所對應的 IP 為 127.0.0.1。所以當你啟動一台 web server 在本地時，只要打 localhost:3000，就能看到畫面了。<br><br>
 
-後來她轉職了，到一間剛研發出<b>插電式、可隨著躺的姿勢不同，進行局部充氣，讓頸椎完全貼合的枕頭</b>新創，擔任執行策畫。<br><br>
+<b>假設你電腦的 IP 是 121.212.121.212，那在網址輸入 121.212.121.212:3000，也會出現同個畫面。但是傳給別人時，為什麼別人看不到呢？</b><br><br>
 
-有天她密我，想請我幫她新公司架個電商網站。<br><br>
+答案是<b>防火牆擋住了</b>。你必須開放 3000 Port 給外人連線才行。<br><br>
 
-我想了想，要做可以，但會花不少錢和時間，不如用現成的開店平台就好。<br><br>
+而一般的網路空間，通常都幫你設定好了。但如果是自己在 Nginx 架站的話，就必須手動設定。<br><br>
 
-在下班後，我們約在公司對面的星巴克碰面。除了她(Jane)之外，還有兩個老闆一起。<br><br>
+Port 非常方便，一個網頁伺服器可以有很多 Port，例如預設的 80 port，HTTPS 的 443 Port，MYSQL 的 3306 Port 等等。
 
-「如果讓你做，大約要多少時間？價格怎麼算？因為我們有問過另外一家，他們估的價碼蠻高的。」他們問。<br><br>
+最後，<br><br>
 
-「一個完整電商網站基本要三個人，UI/UX 設計師、前端、後端工程師，等到設計師規劃並做完，應該要三周，然後工程可能要兩三個月...。但還是要看預算多少，五人萬有五十萬做法，一百萬有一百萬的。」我頓了頓，又說。<br><br>
+如果有到過中國的朋友，一定會用 VPN。<br><br>
 
-「但我不建議你從頭做，其實現在的開店平台不少，金流、頁面、語系都能快速處理。我們直接開一個來試吧。」接著我請 Jane 開啟某平台來操作。<br><br>
+它可以通過防火牆，讓你連線到私人的網路，隱藏自己的 IP 以及傳送的私密資訊。<b>有些政府機關怕資訊外流，所以員工都需要透過 VPN，才能連結到公司資料。這也是其中的一種應用。</b><br><br>
 
-30分鐘過後。<br><br>
 
-「雖然只有固定版型，但好方便啊，這樣就做完一個頁面了，語系什麼的設定也不複雜。」他們驚嘆。<br><br>
-
-最後，他們決定採用平台月/年租的方式，自製網站。<br><br>
-
-「今天就這樣囉，看還有什麼想問的在密我。另外，我想買顆好的枕頭很久了，那在看怎麼賣跟我說。」我說。他們感謝並向我揮手道別。<br><br>
-
-晚上，當我問要付多少錢給 Jane 買枕頭時，她很大方的說，「老闆決定直接送你一顆，感謝你今天的幫忙。」我也接受了，想說也幫他們省了幾十萬架網站，就拿囉。<br><br>
-
-就這樣，我得到一顆需要插電的自適應枕頭。<br><br>
-
-<img style="margin-bottom:8px; width:50%;" src="https://frontenter.files.wordpress.com/2019/09/pillows.jpg"/>
-<div style="text-align:center">得到一顆千元插電枕頭，幸好我床邊有插頭。</div><br><br><br>
-
-<h3 class="article-h1-color">資訊顧問我不行吧</h3><br>
-
-前幾周，有個協會理事長問我，有沒有懂點資訊的人才可以推薦，因為他們有個網站需要維護。但我忘了回覆她。<br><br>
-
-又過了幾天，我和朋友在健身時，她突然打電話給我。說他協會正在使用的網站需要協助，問我有沒有人才能推薦。<br><br>
-
-「你們網站是用什麼程式語言？需要的是兼職還是全職的人？」我問。<br><br>
-
-接著她說了公司專案狀況，但他們沒有資訊背景的同事，只會操作，也不知道需要什麼樣的人來幫忙。<br><br>
-
-最後，她希望我去協會幫她確認，我答應了。<br><br>
-
-他們的協會是在北車附近的辦公大樓，我坐電梯上九樓，一整層目測約有六七家企業行號。敲了敲門，理事長開門領我進去，裡頭有兩個員工，感覺正在加班。<br><br>
-
-了解情況後，原來是個需符合無障礙需求的多語網站，僅需要調整 html 標籤就好，不需要會程式的人也能做。於是，我請其中一位員工下載 Visual Studio Code，讓他們方便編輯。很快地事情就解決了。<br><br>
-
-結束後理事長開始跟我聊天，他們是關心新住民、移民工的協會，已經深耕台北許久。但他們不想再寫企劃，或申請政府專案。而是想做些小生意，自力更生。<br><br>
-
-所以問了些關於大數據、數位廣告、媒體分潤的問題，還想自己做個移民工教室、app 等等。我只能就我懂的去分享。<br><br>
-
-就這樣聊了好幾個小時，他們員工仍然沒下班。在我快睡著時，她問我要不要來當他們協會的資訊顧問，還可以發個牌給我。<br><br>
-
-我笑說之後再看，有什麼需要幫忙的都可以說。故事就這樣。<br><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/09/sea-market-2.jpg"/>
-<div style="text-align:center">海或瘋市集。</div><br><br><br>
-
-<h3 class="article-h1-color">後話</h3><br>
-
-寫著寫，有點像在講故事，但更像是隨筆紀錄。<br><br>
-
-下次來說點教學的故事吧。<br><br>
-
-<br><br>
-
-<br><br>
-
-<br><br>
+<br><br><br><br><br><br>
 
 
 <h3 class="article-h1-color">技術文章與合作</h3><br>
@@ -361,15 +301,10 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190831/" data-toggle="tooltip" data-placement="top" title="人和人的差距是從何開始的？">&larr;
+                        <a href="/post/20190913/" data-toggle="tooltip" data-placement="top" title="公司招聘員工 有如宅宅追女孩">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20190913/" data-toggle="tooltip" data-placement="top" title="公司招聘員工 有如宅宅追女孩">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
