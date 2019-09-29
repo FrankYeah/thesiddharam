@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="為什麼別人連不到我的本地網頁伺服器？" />
-    <meta property="og:title" content="為什麼別人連不到我的本地網頁伺服器？" />
-    <meta property="twitter:title" content="為什麼別人連不到我的本地網頁伺服器？" />
+    <meta name="title" content="佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面" />
+    <meta property="og:title" content="佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面" />
+    <meta property="twitter:title" content="佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面" />
     
 
     
-    <meta name="description" content="剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到此網站，但打自己電腦 IP 時，卻連不上呢？」後來這個疑問，在我玩 Nginx 的時候，獲得了解答。">
-    <meta property="og:description" content="剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到此網站，但打自己電腦 IP 時，卻連不上呢？」後來這個疑問，在我玩 Nginx 的時候，獲得了解答。" />
-    <meta property="twitter:description" content="剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到此網站，但打自己電腦 IP 時，卻連不上呢？」後來這個疑問，在我玩 Nginx 的時候，獲得了解答。" />
+    <meta name="description" content="想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。這個佈署有兩件重要的事要解決，一個是將 build 好的檔案放到 gh-pages 分支；另一個是處理 vouter 切換後，重整頁面會出現 404 的問題。">
+    <meta property="og:description" content="想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。這個佈署有兩件重要的事要解決，一個是將 build 好的檔案放到 gh-pages 分支；另一個是處理 vouter 切換後，重整頁面會出現 404 的問題。" />
+    <meta property="twitter:description" content="想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。這個佈署有兩件重要的事要解決，一個是將 build 好的檔案放到 gh-pages 分支；另一個是處理 vouter 切換後，重整頁面會出現 404 的問題。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="DevOps, server, DNS, nginx, port, 西打藍" name="keywords">
+    <meta content="vue, SPA, vue-router, github pages, siddharam, 西打藍" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>為什麼別人連不到我的本地網頁伺服器？-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190917/">
+    <link rel="canonical" href="/post/20190929/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -194,14 +194,26 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/devops" title="DevOps">
-                            DevOps
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        <a class="tag" href="/tags/spa" title="SPA">
+                            SPA
+                        </a>
+                        
+                        <a class="tag" href="/tags/github-pages" title="github pages">
+                            github pages
+                        </a>
+                        
+                        <a class="tag" href="/tags/vue-router" title="vue-router">
+                            vue-router
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> September 17, 2019</p>
-                    <h1>為什麼別人連不到我的本地網頁伺服器？</h1>
-                    <h3 class="subheading">port 與防火牆</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> September 29, 2019</p>
+                    <h1>佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面</h1>
+                    <h3 class="subheading">vue.config.js 設定</h3>
                     <span class="meta">
 			
 
@@ -234,33 +246,125 @@
 
 <br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">筆電能不能當 server？</h3><br>
+<h3 class="article-h1-color">前言</h3><br>
 
-剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到；但拿自己電腦當網頁伺服器，連接 IP 時，卻連不上呢？」<br><br>
+想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。<br><br>
 
-後來這個疑問，在我玩 Nginx 的時候，獲得了解答。<br><br>
+這個佈署有兩件重要的事要解決，一個是將 build 好的檔案放到 gh-pages 分支；另一個是處理 vouter 切換後，重整頁面會出現 404 的問題。此次目錄如下：<br><br>
+
+<b><h5>
+
+1. gh-pages 分支<br><br>
+2. 404 頁面處理
+
+</h5></b><br><br>
 
 
+<h3 class="article-h1-color">GitHub Pages</h3><br>
 
-<h3 class="article-h1-color">網域與 IP</h3><br>
+首先，我們要將 vue 專案推上 github，如果對 git 指令不熟，可以參考 <a href="http://localhost:1313/post/20190515/">這篇</a> 文章。<br><br>
 
-熟悉網路知識的人都知道，所有的英文網域，在透過 DNS 解析後，都能還原回一串 IP。可以把它看成家裡的門牌。<br><br>
+第一步，要在 github 建立新的 repository。接著，我們把本地專案推送至遠端：<br><br>
 
-而自己電腦的 IP 位置，則是 localhost，而所對應的 IP 為 127.0.0.1。所以當你啟動一台 web server 在本地時，只要打 localhost:3000，就能看到畫面了。<br><br>
+<code>git init</code><br><br>
 
-<b>假設你電腦的 IP 是 121.212.121.212，那在網址輸入 121.212.121.212:3000，也會出現同個畫面。但是傳給別人時，為什麼別人看不到呢？</b><br><br>
+<code>git add .</code><br><br>
 
-答案是<b>防火牆擋住了</b>。你必須開放 3000 Port 給外人連線才行。<br><br>
+<code>git commit -m "first commit"</code><br><br>
 
-而一般的網路空間，通常都幫你設定好了。但如果是自己在 Nginx 架站的話，就必須手動設定。<br><br>
+<code>git remote add origin https://github.com/{{ 你的 github 名稱 }}/{{ repository 名稱 }}.git</code><br><br>
 
-Port 非常方便，一個網頁伺服器可以有很多 Port，例如預設的 80 port，HTTPS 的 443 Port，MYSQL 的 3306 Port 等等。
+上述指令以我自己為範例是：<br><br>
 
-最後，<br><br>
+<code>git remote add origin https://github.com/FrankYeah/market.git</code><br><br>
 
-如果有到過中國的朋友，一定會用 VPN。<br><br>
+<code>git push -u origin master</code><br><br>
 
-它可以通過防火牆，讓你連線到私人的網路，隱藏自己的 IP 以及傳送的私密資訊。<b>有些政府機關怕資訊外流，所以員工都需要透過 VPN，才能連結到公司資料。這也是其中的一種應用。</b><br><br>
+接著，我們要新增 vue.confing.js 檔在根目錄，這是為了在 production 時被加載，可以參考 <a href="https://cli.vuejs.org/zh/config/">文件</a>，裡頭的設定如下：<br><br>
+
+
+<pre><code>
+//vue.confing.js
+
+
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/market/'
+    : '/'
+}
+
+// 請修改 market 為你的 repository 名稱
+
+</code></pre>
+
+這樣一來，你的 webpack 就會幫你的 github pages URL 加上 publicPath。但這個設定對有些人沒效，那麼你可以自己在 webpack config 做些調整：<br><br>
+
+<pre><code>
+//config/index.js
+
+  ...
+  ...
+  ...
+
+  build: {
+
+  ...
+  ...
+  ...
+
+    assetsPublicPath: '/market/',
+
+  ...
+  ...
+  ...
+
+
+// 請修改 market 為你的 repository 名稱
+
+</code></pre>
+
+
+本地的設定告一段落，等等處理 404 頁面的時候再回來。接著，我們要把 build 好的 dist 資料夾檔案推上 gh-pages：<br><br>
+
+<code>cd dist</code><br><br>
+
+<code>git init</code><br><br>
+
+<code>git add .</code><br><br>
+
+<code>cd commit -m 'build file'</code><br><br>
+
+<code>git push -f https://github.com/FrankYeah/market.git master:gh-pages</code><br><br>
+
+最後，我們到 github 頁面，選擇自己的 repository，點選 Settings 後，往下滑到 GitHub Pages 點 Choose a theme 再按確認，就能建立好靜態頁面了。<br><br>
+
+
+<h3 class="article-h1-color">404 頁面處理</h3><br>
+
+如果你有做 router 切換，會發現重整時，會返回 404，這是因為你的路徑不存在，vue 只是切換 component 而已。這裡提供兩個做法：<br><br>
+
+1. 自己手動複製 404.html 到 github 上，內容只要照搬 index.html 就好。<br><br>
+
+2. 是到 vue router 做設定：<br><br>
+
+<pre><code>
+//router/index.js
+
+export default new Router({
+  mode: 'hash',
+  base: '/market',
+
+...
+...
+...
+
+</code></pre>
+
+主要是透過 hash 的做法來解決，如果是設定 history mode 的話，就會有問題。<br><br>
+
+如果不是用 github pages，而是用 nginx 的話，只要再 try_files 設定 404 頁面指向 index.html 就好，原理和第一個解法一樣。<br><br>
+
+最後提供 github 讓大家參考端詳：<a href="https://github.com/FrankYeah/market">github</a>、<a href="https://frankyeah.github.io/market/#/">github pages</a>。
 
 
 <br><br><br><br><br><br>
@@ -301,15 +405,10 @@ Line 官方帳號 QR Code：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190913/" data-toggle="tooltip" data-placement="top" title="公司招聘員工 有如宅宅追女孩">&larr;
+                        <a href="/post/20190917/" data-toggle="tooltip" data-placement="top" title="為什麼別人連不到我的本地網頁伺服器？">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20190929/" data-toggle="tooltip" data-placement="top" title="佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
