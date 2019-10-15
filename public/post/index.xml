@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>興趣可以當作一份工作嗎？</title>
+      <link>https://siddharam.com.tw/post/20191015/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20191015/</guid>
+      <description>文 / Siddharam 西打藍 前言 新的類別，用來記錄與人生相關的思考。 興趣 我最初的結論是，所有的興趣都能成為工作，但要成為一份工作，你必須有一定專業，才有人買</description>
+    </item>
     
     <item>
       <title>佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面</title>

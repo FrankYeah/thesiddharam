@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://siddharam.com.tw/post/20191015/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20190929/</loc>
     <lastmod>2019-09-29T00:00:00+00:00</lastmod>
   </url>
@@ -326,7 +331,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/post/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -373,7 +378,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -488,6 +493,12 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/tags/%E5%93%B2%E5%AD%B8%E8%AB%AE%E5%95%86/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/tags/%E5%9C%96%E8%A1%A8/</loc>
     <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -507,7 +518,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/tags/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -596,6 +607,12 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/tags/%E8%88%88%E8%B6%A3/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -604,6 +621,12 @@
   <url>
     <loc>https://siddharam.com.tw/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/categories/%E9%8F%A1%E6%80%9D%E4%BA%BA%E7%94%9F/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
