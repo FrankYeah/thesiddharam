@@ -378,14 +378,22 @@ export default {
   }
 }
 &lt;/script>
-
+</code>
 </pre><br>
 
 <h3 class="article-h1-color">共用 SCSS Variables</h3><br>
 
+SCSS 安裝：<br><br>
+<code>
+npm install sass-loader@7.3.1 sass-resources-loader node-sass --save-dev<br>
+
+</code><br>
+
+<i>sass-loader 若安裝更高版本會報錯，所以建議 7.3.1 版本。</i><br><br><br><br>
+
 接著是我研究最久的 SCSS 共用，用那麼久是因為弄錯版本了，如果是 Vue CLI 3，只需要：<br><br>
 
-</code>
+
 <pre><code>
 # 在 build/webpack.base.conf.js 設定就好
 
