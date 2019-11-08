@@ -29,8 +29,8 @@ canonifyURLs = true
 
   sidebar_about_description = "文字紀錄可能性 | 程式創造可能性"
 
-
 [params.social]
+  rss            = true 
   email          = ""
   github         = ""
 

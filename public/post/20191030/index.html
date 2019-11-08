@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo.jpg" />
+    
+
+    
+    <meta name="title" content="語言只是工具，程式也是工具，什麼才是非工具的能力？" />
+    <meta property="og:title" content="語言只是工具，程式也是工具，什麼才是非工具的能力？" />
+    <meta property="twitter:title" content="語言只是工具，程式也是工具，什麼才是非工具的能力？" />
+    
+
+    
+    <meta name="description" content="朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。">
+    <meta property="og:description" content="朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。" />
+    <meta property="twitter:description" content="朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="生意" name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>語言只是工具，程式也是工具，什麼才是非工具的能力？-Siddharam | 寫程式的文字人 | 西打藍</title>
+
+    <link rel="canonical" href="/post/20191030/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:14px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; text-decoration: underline;" class="navbar-brand" href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit">有話對我說</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%8F%A1%E6%80%9D%E4%BA%BA%E7%94%9F">鏡思人生</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E7%94%9F%E6%84%8F" title="生意">
+                            生意
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> October 30, 2019</p>
+                    <h1>語言只是工具，程式也是工具，什麼才是非工具的能力？</h1>
+                    <h3 class="subheading">中東國貿生意人告訴了我答案</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / Siddharam 西打藍<br><br>
+
+<h3 class="article-h1-color">前言</h3><br>
+
+前幾天在思考一個問題：<br><br>
+
+當我們說，語言只是一個工具，程式只是一種工具，會計只是一種工具的時候，<br><br>
+
+什麼才是非工具的能力呢？<br><br>
+
+我想到的，是業務的溝通能力，還有管理團隊的能力。但這些答案始終不能說服我。<br><br>
+
+而今天晚上去和朋友談架設網站的生意時，和朋友家人的談話中，給了我一些靈感回答這個問題。不過今天的內容不僅只回答這則問題而已。<br><br>
+
+<h3 class="article-h1-color">談生意</h3><br>
+
+朋友的媽媽在中東有買賣生意，專做 2B，近年因為諸多因素，準備回台灣改做 2C 的生意，因此有架設網站販售的需求。<br><br>
+
+在談完網站相關需求後，朋友和媽媽（朋友的媽媽）便自顧的談起生意。朋友在台灣也有自己成立的公司。<br><br>
+
+「中東某國家（不便透露）多是直營店，他們的電商做不起來，因為基礎網路設施還不夠成熟，連 4G 都是近年才有的。他們的消費習慣和台灣完全不一樣，我們習慣的電商不適合他們。」媽媽。<br><br>
+
+「加上國情不同，他們人民出國不便，所以我們在當地做 2B 才有價值。在台灣的話，買一張機票隨便就能出國，做 2B 的生意競爭太大就不合適了，只能轉做 2C 才行。」媽媽。<br><br>
+
+...<br><br>
+
+「那麼，接下來我先從通路開始下手？」朋友問。<br><br>
+
+「對，你得走以前我走過的路，一間間百貨去看，去觀察吸引你的貨物有哪些。在夏天時，準備冬天的貨品，冬天時，則準備夏天的。此外，還有 everyday 的貨品也要看。」媽媽。<br><br>
+
+一整晚的談話就如上述所見，但我觀察到的重點不只是內容，而是這樣的家庭互動方式，在其他家庭裡並不多見。<br><br>
+
+從內容來看，回答了我開頭的提問。<b>媽媽不是從書本上學到如何做生意，而是將親身經歷化作生意經。</b><br><br>
+
+對她來說，架設網站只是工作方案之一，而我，就是架設網站的工具。<br><br>
+
+媽媽懂得<b>運用工具</b>為她解決生意上的問題，例如每月聘請會計師協助作帳，一通電話請廠商提供樣品，一則微信請熟悉的人幫忙打通通路。<br><br>
+
+<h3 class="article-h1-color">耳濡目染</h3><br>
+
+一般家庭回家後，多是一起看個電視，各自玩手機，不然就是吃飯或玩遊戲。<br><br>
+
+然而朋友回家卻是和母親談生意，從小也耳濡目染著生意經，迥異於常人的生活型態，讓朋友的思維與眾不同，年紀輕輕就開了公司，賺取數倍於上班族的收入，每年中東、香港、中國四處飛，也早早成家立業有了房車與小孩。<br><br>
+
+這位朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。<br><br>
+
+上班族的思維除了用在專業上，還用在應對主管上，耗費了許多精力。此外，我們常覺得老闆不比我們聰明，事實上也沒錯。但是，為什麼他是老闆，而你是員工呢？<br><br>
+
+這則問題留待下次思考，同時我腦海也縈繞著一則問題：為什麼劉備、曹操、孫權是天下的主角，而數倍於他們智慧的郭嘉、孔明、陸遜不是呢？<br><br>
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20191017/" data-toggle="tooltip" data-placement="top" title="人生如何過的更好？">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+想定期收到技術文章，或想一起探討前後端程式的朋友，建議加入 line 群組，或是官方帳號，大家可以互相交流，一起學程式，歡迎加入：<br><br>
+
+<span>Email: aaa24295234@gmail.com</span><br><br>
+Line 群組：<a href="https://line.me/R/ti/g/i80ChvQ3dt"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">群組</span></a><br><br>
+Line 群組 QR Code：<br><br>
+<img src="https://frontenter.files.wordpress.com/2019/05/line-chat-room.jpg">
+Line 官方帳號：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
+Line 官方帳號 QR Code：<br><br>
+<img src="https://qr-official.line.me/sid/M/184railx.png">
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

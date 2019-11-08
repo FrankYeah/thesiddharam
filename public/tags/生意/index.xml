@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生意 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E7%94%9F%E6%84%8F/</link>
+    <description>Recent content in 生意 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E7%94%9F%E6%84%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>語言只是工具，程式也是工具，什麼才是非工具的能力？</title>
+      <link>https://siddharam.com.tw/post/20191030/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20191030/</guid>
+      <description>文 / Siddharam 西打藍 前言 前幾天在思考一個問題： 當我們說，語言只是一個工具，程式只是一種工具，會計只是一種工具的時候， 什麼才是非工具的能力呢？ 我想到的</description>
+    </item>
+    
+  </channel>
+</rss>
