@@ -6,10 +6,19 @@
     <description>Recent content in 工程師日常 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>工程師看待 bug 的方式大不同</title>
+      <link>https://siddharam.com.tw/post/20191116/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20191116/</guid>
+      <description>文 / Siddharam 西打藍 前言 公司在軟體開發上，都會由資深工程師（簡稱資深）幫忙 code review，從最近一次的 code review 中，我領悟到一位好的工程師在開發時，對待 bug</description>
+    </item>
     
     <item>
       <title>軟體工程師的檢討會議</title>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo.jpg" />
+    
+
+    
+    <meta name="title" content="VeeValidate 表單驗證 | 密碼限制及二次確認密碼" />
+    <meta property="og:title" content="VeeValidate 表單驗證 | 密碼限制及二次確認密碼" />
+    <meta property="twitter:title" content="VeeValidate 表單驗證 | 密碼限制及二次確認密碼" />
+    
+
+    
+    <meta name="description" content="我的密碼有四條限制：一是不能空白、二是至少有八個字元、三是至少含一個數字、四是需與二次確認密碼相同。除了「至少需含一個數字」，在套件中沒有提供，需要客製化之外，其他都有內建......">
+    <meta property="og:description" content="我的密碼有四條限制：一是不能空白、二是至少有八個字元、三是至少含一個數字、四是需與二次確認密碼相同。除了「至少需含一個數字」，在套件中沒有提供，需要客製化之外，其他都有內建......" />
+    <meta property="twitter:description" content="我的密碼有四條限制：一是不能空白、二是至少有八個字元、三是至少含一個數字、四是需與二次確認密碼相同。除了「至少需含一個數字」，在套件中沒有提供，需要客製化之外，其他都有內建......" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="VeeValidate, 密碼, 驗證" name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>VeeValidate 表單驗證 | 密碼限制及二次確認密碼-Siddharam | 寫程式的文字人 | 西打藍</title>
+
+    <link rel="canonical" href="/post/20191122/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: rgb(2, 186, 192);" class="navbar-brand" href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit">有話對我說</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: rgb(2, 186, 192);" class="navbar-brand" href="https://p.ecpay.com.tw/DE181">自由贊助</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%8F%A1%E6%80%9D%E4%BA%BA%E7%94%9F">鏡思人生</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/veevalidate" title="VeeValidate">
+                            VeeValidate
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> November 22, 2019</p>
+                    <h1>VeeValidate 表單驗證 | 密碼限制及二次確認密碼</h1>
+                    <h3 class="subheading">免用正規表示式</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / Siddharam 西打藍<br><br>
+
+<h3 class="article-h1-color">前言</h3><br>
+
+上周為了做登入頁面的密碼強度設定，而去了解 vue VeeValidate 驗證套件，它可以驗證 input 裡的值，讓你不需寫正規表達式，就能輕鬆做完限制式。<br><br>
+
+
+<h3 class="article-h1-color">開始</h3><br>
+
+我的密碼有四條限制：<b>一是不能空白、二是至少有八個字元、三是至少含一個數字、四是需與二次確認密碼相同。</b>除了「至少需含一個數字」，在套件中沒有提供，需要客製化之外，其他都有內建。<br><br>
+
+接著，我們就來實作。<br><br><br>
+
+<pre>
+<code>
+// 安裝 VeeValidate 套件
+
+npm install vee-validate --save
+</code>
+</pre>
+
+
+<pre>
+<code>
+// 在 main.js 中引用
+
+import VeeValidate, { Validator } from 'vee-validate'
+
+
+/** Custom Rule 至少需含一個數字，使用正規表達式 */
+Validator.extend('requireOneNumeric', function (value) {
+  return /.*[0-9].*/i.test(value)
+})
+
+Vue.use(VeeValidate, {
+  // 避免自動 inject 到所有 component，需要時在 inject 
+  inject: false,
+  // 語系
+  locale: 'zh_CN',
+  // 驗證字串
+  // 當看到 i18n 時，可以替換成自己的文字，這是我做語系轉換用的，zh_TW、zh_CN 分別代表繁/簡體
+  // 在 max 和 min 中傳入的 length，是我 i18n 用來代入數值的
+  // confirmed 則是用做二次密碼確認的
+  dictionary: {
+    zh_TW: {
+      messages: {
+        required () {
+          return i18n.t('message.formColumnEmpty')
+        },
+        email () {
+          return i18n.t('message.formMailWrong')
+        },
+        numeric () {
+          return i18n.t('message.formNumberEmpty')
+        },
+        max (field, length) {
+          return i18n.t('message.formCharacterOverMax', { max: length })
+        },
+        min (field, length) {
+          return i18n.t('message.formCharacterOverMin', { min: length })
+        },
+        requireOneNumeric (field) {
+          return i18n.t('message.formNumericeOverOne')
+        },
+        confirmed () {
+          return i18n.t('message.pleaseConfirmPassword')
+        }
+      }
+    },
+    zh_CN: {
+      messages: {
+        required () {
+          return i18n.t('message.formColumnEmpty')
+        },
+        email () {
+          return i18n.t('message.formMailWrong')
+        },
+        numeric () {
+          return i18n.t('message.formNumberEmpty')
+        },
+        max (field, length) {
+          return i18n.t('message.formCharacterOverMax', { max: length })
+        },
+        min (field, length) {
+          return i18n.t('message.formCharacterOverMin', {min: length})
+        },
+        requireOneNumeric (field) {
+          return i18n.t('message.formNumericeOverOne')
+        },
+        confirmed () {
+          return i18n.t('message.pleaseConfirmPassword')
+        }
+      }
+    }
+  }
+})
+
+</code>
+</pre>
+
+
+<pre>
+<code>
+
+// account.vue
+// min:8 就會限制最少 8 個字元
+// ref 是對應到第二個 input 的 confirmed:confirmPassword，就可以做二次密碼的確認
+// VeeeValidate 會一步步從左驗證到右
+
+&lt;input-verify
+    v-model="currentUser.password"
+    type="password"
+    :placeholder="$t('editing.newPassword')"
+    name="verifyNewPassword"
+    v-validate="'required|min:8|requireOneNumeric'"
+    ref="confirmPassword"
+>
+
+// 當文字有誤時，就會 show 出錯誤提示文字，裡頭的 'verifyNewPassword' 字串是相對應 input 的 name
+
+&lt;div
+    class="input-error error-text"
+    v-show="errors.has('verifyNewPassword')"
+>
+    {{ errors.first('verifyNewPassword') }}
+&lt;/div>
+
+&lt;input-verify
+    v-model="currentUser.verifyPassword"
+    type="password"
+    :placeholder="$t('editing.confirmNewPassword')"
+    name="verifyPasswordCheck"
+    v-validate="'required|min:8|requireOneNumeric|confirmed:confirmPassword'"
+>
+&lt;/input-verify>
+
+&lt;div
+    class="input-error error-text"
+    v-show="errors.has('verifyPasswordCheck')"
+>
+    {{ errors.first('verifyPasswordCheck') }}
+&lt;/div>
+
+...
+
+// 記得先將 validator inject 進 component
+
+export default {
+inject: ['$validator'],
+
+...
+</code>
+</pre>
+<br>
+其他的檢驗方式：<br><br>
+errors.first('field')  顯示欄位field的第一個出錯資訊<br>
+
+errors.collect('field')  顯示欄位field的所有出錯資訊<br>
+
+errors.has('field')  判斷fileds欄位是否檢驗有誤<br>
+
+erros.all()  顯示所有的出錯資訊<br>
+
+errors.any()  判斷是否有錯誤
+
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20191116/" data-toggle="tooltip" data-placement="top" title="工程師看待 bug 的方式大不同">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+寫這些技術分享文，筆者是沒有額外收入的，但每年還是要付域名費用，如果你喜歡我的文章，歡迎<a href="https://p.ecpay.com.tw/DE181"> 自由贊助 </a>唷！也期待收到你的<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"> 回饋</a>。<br><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+想定期收到技術文章，或想一起探討前後端程式的朋友，建議加入 line 群組，或是官方帳號，大家可以互相交流，一起學程式，歡迎加入：<br><br>
+
+<span>Email: aaa24295234@gmail.com</span><br><br>
+Line 群組：<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">入群組表單邀請</span></a><br><br>
+群組為了防止假帳號，不開放用 QR Code 掃描入群，如有需要，可以填寫表單，註記 line ID 告訴我，謝謝。<br><br>
+Line 官方帳號：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
+Line 官方帳號 QR Code：<br><br>
+<img src="https://qr-official.line.me/sid/M/184railx.png">
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

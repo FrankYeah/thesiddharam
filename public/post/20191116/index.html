@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo.jpg" />
+    
+
+    
+    <meta name="title" content="工程師看待 bug 的方式大不同" />
+    <meta property="og:title" content="工程師看待 bug 的方式大不同" />
+    <meta property="twitter:title" content="工程師看待 bug 的方式大不同" />
+    
+
+    
+    <meta name="description" content="公司在軟體開發上，都會由資深工程師（簡稱資深）幫忙 code review，從最近一次的 code review 中，我領悟到一位好的工程師在開發時，對待 bug 應有的心態是什麼，下面會舉真實的例子作為分享......">
+    <meta property="og:description" content="公司在軟體開發上，都會由資深工程師（簡稱資深）幫忙 code review，從最近一次的 code review 中，我領悟到一位好的工程師在開發時，對待 bug 應有的心態是什麼，下面會舉真實的例子作為分享......" />
+    <meta property="twitter:description" content="公司在軟體開發上，都會由資深工程師（簡稱資深）幫忙 code review，從最近一次的 code review 中，我領悟到一位好的工程師在開發時，對待 bug 應有的心態是什麼，下面會舉真實的例子作為分享......" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="bug, 工程師日常" name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>工程師看待 bug 的方式大不同-Siddharam | 寫程式的文字人 | 西打藍</title>
+
+    <link rel="canonical" href="/post/20191116/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: rgb(2, 186, 192);" class="navbar-brand" href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit">有話對我說</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: rgb(2, 186, 192);" class="navbar-brand" href="https://p.ecpay.com.tw/DE181">自由贊助</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%8F%A1%E6%80%9D%E4%BA%BA%E7%94%9F">鏡思人生</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/bug" title="bug">
+                            bug
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> November 16, 2019</p>
+                    <h1>工程師看待 bug 的方式大不同</h1>
+                    <h3 class="subheading">好的工程師與中庸工程師差異</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / Siddharam 西打藍<br><br>
+
+<h3 class="article-h1-color">前言</h3><br>
+
+公司在軟體開發上，都會由資深工程師（簡稱資深）幫忙 code review，從最近一次的 code review 中，我領悟到一位好的工程師在開發時，對待 bug 應有的心態是什麼，下面會舉真實的例子作為分享。
+
+<br><br>
+
+<h3 class="article-h1-color">veeValidate & vue i18n</h3><br>
+
+週四下午，我提交了這周要完成的工作。資深看完後，提出要修改的部分：<br><br>
+
+「這部分元件重複用那麼多次，是可以抽出來共用的。」資深對我說。<br><br>
+
+「既然密碼的長度、數字驗證都用 veeValidate 來做提示了，二次驗證密碼的部分，應該也用 veeValidate 做驗證就好，而不是用 element 的 message。」資深。此外，還有一些待修改的小 bug。<br><br>
+
+程式開發就是這樣，功能沒問題，但寫法不好就是得改。這說明了程式界的一句名言：<br><br>
+
+<b>「Any fool can write code that a computer can understand. Good programmers write code that humans can understand.」</b><br><br>
+
+因此，把 code 寫得別人看得懂，好維護是重要的事。<br><br>
+
+週五一早，我興致勃勃地修改昨天的 bug。<br><br>
+
+「真奇怪，雖然執行沒有問題，為什麼 console 會報錯呢？查一下 stackoverflow 好了...，OK 沒報錯了，呼！終於搞定，就這樣推上去吧！」我內心 murmur。<br><br>
+
+過了一陣子，資深看了我新推上去的 code 後問我：<br><br>
+
+「問一下，為什麼這裡加了段 pause 跟 reset？」<br><br>
+
+「因為如果沒有加的話，veeValidate 會報錯啊！實在不知道什麼原因，我的寫法和你某個驗證的寫法，基本上是一樣的說...」我回答。<br><br>
+
+兩個人開始查找原因，最後我一層層排除可能性後，發現在我在觸發其中一個 function 時，同時關閉 input block 子組件和清空裡頭的值（密碼填到一半關閉或填完關閉，都要清除 input 中的資料），就會報錯。但如果單獨做一件事情，就沒事。<br><br>
+
+我把觀察到的這個<b>「現象」</b>告訴資深，原本以為拆成兩個 function 應該就結束了吧，但資深要我搞清楚<b>「為什麼發生」</b>。<br><br>
+
+於是我看了一下組件中的行為，又多做一些嘗試後發現：原來在子組件關閉後，進行資料清洗時，會觸發 veeValidate 的驗證，但由於 callback 的關係，它會往下先關閉子組件後再做驗證，但在要驗證時，卻發現子組件已經消失了，所以才會報錯。<br><br>
+
+我把推論後的想法告訴資深後，他建議我使用 vue 的 nextTick，在關閉子組件後，也同時取消驗證機制，再把父組件的資料清空，就不會觸發到 veeValidate 了。<br><br>
+
+至此我才恍然大悟，原本一直以為是做密碼驗證的同時，也使用 vue i18n 去做語系切換，並傳入變數時才導致這個錯誤。幸好資深要我多想一點、理解原由，這才真正的解決問題。<br><br> 
+
+<h3 class="article-h1-color">醒悟</h3><br>
+
+下班時，我回頭想了想這件事，發現在面對複合問題時，我常只做到解決問題，卻沒有確實做到理解問題。<br><br> 
+
+這個不知不覺養成的習慣，確實在影響我進步，幸好資深讓我看到這一點，非常謝謝他。<br><br> 
+
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20191108/" data-toggle="tooltip" data-placement="top" title="軟體工程師的檢討會議">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/20191122/" data-toggle="tooltip" data-placement="top" title="VeeValidate 表單驗證 | 密碼限制及二次確認密碼">新的一篇
+                             &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+寫這些技術分享文，筆者是沒有額外收入的，但每年還是要付域名費用，如果你喜歡我的文章，歡迎<a href="https://p.ecpay.com.tw/DE181"> 自由贊助 </a>唷！也期待收到你的<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"> 回饋</a>。<br><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+想定期收到技術文章，或想一起探討前後端程式的朋友，建議加入 line 群組，或是官方帳號，大家可以互相交流，一起學程式，歡迎加入：<br><br>
+
+<span>Email: aaa24295234@gmail.com</span><br><br>
+Line 群組：<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">入群組表單邀請</span></a><br><br>
+群組為了防止假帳號，不開放用 QR Code 掃描入群，如有需要，可以填寫表單，註記 line ID 告訴我，謝謝。<br><br>
+Line 官方帳號：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
+Line 官方帳號 QR Code：<br><br>
+<img src="https://qr-official.line.me/sid/M/184railx.png">
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
