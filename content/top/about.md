@@ -49,7 +49,7 @@ draft: false
 <a href="https://frankyeah.github.io/yand/">室內設計公司接案</a> (電腦版，尚未完成)<br><br>
 <a href="https://www.behance.net/SIANG-HUA?fbclid=IwAR1ZnMxo7gGab__tWCIF1GcTT14o7Vb6z-UkcWcA7GHO7jIgzvTCM57wqr8" target='_blank'>合作設計師的平面作品</a><br><br>
 現在所看的部落格也是自己架的。<br><br>
-如果喜歡我的文章，也歡迎<a href="https://p.ecpay.com.tw/DE181"> 自由贊助 </a>唷！<br><br>
+如果喜歡我的文章，也歡迎<a href="https://p.ecpay.com.tw/0167F" target="_blank"> 自由贊助 </a>唷！<br><br>
 
 <br><br><br><br>
 

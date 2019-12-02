@@ -6,10 +6,19 @@
     <description>Recent content on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>基隆的摩登時代 - 委託行</title>
+      <link>https://siddharam.com.tw/post/20191123/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20191123/</guid>
+      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/11/wetoe-street.jpg&#34;); } 文 / Siddharam 西打藍 前言 在基隆有一座街巷，曾引領一整世代人的時尚，在最風光的年代，有人在這裡日進斗金，一天的生意抵得過一般人十倍的</description>
+    </item>
     
     <item>
       <title>VeeValidate 表單驗證 | 密碼限制及二次確認密碼</title>
