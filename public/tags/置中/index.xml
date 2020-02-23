@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Css on Siddharam</title>
-    <link>https://siddharam.com.tw/tags/css/</link>
-    <description>Recent content in Css on Siddharam</description>
+    <title>置中 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E7%BD%AE%E4%B8%AD/</link>
+    <description>Recent content in 置中 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://siddharam.com.tw/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siddharam.com.tw/tags/%E7%BD%AE%E4%B8%AD/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://siddharam.com.tw/post/20200223/</guid>
       <description>文 / Siddharam 西打藍 垂直水平置中 我們的目標，是讓咖啡色方塊，能在藍色方塊垂直置中。 &amp;lt;div class=&#34;outer&#34; &amp;lt;div class=&#34;inner&#34; &amp;lt;/div &amp;lt;/div .outer { width: 200px; heieght: 200px; background: rgb(2, 186, 192); } inner { width: 50px; height: 50px; background: burlywood; } 有興趣的你，可</description>
-    </item>
-    
-    <item>
-      <title>怎麼學程式？ | 前端工程師必備技能</title>
-      <link>https://siddharam.com.tw/post/20190514/</link>
-      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://siddharam.com.tw/post/20190514/</guid>
-      <description>文 / Siddharam 西打藍 前言 最初，在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。 後來才了解，原來大家都是在 IDE 上寫，我最初是使用 Atom，</description>
     </item>
     
   </channel>

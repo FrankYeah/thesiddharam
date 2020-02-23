@@ -6,10 +6,19 @@
     <description>Recent content in 技術筆記 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS 垂直水平置中</title>
+      <link>https://siddharam.com.tw/post/20200223/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200223/</guid>
+      <description>文 / Siddharam 西打藍 垂直水平置中 我們的目標，是讓咖啡色方塊，能在藍色方塊垂直置中。 &amp;lt;div class=&#34;outer&#34; &amp;lt;div class=&#34;inner&#34; &amp;lt;/div &amp;lt;/div .outer { width: 200px; heieght: 200px; background: rgb(2, 186, 192); } inner { width: 50px; height: 50px; background: burlywood; } 有興趣的你，可</description>
+    </item>
     
     <item>
       <title>VeeValidate 表單驗證 | 密碼限制及二次確認密碼</title>

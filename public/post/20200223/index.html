@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Siddharam | 寫程式的文字人 | 西打藍" />
-    <meta property="og:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
-    <meta property="twitter:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
+    <meta name="title" content="CSS 垂直水平置中" />
+    <meta property="og:title" content="CSS 垂直水平置中" />
+    <meta property="twitter:title" content="CSS 垂直水平置中" />
     
 
     
-    <meta name="description" content="文字紀錄可能性 | 程式創造可能性">
-    <meta property="og:description" content="文字紀錄可能性 | 程式創造可能性" />
-    <meta property="twitter:description" content="文字紀錄可能性 | 程式創造可能性" />
+    <meta name="description" content="這是我最新學到的一招，margin auto 本身就能做到置中的效果，加上 flex 讓 inner 上下左右擴展的作用，達到垂直水平置中的效果。">
+    <meta property="og:description" content="這是我最新學到的一招，margin auto 本身就能做到置中的效果，加上 flex 讓 inner 上下左右擴展的作用，達到垂直水平置中的效果。" />
+    <meta property="twitter:description" content="這是我最新學到的一招，margin auto 本身就能做到置中的效果，加上 flex 讓 inner 上下左右擴展的作用，達到垂直水平置中的效果。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="" name="keywords">
+    <meta content="css, 垂直置中, 水平置中, flex, margin, absolute, 絕對定位, 垂直水平置中" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>Css-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>CSS 垂直水平置中-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/tags/css/">
+    <link rel="canonical" href="/post/20200223/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -188,15 +188,34 @@
 
 
 
-<header class="intro-header">
 
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <img style="width: 220px;" src="https://frontenter.files.wordpress.com/2019/05/white-icon-up-siddharam.png" alt="siddharam">
-                    
-		    <span class="subheading">寫程式的文字人</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/css" title="css">
+                            css
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E7%BD%AE%E4%B8%AD" title="置中">
+                            置中
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> February 23, 2020</p>
+                    <h1>CSS 垂直水平置中</h1>
+                    <h3 class="subheading">三種最佳作法</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -205,138 +224,199 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
 
-<div class="post-preview">
-        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">February 23, 2020</h5>
-    <a href="https://siddharam.com.tw/post/20200223/">
-        <h2 class="post-title homepage-post-title">
-            CSS 垂直水平置中 
+<article>
+    <div class="container">
+        <div class="row">
+
             
-        </h2>
-	
-        <h3 class="post-subtitle homepage-post-subtitle">
-            三種最佳作法
-        </h3>
-	
-        <div class="post-content-preview homepage-post-meta">
-	
-            這是我最新學到的一招，margin auto 本身就能做到置中的效果，加上 flex 讓 inner 上下左右擴展的作用，達到垂直水平置中的效果。
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-    
-    </p>
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / Siddharam 西打藍<br><br>
+
+<h3 class="article-h1-color">垂直水平置中</h3><br>
+
+我們的目標，是讓咖啡色方塊，能在藍色方塊垂直置中。<br><br>
+
+<pre>
+<code>
+
+&lt;div class="outer">
+
+  &lt;div class="inner"> &lt;/div>
+
+&lt;/div>
+
+.outer {
+  width: 200px;
+  heieght: 200px;
+  background: rgb(2, 186, 192);
+}
+
+inner {
+    width: 50px;
+    height: 50px;
+    background: burlywood;
+}
+
+</code>
+</pre>
+<br>
+
+<div style="width:200px; height: 200px; background: rgb(2, 186, 192);">
+
+  <div style="width:50px; height: 50px; background: burlywood;"></div>
+
+</div><br><br>
+
+有興趣的你，可以開啟檢查工具調整樣式看看。<br><br>
+
+<h3 class="article-h1-color">一、flex 作法</h3><br>
+
+flex 的 justify-content 負責 inner 水平排列，而 align-items 則是垂直排列。<br><br>
+
+<pre>
+<code>
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</code>
+</pre>
+<br>
+
+<h3 class="article-h1-color">二、absolute 絕對定位作法</h3><br>
+
+top、left 讓物體水平垂直置中，但必須扣除物體本身寬高，所以需要加上 translate 的 -50% 位移。<br><br>
+
+<pre>
+<code>
+
+.outer {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</code>
+</pre>
+<br><br>
+
+
+<h3 class="article-h1-color">三、flex、margin 作法</h3><br>
+
+這是我最新學到的一招，margin auto 本身就能做到置中的效果，加上 flex 讓 inner 上下左右擴展的作用，達到垂直水平置中的效果。<br><br>
+
+<pre>
+<code>
+
+.outer {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</code>
+</pre>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
 </div>
-<hr>
 
-<div class="post-preview">
-        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">May 14, 2019</h5>
-    <a href="https://siddharam.com.tw/post/20190514/">
-        <h2 class="post-title homepage-post-title">
-            怎麼學程式？ | 前端工程師必備技能 
-            
-        </h2>
-	
-        <h3 class="post-subtitle homepage-post-subtitle">
-            從 0 到 1 的入門教學
-        </h3>
-	
-        <div class="post-content-preview homepage-post-meta">
-	
-            在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。後來爬文才了解，原來大家都是在 IDE（編輯器）上寫。這是為初學者寫的教學文，幫助新手跨出第 0 步，進入 HTML、CSS、JavaScript 的世界......
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-    
-    </p>
-</div>
-<hr>
+<script src="../../js/post.js"></script>
 
 
-            
+                
 
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-
-    
-	
-    <section class="">
-    
-    <hr><h5><a style="color:rgb(2, 186, 192)!important;" href="/top/about">關於</a></h5>
-        <div class="short-about">
-            
-            
-                <p>文字紀錄可能性 | 程式創造可能性</p>
-            
-           
-           <ul class="list-inline"> 
-               
-               <li>
-                   <a href="https://siddharam.com.tw/tags/css/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               
-               
-               
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20200222/" data-toggle="tooltip" data-placement="top" title="離職不要說">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
                 </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+寫這些技術分享文，筆者是沒有額外收入的，但每年還是要付域名費用，如果你喜歡我的文章，歡迎<a href="https://p.ecpay.com.tw/0167F" target="_blank"> 自由贊助 </a>唷！也期待收到你的<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"> 回饋</a>。<br><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+想定期收到技術文章，或想一起探討前後端程式的朋友，建議加入 line 群組，或是官方帳號，大家可以互相交流，一起學程式，歡迎加入：<br><br>
+
+<span>Email: aaa24295234@gmail.com</span><br><br>
+Line 群組：<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">入群組表單邀請</span></a><br><br>
+群組為了防止假帳號，不開放用 QR Code 掃描入群，如有需要，可以填寫表單，註記 line ID 告訴我，謝謝。<br><br>
+Line 官方帳號：<a href="http://nav.cx/dkV3Bm2"><span id="lineId" style="color:rgb(2, 186, 192); cursor:pointer">@184railx</span></a><br><br>
+Line 官方帳號 QR Code：<br><br>
+<img src="https://qr-official.line.me/sid/M/184railx.png">
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
             </div>
-            <div id="busuanzi_container_page_pv">
-                    閱讀量：<span id="busuanzi_value_page_pv"></span> 次
-                </div><br>
-                <div id="busuanzi_container_site_uv">
-                    訪客數：<span id="busuanzi_value_site_uv"></span> 次
-                </span>
-    </section>
-	
-    
-    
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-    
-    
-</div>
+                
+                
 
-	</div>
-</div>
-
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -348,7 +428,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href="https://siddharam.com.tw/tags/css/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
