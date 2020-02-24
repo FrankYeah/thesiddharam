@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>權重 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E6%AC%8A%E9%87%8D/</link>
+    <description>Recent content in 權重 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E6%AC%8A%E9%87%8D/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>css 權重 | 包含深度選擇器</title>
+      <link>https://siddharam.com.tw/post/20200224/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200224/</guid>
+      <description>文 / Siddharam 西打藍 面試考題 會寫這篇，主要是曾面試到一份，比較各類選擇器權重的考題。 其中竟包含了深度選擇器，後來回家測試後發現，它仍屬於 clss、i</description>
+    </item>
+    
+  </channel>
+</rss>

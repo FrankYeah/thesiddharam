@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Vue CLI 2 環境設定 | 全域 SCSS" />
-    <meta property="og:title" content="Vue CLI 2 環境設定 | 全域 SCSS" />
-    <meta property="twitter:title" content="Vue CLI 2 環境設定 | 全域 SCSS" />
+    <meta name="title" content="css 權重 | 包含深度選擇器" />
+    <meta property="og:title" content="css 權重 | 包含深度選擇器" />
+    <meta property="twitter:title" content="css 權重 | 包含深度選擇器" />
     
 
     
-    <meta name="description" content="Vue CLI 2 的環境設定就耗費了我一下午的工作時間，所以將這次經驗紀錄下來，方便對全域 SCSS 以及 Router 有需求的人，有這篇文可以參考......">
-    <meta property="og:description" content="Vue CLI 2 的環境設定就耗費了我一下午的工作時間，所以將這次經驗紀錄下來，方便對全域 SCSS 以及 Router 有需求的人，有這篇文可以參考......" />
-    <meta property="twitter:description" content="Vue CLI 2 的環境設定就耗費了我一下午的工作時間，所以將這次經驗紀錄下來，方便對全域 SCSS 以及 Router 有需求的人，有這篇文可以參考......" />
+    <meta name="description" content="會寫這篇，主要是曾面試到一份，比較各類選擇器權重的考題。其中竟包含了深度選擇器，後來回家測試後發現，它仍屬於 clss、id 的範疇，所以決定紀錄一下。">
+    <meta property="og:description" content="會寫這篇，主要是曾面試到一份，比較各類選擇器權重的考題。其中竟包含了深度選擇器，後來回家測試後發現，它仍屬於 clss、id 的範疇，所以決定紀錄一下。" />
+    <meta property="twitter:description" content="會寫這篇，主要是曾面試到一份，比較各類選擇器權重的考題。其中竟包含了深度選擇器，後來回家測試後發現，它仍屬於 clss、id 的範疇，所以決定紀錄一下。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="vue, scss, router, Vue CLI 2" name="keywords">
+    <meta content="css, 深度選擇器, id, class, inline style, important, 權重" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>Vue CLI 2 環境設定 | 全域 SCSS-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>css 權重 | 包含深度選擇器-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190521/">
+    <link rel="canonical" href="/post/20200224/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -199,26 +199,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/css" title="css">
+                            css
                         </a>
                         
-                        <a class="tag" href="/tags/scss" title="scss">
-                            scss
-                        </a>
-                        
-                        <a class="tag" href="/tags/router" title="router">
-                            router
-                        </a>
-                        
-                        <a class="tag" href="/tags/vue-cli-2" title="Vue CLI 2">
-                            Vue CLI 2
+                        <a class="tag" href="/tags/%E6%AC%8A%E9%87%8D" title="權重">
+                            權重
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> May 21, 2019</p>
-                    <h1>Vue CLI 2 環境設定 | 全域 SCSS</h1>
-                    <h3 class="subheading">Router 基本教學</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> February 24, 2020</p>
+                    <h1>css 權重 | 包含深度選擇器</h1>
+                    <h3 class="subheading">!important、inline、id、class、element</h3>
                     <span class="meta">
 			
 
@@ -251,218 +243,146 @@
 
 <br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">前言</h3><br>
-最近被分配做「問卷機器人」的任務，需要有兩個語系、二十六則問題，有單選、複選。總之畫面很像在 line 聊天。<br><br>
+<h3 class="article-h1-color">面試考題</h3><br>
 
-一共會有四個頁面，重點有兩個：<br><br>
+會寫這篇，主要是曾面試到一份，比較各類選擇器權重的考題。<br><br>
 
-一是兩周完成。<br>
-二是用 Vue CLI 2 版本製作。<br><br>
+其中竟包含了深度選擇器，後來回家測試後發現，它仍屬於 clss、id 的範疇，所以決定紀錄一下。<br><br>
 
-問題是，之前工作專案有用過 Vue，但環境不是我弄的，在更以前的練習是用 Vue CLI 3，連 webpack 都不用碰，所以光是版本 2 的環境就搞了一下午，厭世。索性就整理一下坑，讓有相似需求的同行參考。以下是會講的內容：<br><br>
+<h3 class="article-h1-color">css 權重</h3><br>
 
-1. Vue CLI 2 安裝<br>
-2. router 處理<br>
-3. 共用 component header<br>
-4. 共用 SCSS Variables<br><br>
+權重由高往低排列，是：<br><br>
 
-<h3 class="article-h1-color">初探 Vue CLI 2</h3><br>
+<h3>!important > inline > id > class > element</h3><br>
 
-Vue CLI 2 安裝：<br><br>
+範例如下：<br><br>
+
+<pre>
 <code>
-npm install -g vue-cli<br>
-yarn global add vue-cli<br>
-</code><br><br>
 
+&lt;div class="div-class" id="divId">&lt;/div>
 
-Vue CLI 3 安裝：<br><br>
-<code>
-npm install -g @vue/cli<br>
-yarn global add @vue/cli<br>
-</code><br><br>
+.div-class {
 
-啟用 Webpack，後面專案名稱自取：<br><br>
-<code>
-vue init webpack analyze-robot<br>
-</code><br><br>
-
-接著它會問你要安裝那些東西，如 vue-router、ESLint 標準、unit test、e2e、npm，看你需要哪些，反正之後要用也可以自己裝。<br><br>
-
-結束後，就可以切換到該專案，輸入：
-<code>
-npm run dev
-</code>
-就可以開發了。
-
-<h3 class="article-h1-color">Router 怎麼寫</h3><br>
-
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/05/vue-structure.png"/>
-<div style="text-align:center">專案結構。</div><br>
-
-先看看我的專案結構後，直接上程式碼比較快：<br><br>
-
-<pre><code>
-# 以 question 為例
-# Question.vue
-
-&lt;template>
-  &lt;div>
-    &lt;router-link to="/">首頁連結&lt;/router-link>
-  &lt;/div>
-&lt;/template>
-
-&lt;script>
-export default {
-  name: 'Question',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
-&lt;/script>
-
-# router/index.js
-
-import Vue from 'vue'
-import Router from 'vue-router'
-import Header from '@/components/Header'
-import Home from '@/components/Home'
-import Question from '@/components/Question'
-
-Vue.use(Router)
-
-export {
-  Header
 }
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/question',
-      name: 'Question',
-      component: Question
-    }
-  ]
-})
-</code>
-</pre><br>
+#divId {
 
-在 index.js 設定完後，就能引用 router 了。<br><br>
-
-<h3 class="article-h1-color">Component 共用</h3><br>
-
-以經常共用的 Header 為例：<br><br>
-
-<pre><code>
-# 我直接放在 App.vue 這隻程式裡，所以每個 component 上方都能看見 Header
-# App.vue
-
-&lt;template>
-  &lt;div id="app">
-    &lt;Header>&lt;/Header>
-    &lt;router-view/>
-  &lt;/div>
-&lt;/template>
-
-&lt;script>
-import Header from './components/Header'
-export default {
-  name: 'App',
-  components: {
-    Header
-  }
 }
-&lt;/script>
+
 </code>
-</pre><br>
+</pre>
+<br>
 
-<h3 class="article-h1-color">共用 SCSS Variables</h3><br>
+<h5>!important</h5><br>
 
-SCSS 安裝：<br><br>
+
+<pre>
 <code>
-npm install sass-loader@7.3.1 sass-resources-loader node-sass --save-dev<br>
 
-</code><br>
-
-<i>sass-loader 若安裝更高版本會報錯，所以建議 7.3.1 版本。</i><br><br><br><br>
-
-接著是我研究最久的 SCSS 共用，用那麼久是因為弄錯版本了，如果是 Vue CLI 3，只需要：<br><br>
+.div-class {
+  background: red !important;
+}
 
 
-<pre><code>
-# 在 build/webpack.base.conf.js 設定就好
-
-{
-    test: /\.(sass|scss)$/,
-    use: [
-        'vue-style-loader',
-        'css-loader',
-        'postcss-loader',
-        {
-            loader: 'sass-loader',
-            options:{
-                data: `@import "./src/styles/global/_mixin.scss";`
-            }
-        }
-
-    ]
-},
 </code>
-</pre><br>
+</pre>
+<br>
 
-如果是 Vue CLI 2，就有幾個地方要設定：<br><br>
+<h5>inline style</h5><br>
 
-<pre><code>
 
-# 要在 build/util.js 中的 exports.cssLoaders 裡添加 function
+<pre>
+<code>
 
-  function resolveResource(name) {
-    return path.resolve(__dirname, '../src/styles/global/' + name);
-  }
-  function generateSassResourceLoader() {
-    var loaders = [
-    cssLoader,
-    'sass-loader',
-    {
-      loader: 'sass-resources-loader',
-      options: {
-      resources: [
-        resolveResource('_mixins.scss'),
-        resolveResource('_variables.scss'),
-        resolveResource('_normalize.scss')
-      ]
-      }
-    }
-    ];
-    if (options.extract) {
-      return ExtractTextPlugin.extract({
-      use: loaders,
-      fallback: 'vue-style-loader'
-      })
-    } else {
-      return ['vue-style-loader'].concat(loaders)
-    }
-  }
+&lt;div class="div-class" id="divId" style="background: red;">&lt;/div>
 
-# 下方的 sass 與 scss 的 return 要修改成：
-...
-...
-sass: generateSassResourceLoader(),
-scss: generateSassResourceLoader(),
-...
-...
-</code></pre><br>
 
-教學到這裡告一段落。所以，可以共用的 style 會放在全域裡，而無法共用的，其實可以直接寫在 component 裡面就好，反正只會用一次。
+</code>
+</pre>
+<br>
 
 
 
+<h5>id</h5><br>
+
+
+<pre>
+<code>
+
+#divId {
+  background: red;
+}
+
+
+</code>
+</pre>
+<br>
+
+<h5>class</h5><br>
+
+
+<pre>
+<code>
+
+.div-class {
+  background: red;
+}
+
+
+</code>
+</pre>
+<br>
+
+<h5>element</h5><br>
+
+
+<pre>
+<code>
+
+div {
+  background: red;
+}
+
+
+</code>
+</pre>
+<br>
+
+<h3 class="article-h1-color">深度選擇器</h3><br>
+
+通常是 css 有 scope 的情況下，才會用到深度選擇器，如果是以 class 的寫法做深度選擇時，它的權重會落在 class 的最高級。<br><br>
+
+<pre>
+<code>
+
+// basic-table 是組件，裡頭其中一個 class 命名為 table
+
+&lt;div class="div-class">
+
+  &lt;basic-table class="table">&lt;/basic-table>
+
+&lt;/div>
+
+
+
+&lt;style>
+
+// 深度選擇器
+
+.div-class /deep/ .table {
+  background: red;
+}
+
+&lt;/style>
+
+</code>
+</pre>
+<br><br>
+
+所以結論是：
+
+<h4>!important > inline > id > 使用 class 的選擇器 > class > element</h4>
 
 <br><br><br>
 
@@ -481,15 +401,10 @@ scss: generateSassResourceLoader(),
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190519/" data-toggle="tooltip" data-placement="top" title="認識 google chrome 開發者工具 dev tool | 不會程式也能看懂網站結構">&larr;
+                        <a href="/post/20200223/" data-toggle="tooltip" data-placement="top" title="CSS 垂直水平置中">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20190528/" data-toggle="tooltip" data-placement="top" title="google form 表單收集資料 | 無須資料庫">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
