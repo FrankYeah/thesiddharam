@@ -6,10 +6,19 @@
     <description>Recent content in Vue on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue slot 插槽 | 使用教學</title>
+      <link>https://siddharam.com.tw/post/20200225/</link>
+      <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200225/</guid>
+      <description>文 / Siddharam 西打藍 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
+    </item>
     
     <item>
       <title>佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面</title>

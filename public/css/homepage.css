@@ -42,15 +42,43 @@
 
 /* 首圖照片 */
 .intro-header{
-    background-image:url("https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg");
+    background-image:url("https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg");
 }
 
 @media screen and (max-width:500px){
     .intro-header{
-        background-image:url("https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg");
+        background-image:url("https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg");
     }
     intro-header .post-heading h1 {
         font-size: 26px;
     }
 }
+
+@media screen and (min-width:768px){
+
+    .navbar-custom .nav li a {
+        color: #949898;
+        font-weight: 400;
+    }
+
+    .intro-header {
+        height: 515px;
+    }
+
+}
+
+@media screen and (max-width:767px){
+
+    .navbar-default .navbar-nav>li>a {
+        color: #777;
+        font-weight: 400;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #949898;
+    }
+
+}
+
+
 

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue slot 插槽 | 使用教學</title>
+      <link>https://siddharam.com.tw/post/20200225/</link>
+      <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200225/</guid>
+      <description>文 / Siddharam 西打藍 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
+    </item>
     
     <item>
       <title>css 權重 | 包含深度選擇器</title>
@@ -386,7 +395,7 @@
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190418/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2019/01/index-head-photo.jpg&#34;); } } 文 / Siddharam 西打藍 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
+      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg&#34;); } } 文 / Siddharam 西打藍 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
     </item>
     
   </channel>
