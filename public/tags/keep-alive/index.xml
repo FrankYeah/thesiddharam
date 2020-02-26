@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keep Alive on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/keep-alive/</link>
+    <description>Recent content in Keep Alive on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/keep-alive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vue keep-alive | 保存組件狀態</title>
+      <link>https://siddharam.com.tw/post/20200226/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200226/</guid>
+      <description>文 / Siddharam 西打藍 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="vue slot 插槽 | 使用教學" />
-    <meta property="og:title" content="vue slot 插槽 | 使用教學" />
-    <meta property="twitter:title" content="vue slot 插槽 | 使用教學" />
+    <meta name="title" content="vue keep-alive | 保存組件狀態" />
+    <meta property="og:title" content="vue keep-alive | 保存組件狀態" />
+    <meta property="twitter:title" content="vue keep-alive | 保存組件狀態" />
     
 
     
-    <meta name="description" content="vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。slot 可以讓你在父層，在來決定組件中某塊區域的長相。就像是在拼圖中間挖空一塊，讓每位拼圖創作者自由在其中揮灑色彩。">
-    <meta property="og:description" content="vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。slot 可以讓你在父層，在來決定組件中某塊區域的長相。就像是在拼圖中間挖空一塊，讓每位拼圖創作者自由在其中揮灑色彩。" />
-    <meta property="twitter:description" content="vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。slot 可以讓你在父層，在來決定組件中某塊區域的長相。就像是在拼圖中間挖空一塊，讓每位拼圖創作者自由在其中揮灑色彩。" />
+    <meta name="description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。">
+    <meta property="og:description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。" />
+    <meta property="twitter:description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="vue, slot, 組件, component" name="keywords">
+    <meta content="vue, keep-alive" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>vue slot 插槽 | 使用教學-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>vue keep-alive | 保存組件狀態-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20200225/">
+    <link rel="canonical" href="/post/20200226/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -203,14 +203,14 @@
                             vue
                         </a>
                         
-                        <a class="tag" href="/tags/slot" title="slot">
-                            slot
+                        <a class="tag" href="/tags/keep-alive" title="keep-alive">
+                            keep-alive
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> February 25, 2020</p>
-                    <h1>vue slot 插槽 | 使用教學</h1>
-                    <h3 class="subheading">高彈性的組件化設計</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> February 26, 2020</p>
+                    <h1>vue keep-alive | 保存組件狀態</h1>
+                    <h3 class="subheading">避免重複渲染影響效能</h3>
                     <span class="meta">
 			
 
@@ -243,82 +243,58 @@
 
 <br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">組件化設計</h3><br>
+<h3 class="article-h1-color"></h3><br>
 
-vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。<br><br>
-
-slot 可以讓你在父層，在來決定組件中某塊區域的長相。<b>就像是在拼圖中間挖空一塊，讓每位拼圖創作者自由在其中揮灑色彩。</b><br><br>
-
-我分享兩種自己常用的作法分享：<br><br>
-
-<h3 class="article-h1-color">組件化設計</h3><br>
-
-首先是最簡單實用的例子，也就是挖空。<br><br>
+會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。使用方法很簡單。<br><br> 
 
 <pre>
 <code>
 
-// bread-crumb 組件
-// 在組件中挖空
+// 組件切換時還能保持狀態
 
-&lt;template>
-  &lt;div class="bread-crumb">
-    &lt;slot>&lt;/slot>
-  &lt;/div>
-&lt;/template>
+&lt;keep-alive>
+  &lt;component :is="selectedNavBar">&lt;/component>
+&lt;/keep-alive>
 
-// 父層
-// 使用組件時就能塞入元素
+...
+...
 
-&lt;bread-crumb>
-  &lt;h1>我是填空物&lt;/h1>
-&lt;/bread-crumb>
+data () {
+  return {
+    selectedNavBar: 'PlanDetail',
+    navbar: [
+      { componentName: 'PlanDetail' },
+      { componentName: 'ReplaceCase' },
+      { componentName: 'ProductDemand' },
+      { componentName: 'ProductSpec' }
+    ]
+  }
+}
 
-// 結果如下
-
-&lt;div class="bread-crumb">
-　&lt;h1>我是填空物&lt;/h1>
-&lt;/div>
+...
+...
 
 </code>
 </pre>
 <br>
 
-第二種是具名插槽（Named Slots），你可以命名多個 slot 在組件中，想要將元素放在指定 slot 位置時，只需要加上其命名就可以了。<br><br>
+除此之外，你還能指定哪些組件要保存狀態、哪些不用，只需要加上 include、exclude。<br><br>
 
 <pre>
 <code>
 
-// bread-crumb 組件
-// 在組件中挖空 slot 並命名為 header
+// 此種寫法表示，只有 PlanDetail、ReplaceCase 兩個組件需要被快取，
+// 其他組件則不需要。exclude 作法則反。
 
-&lt;template>
-  &lt;div class="bread-crumb">
-    &lt;slot name="header">&lt;/slot>
-  &lt;/div>
-&lt;/template>
-
-// 父層
-// 使用 slot 時取名，就能使用
-
-&lt;bread-crumb>
-  &lt;h1 slot="header">我是 header&lt;/h1>
-&lt;/bread-crumb>
-
-// 結果如下
-
-&lt;div class="bread-crumb">
-　&lt;h1>我是 header&lt;/h1>
-&lt;/div>
+&lt;keep-alive include:"PlanDetail, ReplaceCase">
+  &lt;component :is="selectedNavBar">&lt;/component>
+&lt;/keep-alive>
 
 </code>
 </pre>
 <br>
 
-每次要選擇抽出樣式，還是挖空 slot 時都很苦惱，兩者沒有絕對，只能看網站整體設計來做判斷。<br><br>
-
-
-
+因為被快取的組件不會被摧毀，所以也不會觸發 mounted，如果要重新觸發組件的生命週期，可以使用 activated 與 deactivated。
 
 <br><br><br>
 
@@ -337,15 +313,10 @@ slot 可以讓你在父層，在來決定組件中某塊區域的長相。<b>就
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20200224/" data-toggle="tooltip" data-placement="top" title="css 權重 | 包含深度選擇器">&larr;
+                        <a href="/post/20200225/" data-toggle="tooltip" data-placement="top" title="vue slot 插槽 | 使用教學">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20200226/" data-toggle="tooltip" data-placement="top" title="vue keep-alive | 保存組件狀態">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
