@@ -6,10 +6,19 @@
     <description>Recent content on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>離職第一週</title>
+      <link>https://siddharam.com.tw/post/20200227/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200227/</guid>
+      <description>文 / Siddharam 西打藍 離職之後 我還沒寫為什麼離職，因為還想沉澱一段時間再說。而今天有點感覺，想先記錄離職後發生的事，就開始吧。 懵懂的開始 從 2/21（五</description>
+    </item>
     
     <item>
       <title>vue keep-alive | 保存組件狀態</title>
@@ -17,7 +26,7 @@
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200226/</guid>
-      <description>文 / Siddharam 西打藍 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive</description>
+      <description>文 / Siddharam 西打藍 vue keep-alive 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供</description>
     </item>
     
     <item>
