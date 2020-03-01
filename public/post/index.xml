@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>前端必懂的HTTP 知識</title>
+      <link>https://siddharam.com.tw/post/20200229/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200229/</guid>
+      <description>文 / Siddharam 西打藍 前言 這應該是前端面試前，必要準備的題目之一。在前公司時，曾負責分享這則題目，今天就把當時分享的內容整理出來。 為網路檔案傳輸而生的</description>
+    </item>
     
     <item>
       <title>帕金森定律 | 拖延症的發生</title>
