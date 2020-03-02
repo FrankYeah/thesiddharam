@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>轉職 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E8%BD%89%E8%81%B7/</link>
+    <description>Recent content in 轉職 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E8%BD%89%E8%81%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>寫在工作一年後 記者轉職前端工程師成功</title>
+      <link>https://siddharam.com.tw/post/20200301/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200301/</guid>
+      <description>文 / Siddharam 西打藍 前言 會萌生轉職的念頭，通常不是轉職後的工作有多好，而是當下的狀態太差，差到只能透過轉職來解決問題。 我不知道自己算不算典型，但都過</description>
+    </item>
+    
+  </channel>
+</rss>

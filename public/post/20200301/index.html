@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="前端必懂的HTTP 知識" />
-    <meta property="og:title" content="前端必懂的HTTP 知識" />
-    <meta property="twitter:title" content="前端必懂的HTTP 知識" />
+    <meta name="title" content="寫在工作一年後 記者轉職前端工程師成功" />
+    <meta property="og:title" content="寫在工作一年後 記者轉職前端工程師成功" />
+    <meta property="twitter:title" content="寫在工作一年後 記者轉職前端工程師成功" />
     
 
     
-    <meta name="description" content="這應該是前端面試前，必要準備的題目之一。在前公司時，曾負責分享這則題目，今天就把當時分享的內容整理出來。">
-    <meta property="og:description" content="這應該是前端面試前，必要準備的題目之一。在前公司時，曾負責分享這則題目，今天就把當時分享的內容整理出來。" />
-    <meta property="twitter:description" content="這應該是前端面試前，必要準備的題目之一。在前公司時，曾負責分享這則題目，今天就把當時分享的內容整理出來。" />
+    <meta name="description" content="會萌生轉職的念頭，通常不是轉職後的工作有多好，而是當下的狀態太差，差到只能透過轉職來解決問題。">
+    <meta property="og:description" content="會萌生轉職的念頭，通常不是轉職後的工作有多好，而是當下的狀態太差，差到只能透過轉職來解決問題。" />
+    <meta property="twitter:description" content="會萌生轉職的念頭，通常不是轉職後的工作有多好，而是當下的狀態太差，差到只能透過轉職來解決問題。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="http, 前端" name="keywords">
+    <meta content="轉職, 前端, 軟體工程師, 記者" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>前端必懂的HTTP 知識-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>寫在工作一年後 記者轉職前端工程師成功-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20200229/">
+    <link rel="canonical" href="/post/20200301/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -199,14 +199,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/http" title="http">
-                            http
+                        <a class="tag" href="/tags/%E8%BD%89%E8%81%B7" title="轉職">
+                            轉職
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF" title="前端">
+                            前端
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> February 29, 2020</p>
-                    <h1>前端必懂的HTTP 知識</h1>
-                    <h3 class="subheading">重點整理 HTTP0.9、1.0、1.1 特色</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 1, 2020</p>
+                    <h1>寫在工作一年後 記者轉職前端工程師成功</h1>
+                    <h3 class="subheading">難過的轉職原因</h3>
                     <span class="meta">
 			
 
@@ -241,98 +245,50 @@
 
 <h3 class="article-h1-color">前言</h3><br>
 
-這應該是前端面試前，必要準備的題目之一。在前公司時，曾負責分享這則題目，今天就把當時分享的內容整理出來。<br><br>
 
-<h3 class="article-h1-color">為網路檔案傳輸而生的 HTTP 0.9</h3><br>
+<b>會萌生轉職的念頭，通常不是轉職後的工作有多好，而是當下的狀態太差，差到只能透過轉職來解決問題。</b><br><br>
 
+我不知道自己算不算典型，但都過了一年了，我想，是個時候誠實面對當時的自己。<br><br>
 
-超文字傳輸協定（Hypertext Transfer Protocol, HTTP）是網路上，最普遍被廣泛採用的應用協定之一。它是客戶端和伺服器之間，用來產生最新網頁內容的共通語言。<br><br>
+<h3 class="article-h1-color">記者的樂與苦</h3><br>
 
-1991年設計 HTTP 的目標：檔案傳輸功能、能夠對某個超文本檔案庫提出索引搜尋的請求，以及能夠讓客戶端對伺服器進行查詢。<br><br>
+大學畢業後，我在網路媒體、報社、雜誌當了約三年記者，當時遇到最大的挫折是：採訪企劃被退、稿子寫不好被退。這是記者經常面臨的挑戰，尤其是在經典雜誌時，一個月只讓你寫一篇七千字文章的情況下，企劃和文字的功力更會被要求，還記得當時蠻痛苦的。<br><br>
 
-當時的實作如下：<br><br>
+但除此之外，當記者的好處太多了。<br><br>
 
-<b>〃客戶端請求一個單一 ASCII 字元字串（character string）</b><br>
-<b>〃客戶端請求是以一個換行字元（CRLF）來作結束。</b><br>
-<b>〃伺服器回應一個 ASCII 字元串（character stream）。</b><br>
-<b>〃伺服器回應一份超文字標記語言（HTML）。</b><br>
-<b>〃連線會在文件傳輸完成後被終止連結。</b><br><br>
+最大的好處是：不常進辦公室。你可能要南下採訪故事人物，或是到台北市各地參加記者會、研討會。當記者這段時間，還曾由公司派遣，而遠道印尼、越南、美國進行採訪任務。每當文章完成發表後，也會有滿滿的成就感。我還曾因公司關係，參加影視節目及廣播節目，這都是非常難得的體驗。<br><br>
 
+可惜的是，因媒體大環境的關係，公司能給付的薪資有限，當時的薪資約三萬多，一年頂多賺四十多萬。對於 25 歲的我來說，錢賺的多寡會和自身價值連結，雖然日子過得開心，但在朋友面前，總仍會暗自比較，也為未來若需成家立業等事擔心。<br><br>
 
-簡單來說，就是雙方建立連線後，client 向 server 發出請求，server 回應 HTML 檔案。其中的 request 和 response 都是以 ASCII 編碼進行處理的。以下再舉個例子：<br><br>
+<h3 class="article-h1-color">轉職的契機</h3><br>
 
+當時找不到其他解決辦法的我，碰巧看到新興媒體如報導者、端傳媒開出職缺，發現有個職稱名為前、後端工程師，他們的薪水都開好高，研究後發現，原來當時的互動式網站，是由他們製作而成的，索性就去研究看看。<br><br>
 
-<pre>
-<code>
+研究約半年後，看到 AppWorks School 開了前端工程師專班，便決定去聊聊，也很順利的徵選上。<br><br>
 
-$> telnet google.com 80
-
-Connected to 74.125.xxx.xxx
-
-GET /about/
-
-（超文字回應內容）
-（關閉連線）
-
-</code>
-</pre>
-<br>
-
-這是使用 telnet 連線到 google.com 的 80 port。Request 僅有短短兩行，包含文件路徑和 GET 方法。Request 連 headers 都沒有，只有一份 HTML 檔案。<br><br>
-
-整理一下 HTTP 0.9 的特色：<br><br>
-
-<b>1.「客戶端與伺服器」（client & server）以及「請求與回應」 （request & reponse）關係的協定。</b><br>
-<b>2. 跑在 TCP/IP 連結上的 ASCII 協定。</b><br>
-<b>3. 被設計用來傳輸超文字文件（HTML）。</b><br>
-<b>4. 伺服器和客戶端之間的連線，會在每個請求之後就被關閉。</b><br><br>
-
-<h3 class="article-h1-color">更多 metadata 的 HTTP 1.0</h3><br>
-
-後來到了 1994 年，Netscape 發行全球第一套瀏覽器 Navigator 1.0，原先 HTTP 0.9 的設計已經不夠用，新型態的網站需要的不只是 HTML，還需要能支援 CSS 以及 圖片等，也需要更多的 metadata。<br><br>
-
-HTTP 1.0 的特點整理：<br><br>
-
-<b>1. 回應物件並不僅限於超文字內容，包含 純文字檔案、圖片。</b><br>
-<b>2. 更多的請求標頭訊息，包含 User-Agent、Accept。</b><br>
-<b>3. 更多的回應標頭訊息，HTTP 類型、Content-Type、Content-Length、Expires、Last-Modified。</b><br>
-<b>4. 每次請求都需要建立一次 TCP 連線。</b><br><br>
-
-補充標頭訊息意思：<br><br>
-
-<i>User-Agent：瀏覽器名稱、瀏覽器版本號、渲染引擎、操作系統。</i><br>
-<i>Accept：能夠接受的回應內容類型（Content-Types）。</i><br>
-<i>Expires：指定一個日期/時間，超過該時間則認為此回應已經過期。</i><br>
-<i>Last-Modified：所請求的物件的最後修改日期。</i><br><br>
-
-<h3 class="article-h1-color">節省更多網路資源的 HTTP 1.1</h3><br>
-
-在 HTTP 1.0 發布的幾年後，1.1 版本就出現了，引進了重要的效能最佳化的技術。<br><br>
-
-特點整理：<br><br>
-
-<b>〃持續存活（keepalive）的 HTTP 連線技術。允許連線被重複使用。</b><br>
-<b>〃請求管線處理（request pipelining）以允許同時進行請求處理作業。消除由回應和請求傳播延遲所產生的等候時間。是將多個HTTP請求（request）整批送出的技術，而在傳送過程中不需先等待伺服器的回應。</b><br>
-<b>〃緩存處理，緩存控制策略例如 Entity Etag，If-Unmodified-Since, If-Match, If-None-Match等更多可供選擇的緩存頭來控制緩存策略。</b><br>
-<b>〃錯誤通知的管理，在HTTP1.1中新增了24個錯誤狀態響應碼，如409（Conflict）表示請求的資源與資源的當前狀態發生衝突；410（Gone）表示服務器上的某個資源被永久性的刪除。</b><br>
-
-名詞解釋：<br><br>
-
-<i>如果URL上的資源內容改變，一個新的ETag就會被分配。ETag類似於指紋，並且他們能夠被快速地被比較，以確定兩個版本的資源是否相同。</i><br>
-<i>當快取過期之後，可以用If-Modified-Since或是If-None-Match詢問 Server 有沒有新的資源，如果有的話就回傳新的，沒有的話就回傳 Status code 304，代表快取裡面的資源還能繼續沿用。</i><br>
-<i>Content-Encoding ：能夠接受的編碼方式列表。</i><br>
-<i>Cookies ：由伺服器通過 Set- Cookie 傳送的一個超文字傳輸協定 Cookie。</i><br>
-<i>Connection ：該瀏覽器想要優先使用的連接類型。</i><br>
-<i>Catche-Control： Catche 存活的時間（秒）。</i><br>
-<i>Transfer-Encoding ：用來將實體安全地傳輸給用戶的編碼形式。目前定義的方法包括：分塊（chunked）、compress、deflate、gzip 和 identity。</i><br><br>
-
-<h3 class="article-h1-color">後記</h3><br>
-
-那次的分享會，也是準備了很久、精讀了「高效能網站開發指南」這本書才完成簡報的。而 HTTP 2.0 的部分是我最不熟悉的，這次的內文就先不放，因為它和以往的知識連貫不起來。如果要熟悉 HTTP，也建議你實際開 console 來觀察測試唷。<br><br> 
+但在上課期間，因為沒薪水，也不確定能否轉職成功，加上離開心儀的媒體業，導致心裡很不安。當時想著：「人活著也太累了吧，或許我真的沒什麼價值吧。」幸好沒有萌生不好的念頭。但當晚的感覺很難忘，那情緒是我人生的最低潮，往後每當看見有人流露出那種情緒，我都會主動跟他聊聊當時的經歷。<b>因為那種難過，是會讓你做傻事。</b><br><br>
 
 
+<h3 class="article-h1-color">轉職成功</h3><br>
 
-<br><i>參考書目：高效能網站開發指南</i><br><br>
+畢業後，我投遞一家先前就蠻感興趣的公司，也順利的面試上，並在畢業的下一周就職。現在想想，都仍十分感謝這間公司，願意給我機會。<br><br>
+
+一年過後，我算了算，大約賺了70萬，接近當記者的兩倍薪資。這讓我找回自信。<br><br>
+
+過去的自己，實在太小看賺錢這件事。身上有錢，會讓你的選擇更多一些，而跨領域又讓你的機會更多了一些，但更重要的是一種被社會認可的價值，<b>這種認可，人生只需要一次就夠。</b>因為從此以後，你就會知道，<b>自己只要有心，就能實現社會的期待，端看你你想不想做而已。</b><br><br>
+
+爾後心想，既然有公司願意出這個價碼聘請我，那就代表我的產值高於這價格。那麼，或許我該為自己工作試試？這是擾動我離職的因素之一。但我們留待另一篇文章聊。<br><br>
+
+
+<h3 class="article-h1-color">領悟</h3><br>
+
+過去一年來，別人常問我：「為什麼轉職？」，我總是說：「寫文字和寫程式都有創造的元素，兩者我都喜歡，所以才當起了前端工程師。」<b>但實際原因，是當時沒自信的自已，努力嘗試的一種改變而已。</b>慶幸自己成功了。<br><br>
+
+曾想過，出社會後的人生如果可以重來，我會想改變什麼嗎？我想了想，倒也無須改變什麼，<b>畢竟你若沒經歷這些苦，即使得到的結果再美好，你也不會珍惜，更不知它的得來不易。</b><br><br>
+
+我今年27歲，是一名前端工程師，前一年還是一名記者呢。明年、未來會怎麼樣，我也不曉得。但現在的我，有著比以前厚實的自信，原因是我嘗試過改變，並也因為努力和幸運而成功，<b>那麼，充滿潛力的你呢，不喜歡現在生活的話，準備嘗試些什麼改變了嗎？</b><br><br>
+
+
 
 <br><br><br>
 
@@ -351,15 +307,10 @@ HTTP 1.0 的特點整理：<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20200228/" data-toggle="tooltip" data-placement="top" title="帕金森定律 | 拖延症的發生">&larr;
+                        <a href="/post/20200229/" data-toggle="tooltip" data-placement="top" title="前端必懂的HTTP 知識">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20200301/" data-toggle="tooltip" data-placement="top" title="寫在工作一年後 記者轉職前端工程師成功">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
