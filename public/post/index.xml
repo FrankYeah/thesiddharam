@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WordPress 主題安裝教學 | 以 Avada 為例</title>
+      <link>https://siddharam.com.tw/post/20200305/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200305/</guid>
+      <description>文 / Siddharam 西打藍 前言 我們這次將購買 Avada 作為 WordPress 的佈景主題。它非常容易上手，有方便的排版和多種外掛可以選用，如果你對網站沒那麼熟悉，這套軟體能讓你輕易</description>
+    </item>
+    
+    <item>
+      <title>WordPress 架站教學 | SiteGround 主機</title>
+      <link>https://siddharam.com.tw/post/20200304/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200304/</guid>
+      <description>文 / Siddharam 西打藍 前言 今天為了幫人架部落格平台，所以在 SiteGround 購買主機，也安裝好 WordPress。事實上 SiteGround 本身就有專門給 WordPress 的架站方案，所以整個過程花不</description>
+    </item>
     
     <item>
       <title>有一種工作，叫生活 | 給在工作中迷失的你</title>
