@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="WordPress 主題安裝教學 | 以 Avada 為例" />
-    <meta property="og:title" content="WordPress 主題安裝教學 | 以 Avada 為例" />
-    <meta property="twitter:title" content="WordPress 主題安裝教學 | 以 Avada 為例" />
+    <meta name="title" content="vuex 教學 | vue 的狀態管理工具" />
+    <meta property="og:title" content="vuex 教學 | vue 的狀態管理工具" />
+    <meta property="twitter:title" content="vuex 教學 | vue 的狀態管理工具" />
     
 
     
-    <meta name="description" content="我們這次將購買 Avada 作為 WordPress 的佈景主題。它非常容易上手，有方便的排版和多種外掛可以選用，如果你對網站沒那麼熟悉，這套軟體能讓你輕易地架起部落格及電商平台...">
-    <meta property="og:description" content="我們這次將購買 Avada 作為 WordPress 的佈景主題。它非常容易上手，有方便的排版和多種外掛可以選用，如果你對網站沒那麼熟悉，這套軟體能讓你輕易地架起部落格及電商平台..." />
-    <meta property="twitter:description" content="我們這次將購買 Avada 作為 WordPress 的佈景主題。它非常容易上手，有方便的排版和多種外掛可以選用，如果你對網站沒那麼熟悉，這套軟體能讓你輕易地架起部落格及電商平台..." />
+    <meta name="description" content="vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集...">
+    <meta property="og:description" content="vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集..." />
+    <meta property="twitter:description" content="vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集..." />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="WordPress, Avada, 架站, 主題, theme" name="keywords">
+    <meta content="vue, vuex, state, mutation, commit, action" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>WordPress 主題安裝教學 | 以 Avada 為例-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>vuex 教學 | vue 的狀態管理工具-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20200305/">
+    <link rel="canonical" href="/post/20200306/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -199,22 +199,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/wordpress" title="WordPress">
-                            WordPress
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
                         </a>
                         
-                        <a class="tag" href="/tags/avada" title="Avada">
-                            Avada
-                        </a>
-                        
-                        <a class="tag" href="/tags/%E6%9E%B6%E7%AB%99" title="架站">
-                            架站
+                        <a class="tag" href="/tags/vuex" title="vuex">
+                            vuex
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 5, 2020</p>
-                    <h1>WordPress 主題安裝教學 | 以 Avada 為例</h1>
-                    <h3 class="subheading">新手最容易上手的佈景主題</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 6, 2020</p>
+                    <h1>vuex 教學 | vue 的狀態管理工具</h1>
+                    <h3 class="subheading">響應式狀態更新</h3>
                     <span class="meta">
 			
 
@@ -249,45 +245,175 @@
 
 <h3 class="article-h1-color">前言</h3><br>
 
-我們這次將購買 Avada 作為 WordPress 的佈景主題。它非常容易上手，有方便的排版和多種外掛可以選用，如果你對網站沒那麼熟悉，這套軟體能讓你輕易地架起部落格及電商平台。那我們就開始吧。<br><br>
+蠻多專案都有用到 vuex，原因是 vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集。<br><br>
+
+那我們就開始吧。<br><br>
 
 
-<h3 class="article-h1-color">Avada 教學</h3><br>
+<h3 class="article-h1-color">vuex</h3><br>
 
-1. 首先進到這個<a href="https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?irgwc=1&clickid=32VUf9x6vxyOWvywUx0Mo3w1UknXAJxYxWwRxU0&iradid=275988&irpid=1245386&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1245386&utm_medium=affiliate&utm_source=impact_radius" target="_blank">網站</a>，點擊 Add to Cart 後，就可以結帳。你會需要輸入個人資料和付款方式。購買完成後，就將 Avada 的檔案下載下來，並解壓縮。<br><br>
+首先我們會安裝 vuex，如果使用 CLI 的話，可以主動勾選安裝 vuex 選項：<br><br>
 
-<img style="margin-bottom:8px; max-width:80%;" src="https://frontenter.files.wordpress.com/2020/03/avada-checkout.png"/>
-<div style="text-align:center;">購買 Avada 並結帳。</div><br><br>
+<code>npm install vuex --save</code><br><br>
+
+接著，我們要創建一個 store，並將此次會運用到的三個 object 放入，分別是 state、mutation、action。<br><br>
+
+<pre>
+<code>
+
+// store/index.js
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+const state = {
+
+}
+
+const mutations = {
+
+}
+
+const actions = {
+
+}
+
+export default new Vuex.Store({
+  state,
+  mutations,
+  actions
+})
 
 
-2. 接著我們回到 WordPress，如果不習慣英文介面的話，可以到 Settings - General - Site Language 的地方修改它。修改後，我們要安裝上一步所下載的主題。<br><br>
+</code>
+</pre>
+<br>
 
-我們進到外觀 - 上傳，接著從 Avada_Full_Package - Avada Theme 中先選擇 Avada.zip 上傳，上傳完成後，點擊安裝，但不要啟用。我們接著上傳 Avada-Child-Theme.zip，完成安裝後，我們點選啟用，就安裝完成了。<br><br>
+以上就完成 vuex 的結構。接著，我們來嘗試 vuex 的第一種用法， state 和 mutation。<br><br>
 
-<img style="margin-bottom:8px; max-width:80%;" src="https://frontenter.files.wordpress.com/2020/03/avada-upload.png"/>
-<div style="text-align:center;">上傳佈景主題。</div><br><br>
+<pre>
+<code>
 
-<img style="margin-bottom:8px; max-width:80%;" src="https://frontenter.files.wordpress.com/2020/03/avada-setup.png"/>
-<div style="text-align:center;">安裝佈景主題。</div><br><br>
+// store/index.js
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+const state = {
+  companyId: ''
+}
+
+const mutations = {
+  addCompanyId (state, data) {
+    state.companyId = data
+  },
+}
+
+const actions = {
+
+}
+
+export default new Vuex.Store({
+  state,
+  mutations,
+  actions
+})
 
 
-3. 接著，我們點擊左側 Avada 的 Registration 註冊，因為每一個 Avada 只能安裝在一個 WordPress 上，所以需要註冊。首先我們點選下方的 Generate A Personal Token Link，進到頁面後，上方的 token name 可以任意取，下方勾選的項目則參考圖片，最後就可以 create token，接著就把 token key 複製貼到註冊畫面的欄位上，並 submit。<br><br>
+</code>
+</pre>
+<br>
 
-<img style="margin-bottom:8px; max-width:80%;" src="https://frontenter.files.wordpress.com/2020/03/avada-token-get.png"/>
-<div style="text-align:center;">勾選項目。</div><br><br>
+state 是我們的狀態列表，以上面為例，companyId 類似組件中的 data，而 mutations 則是專門用來更新 companyId 的 methods。定義好之後，該如何使用他們呢？下方將會示範：<br><br>
 
-<img style="margin-bottom:8px; max-width:80%;" src="https://frontenter.files.wordpress.com/2020/03/avada-success-key.png"/>
-<div style="text-align:center;">取得 token key。</div><br><br>
+<pre>
+<code>
 
-4. 為了要使用 Avada 的佈景主題，我們需要安裝一些基本外掛。我們點選 Avada - Plugins，安裝有橘色 REQUIRED 字樣的外掛，分別是 FUSION CORE、FUSION BUILDER，安裝教學到這裡，就算完成囉。<br><br>
+// components/CompanyInfo.vue
 
-<img style="margin-bottom:8px; max-width:80%;" src="https://frontenter.files.wordpress.com/2020/03/avada-plugin-setup.png"/>
-<div style="text-align:center;">安裝 Avada 基本外掛。</div><br><br>
+...
+...
+
+computed: {
+  getCompanyName: {
+    return this.$store.state.companyId
+  }
+},
+methods: {
+  handleCompanyName: {
+    this.$store.commit('addCompanyId', '西打藍')
+  }
+}
+
+...
+...
 
 
-<h3 class="article-h1-color">後話</h3><br>
+</code>
+</pre>
+<br>
 
-安裝算是挺方便的，我們下一步將會談到如何使用 Avada 主題以及如何調整版面。
+上述範例中，getCompanyName 可以獲取 vuex 中 state.companyId 的資料。純示範拿 state 資料，並沒用到。<br><br>
+
+而 handleCompanyName 則會直接呼叫 mutations.addCompanyId 這支 function，將 '西打藍' 傳入後更新。但 mutation 有一個限制，就是它是<b>同步執行</b>。<br><br>
+
+是不是很簡單方便？<br><br>
+
+再來是 action。action 只做一件事情，就是使用 mutation。但，為何不直接使用 mutation 就好呢？<br><br>
+
+原因是 <b>mutation 是同步，而 action 則是異步操作。</b><br><br>
+
+<pre>
+<code>
+
+// store/index.js
+
+...
+...
+
+const actions = {
+
+  handleCompanyNameAsync ({ commit }) {
+    setTimeout(() => {
+      commit('handleCompanyName')
+    }, 1000)
+  }
+
+}
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+使用時，則用 dispatch：<br><br>
+
+<pre>
+<code>
+
+components/ContactUs.vue
+
+...
+...
+
+methods: {
+  this.$store.dispatch('handleCompanyNameAsync')
+}
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+vuex 的教學就到這邊，其他還有 getter、module 的概念，我們留待下次說。<br><br>
 
 
 <br><br><br>
@@ -307,15 +433,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20200304/" data-toggle="tooltip" data-placement="top" title="WordPress 架站教學 | SiteGround 主機">&larr;
+                        <a href="/post/20200305/" data-toggle="tooltip" data-placement="top" title="WordPress 主題安裝教學 | 以 Avada 為例">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20200306/" data-toggle="tooltip" data-placement="top" title="vuex 教學 | vue 的狀態管理工具">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
