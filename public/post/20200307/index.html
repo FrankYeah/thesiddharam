@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="vuex 教學 | vue 的狀態管理工具" />
-    <meta property="og:title" content="vuex 教學 | vue 的狀態管理工具" />
-    <meta property="twitter:title" content="vuex 教學 | vue 的狀態管理工具" />
+    <meta name="title" content="賽馬症候群 | 揮之不去的競爭思維" />
+    <meta property="og:title" content="賽馬症候群 | 揮之不去的競爭思維" />
+    <meta property="twitter:title" content="賽馬症候群 | 揮之不去的競爭思維" />
     
 
     
-    <meta name="description" content="vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集...">
-    <meta property="og:description" content="vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集..." />
-    <meta property="twitter:description" content="vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集..." />
+    <meta name="description" content="為了競爭，你失去了學習的樂趣、工作的樂趣、思考的樂趣、運動的樂趣，也失去了感動、失去了人情味、失去了時間、失去了愛。成為一個，連自己都不喜歡的人...">
+    <meta property="og:description" content="為了競爭，你失去了學習的樂趣、工作的樂趣、思考的樂趣、運動的樂趣，也失去了感動、失去了人情味、失去了時間、失去了愛。成為一個，連自己都不喜歡的人..." />
+    <meta property="twitter:description" content="為了競爭，你失去了學習的樂趣、工作的樂趣、思考的樂趣、運動的樂趣，也失去了感動、失去了人情味、失去了時間、失去了愛。成為一個，連自己都不喜歡的人..." />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="vue, vuex, state, mutation, commit, action" name="keywords">
+    <meta content="思考, 功利主義, 賽馬思維, 好奇心, 零和遊戲" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>vuex 教學 | vue 的狀態管理工具-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>賽馬症候群 | 揮之不去的競爭思維-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20200306/">
+    <link rel="canonical" href="/post/20200307/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -199,18 +199,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/%E6%80%9D%E8%80%83" title="思考">
+                            思考
                         </a>
                         
-                        <a class="tag" href="/tags/vuex" title="vuex">
-                            vuex
+                        <a class="tag" href="/tags/%E5%8A%9F%E5%88%A9%E4%B8%BB%E7%BE%A9" title="功利主義">
+                            功利主義
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 6, 2020</p>
-                    <h1>vuex 教學 | vue 的狀態管理工具</h1>
-                    <h3 class="subheading">響應式狀態更新</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 7, 2020</p>
+                    <h1>賽馬症候群 | 揮之不去的競爭思維</h1>
+                    <h3 class="subheading">只有一位勝者的零和遊戲</h3>
                     <span class="meta">
 			
 
@@ -243,177 +243,53 @@
 
 <br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">前言</h3><br>
+<h3 class="article-h1-color">練騎重型機車得到的啟示</h3><br>
 
-蠻多專案都有用到 vuex，原因是 vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集。<br><br>
+周六時，我一邊看《我為什麼去法國上哲學課？》一邊練騎重型機車準備考試，這本書我重複看了很多遍，也因為是本需要思考的書，所以常常闔上書本，靜靜思考。<br><br>
 
-那我們就開始吧。<br><br>
+當時讀到一段寫著，中國的小孩，從小被訓練著賽馬思維，除了要提早學習英文外，還得學習眾多不同才藝，為的就是在班上名列前茅，競爭第一名的寶座，<b>然而第一名只有一個，所以班上只能有一位勝者，其他人都是失敗者。</b>作者的哲學老師認為，這樣的人生不值得追求。<br><br>
 
+第一次讀到這段時心想：是的沒錯，不只是中國，就連台灣、新加坡的小孩從小就是被灌輸競爭的思維，在班級上有排名就有競爭，甚至小孩自己就會比較<b>誰的才藝厲害、誰的籃球技術比較強，</b>總之，什麼東西都可以比。<br><br>
 
-<h3 class="article-h1-color">vuex</h3><br>
-
-首先我們會安裝 vuex，如果使用 CLI 的話，可以主動勾選安裝 vuex 選項：<br><br>
-
-<code>npm install vuex --save</code><br><br>
-
-接著，我們要創建一個 store，並將此次會運用到的三個 object 放入，分別是 state、mutation、action。<br><br>
-
-<pre>
-<code>
-
-// store/index.js
-
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
-const state = {
-
-}
-
-const mutations = {
-
-}
-
-const actions = {
-
-}
-
-export default new Vuex.Store({
-  state,
-  mutations,
-  actions
-})
+而這次讀到這段的當下，是在練騎重機，赫然發現，<b>原來我從來沒有擺脫競爭思維，因為，我仍然會想更快學會騎重機，考試中的直線七秒有沒有比其他人撐得還要久</b>，這令我嚇一大跳。<br><br>
 
 
-</code>
-</pre>
-<br>
+<h3 class="article-h1-color">為了贏、為了好奇心</h3><br>
 
-以上就完成 vuex 的結構。接著，我們來嘗試 vuex 的第一種用法， state 和 mutation。<br><br>
+我開始盤點起自身經驗，發現以行動動機來說，主要分成兩種，一種是為了贏而產生的行動；另一種則是為了滿足好奇心而產生的行動。兩者的行動，以及所產生的結果都不盡相同。<br><br>
 
-<pre>
-<code>
+如果以學習來說，你為了通過考試，可能會用死背的方式，作為一種學習手段，也可能倚靠作弊的方式，通過測驗。即使真的通過考試，相信學習效果也不會太好，甚至為零，不然，為什麼台灣小孩從小學就開始學英文，但到了出社會後，有人連和外國人對話都做不到？<br><br>
 
-// store/index.js
+我也曾有過作弊或死背名詞的經驗，往後回想，<b>除了作弊技術增強外，什麼收穫也沒有。</b><br><br>
 
-import Vue from 'vue'
-import Vuex from 'vuex'
+但在大學時，曾因為外籍老師的全英文課程中，有很多有趣的同學，所以為了聽懂老師及同學的英語對話，下課後，我還主動聽 BBC 和 TED 之類的純英語內容平台，以增強聽力。往後英文對話也越來越得心應手，也因為好奇英語人士的思考方式，主動學習更多，在不知不覺中克服曾經的語言難關。<br><br>
 
-Vue.use(Vuex)
-
-const state = {
-  companyId: ''
-}
-
-const mutations = {
-  addCompanyId (state, data) {
-    state.companyId = data
-  },
-}
-
-const actions = {
-
-}
-
-export default new Vuex.Store({
-  state,
-  mutations,
-  actions
-})
+整理思維後發現，<b>為了贏，你可能會加倍努力、不擇手段，或是作弊；而為了滿足好奇心，你會主動找出符合自己步調的方式學習。</b><br><br>
 
 
-</code>
-</pre>
-<br>
+<h3 class="article-h1-color">思維認知，是改變的第一步</h3><br>
 
-state 是我們的狀態列表，以上面為例，companyId 類似組件中的 data，而 mutations 則是專門用來更新 companyId 的 methods。定義好之後，該如何使用他們呢？下方將會示範：<br><br>
+回到練車場上，為什麼我會想要學得比其他人還快？或是直線七秒撐得比別人還久？<br><br>
 
-<pre>
-<code>
+<b>我想是為了讓自己在社會上，看起來比較厲害、比較有用。但其實根本沒人在乎你，因為每個人最在乎的都是自己。</b><br><br>
 
-// components/CompanyInfo.vue
+而盲目的追逐第一名，也不會獲得實質上的好處，反而是競爭帶來的傷害遠大於收穫。能從容享受學習的過程，才是好的。<br><br>
 
-...
-...
+想通這點後，就更可以慢慢生活。你同時也會發現，生活周遭有多少慣性上的競爭，例如：<b>薪資高低、身高與體重、一年出幾次國、別人的男友花多少錢買禮物給女友、跑步快慢、功課好壞、CP 值高低。</b><br><br>
 
-computed: {
-  getCompanyName: {
-    return this.$store.state.companyId
-  }
-},
-methods: {
-  handleCompanyName: {
-    this.$store.commit('addCompanyId', '西打藍')
-  }
-}
+<b>為了競爭，你失去了學習的樂趣、工作的樂趣、思考的樂趣、運動的樂趣，也失去了感動、失去了人情味、失去了時間、失去了愛。成為一個，連自己都不喜歡的人。</b><br><br>
 
-...
-...
+你想成為一個，什麼樣的人呢？<br><br>
 
 
-</code>
-</pre>
-<br>
+<h3 class="article-h1-color">後記</h3><br>
 
-上述範例中，getCompanyName 可以獲取 vuex 中 state.companyId 的資料。純示範拿 state 資料，並沒用到。<br><br>
+每次寫完文章後，都比動筆思考前，收穫了更多。<br><br>
 
-而 handleCompanyName 則會直接呼叫 mutations.addCompanyId 這支 function，將 '西打藍' 傳入後更新。但 mutation 有一個限制，就是它是<b>同步執行</b>。<br><br>
+我原本還沒意識到，競爭思維會讓自己失去這麼多東西，甚至讓自己朝自己討厭的人邁進，真是幸好有寫了這篇文章。<br><br>
 
-是不是很簡單方便？<br><br>
+方才我躺在沙發上，心中突然輕鬆了起來，雖然想按照自己的步調走，但總會下意識和工作中的朋友比較，比較失去的會不會比收穫的還多。但剛剛完筆躺下時，真的很放鬆，也享受了當下躺下、無憂的時光。我想我會記住這一刻的。<br><br>
 
-再來是 action。action 只做一件事情，就是使用 mutation。但，為何不直接使用 mutation 就好呢？<br><br>
-
-原因是 <b>mutation 是同步，而 action 則是異步操作。</b><br><br>
-
-<pre>
-<code>
-
-// store/index.js
-
-...
-...
-
-const actions = {
-
-  handleCompanyNameAsync ({ commit }) {
-    setTimeout(() => {
-      commit('handleCompanyName')
-    }, 1000)
-  }
-
-}
-
-...
-...
-
-</code>
-</pre>
-<br>
-
-使用時，則用 dispatch：<br><br>
-
-<pre>
-<code>
-
-components/ContactUs.vue
-
-...
-...
-
-methods: {
-  this.$store.dispatch('handleCompanyNameAsync')
-}
-
-...
-...
-
-</code>
-</pre>
-<br>
-
-vuex 的教學就到這邊，其他還有 getter、module 的概念，我們留待下次說。<br><br>
 
 
 <br><br><br>
@@ -433,15 +309,10 @@ vuex 的教學就到這邊，其他還有 getter、module 的概念，我們留�
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20200305/" data-toggle="tooltip" data-placement="top" title="WordPress 主題安裝教學 | 以 Avada 為例">&larr;
+                        <a href="/post/20200306/" data-toggle="tooltip" data-placement="top" title="vuex 教學 | vue 的狀態管理工具">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20200307/" data-toggle="tooltip" data-placement="top" title="賽馬症候群 | 揮之不去的競爭思維">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
