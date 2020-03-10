@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue mixins | 組件方法複用</title>
+      <link>https://siddharam.com.tw/post/20200309/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200309/</guid>
+      <description>文 / Siddharam 西打藍 組件共用方法 在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixi</description>
+    </item>
     
     <item>
       <title>離職第二週</title>

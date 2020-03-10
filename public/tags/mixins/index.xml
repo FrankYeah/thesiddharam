@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mixins on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/mixins/</link>
+    <description>Recent content in Mixins on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/mixins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vue mixins | 組件方法複用</title>
+      <link>https://siddharam.com.tw/post/20200309/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200309/</guid>
+      <description>文 / Siddharam 西打藍 組件共用方法 在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixi</description>
+    </item>
+    
+  </channel>
+</rss>

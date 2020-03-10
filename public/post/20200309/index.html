@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="vue keep-alive | 保存組件狀態" />
-    <meta property="og:title" content="vue keep-alive | 保存組件狀態" />
-    <meta property="twitter:title" content="vue keep-alive | 保存組件狀態" />
+    <meta name="title" content="vue mixins | 組件方法複用" />
+    <meta property="og:title" content="vue mixins | 組件方法複用" />
+    <meta property="twitter:title" content="vue mixins | 組件方法複用" />
     
 
     
-    <meta name="description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。">
-    <meta property="og:description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。" />
-    <meta property="twitter:description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。" />
+    <meta name="description" content="在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixins 中的對象不只有 methods，還可以包含生命週期、data、computed，相當靈活...">
+    <meta property="og:description" content="在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixins 中的對象不只有 methods，還可以包含生命週期、data、computed，相當靈活..." />
+    <meta property="twitter:description" content="在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixins 中的對象不只有 methods，還可以包含生命週期、data、computed，相當靈活..." />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="vue, keep-alive, 組件, component" name="keywords">
+    <meta content="vue, mixins, 組件, component" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>vue keep-alive | 保存組件狀態-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>vue mixins | 組件方法複用-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20200226/">
+    <link rel="canonical" href="/post/20200309/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -203,14 +203,14 @@
                             vue
                         </a>
                         
-                        <a class="tag" href="/tags/keep-alive" title="keep-alive">
-                            keep-alive
+                        <a class="tag" href="/tags/mixins" title="mixins">
+                            mixins
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> February 26, 2020</p>
-                    <h1>vue keep-alive | 保存組件狀態</h1>
-                    <h3 class="subheading">避免重複渲染影響效能</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 9, 2020</p>
+                    <h1>vue mixins | 組件方法複用</h1>
+                    <h3 class="subheading">獨立抽出常用方法</h3>
                     <span class="meta">
 			
 
@@ -243,58 +243,132 @@
 
 <br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">vue keep-alive</h3><br>
+<h3 class="article-h1-color">組件共用方法</h3><br>
 
-會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。使用方法很簡單。<br><br> 
+在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixins 中的對象不只有 methods，還可以包含生命週期、data、computed，相當靈活。<br><br>
+
+<h3 class="article-h1-color">mixins</h3><br>
+
+之前使用 mixins 的經驗，是在全域中使用，如下範例：<br><br>
 
 <pre>
 <code>
 
-// 組件切換時還能保持狀態
+// utils/mixins.js
 
-&lt;keep-alive>
-  &lt;component :is="selectedNavBar">&lt;/component>
-&lt;/keep-alive>
+import Vue from 'vue'
 
-...
-...
-
-data () {
-  return {
-    selectedNavBar: 'PlanDetail',
-    navbar: [
-      { componentName: 'PlanDetail' },
-      { componentName: 'ReplaceCase' },
-      { componentName: 'ProductDemand' },
-      { componentName: 'ProductSpec' }
-    ]
+// 全站共用的 function，會注入每個 component 當中
+Vue.mixin({
+  methods: {
+    // 標註千分位
+    formatComma (str) {
+      return str ? str.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') : str
+    }
   }
+})
+
+</code>
+</pre>
+<br>
+
+在 main.js 中引入：<br><br>
+
+<pre>
+<code>
+
+// main.js
+
+...
+...
+
+import '@/utils/mixins'
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+使用時，可以直接呼叫：<br><br>
+
+
+<pre>
+<code>
+
+// components/CountNumber.vue
+
+...
+...
+
+this.formatComma(2999999)
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+
+如果你只是少部分組件會共用的 methods，那麼你可以考慮局部引用，它的用法如下範例：<br><br>
+
+<pre>
+<code>
+
+// utils/mixins.js
+
+export default {
+   data () {
+      msg: 'mixins data'
+   },
+   created () {
+      console.log('mixins created')
+   },
+   methods: {
+      mixinsMethod: function () {
+         console.log('mixins function')
+      }
+   }
 }
 
-...
-...
-
 </code>
 </pre>
 <br>
 
-除此之外，你還能指定哪些組件要保存狀態、哪些不用，只需要加上 include、exclude。<br><br>
+組件需要使用時再引入：<br><br>
 
 <pre>
 <code>
 
-// 此種寫法表示，只有 PlanDetail、ReplaceCase 兩個組件需要被快取，
-// 其他組件則不需要。exclude 作法則反。
+...
+...
 
-&lt;keep-alive include:"PlanDetail, ReplaceCase">
-  &lt;component :is="selectedNavBar">&lt;/component>
-&lt;/keep-alive>
+import mixins from '.utils/mixins.js'
+
+export default {
+   mixins: [mixins],
+   created: function () {
+      console.log(this.$data.msg)
+      this.mixinsMethod()
+   }
+}
+
+    // 將接續印出：
+    // mixins created
+    // mixins data
+    // mixins function
+
+...
+...
 
 </code>
 </pre>
 <br>
 
-因為被快取的組件不會被摧毀，所以也不會觸發 mounted，如果要重新觸發組件的生命週期，可以使用 activated 與 deactivated。
+兩種方式都很方便，端看你的使用需求，另外還有一種直接在 vue prototype 建立方法的方式，但它的靈活動就沒那麼大了。<br><br>
+
 
 <br><br><br>
 
@@ -313,15 +387,10 @@ data () {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20200225/" data-toggle="tooltip" data-placement="top" title="vue slot 插槽 | 使用教學">&larr;
+                        <a href="/post/20200308/" data-toggle="tooltip" data-placement="top" title="離職第二週">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20200227/" data-toggle="tooltip" data-placement="top" title="離職第一週">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 

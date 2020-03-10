@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="vue keep-alive | 保存組件狀態" />
-    <meta property="og:title" content="vue keep-alive | 保存組件狀態" />
-    <meta property="twitter:title" content="vue keep-alive | 保存組件狀態" />
+    <meta name="title" content="Siddharam | 寫程式的文字人 | 西打藍" />
+    <meta property="og:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
+    <meta property="twitter:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
     
 
     
-    <meta name="description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。">
-    <meta property="og:description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。" />
-    <meta property="twitter:description" content="會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。" />
+    <meta name="description" content="文字紀錄可能性 | 程式創造可能性">
+    <meta property="og:description" content="文字紀錄可能性 | 程式創造可能性" />
+    <meta property="twitter:description" content="文字紀錄可能性 | 程式創造可能性" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="vue, keep-alive, 組件, component" name="keywords">
+    <meta content="" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>vue keep-alive | 保存組件狀態-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>Mixins-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20200226/">
+    <link rel="canonical" href="/tags/mixins/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -188,34 +188,15 @@
 
 
 
+<header class="intro-header" style="background-image: url('https://frontenter.files.wordpress.com/2020/02/siddharam-new-main-bg.jpg');">
 
-<style type="text/css">
-      
-</style>
-<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
-                        </a>
-                        
-                        <a class="tag" href="/tags/keep-alive" title="keep-alive">
-                            keep-alive
-                        </a>
-                        
-                    </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> February 26, 2020</p>
-                    <h1>vue keep-alive | 保存組件狀態</h1>
-                    <h3 class="subheading">避免重複渲染影響效能</h3>
-                    <span class="meta">
-			
-
-                        
-                    </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    
+                    
+		    
                 </div>
             </div>
         </div>
@@ -224,139 +205,113 @@
 
 
 
+  
+<div class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
 
-<article>
-    <div class="container">
-        <div class="row">
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 9, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200309/">
+        <h2 class="post-title homepage-post-title">
+            vue mixins | 組件方法複用 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            獨立抽出常用方法
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixins 中的對象不只有 methods，還可以包含生命週期、data、computed，相當靈活...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
 
             
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
 
-                
-                
-                
-                
-                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
 
-<br>文 / Siddharam 西打藍<br><br>
 
-<h3 class="article-h1-color">vue keep-alive</h3><br>
+       	</div>
+        
 
-會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供的 keep-alive 來保持組件狀態。使用方法很簡單。<br><br> 
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+    
 
-<pre>
-<code>
+    
+	
+    <section class="">
+    
+    <hr><h5><a style="color:rgb(2, 186, 192)!important;" href="/top/about">關於</a></h5>
+        <div class="short-about">
+            
+            
+                <p>文字紀錄可能性 | 程式創造可能性</p>
+            
+           
+           <ul class="list-inline"> 
+               
+               <li>
+                   <a href="https://siddharam.com.tw/tags/mixins/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                </ul>
+            </div>
+            <div id="busuanzi_container_page_pv">
+                    閱讀量：<span id="busuanzi_value_page_pv"></span> 次
+                </div><br>
+                <div id="busuanzi_container_site_uv">
+                    訪客數：<span id="busuanzi_value_site_uv"></span> 次
+                </span>
+    </section>
+	
+    
+    
 
-// 組件切換時還能保持狀態
-
-&lt;keep-alive>
-  &lt;component :is="selectedNavBar">&lt;/component>
-&lt;/keep-alive>
-
-...
-...
-
-data () {
-  return {
-    selectedNavBar: 'PlanDetail',
-    navbar: [
-      { componentName: 'PlanDetail' },
-      { componentName: 'ReplaceCase' },
-      { componentName: 'ProductDemand' },
-      { componentName: 'ProductSpec' }
-    ]
-  }
-}
-
-...
-...
-
-</code>
-</pre>
-<br>
-
-除此之外，你還能指定哪些組件要保存狀態、哪些不用，只需要加上 include、exclude。<br><br>
-
-<pre>
-<code>
-
-// 此種寫法表示，只有 PlanDetail、ReplaceCase 兩個組件需要被快取，
-// 其他組件則不需要。exclude 作法則反。
-
-&lt;keep-alive include:"PlanDetail, ReplaceCase">
-  &lt;component :is="selectedNavBar">&lt;/component>
-&lt;/keep-alive>
-
-</code>
-</pre>
-<br>
-
-因為被快取的組件不會被摧毀，所以也不會觸發 mounted，如果要重新觸發組件的生命週期，可以使用 activated 與 deactivated。
-
-<br><br><br>
-
-</article>
-
-<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
-  閱讀量<span id="busuanzi_value_page_pv"></span>次
+    
+    
 </div>
 
-<script src="../../js/post.js"></script>
+	</div>
+</div>
 
-
-                
-
-                <hr>
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/post/20200225/" data-toggle="tooltip" data-placement="top" title="vue slot 插槽 | 使用教學">&larr;
-                            上一篇</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/post/20200227/" data-toggle="tooltip" data-placement="top" title="離職第一週">新的一篇
-                             &rarr;</a>
-                    </li>
-                    
-                </ul>
-
-                
-<br><br><br>
-<h3 class="article-h1-color">技術文章與合作</h3><br>
-
-寫這些技術分享文，筆者是沒有額外收入的，但每年還是要付域名費用，如果你喜歡我的文章，歡迎<a href="https://p.ecpay.com.tw/0167F" target="_blank"> 自由贊助 </a>唷！也期待收到你的<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"> 回饋</a>。<br><br>
-
-有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
-
-
-<br><br>
-
-
-<div id="disqus-comment"></div>
-
-
-
-            </div>
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-
-                
-                
-            </div>
-        </div>
-    </div>
-</article>
 
 
 
@@ -368,7 +323,7 @@ data () {
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                       <a href="https://siddharam.com.tw/tags/mixins/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
