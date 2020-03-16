@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Bus on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/event-bus/</link>
+    <description>Recent content in Event Bus on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/event-bus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vue Event Bus 教學：組件間溝通橋樑</title>
+      <link>https://siddharam.com.tw/post/20200316/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200316/</guid>
+      <description>文 / Siddharam 西打藍 前言 一般 vue 在進行父子組件溝通時，通常是使用 props、emit。 如果是多個組件都需要溝通、取值的話，就會使用 vuex。 而當只有兩</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,13 +6,22 @@
     <description>Recent content in Vue on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>vue mixins | 組件方法複用</title>
+      <title>vue Event Bus 教學：組件間溝通橋樑</title>
+      <link>https://siddharam.com.tw/post/20200316/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200316/</guid>
+      <description>文 / Siddharam 西打藍 前言 一般 vue 在進行父子組件溝通時，通常是使用 props、emit。 如果是多個組件都需要溝通、取值的話，就會使用 vuex。 而當只有兩</description>
+    </item>
+    
+    <item>
+      <title>vue mixins：組件方法複用</title>
       <link>https://siddharam.com.tw/post/20200309/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
@@ -21,7 +30,7 @@
     </item>
     
     <item>
-      <title>vuex 教學 | vue 的狀態管理工具</title>
+      <title>vuex 教學：vue 的狀態管理工具</title>
       <link>https://siddharam.com.tw/post/20200306/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       
@@ -30,7 +39,7 @@
     </item>
     
     <item>
-      <title>vue keep-alive | 保存組件狀態</title>
+      <title>vue keep-alive：保存組件狀態</title>
       <link>https://siddharam.com.tw/post/20200226/</link>
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       
@@ -39,7 +48,7 @@
     </item>
     
     <item>
-      <title>vue slot 插槽 | 使用教學</title>
+      <title>vue slot 插槽：使用教學</title>
       <link>https://siddharam.com.tw/post/20200225/</link>
       <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
       
@@ -48,7 +57,7 @@
     </item>
     
     <item>
-      <title>佈署 vue SPA 專案到 GitHub Pages | 處理 404 頁面</title>
+      <title>佈署 vue SPA 專案到 GitHub Pages：處理 404 頁面</title>
       <link>https://siddharam.com.tw/post/20190929/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
       
@@ -57,7 +66,7 @@
     </item>
     
     <item>
-      <title>vue-i18n 雙語網站 | vue-router 相應調整</title>
+      <title>vue-i18n 雙語網站：vue-router 相應調整</title>
       <link>https://siddharam.com.tw/post/20190821/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
@@ -66,7 +75,7 @@
     </item>
     
     <item>
-      <title>Vue-Analytics 埋 GA  | v-ga directive 使用</title>
+      <title>Vue-Analytics 埋 GA：v-ga directive 使用</title>
       <link>https://siddharam.com.tw/post/20190703/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -84,7 +93,7 @@
     </item>
     
     <item>
-      <title>ECharts 繪製柱狀圖 | 以 vue-echarts 為例</title>
+      <title>ECharts 繪製柱狀圖：以 vue-echarts 為例</title>
       <link>https://siddharam.com.tw/post/20190603/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -93,7 +102,7 @@
     </item>
     
     <item>
-      <title>Vue CLI 2 環境設定 | 全域 SCSS</title>
+      <title>Vue CLI 2 環境設定：全域 SCSS</title>
       <link>https://siddharam.com.tw/post/20190521/</link>
       <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
       

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg" />
+    
+
+    
+    <meta name="title" content="vue Event Bus 教學：組件間溝通橋樑" />
+    <meta property="og:title" content="vue Event Bus 教學：組件間溝通橋樑" />
+    <meta property="twitter:title" content="vue Event Bus 教學：組件間溝通橋樑" />
+    
+
+    
+    <meta name="description" content="當只有兩個組件，或是少部分組件需要溝通，但其關係又不是父子的話，則可以使用 Event Bus...">
+    <meta property="og:description" content="當只有兩個組件，或是少部分組件需要溝通，但其關係又不是父子的話，則可以使用 Event Bus..." />
+    <meta property="twitter:description" content="當只有兩個組件，或是少部分組件需要溝通，但其關係又不是父子的話，則可以使用 Event Bus..." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="vue, event bus, 組件, component" name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>vue Event Bus 教學：組件間溝通橋樑-Siddharam | 寫程式的文字人 | 西打藍</title>
+
+    <link rel="canonical" href="/post/20200316/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit">有話對我說</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://www.facebook.com/%E8%A5%BF%E6%89%93%E8%97%8D-Siddharam-104806204464269/" target="_blank">Facebook</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%8F%A1%E6%80%9D%E4%BA%BA%E7%94%9F">鏡思人生</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        <a class="tag" href="/tags/event-bus" title="event bus">
+                            event bus
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 16, 2020</p>
+                    <h1>vue Event Bus 教學：組件間溝通橋樑</h1>
+                    <h3 class="subheading">props、vuex 以外的跨組件傳遞方式</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / Siddharam 西打藍<br><br>
+
+<h3 class="article-h1-color">前言</h3><br>
+
+一般 vue 在進行父子組件溝通時，通常是使用 props、emit。<br><br>
+
+如果是多個組件都需要溝通、取值的話，就會使用 <a href="https://siddharam.com.tw/post/20200306/" target="_blank">vuex</a>。<br><br>
+
+而當只有兩個組件，或是少部分組件需要溝通，但其關係又不是父子的話，則可以使用 Event Bus，以下是使用範例：<br><br>
+
+<h3 class="article-h1-color">Event Bus</h3><br>
+
+首先，我們先在 vue 原型上掛載 Event Bus：<br><br>
+
+<pre>
+<code>
+
+// util/bus.js
+
+import Vue from 'vue'
+Vue.prototype.$bus = new Vue()
+
+</code>
+</pre>
+<br>
+
+接著，我們在 main.js 中注入後，就能使用 Event Bus 囉：<br><br>
+
+<pre>
+<code>
+
+// main.js
+
+...
+...
+
+import '@/utils/bus'
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+完成後，我們先建立兩個 component，分別是 com1.vue、com2.vue，我們先在 com1 中註冊方法：<br><br>
+
+<pre>
+<code>
+
+// component/com1.vue
+
+...
+...
+
+  created () {
+    this.$bus.$on('alert:msg', (text) => {
+      alert(text)
+    })
+  },
+
+...
+...
+
+
+</code>
+</pre>
+<br>
+
+接著，我們在 com2 中調用 com1 所註冊的方法：<br><br>
+
+<pre>
+<code>
+
+// component/com2.vue
+
+...
+...
+
+&lt;button @click="busEvent">TESTTEST&lt;/button>
+
+...
+...
+
+  methods: {
+    busEvent () {
+      this.$bus.$emit('alert:msg', '測試')
+    }
+  },
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+當我們點擊 button 時，應該就會 alert 文字，完成組件間的溝通了。<br><br>
+
+以前在開發專案時，從沒用過 Event Bus，可能是沒機會用到的關係，不過這次練習下來，發現真的是挺方便的。<br><br>
+
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20200315/" data-toggle="tooltip" data-placement="top" title="離職第三週">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+寫這些技術分享文，筆者是沒有額外收入的，但每年還是要付域名費用，如果你喜歡我的文章，歡迎<a href="https://p.ecpay.com.tw/0167F" target="_blank"> 自由贊助 </a>唷！也期待收到你的<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"> 回饋</a>。<br><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
