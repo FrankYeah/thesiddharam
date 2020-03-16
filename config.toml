@@ -1,9 +1,9 @@
 baseURL = "https://siddharam.com.tw/"
 languageCode = "en-us"
 title = "Siddharam"
-SEOTitle = "Siddharam | 寫程式的文字人 | 西打藍"
+SEOTitle = "Siddharam｜寫程式的文字人｜西打藍"
 subhead = "寫程式的文字人"
-description = "文字紀錄可能性 | 程式創造可能性"
+description = "文字紀錄可能性｜程式創造可能性"
 theme = "hugo-theme-cleanwhite"
 hasCJKLanguage = true
 
@@ -17,9 +17,9 @@ canonifyURLs = true
 
 [params]
   header_image = "img/index-head-photo-new.jpg"
-  description = "文字紀錄可能性 | 程式創造可能性"
-  title = "Siddharam | 寫程式的文字人 | 西打藍"
-  SEOTitle = "Siddharam | 寫程式的文字人 | 西打藍"
+  description = "文字紀錄可能性｜程式創造可能性"
+  title = "Siddharam｜寫程式的文字人｜西打藍"
+  SEOTitle = "Siddharam｜寫程式的文字人｜西打藍"
   keyword = "Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常"
   navbarTitle = "寫程式的文字人"
   slogan = "寫程式的文字人"
@@ -27,7 +27,7 @@ canonifyURLs = true
   image_404 = ""
   title_404 = "請待會再嘗試一次 :("
 
-  sidebar_about_description = "文字紀錄可能性 | 程式創造可能性"
+  sidebar_about_description = "文字紀錄可能性｜程式創造可能性"
 
 [params.social]
   rss            = true 
