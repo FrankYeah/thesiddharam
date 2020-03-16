@@ -17,7 +17,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190821/</guid>
-      <description>文 / Siddharam 西打藍 前言 公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非</description>
+      <description>文 / 西打藍 Siddharam 前言 公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非</description>
     </item>
     
   </channel>

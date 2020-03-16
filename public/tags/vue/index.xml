@@ -17,7 +17,7 @@
       <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200316/</guid>
-      <description>文 / Siddharam 西打藍 前言 一般 vue 在進行父子組件溝通時，通常是使用 props、emit。 如果是多個組件都需要溝通、取值的話，就會使用 vuex。 而當只有兩</description>
+      <description>文 / 西打藍 Siddharam 前言 一般 vue 在進行父子組件溝通時，通常是使用 props、emit。 如果是多個組件都需要溝通、取值的話，就會使用 vuex。 而當只有兩</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200309/</guid>
-      <description>文 / Siddharam 西打藍 組件共用方法 在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixi</description>
+      <description>文 / 西打藍 Siddharam 組件共用方法 在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixi</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200306/</guid>
-      <description>文 / Siddharam 西打藍 前言 蠻多專案都有用到 vuex，原因是 vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要</description>
+      <description>文 / 西打藍 Siddharam 前言 蠻多專案都有用到 vuex，原因是 vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200226/</guid>
-      <description>文 / Siddharam 西打藍 vue keep-alive 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供</description>
+      <description>文 / 西打藍 Siddharam vue keep-alive 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200225/</guid>
-      <description>文 / Siddharam 西打藍 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
+      <description>文 / 西打藍 Siddharam 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190929/</guid>
-      <description>文 / Siddharam 西打藍 前言 想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。 這個佈署有兩件重要的事要解決，一個是</description>
+      <description>文 / 西打藍 Siddharam 前言 想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。 這個佈署有兩件重要的事要解決，一個是</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190821/</guid>
-      <description>文 / Siddharam 西打藍 前言 公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非</description>
+      <description>文 / 西打藍 Siddharam 前言 公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190703/</guid>
-      <description>文 / Siddharam 西打藍 前言 如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。 因此我選了vue-analytics 這個套件來</description>
+      <description>文 / 西打藍 Siddharam 前言 如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。 因此我選了vue-analytics 這個套件來</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190627/</guid>
-      <description>文 / Siddharam 西打藍 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
+      <description>文 / 西打藍 Siddharam 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190603/</guid>
-      <description>文 / Siddharam 西打藍 前言 這次介紹一個在公司很常使用的套件 - ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常</description>
+      <description>文 / 西打藍 Siddharam 前言 這次介紹一個在公司很常使用的套件 - ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190521/</guid>
-      <description>文 / Siddharam 西打藍 前言 最近被分配做「問卷機器人」的任務，需要有兩個語系、二十六則問題，有單選、複選。總之畫面很像在 line 聊天。 一共會有四個頁面，重點有</description>
+      <description>文 / 西打藍 Siddharam 前言 最近被分配做「問卷機器人」的任務，需要有兩個語系、二十六則問題，有單選、複選。總之畫面很像在 line 聊天。 一共會有四個頁面，重點有</description>
     </item>
     
   </channel>

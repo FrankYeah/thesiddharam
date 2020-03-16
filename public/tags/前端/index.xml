@@ -17,7 +17,7 @@
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200301/</guid>
-      <description>文 / Siddharam 西打藍 前言 會萌生轉職的念頭，通常不是轉職後的工作有多好，而是當下的狀態太差，差到只能透過轉職來解決問題。 我不知道自己算不算典型，但都過</description>
+      <description>文 / 西打藍 Siddharam 前言 會萌生轉職的念頭，通常不是轉職後的工作有多好，而是當下的狀態太差，差到只能透過轉職來解決問題。 我不知道自己算不算典型，但都過</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190907/</guid>
-      <description>文 / Siddharam 西打藍 攝影 / Siddharam 西打藍 之前當記者 有看過關於的讀者，應該都知道，我因為喜歡有趣的生活、喜歡寫文章，所以曾當過三年記者，是去年才轉職當前端工</description>
+      <description>文 / 西打藍 Siddharam 攝影 / Siddharam 西打藍 之前當記者 有看過關於的讀者，應該都知道，我因為喜歡有趣的生活、喜歡寫文章，所以曾當過三年記者，是去年才轉職當前端工</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190703/</guid>
-      <description>文 / Siddharam 西打藍 前言 如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。 因此我選了vue-analytics 這個套件來</description>
+      <description>文 / 西打藍 Siddharam 前言 如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。 因此我選了vue-analytics 這個套件來</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190701/</guid>
-      <description>文 / Siddharam 西打藍 前言 這是我第二次接架站的案子。咦，為什麼沒看到第一次的呢？因為還沒結案。設計要重新出稿，等我結案再來寫一篇。此篇目錄： 1. 接案之初</description>
+      <description>文 / 西打藍 Siddharam 前言 這是我第二次接架站的案子。咦，為什麼沒看到第一次的呢？因為還沒結案。設計要重新出稿，等我結案再來寫一篇。此篇目錄： 1. 接案之初</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190627/</guid>
-      <description>文 / Siddharam 西打藍 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
+      <description>文 / 西打藍 Siddharam 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190606/</guid>
-      <description>文 / Siddharam 西打藍 前言 明天就是端午節了，在回家的路上，突然想寫下這半年來，擔任前端工程師時的種種想法，希望能給後進者一些方向，也為自己的人生做個紀</description>
+      <description>文 / 西打藍 Siddharam 前言 明天就是端午節了，在回家的路上，突然想寫下這半年來，擔任前端工程師時的種種想法，希望能給後進者一些方向，也為自己的人生做個紀</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190603/</guid>
-      <description>文 / Siddharam 西打藍 前言 這次介紹一個在公司很常使用的套件 - ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常</description>
+      <description>文 / 西打藍 Siddharam 前言 這次介紹一個在公司很常使用的套件 - ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190528/</guid>
-      <description>文 / Siddharam 西打藍 前言 最近一個案子需要儲存用戶的電子郵件，對方 PM 說，不管存在哪裡都可以，於是我找到存在 Google Form 表單的方法，以下就來演示吧。 下列將會提到</description>
+      <description>文 / 西打藍 Siddharam 前言 最近一個案子需要儲存用戶的電子郵件，對方 PM 說，不管存在哪裡都可以，於是我找到存在 Google Form 表單的方法，以下就來演示吧。 下列將會提到</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190519/</guid>
-      <description>文 / Siddharam 西打藍 前言 當初在學 chrome 開發者工具時，幾乎是做中學，在學前端時就碰了 elements、Local Storage、console，正式工作後</description>
+      <description>文 / 西打藍 Siddharam 前言 當初在學 chrome 開發者工具時，幾乎是做中學，在學前端時就碰了 elements、Local Storage、console，正式工作後</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190502/</guid>
-      <description>文 / Siddharam 西打藍 前言 Owl Carousel 的 Doc 和 GitHub。 最近接了室內設計公司的官網外包案，需要做到點擊後，向右換頁的輪播效果，有類似翻書的感覺，並且沒有切換</description>
+      <description>文 / 西打藍 Siddharam 前言 Owl Carousel 的 Doc 和 GitHub。 最近接了室內設計公司的官網外包案，需要做到點擊後，向右換頁的輪播效果，有類似翻書的感覺，並且沒有切換</description>
     </item>
     
   </channel>

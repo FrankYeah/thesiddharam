@@ -17,7 +17,7 @@
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200226/</guid>
-      <description>文 / Siddharam 西打藍 vue keep-alive 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供</description>
+      <description>文 / 西打藍 Siddharam vue keep-alive 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供</description>
     </item>
     
   </channel>

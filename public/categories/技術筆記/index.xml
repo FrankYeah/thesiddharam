@@ -17,7 +17,7 @@
       <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200316/</guid>
-      <description>文 / Siddharam 西打藍 前言 一般 vue 在進行父子組件溝通時，通常是使用 props、emit。 如果是多個組件都需要溝通、取值的話，就會使用 vuex。 而當只有兩</description>
+      <description>文 / 西打藍 Siddharam 前言 一般 vue 在進行父子組件溝通時，通常是使用 props、emit。 如果是多個組件都需要溝通、取值的話，就會使用 vuex。 而當只有兩</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200309/</guid>
-      <description>文 / Siddharam 西打藍 組件共用方法 在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixi</description>
+      <description>文 / 西打藍 Siddharam 組件共用方法 在 vue 的組件中，有一些常用的方法，我們可以獨立抽出放在 mixins，就不需要在每個組件又寫一次 methods。mixi</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200306/</guid>
-      <description>文 / Siddharam 西打藍 前言 蠻多專案都有用到 vuex，原因是 vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要</description>
+      <description>文 / 西打藍 Siddharam 前言 蠻多專案都有用到 vuex，原因是 vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200305/</guid>
-      <description>文 / Siddharam 西打藍 前言 我們這次將購買 Avada 作為 WordPress 的佈景主題。它非常容易上手，有方便的排版和多種外掛可以選用，如果你對網站沒那麼熟悉，這套軟體能讓你輕易</description>
+      <description>文 / 西打藍 Siddharam 前言 我們這次將購買 Avada 作為 WordPress 的佈景主題。它非常容易上手，有方便的排版和多種外掛可以選用，如果你對網站沒那麼熟悉，這套軟體能讓你輕易</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200304/</guid>
-      <description>文 / Siddharam 西打藍 前言 今天為了幫人架部落格平台，所以在 SiteGround 購買主機，也安裝好 WordPress。事實上 SiteGround 本身就有專門給 WordPress 的架站方案，所以整個過程花不</description>
+      <description>文 / 西打藍 Siddharam 前言 今天為了幫人架部落格平台，所以在 SiteGround 購買主機，也安裝好 WordPress。事實上 SiteGround 本身就有專門給 WordPress 的架站方案，所以整個過程花不</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200229/</guid>
-      <description>文 / Siddharam 西打藍 前言 這應該是前端面試前，必要準備的題目之一。在前公司時，曾負責分享這則題目，今天就把當時分享的內容整理出來。 為網路檔案傳輸而生的</description>
+      <description>文 / 西打藍 Siddharam 前言 這應該是前端面試前，必要準備的題目之一。在前公司時，曾負責分享這則題目，今天就把當時分享的內容整理出來。 為網路檔案傳輸而生的</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200226/</guid>
-      <description>文 / Siddharam 西打藍 vue keep-alive 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供</description>
+      <description>文 / 西打藍 Siddharam vue keep-alive 會用到 vue keep-alive，是因為在執行專案時，有個頁面是會重複切換組件的，因為怕瀏覽器重複渲染而影響效能，所以找來 vue 提供</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200225/</guid>
-      <description>文 / Siddharam 西打藍 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
+      <description>文 / 西打藍 Siddharam 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200224/</guid>
-      <description>文 / Siddharam 西打藍 面試考題 會寫這篇，主要是曾面試到一份，比較各類選擇器權重的考題。 其中竟包含了深度選擇器，後來回家測試後發現，它仍屬於 clss、i</description>
+      <description>文 / 西打藍 Siddharam 面試考題 會寫這篇，主要是曾面試到一份，比較各類選擇器權重的考題。 其中竟包含了深度選擇器，後來回家測試後發現，它仍屬於 clss、i</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200223/</guid>
-      <description>文 / Siddharam 西打藍 垂直水平置中 我們的目標，是讓咖啡色方塊，能在藍色方塊垂直置中。 &amp;lt;div class=&#34;outer&#34; &amp;lt;div class=&#34;inner&#34; &amp;lt;/div &amp;lt;/div .outer { width: 200px; heieght: 200px; background: rgb(2, 186, 192); } inner { width: 50px; height: 50px; background: burlywood; } 有興趣的你，可</description>
+      <description>文 / 西打藍 Siddharam 垂直水平置中 我們的目標，是讓咖啡色方塊，能在藍色方塊垂直置中。 &amp;lt;div class=&#34;outer&#34; &amp;lt;div class=&#34;inner&#34; &amp;lt;/div &amp;lt;/div .outer { width: 200px; heieght: 200px; background: rgb(2, 186, 192); } inner { width: 50px; height: 50px; background: burlywood; } 有興趣的你，可</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20191122/</guid>
-      <description>文 / Siddharam 西打藍 前言 上周為了做登入頁面的密碼強度設定，而去了解 vue VeeValidate 驗證套件，它可以驗證 input 裡的值，讓你不需寫正規表達式，就能輕鬆做完限制式。 開始 我</description>
+      <description>文 / 西打藍 Siddharam 前言 上周為了做登入頁面的密碼強度設定，而去了解 vue VeeValidate 驗證套件，它可以驗證 input 裡的值，讓你不需寫正規表達式，就能輕鬆做完限制式。 開始 我</description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190929/</guid>
-      <description>文 / Siddharam 西打藍 前言 想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。 這個佈署有兩件重要的事要解決，一個是</description>
+      <description>文 / 西打藍 Siddharam 前言 想將 vue SPA 專案佈署到 GitHub Pages 已經很久了，但有很多問題待解決，所以擱置至今，趁著假日就來做做看。 這個佈署有兩件重要的事要解決，一個是</description>
     </item>
     
     <item>
@@ -125,7 +125,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190821/</guid>
-      <description>文 / Siddharam 西打藍 前言 公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非</description>
+      <description>文 / 西打藍 Siddharam 前言 公司某專案是用 vue，最近需要弄成雙語，目前評估後認為，手作和 vue-i18n 差別不大，最後可能會用手作。但還是紀錄一下 vue-i18n 如何實現雙語，非</description>
     </item>
     
     <item>
@@ -134,7 +134,7 @@
       <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190809/</guid>
-      <description>文 / Siddharam 西打藍 前言 我們這次要來開 API 給自己用，要完成這點，需要許多知識的融合，包含 SQL、後端語言以及 API 設計等，這項工作不簡單。 如果不熟悉 MySQL Workbench 如</description>
+      <description>文 / 西打藍 Siddharam 前言 我們這次要來開 API 給自己用，要完成這點，需要許多知識的融合，包含 SQL、後端語言以及 API 設計等，這項工作不簡單。 如果不熟悉 MySQL Workbench 如</description>
     </item>
     
     <item>
@@ -143,7 +143,7 @@
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190807/</guid>
-      <description>文 / Siddharam 西打藍 前言 Workbench 是圖形化管理 MySQL 的介面，可以在裡頭新增 schema 以及 table，也能用來寫 SQL 的執行指令，我們可以用它來管理遠端的資料庫，也能在本機上</description>
+      <description>文 / 西打藍 Siddharam 前言 Workbench 是圖形化管理 MySQL 的介面，可以在裡頭新增 schema 以及 table，也能用來寫 SQL 的執行指令，我們可以用它來管理遠端的資料庫，也能在本機上</description>
     </item>
     
     <item>
@@ -152,7 +152,7 @@
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190729/</guid>
-      <description>文 / Siddharam 西打藍 前言 在開始前，你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置。 安裝 nginx</description>
+      <description>文 / 西打藍 Siddharam 前言 在開始前，你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置。 安裝 nginx</description>
     </item>
     
     <item>
@@ -161,7 +161,7 @@
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190726/</guid>
-      <description>文 / Siddharam 西打藍 前言 如果對 linux 指令不熟，可以先看看 這篇，一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳</description>
+      <description>文 / 西打藍 Siddharam 前言 如果對 linux 指令不熟，可以先看看 這篇，一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190724/</guid>
-      <description>文 / Siddharam 西打藍 前言 上上週我還是個沒碰過 linux 的前端工程師呢，因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所</description>
+      <description>文 / 西打藍 Siddharam 前言 上上週我還是個沒碰過 linux 的前端工程師呢，因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所</description>
     </item>
     
     <item>
@@ -179,7 +179,7 @@
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190703/</guid>
-      <description>文 / Siddharam 西打藍 前言 如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。 因此我選了vue-analytics 這個套件來</description>
+      <description>文 / 西打藍 Siddharam 前言 如果只是單純埋 GA 的話，可以在 index.html 中處理就好。但如果有 router 切換的話，可能會追蹤不到。 因此我選了vue-analytics 這個套件來</description>
     </item>
     
     <item>
@@ -188,7 +188,7 @@
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190627/</guid>
-      <description>文 / Siddharam 西打藍 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
+      <description>文 / 西打藍 Siddharam 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
     </item>
     
     <item>
@@ -197,7 +197,7 @@
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190603/</guid>
-      <description>文 / Siddharam 西打藍 前言 這次介紹一個在公司很常使用的套件 - ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常</description>
+      <description>文 / 西打藍 Siddharam 前言 這次介紹一個在公司很常使用的套件 - ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常</description>
     </item>
     
     <item>
@@ -206,7 +206,7 @@
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190528/</guid>
-      <description>文 / Siddharam 西打藍 前言 最近一個案子需要儲存用戶的電子郵件，對方 PM 說，不管存在哪裡都可以，於是我找到存在 Google Form 表單的方法，以下就來演示吧。 下列將會提到</description>
+      <description>文 / 西打藍 Siddharam 前言 最近一個案子需要儲存用戶的電子郵件，對方 PM 說，不管存在哪裡都可以，於是我找到存在 Google Form 表單的方法，以下就來演示吧。 下列將會提到</description>
     </item>
     
     <item>
@@ -215,7 +215,7 @@
       <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190521/</guid>
-      <description>文 / Siddharam 西打藍 前言 最近被分配做「問卷機器人」的任務，需要有兩個語系、二十六則問題，有單選、複選。總之畫面很像在 line 聊天。 一共會有四個頁面，重點有</description>
+      <description>文 / 西打藍 Siddharam 前言 最近被分配做「問卷機器人」的任務，需要有兩個語系、二十六則問題，有單選、複選。總之畫面很像在 line 聊天。 一共會有四個頁面，重點有</description>
     </item>
     
     <item>
@@ -224,7 +224,7 @@
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190519/</guid>
-      <description>文 / Siddharam 西打藍 前言 當初在學 chrome 開發者工具時，幾乎是做中學，在學前端時就碰了 elements、Local Storage、console，正式工作後</description>
+      <description>文 / 西打藍 Siddharam 前言 當初在學 chrome 開發者工具時，幾乎是做中學，在學前端時就碰了 elements、Local Storage、console，正式工作後</description>
     </item>
     
     <item>
@@ -233,7 +233,7 @@
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190515/</guid>
-      <description>文 / Siddharam 西打藍 前言 這個教學，是列出工作上最常使用的 git 指令，所以你若是自學者，可以參考這一篇，檢視自己能力是否符合業界需求。 應網友要求，我錄製了</description>
+      <description>文 / 西打藍 Siddharam 前言 這個教學，是列出工作上最常使用的 git 指令，所以你若是自學者，可以參考這一篇，檢視自己能力是否符合業界需求。 應網友要求，我錄製了</description>
     </item>
     
     <item>
@@ -242,7 +242,7 @@
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190514/</guid>
-      <description>文 / Siddharam 西打藍 前言 最初，在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。 後來才了解，原來大家都是在 IDE 上寫，我最初是使用 Atom，</description>
+      <description>文 / 西打藍 Siddharam 前言 最初，在開始寫程式之前，我腦海中一片茫然，因為連在哪寫程式都不知道。 後來才了解，原來大家都是在 IDE 上寫，我最初是使用 Atom，</description>
     </item>
     
     <item>
@@ -251,7 +251,7 @@
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190510/</guid>
-      <description>文 / Siddharam 西打藍 前言 週五晚上突然想玩玩 selenium，它能夠自動幫你跑瀏覽器事件，例如最基本的點擊、輸入，選擇依據是 html 元素。大家一起在夜晚入門</description>
+      <description>文 / 西打藍 Siddharam 前言 週五晚上突然想玩玩 selenium，它能夠自動幫你跑瀏覽器事件，例如最基本的點擊、輸入，選擇依據是 html 元素。大家一起在夜晚入門</description>
     </item>
     
     <item>
@@ -260,7 +260,7 @@
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190509/</guid>
-      <description>文 / Siddharam 西打藍 前言 五月，是科技大廠展演的季節，在 在 2019 Google I/O 大會 期間，同事在 slack 貼了 ML Study Jam 機器學習培訓計劃的活動，想說 Google 的服務只玩過 firebase 和語音 API，</description>
+      <description>文 / 西打藍 Siddharam 前言 五月，是科技大廠展演的季節，在 在 2019 Google I/O 大會 期間，同事在 slack 貼了 ML Study Jam 機器學習培訓計劃的活動，想說 Google 的服務只玩過 firebase 和語音 API，</description>
     </item>
     
     <item>
@@ -269,7 +269,7 @@
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190502/</guid>
-      <description>文 / Siddharam 西打藍 前言 Owl Carousel 的 Doc 和 GitHub。 最近接了室內設計公司的官網外包案，需要做到點擊後，向右換頁的輪播效果，有類似翻書的感覺，並且沒有切換</description>
+      <description>文 / 西打藍 Siddharam 前言 Owl Carousel 的 Doc 和 GitHub。 最近接了室內設計公司的官網外包案，需要做到點擊後，向右換頁的輪播效果，有類似翻書的感覺，並且沒有切換</description>
     </item>
     
     <item>
@@ -278,7 +278,7 @@
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190424/</guid>
-      <description>文 / Siddharam 西打藍 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供</description>
+      <description>文 / 西打藍 Siddharam 前言 firebase 可以說是造福前端工程師的好工具。 它讓你可以匯入 json 格式的資料，並透過 get API 拿取，甚至能在 javascript 進行 query 的動作，firebase 也提供</description>
     </item>
     
     <item>
@@ -287,7 +287,7 @@
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190423/</guid>
-      <description>文 / Siddharam 西打藍 lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。 練習 (1) dropRight(array, 從右邊</description>
+      <description>文 / 西打藍 Siddharam lodash 這次來挑選常用的 lodash function，嘗試自己手寫。 lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。 練習 (1) dropRight(array, 從右邊</description>
     </item>
     
     <item>
@@ -296,7 +296,7 @@
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190418/</guid>
-      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg&#34;); } } 文 / Siddharam 西打藍 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
+      <description>/* 首圖照片 */ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg&#34;); } @media screen and (max-width:500px){ .intro-header{ background-image:url(&#34;https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg&#34;); } } 文 / 西打藍 Siddharam 前導 現在的發文平台很多，不論會不會程式都能輕易的上手。 而人人皆有的 Facebook、Line、</description>
     </item>
     
   </channel>

@@ -17,7 +17,7 @@
       <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190627/</guid>
-      <description>文 / Siddharam 西打藍 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
+      <description>文 / 西打藍 Siddharam 前言 在寫 axios 時，很直覺的會跟 call AJAX 一樣，後端給什麼 URL，就直接帶入傳值，但當 request 的網域改變時，就必須一個個更改，難以管理維護。 透過 axios.create</description>
     </item>
     
   </channel>

@@ -17,7 +17,7 @@
       <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20200225/</guid>
-      <description>文 / Siddharam 西打藍 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
+      <description>文 / 西打藍 Siddharam 組件化設計 vue 在進行組件（component）化設計時，有很多種方式可以讓組件更有彈性，而 vue slot 就是其中一種。 slot 可以讓你在父層，在來</description>
     </item>
     
   </channel>

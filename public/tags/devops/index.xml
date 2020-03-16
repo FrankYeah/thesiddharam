@@ -17,7 +17,7 @@
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190917/</guid>
-      <description>文 / Siddharam 西打藍 筆電能不能當 server？ 剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到；但拿自己電腦當網頁伺服</description>
+      <description>文 / 西打藍 Siddharam 筆電能不能當 server？ 剛學網站知識時，一直疑問一件事？「為什麼我可以在網路空間如 GitHub 架站，讓全世界看到；但拿自己電腦當網頁伺服</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190729/</guid>
-      <description>文 / Siddharam 西打藍 前言 在開始前，你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置。 安裝 nginx</description>
+      <description>文 / 西打藍 Siddharam 前言 在開始前，你可能需要先熟悉 linux 指令，接著我們就來安裝 nginx，並嘗試把靜態資源上去。最後，我們會簡介服務器的目錄配置。 安裝 nginx</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190726/</guid>
-      <description>文 / Siddharam 西打藍 前言 如果對 linux 指令不熟，可以先看看 這篇，一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳</description>
+      <description>文 / 西打藍 Siddharam 前言 如果對 linux 指令不熟，可以先看看 這篇，一般來說，我們不會直接用 root 權限來做事，所以通常會建立新帳號來操作，今天就要教大家如何建立帳</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/post/20190724/</guid>
-      <description>文 / Siddharam 西打藍 前言 上上週我還是個沒碰過 linux 的前端工程師呢，因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所</description>
+      <description>文 / 西打藍 Siddharam 前言 上上週我還是個沒碰過 linux 的前端工程師呢，因為公司現在沒有 QA、DevOps 來幫忙管機器以及自動化佈署，而後端的時間被占滿了，所</description>
     </item>
     
   </channel>
