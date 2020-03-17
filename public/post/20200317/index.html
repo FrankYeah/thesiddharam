@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="Siddharam｜寫程式的文字人｜西打藍" />
-    <meta property="og:title" content="Siddharam｜寫程式的文字人｜西打藍" />
-    <meta property="twitter:title" content="Siddharam｜寫程式的文字人｜西打藍" />
+    <meta name="title" content="vuex 進階教學：Module、Getter" />
+    <meta property="og:title" content="vuex 進階教學：Module、Getter" />
+    <meta property="twitter:title" content="vuex 進階教學：Module、Getter" />
     
 
     
-    <meta name="description" content="文字紀錄可能性｜程式創造可能性">
-    <meta property="og:description" content="文字紀錄可能性｜程式創造可能性" />
-    <meta property="twitter:description" content="文字紀錄可能性｜程式創造可能性" />
+    <meta name="description" content="接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了...">
+    <meta property="og:description" content="接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了..." />
+    <meta property="twitter:description" content="接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了..." />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="" name="keywords">
+    <meta content="vue, vuex, module, mapstate, getter, 教學" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>Vuex-Siddharam｜寫程式的文字人｜西打藍</title>
+    <title>vuex 進階教學：Module、Getter-Siddharam｜寫程式的文字人｜西打藍</title>
 
-    <link rel="canonical" href="/tags/vuex/">
+    <link rel="canonical" href="/post/20200317/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -188,15 +188,34 @@
 
 
 
-<header class="intro-header" style="background-image: url('https://frontenter.files.wordpress.com/2020/02/siddharam-new-main-bg.jpg');">
 
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    
-                    
-		    
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        <a class="tag" href="/tags/vuex" title="vuex">
+                            vuex
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 17, 2020</p>
+                    <h1>vuex 進階教學：Module、Getter</h1>
+                    <h3 class="subheading">模組化及複用函數</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -205,138 +224,310 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
 
-<div class="post-preview">
-        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 17, 2020</h5>
-    <a href="https://siddharam.com.tw/post/20200317/">
-        <h2 class="post-title homepage-post-title">
-            vuex 進階教學：Module、Getter 
+<article>
+    <div class="container">
+        <div class="row">
+
             
-        </h2>
-	
-        <h3 class="post-subtitle homepage-post-subtitle">
-            模組化及複用函數
-        </h3>
-	
-        <div class="post-content-preview homepage-post-meta">
-	
-            接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了...
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-    
-    </p>
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / 西打藍 Siddharam<br><br>
+
+<h3 class="article-h1-color">前言</h3><br>
+
+接續上回<a href="https://siddharam.com.tw/post/20200306/" target="_blank">〈vuex 教學：vue 的狀態管理工具〉</a>教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了。那我們就開始吧。<br><br>
+
+
+<h3 class="article-h1-color">vuex 進階</h3><br>
+
+Module 模組化。當你的狀態過多且複雜時，就可以考慮運用 Module 來做切割，讓每個 Module 擁有自己的 state、mutation、action、getter，方法很簡單：<br><br>
+
+<pre>
+<code>
+
+// store/index.js
+// 官網教學範例
+
+...
+...
+
+const moduleA = {
+  state: { ... },
+  mutations: { ... },
+  actions: { ... },
+  getters: { ... }
+}
+
+const moduleB = {
+  state: { ... },
+  mutations: { ... },
+  actions: { ... }
+}
+
+const store = new Vuex.Store({
+  modules: {
+    a: moduleA,
+    b: moduleB
+  }
+})
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+你也可以用資料夾分層，會更好維護：<br><br>
+
+<pre>
+<code>
+
+store  /  index.js
+       /  module   /  header  /  index.js
+                              /  mutation.js
+                              /  action.js
+                              /  getter.js
+                   /  footer  /  index.js
+                              /  mutation.js
+                              /  action.js
+                              /  getter.js
+
+
+</code>
+</pre>
+<br>
+
+<pre>
+<code>
+
+
+store/index.js
+
+...
+...
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+import header from './modules/header'
+import footer from './modules/footer'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  modules: {
+    header,
+    footer
+  },
+  state: {
+  },
+  mutations: {
+  }
+})
+
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+在 Module 中加入了 namespaced，Vuex 會在 Module 的 action、mutation、getter 加上 prefix。<br><br>
+
+<pre>
+<code>
+
+store/module/header/index.js
+
+...
+...
+
+
+import actions from './actions'
+import mutations from './mutations'
+import getters from './getters'
+
+export default {
+  namespaced: true,
+  state: {
+    id: null,
+    spec: {
+      length: 0
+    }
+  },
+  actions,
+  mutations,
+  getters
+}
+
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+<h3 class="article-h1-color">getter</h3><br>
+
+再來是 getter，他讓你可以先行處理函式，功能類似於 computed，例如：<br><br>
+
+<pre>
+<code>
+
+// store/index.js
+
+...
+...
+
+const store = new Vuex.Store({
+  state: {
+    todos: [
+      { id: 1, text: '...', done: true },
+      { id: 2, text: '...', done: false }
+    ]
+  },
+  getters: {
+    doneTodos: state => {
+      return state.todos.filter(todo => todo.done)
+    },
+    // 你也可以引入其他 getter 使用
+    doneTodosCount: (state, getters) => {
+    return getters.doneTodos.length
+  }
+  }
+})
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+當你要使用時：<br><br>
+
+<pre>
+<code>
+
+// component/layout.vue
+
+...
+...
+
+computed: {
+  doneTodosCount () {
+    return this.$store.getters.doneTodosCount
+  }
+}
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+另外，也能透過 mapGetters 引入 getter 來使用：<br><br>
+
+<pre>
+<code>
+
+// component/layout.vue
+
+...
+...
+
+import { mapGetters } from 'vuex'
+
+export default {
+  // ...
+  computed: {
+    ...mapGetters([
+      'doneTodos',
+      'doneTodosCount'
+      // ...
+    ])
+  }
+}
+
+...
+...
+
+</code>
+</pre>
+<br>
+
+之前的專案，也幾乎沒用過 getter，通常是把它架好後，就放著閒置了。但 module 會用到，因為當多人共同開發系統時，只要維護各自的 module 就好，才不會動到彼此的架構。<br><br>
+
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
 </div>
-<hr>
 
-<div class="post-preview">
-        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 6, 2020</h5>
-    <a href="https://siddharam.com.tw/post/20200306/">
-        <h2 class="post-title homepage-post-title">
-            vuex 教學：vue 的狀態管理工具 
-            
-        </h2>
-	
-        <h3 class="post-subtitle homepage-post-subtitle">
-            響應式狀態更新
-        </h3>
-	
-        <div class="post-content-preview homepage-post-meta">
-	
-            vuex 可以讓你很方便地管理全站共用的資料 / 狀態。例如一個收集客戶資料的網站，可能有許多份表單需要填寫，當組件切換時，為了方便儲存資料，就會統一在 vuex 做管理與蒐集...
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-    
-    </p>
-</div>
-<hr>
+<script src="../../js/post.js"></script>
 
 
-            
+                
 
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-
-    
-	
-    <section class="">
-    
-    <hr><h5><a style="color:rgb(2, 186, 192)!important;" href="/top/about">關於</a></h5>
-        <div class="short-about">
-            
-            
-                <p>文字紀錄可能性｜程式創造可能性</p>
-            
-           
-           <ul class="list-inline"> 
-               
-               <li>
-                   <a href="https://siddharam.com.tw/tags/vuex/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               
-               
-               
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20200316/" data-toggle="tooltip" data-placement="top" title="vue Event Bus 教學：組件間溝通橋樑">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
                 </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">技術文章與合作</h3><br>
+
+寫這些技術分享文，筆者是沒有額外收入的，但每年還是要付域名費用，如果你喜歡我的文章，歡迎<a href="https://p.ecpay.com.tw/0167F" target="_blank"> 自由贊助 </a>唷！也期待收到你的<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit"> 回饋</a>。<br><br>
+
+有網站設計（UI/UX）、平面設計、網站工程外包需求，皆可以來信詢問，在<a href="https://siddharam.com.tw/top/about/"> 關於下方 </a>有參考作品。<br><br>
+
+
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
             </div>
-            <div id="busuanzi_container_page_pv">
-                    閱讀量：<span id="busuanzi_value_page_pv"></span> 次
-                </div><br>
-                <div id="busuanzi_container_site_uv">
-                    訪客數：<span id="busuanzi_value_site_uv"></span> 次
-                </span>
-    </section>
-	
-    
-    
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-    
-    
-</div>
+                
+                
 
-	</div>
-</div>
-
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -348,7 +539,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href="https://siddharam.com.tw/tags/vuex/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

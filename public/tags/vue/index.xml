@@ -6,10 +6,19 @@
     <description>Recent content in Vue on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vuex 進階教學：Module、Getter</title>
+      <link>https://siddharam.com.tw/post/20200317/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200317/</guid>
+      <description>文 / 西打藍 Siddharam 前言 接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如</description>
+    </item>
     
     <item>
       <title>vue Event Bus 教學：組件間溝通橋樑</title>
