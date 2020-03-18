@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="vuex 進階教學：Module、Getter" />
-    <meta property="og:title" content="vuex 進階教學：Module、Getter" />
-    <meta property="twitter:title" content="vuex 進階教學：Module、Getter" />
+    <meta name="title" content="我也會遊戲沉迷：以傳說對決為例" />
+    <meta property="og:title" content="我也會遊戲沉迷：以傳說對決為例" />
+    <meta property="twitter:title" content="我也會遊戲沉迷：以傳說對決為例" />
     
 
     
-    <meta name="description" content="接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了...">
-    <meta property="og:description" content="接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了..." />
-    <meta property="twitter:description" content="接續上回〈vuex 教學：vue 的狀態管理工具〉教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了..." />
+    <meta name="description" content="大學時期，我沒有和朋友一起玩 LOL，但卻在畢業幾年後，開始和朋友、弟弟玩起了「傳說對決」...">
+    <meta property="og:description" content="大學時期，我沒有和朋友一起玩 LOL，但卻在畢業幾年後，開始和朋友、弟弟玩起了「傳說對決」..." />
+    <meta property="twitter:description" content="大學時期，我沒有和朋友一起玩 LOL，但卻在畢業幾年後，開始和朋友、弟弟玩起了「傳說對決」..." />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="vue, vuex, module, mapstate, getter, 教學" name="keywords">
+    <meta content="思考, 沉迷, 遊戲, 傳說對決" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>vuex 進階教學：Module、Getter-Siddharam｜寫程式的文字人｜西打藍</title>
+    <title>我也會遊戲沉迷：以傳說對決為例-Siddharam｜寫程式的文字人｜西打藍</title>
 
-    <link rel="canonical" href="/post/20200317/">
+    <link rel="canonical" href="/post/20200318/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -199,18 +199,22 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/%E6%80%9D%E8%80%83" title="思考">
+                            思考
                         </a>
                         
-                        <a class="tag" href="/tags/vuex" title="vuex">
-                            vuex
+                        <a class="tag" href="/tags/%E6%B2%89%E8%BF%B7" title="沉迷">
+                            沉迷
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E9%81%8A%E6%88%B2" title="遊戲">
+                            遊戲
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 17, 2020</p>
-                    <h1>vuex 進階教學：Module、Getter</h1>
-                    <h3 class="subheading">模組化及複用函數</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 18, 2020</p>
+                    <h1>我也會遊戲沉迷：以傳說對決為例</h1>
+                    <h3 class="subheading">過去戒斷經驗</h3>
                     <span class="meta">
 			
 
@@ -243,233 +247,85 @@
 
 <br>文 / 西打藍 Siddharam<br><br>
 
-<h3 class="article-h1-color">前言</h3><br>
+<h3 class="article-h1-color">不知不覺玩好幾年</h3><br>
 
-接續上回<a href="https://siddharam.com.tw/post/20200306/" target="_blank">〈vuex 教學：vue 的狀態管理工具〉</a>教學後，這次要延伸筆記 Module、Getter 的使用，也包含較進階的用法，如果已經學完上一版的教學，其實就很夠用了。那我們就開始吧。<br><br>
+大學時期，我沒有和朋友一起玩 LOL，但卻在畢業幾年後，開始和朋友、弟弟玩起了「傳說對決」，以下簡稱「傳說」。它算是 LOL 的簡易、手遊版，是一款 5 V 5 的守塔攻防遊戲。角色分別有射手、法師、刺客、坦克、輔助、戰士六種類型。<br><br>
 
+因為一場遊戲會花費 10 - 20 分鐘，所以通常會在下班或是通勤的過程中玩，如果認真玩的話，通常會等到回家後，網路比較穩定時再玩，免得被隊友罵。<br><br>
 
-<h3 class="article-h1-color">vuex 進階</h3><br>
+我大概有兩、三次戒斷「傳說」的經驗，但仍下載回來，主要原因是為了要抒發，以及被朋友揪玩。主要是後者影響最大。<br><br>
 
-Module 模組化。當你的狀態過多且複雜時，就可以考慮運用 Module 來做切割，讓每個 Module 擁有自己的 state、mutation、action、getter，方法很簡單：<br><br>
+這篇文章，是想紀錄遊戲中讓人沉迷的元素，除了想知道為何沉迷外，也想應用這些元素在事業上，改善自己的拖延毛病。<br><br>
 
-<pre>
-<code>
+<i>以下的百分比數值是根據自己而定。</i><br><br>
 
-// store/index.js
-// 官網教學範例
+<h3 class="article-h1-color">開啟遊戲的原因</h3><br>
 
-...
-...
+先分享主動開啟遊戲的四種原因：<br><br>
 
-const moduleA = {
-  state: { ... },
-  mutations: { ... },
-  actions: { ... },
-  getters: { ... }
-}
+領取每日獎勵與寶物，通常遊戲還會規定要玩幾場 5 v 5，才能領取獎勵。遊戲開啟機率約為 30%。<br><br>
 
-const moduleB = {
-  state: { ... },
-  mutations: { ... },
-  actions: { ... }
-}
+在中小片的零碎時間，並想放鬆心情時，才會開啟遊戲。機率約為 30%。<br><br>
 
-const store = new Vuex.Store({
-  modules: {
-    a: moduleA,
-    b: moduleB
-  }
-})
+此外，當臉書瀑布牆有喜歡的遊戲選手比賽時，通常再看完實況後就會想玩。機率約為 40%。<br><br>
 
-...
-...
-
-</code>
-</pre>
-<br>
-
-你也可以用資料夾分層，會更好維護：<br><br>
-
-<pre>
-<code>
-
-store  /  index.js
-       /  module   /  header  /  index.js
-                              /  mutation.js
-                              /  action.js
-                              /  getter.js
-                   /  footer  /  index.js
-                              /  mutation.js
-                              /  action.js
-                              /  getter.js
+而當朋友敲我找玩時，基本上都會答應，因為還會開啟語音邊聊邊玩。如果是和朋友出門，玩的機率又更大一些。機率約為 80%。<br><br>
 
 
-</code>
-</pre>
-<br>
+<h3 class="article-h1-color">玩完這一場，怎麼還有下一場呢？</h3><br>
 
-<pre>
-<code>
+這部分就很關鍵。原本一場只要 10 來分鐘就結束的遊戲，硬是花了你一兩個小時才結束，而且玩完後感到的只有空虛，這是為什麼呢？<br><br>
 
+是因為一場遊戲中，有各種讓你留存下來的機制。主要有兩種情況：<br><br>
 
-store/index.js
+第一種是遊戲中，當操作很秀、或是擊殺對手時，系統立即給你的精神獎勵，例如全隊廣播 double kill 字樣。留存率 60%。<br><br>
 
-...
-...
+第二種是贏和輸，贏的時候，一樣會全隊廣播 win 字樣，並設定多項的團隊里程碑獎勵你，例如連殺三人、推塔最多、輸出最多等，並且會提升你的牌位等級，每贏一次就增添一分，例如鑽石等級，代表你贏過全遊戲 90% 以上的人。這些獎勵，都會激發你繼續贏下去。留存率 70%。<br><br>
 
-import Vue from 'vue'
-import Vuex from 'vuex'
-import header from './modules/header'
-import footer from './modules/footer'
-
-Vue.use(Vuex)
-
-export default new Vuex.Store({
-  modules: {
-    header,
-    footer
-  },
-  state: {
-  },
-  mutations: {
-  }
-})
+輸的時候可能會想關閉遊戲，但在遊戲中，還是會設計一定的里程碑來獎勵你，甚至表現很好時，還有加分機制。留存率 20%。<br><br>
 
 
-...
-...
+<h3 class="article-h1-color">其他留存玩家的方式</h3><br>
 
-</code>
-</pre>
-<br>
+說到留存玩家的方式，有三種最讓我有感：<br><br>
 
-在 Module 中加入了 namespaced，Vuex 會在 Module 的 action、mutation、getter 加上 prefix。<br><br>
+其中一個是老朋友邀請獎勵，以及老玩家回歸贈品。回歸率 20%。<br><br>
 
-<pre>
-<code>
+再來是新角色的人物造型、技能組令你感興趣。回歸率 30%。<br><br>
 
-store/module/header/index.js
+最後則是已投入時間越長、課金越多、等級越高，也就越難割捨。回歸率 80%。<br><br>
 
-...
-...
+<h3 class="article-h1-color">讓你離開遊戲的原因</h3><br>
 
+遊戲有拉力也有推力，通常遊戲內的推力較弱，因為遊戲策畫的心理機制已經很成熟，但還是有不得不的情況。我舉兩個例子：<br><br>
 
-import actions from './actions'
-import mutations from './mutations'
-import getters from './getters'
+一是遊戲隊友的謾罵，這會讓你不爽而不想再玩。而系統的機制是禁止發表髒字，以及遭多人檢舉的玩家將無法組隊遊戲。離開率 70%。<br><br>
 
-export default {
-  namespaced: true,
-  state: {
-    id: null,
-    spec: {
-      length: 0
-    }
-  },
-  actions,
-  mutations,
-  getters
-}
+二是新手沒有展現的空間，但這點「傳說」做的很好：新手只會和新手玩，而且和等級高的對手相比，高手也不會有特別的加成，起跑點是相同的。離開率 10%。<br><br>
+
+而遊戲外的話，也有兩種情況：<br><br>
+
+一是玩完遊戲後，感覺到空虛，好像時間無故浪費掉一樣。離開率 60%。<br><br>
+
+二是被另一半罵，因此會盡量不在對方面前玩。離開率 20%。<br><br>
 
 
-...
-...
+<h3 class="article-h1-color">如何戒斷遊戲</h3><br>
 
-</code>
-</pre>
-<br>
+那要如何戒斷遊戲呢？目前用過兩個方式，都是對我有效，可以參考：<br><br>
 
-<h3 class="article-h1-color">getter</h3><br>
+一是主動和隊友表示，即將離開遊戲，接著便退出工會、群組，把遊戲刪除。先前玩過一款塔防三國，課了不少金，最後是用這個方法戒斷的。戒斷率：50%。<br><br>
 
-再來是 getter，他讓你可以先行處理函式，功能類似於 computed，例如：<br><br>
+二是一步步來，首先先減少玩的時間，每天減少一點，最後你會發現，少了遊戲的人生也不會怎麼樣，索性就不玩了。之前刪除「傳說」就是依靠這個方法。戒斷率：60%。<br><br>
 
-<pre>
-<code>
 
-// store/index.js
+<h3 class="article-h1-color">最後</h3><br>
 
-...
-...
+寫了這麼多遊戲的機制後，真的挺令我驚訝的，讓我更不敢隨意下載遊戲了。<br><br>
 
-const store = new Vuex.Store({
-  state: {
-    todos: [
-      { id: 1, text: '...', done: true },
-      { id: 2, text: '...', done: false }
-    ]
-  },
-  getters: {
-    doneTodos: state => {
-      return state.todos.filter(todo => todo.done)
-    },
-    // 你也可以引入其他 getter 使用
-    doneTodosCount: (state, getters) => {
-    return getters.doneTodos.length
-  }
-  }
-})
+最近有朋友在玩「異塵餘生」，也找我一起玩，但我下載並跟著遊戲說明走完一輪後，還是決定要刪除遊戲。因為現階段的自己不適合沉迷。<br><br>
 
-...
-...
-
-</code>
-</pre>
-<br>
-
-當你要使用時：<br><br>
-
-<pre>
-<code>
-
-// component/layout.vue
-
-...
-...
-
-computed: {
-  doneTodosCount () {
-    return this.$store.getters.doneTodosCount
-  }
-}
-
-...
-...
-
-</code>
-</pre>
-<br>
-
-另外，也能透過 mapGetters 引入 getter 來使用：<br><br>
-
-<pre>
-<code>
-
-// component/layout.vue
-
-...
-...
-
-import { mapGetters } from 'vuex'
-
-export default {
-  // ...
-  computed: {
-    ...mapGetters([
-      'doneTodos',
-      'doneTodosCount'
-      // ...
-    ])
-  }
-}
-
-...
-...
-
-</code>
-</pre>
-<br>
-
-之前的專案，也幾乎沒用過 getter，通常是把它架好後，就放著閒置了。但 module 會用到，因為當多人共同開發系統時，只要維護各自的 module 就好，才不會動到彼此的架構。<br><br>
+<b>但不能說玩遊戲全然沒收穫，許多不再連絡的朋友，是靠著「傳說」這款遊戲才找回來的。</b>而也因為這款遊戲，才有了這篇文章，也更理解沉迷遊戲的人的想法了。<br><br>
 
 
 <br><br><br>
@@ -489,15 +345,10 @@ export default {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20200316/" data-toggle="tooltip" data-placement="top" title="vue Event Bus 教學：組件間溝通橋樑">&larr;
+                        <a href="/post/20200317/" data-toggle="tooltip" data-placement="top" title="vuex 進階教學：Module、Getter">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20200318/" data-toggle="tooltip" data-placement="top" title="我也會遊戲沉迷：以傳說對決為例">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
