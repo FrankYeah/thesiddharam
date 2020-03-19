@@ -47,6 +47,7 @@
 
 @media screen and (max-width:500px){
     .intro-header{
+        background-position-x: right;
         background-image:url("https://frontenter.files.wordpress.com/2020/02/no-text-main-pic.jpg");
     }
     intro-header .post-heading h1 {
