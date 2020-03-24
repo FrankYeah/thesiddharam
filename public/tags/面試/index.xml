@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>面試 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E9%9D%A2%E8%A9%A6/</link>
+    <description>Recent content in 面試 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E9%9D%A2%E8%A9%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>junior 前端模擬面試：面試官心得</title>
+      <link>https://siddharam.com.tw/post/20200326/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200326/</guid>
+      <description>文 / 西打藍 Siddharam 面試者反應與表現 應 AppWorks School 恩師之邀，來當一日的模擬前端面試官，我負責面試其中四位，每人有半小時時間，其中二十分鐘模擬面試，十分鐘回饋</description>
+    </item>
+    
+  </channel>
+</rss>
