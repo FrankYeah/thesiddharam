@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://siddharam.com.tw/post/20200406/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20200405/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
@@ -634,7 +639,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/post/</loc>
-    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -681,7 +686,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/</loc>
-    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -846,6 +851,12 @@
   <url>
     <loc>https://siddharam.com.tw/tags/%E5%8F%8B%E6%83%85/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/%E5%90%88%E7%90%86%E5%8C%96/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1138,6 +1149,12 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/tags/%E7%BE%8A%E7%BE%A4%E6%95%88%E6%87%89/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/tags/%E8%80%83%E9%A1%8C/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1170,6 +1187,12 @@
   <url>
     <loc>https://siddharam.com.tw/tags/%E8%BD%89%E8%81%B7/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/%E8%BF%B7%E4%BF%A1/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1217,7 +1240,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/categories/%E9%8F%A1%E6%80%9D%E4%BA%BA%E7%94%9F/</loc>
-    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
