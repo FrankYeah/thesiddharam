@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg" />
+    
+
+    
+    <meta name="title" content="Siddharam｜寫程式的文字人｜西打藍" />
+    <meta property="og:title" content="Siddharam｜寫程式的文字人｜西打藍" />
+    <meta property="twitter:title" content="Siddharam｜寫程式的文字人｜西打藍" />
+    
+
+    
+    <meta name="description" content="文字紀錄可能性｜程式創造可能性">
+    <meta property="og:description" content="文字紀錄可能性｜程式創造可能性" />
+    <meta property="twitter:description" content="文字紀錄可能性｜程式創造可能性" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="" name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>慢慢想-Siddharam｜寫程式的文字人｜西打藍</title>
+
+    <link rel="canonical" href="/categories/%E6%85%A2%E6%85%A2%E6%83%B3/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit">有話對我說</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://www.facebook.com/%E8%A5%BF%E6%89%93%E8%97%8D-Siddharam-104806204464269/" target="_blank">Facebook</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    <li>
+                        <a href="https://siddharam.com.tw/tags/%E9%9B%A2%E8%81%B7%E9%80%B1%E8%A8%98/">離職週記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%85%A2%E6%85%A2%E6%83%B3">慢慢想</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('https://frontenter.files.wordpress.com/2020/02/siddharam-new-main-bg.jpg');">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    
+                    
+		    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+  
+<div class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">April 4, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200406/">
+        <h2 class="post-title homepage-post-title">
+            迷信不好嗎？ 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            羊群效應與合理化
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            你知道嗎？不只是人類，其實動物也很迷信...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">April 3, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200405/">
+        <h2 class="post-title homepage-post-title">
+            刻意練習：成為專家的三步學習法 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            比一萬小時定律更有效
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            《刻意練習》這本書，提供給想精進某項能力的你，一個可行的做法...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">April 2, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200404/">
+        <h2 class="post-title homepage-post-title">
+            死刑的快意 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            泯恩仇了嗎？
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            對於支持廢除死刑，並願意在社群上發聲的人，我覺得很傻。因為大部分台灣人是支持死刑的。你可以從各大網路媒體的討論，或是廢死聯盟發文的留言區看見懸殊的比例...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">April 1, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200403/">
+        <h2 class="post-title homepage-post-title">
+            請、謝謝、對不起 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            客氣用語的背後意義
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            文 / 西打藍 Siddharam 當我練習不說謝謝 《我為什麼去法國上哲學課？》這本書提到，作者因為太常向老師奧斯卡說「對不起」而被警告，從而反思這些「客氣用語」背
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 31, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200402/">
+        <h2 class="post-title homepage-post-title">
+            房思琪的初戀樂園：樂園 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            黑夜落幕
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            當作者離世的新聞發生，我才驚訝得知，原本作者父親竟然就是那名怪醫。當下各種記憶湧上，拼出了一張有血有肉的名家，在追求功利與名聲中被拉下高壇...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 30, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200401/">
+        <h2 class="post-title homepage-post-title">
+            自由工作者日常 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            速食店的生態觀察
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            這幾天都在不同地方工作，有在家、咖啡廳、速食店以及私人場所，每個地方都有不同的特點，想說寫些觀察應該蠻有趣的，所以決定來開啟〈自由工作者日常〉系列...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 29, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200331/">
+        <h2 class="post-title homepage-post-title">
+            離職第五週 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            新機會出現與專案開始
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            這週過得很開心，因為許多案子都要開始了，不僅有網站開發，還有文字採訪。可以用兩種專長賺錢維生，是我理想生活的樣貌，現在似乎更接近了些...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 28, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200330/">
+        <h2 class="post-title homepage-post-title">
+            過年會說恭喜發財嗎？ 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            我們的金錢觀
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            脫口秀中，他諷刺華人嗜錢如命的價值觀，我最有感的，是他說過年時期，華人最喜歡祝福別人：「恭喜發財！」白話文則是：「希望你變有錢。」此外他還介紹，華人還有一尊專門負責送錢給大家的「神」，名叫「財神爺」。逗的台下觀眾笑聲連連，覺得不可思議...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 27, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200329/">
+        <h2 class="post-title homepage-post-title">
+            怎麼寫部落格文章？ 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            TA、目標與邏輯
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            近期身旁很多朋友都想寫部落格，但真正付諸行動的卻很少。詢問後發現，主要有兩點原因導致...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+        <h5 style="color:#a3a3a3; font-size: 10px; margin-top:30px;">March 26, 2020</h5>
+    <a href="https://siddharam.com.tw/post/20200328/">
+        <h2 class="post-title homepage-post-title">
+            命運好好玩：工作與生活的兩難 
+            
+        </h2>
+	
+        <h3 class="post-subtitle homepage-post-subtitle">
+            現實的你怎麼選？
+        </h3>
+	
+        <div class="post-content-preview homepage-post-meta">
+	
+            因為這是一部工作與生活的兩難劇。小時候的我，即使懂得工作是什麼，也無法體會金錢壓力與社會壓力。而當時的我，也還沒體驗過戀愛的滋味。所以我猜，當年的我只看得懂生活部分的一小半...
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+    
+    </p>
+</div>
+<hr>
+
+
+            
+
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/categories/%E6%85%A2%E6%85%A2%E6%83%B3/page/2/">下一頁 &rarr;</a>
+    </li>
+    
+</ul>
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+    
+
+    
+	
+    <section class="">
+    
+    <hr><h5><a style="color:rgb(2, 186, 192)!important;" href="/top/about">關於</a></h5>
+        <div class="short-about">
+            
+            
+                <p>文字紀錄可能性｜程式創造可能性</p>
+            
+           
+           <ul class="list-inline"> 
+               
+               <li>
+                   <a href="https://siddharam.com.tw/categories/%E6%85%A2%E6%85%A2%E6%83%B3/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                </ul>
+            </div>
+            <div id="busuanzi_container_page_pv">
+                    閱讀量：<span id="busuanzi_value_page_pv"></span> 次
+                </div><br>
+                <div id="busuanzi_container_site_uv">
+                    訪客數：<span id="busuanzi_value_site_uv"></span> 次
+                </span>
+    </section>
+	
+    
+    
+
+    
+    
+</div>
+
+	</div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="https://siddharam.com.tw/categories/%E6%85%A2%E6%85%A2%E6%83%B3/index.xml" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
