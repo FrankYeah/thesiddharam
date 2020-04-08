@@ -6,10 +6,19 @@
     <description>Recent content in 前端 on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leaflet 開源地圖：即時定位與距離計算</title>
+      <link>https://siddharam.com.tw/post/20200410/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200410/</guid>
+      <description>文 / 西打藍 Siddharam 前言 因為專案原因，需要在網頁上即時定位，並顯示和建築物的相對距離，索性就來研究開源地圖 Leaflet。 以前曾用過 Google Map API，它的</description>
+    </item>
     
     <item>
       <title>junior 前端模擬面試：面試官心得</title>

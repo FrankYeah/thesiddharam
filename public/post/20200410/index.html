@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="斜槓人生：你敢用自己的方式活著嗎？" />
-    <meta property="og:title" content="斜槓人生：你敢用自己的方式活著嗎？" />
-    <meta property="twitter:title" content="斜槓人生：你敢用自己的方式活著嗎？" />
+    <meta name="title" content="Leaflet 開源地圖：即時定位與距離計算" />
+    <meta property="og:title" content="Leaflet 開源地圖：即時定位與距離計算" />
+    <meta property="twitter:title" content="Leaflet 開源地圖：即時定位與距離計算" />
     
 
     
-    <meta name="description" content="斜槓青年代表的是一種全新的人生價值觀，它的核心不在於多重收入，也不在於多重職業，而在於多重人生...">
-    <meta property="og:description" content="斜槓青年代表的是一種全新的人生價值觀，它的核心不在於多重收入，也不在於多重職業，而在於多重人生..." />
-    <meta property="twitter:description" content="斜槓青年代表的是一種全新的人生價值觀，它的核心不在於多重收入，也不在於多重職業，而在於多重人生..." />
+    <meta name="description" content="以前曾用過 Google Map API，它的功能是最多最齊全的，但因為要收費，所以才選擇 Leaflet。Leaflet 的特色是容易上手，也能滿足基本功能...">
+    <meta property="og:description" content="以前曾用過 Google Map API，它的功能是最多最齊全的，但因為要收費，所以才選擇 Leaflet。Leaflet 的特色是容易上手，也能滿足基本功能..." />
+    <meta property="twitter:description" content="以前曾用過 Google Map API，它的功能是最多最齊全的，但因為要收費，所以才選擇 Leaflet。Leaflet 的特色是容易上手，也能滿足基本功能..." />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="斜槓青年, 自由工作者, 倖存者偏差, 習得性失助, 內聖外王, 思考" name="keywords">
+    <meta content="前端, 開源地圖, leaflet, watchPosition, google map" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>斜槓人生：你敢用自己的方式活著嗎？-Siddharam｜寫程式的文字人｜西打藍</title>
+    <title>Leaflet 開源地圖：即時定位與距離計算-Siddharam｜寫程式的文字人｜西打藍</title>
 
-    <link rel="canonical" href="/post/20200409/">
+    <link rel="canonical" href="/post/20200410/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -202,18 +202,22 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E6%96%9C%E6%A7%93%E9%9D%92%E5%B9%B4" title="斜槓青年">
-                            斜槓青年
+                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF" title="前端">
+                            前端
                         </a>
                         
-                        <a class="tag" href="/tags/%E8%87%AA%E7%94%B1%E5%B7%A5%E4%BD%9C%E8%80%85" title="自由工作者">
-                            自由工作者
+                        <a class="tag" href="/tags/%E9%96%8B%E6%BA%90%E5%9C%B0%E5%9C%96" title="開源地圖">
+                            開源地圖
+                        </a>
+                        
+                        <a class="tag" href="/tags/leaflet" title="leaflet">
+                            leaflet
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> April 7, 2020</p>
-                    <h1>斜槓人生：你敢用自己的方式活著嗎？</h1>
-                    <h3 class="subheading">斜槓不是多元職業，而是多元人生</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> April 8, 2020</p>
+                    <h1>Leaflet 開源地圖：即時定位與距離計算</h1>
+                    <h3 class="subheading">watchPosition web 原生定位函式</h3>
                     <span class="meta">
 			
 
@@ -246,113 +250,173 @@
 
 <br>文 / 西打藍 Siddharam<br><br>
 
-<h3 class="article-h1-color">斜槓的最初定義</h3><br>
+<h3 class="article-h1-color">前言</h3><br>
 
-我一直以為，擁有多種收入的人，就可以稱之為斜槓。<br><br>
+因為專案原因，需要在網頁上即時定位，並顯示和建築物的相對距離，索性就來研究開源地圖 Leaflet。<br><br>
 
-在讀了《斜槓青年》後，我更喜歡作者 Susan 下的定義：「<b>斜槓青年代表的是一種全新的人生價值觀，它的核心不在於多重收入，也不在於多重職業，而在於多重人生。</b>」<br><br>
+以前曾用過 Google Map API，它的功能是最多最齊全的，但因為要收費，所以才選擇 Leaflet。Leaflet 的特色是容易上手，也能滿足基本功能。<br><br>
 
-現在的我，有以下六種收入來源：<br><br>
+例如即時定位、測距、回傳經緯度等，以及常用的地點標註、圖表化、第三方介接，基礎應用皆能做到。接著來寫 code 吧。<br><br>
 
-一，創業公司的前端工程師兼夥伴。<br><br>
+<h3 class="article-h1-color">leaflet</h3><br>
 
-二，某公司的專案採訪撰述。<br><br>
+首先先引入 leaflet 套件：<br><br>
 
-三，接專案的前端工程師。<br><br>
+<pre>
+<code>
 
-四，代表 NGO 談網站外包的顧問。<br><br>
+&lt;link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+&lt;script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin="">&lt;/script>
 
-五，和基隆多位團體合辦活動，接政府專案。<br><br>
+...
 
-六，程式教學。<br><br>
+// 放置地圖的元素
 
-七，經營部落格與粉專（尚未營利）。<br><br>
+&lt;div id='map'>&lt;/div>
 
-可以看出，我充分發揮長期累積的各個專長。過去，我必須在媒體業擔任記者，才能體驗採訪的樂趣；幾個月前，我得在新創公司擔任工程師，才有機會和夥伴一起寫程式，完成專案。<br><br>
+...
 
-而現在的我，為了追求自己喜歡的生活方式，而選擇當一名自由工作者。在努力找尋機會下，才談成這些自己喜歡的工作內容，<b>能夠自由切換工作模式，運用不同的天賦與能力工作，這是過去的我所無法想像的生活。</b><br><br>
+</code>
+</pre>
+<br>
 
-雖然接了不同種類的工作看似厲害，但其實是很不穩定的，客戶常因私事而取消合作，每月收入時多時少，還比以前更忙了，任何粗心大意都會打壞自己的招牌。那麼，為了追求自己理想的生活真的有那麼重要嗎？值得嗎？<br><br>
+接著使用 mapbox 初始化地圖：<br><br>
 
-這些內在疑問仍不停追著我跑，《斜槓青年》的作者同樣經歷過這些徬徨，她也在書中針對這些省思做出回應，提供不少借鏡的地方。<br><br>
+<pre>
+<code>
 
-<h3 class="article-h1-color">五種斜槓方式</h3><br>
+// map 是元素 id
 
-《斜槓青年》作者 Susan 是華人世界最早成名的斜槓青年之一。她的工作內容包含自媒體營運、Cross Fit 健身課程一級教練、創辦兩個教育品牌、出版四本雜誌、在北京教授百老匯爵士舞蹈，她同樣運用不同的專長，為自己帶來收入，同時也出書提供給後進者許多寶貴經驗。<br><br>
+var map = L.map('map')
 
-其中她所分享的五種斜槓青年的類型，讓我深受啟發：<br><br>
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1
+}).addTo(map);
 
-<b>一，穩定收入 + 興趣愛好組合</b><br><br>
+// setView 可以設定地圖座標
+// watch 則是持續監聽使用者的位置
 
-這種模式適合仍處探索興趣階段的人，或是興趣的收入不足以支撐生活的人。<br><br>
+map.locate({setView: true, watch: true});
 
-<b>二，左腦 + 右腦組合</b><br><br>
+</code>
+</pre>
+<br>
 
-這是一種理性和創作性思維共同發展的模式，兩者是非常好的互補。例如工程師和畫家。<br><br>
+監聽使用者的即時位置：<br><br>
 
-<b>三，大腦 + 身體組合</b><br><br>
+<pre>
+<code>
 
-這種模式可以讓人在腦力和體力勞動中切換，確保身心健康的平衡。<br><br>
+// 成功監聽到使用者的位置時觸發
+map.on('locationfound', onLocationFound);
 
-<b>四，寫作、教書、演講、顧問組合</b><br><br>
+// 失敗時觸發
+map.on('locationerror', onLocationError);
 
-這是一種黃金組合，你可以透過寫作成為意見領袖，接著演講和邀約也會相繼出現，最後你還能發展教學和顧問的領域，甚至是出書，形成良性循環。<br><br>
+function onLocationFound(e) {
 
-<b>五，一項工作多項職能型</b><br><br>
+}
 
-也許你只有一項專長，但它要求你具備全方位能力，並涉及不同領域。例如一位平面設計師，可能也有編輯、業務的能力，才能獨立完成設計專案。<br><br>
+function onLocationError(e) {
 
-以上五種，讓我最有感的是大腦 + 身體組合。<br><br>
+}
 
-目前的我，多數的工作都是在寫程式以及文字採訪，運用的能力都偏向大腦勞動，所以近期的目標會是培養一項靠身體勞動，來獲取收入的技能，例如按摩、煮食等。<br><br>
+</code>
+</pre>
+<br>
 
-第二有感的是寫作、教學、演講、顧問組合。<br><br>
+我們可以抓取當前位置，並計算與某地的距離：<br><br>
 
-因為這四項都是我的業務範圍，的確每一項都能帶動另一項的業務成長，也對建立個人品牌有極大幫助。<br><br>
+<pre>
+<code>
 
-<h3 class="article-h1-color">為什麼成為斜槓這麼難？</h3><br>
+function onLocationFound(e) {
+  var myLocation = e.latlng // 使用者位置
+　var bookstore = L.latLng(25.129836537742896, 121.74017250433087) // 書店
+  console.log(myLocation.distanceTo(bookstore)) // 計算使用者和書店的距離
+}
 
-既然成為斜槓的好處這麼多，為什麼大家普遍都過著朝九晚六的上班族生活呢？<br><br>
+</code>
+</pre>
+<br>
 
-作者提出多種解釋，而我最同意的理由是<b>「習得性失助」</b>。<br><br>
+我是如何知道某地的經緯度？用 click 函式取得：<br><br>
 
-美國心理學家馬丁‧賽利格曼做了一項實驗。他把狗關在籠子裡，只要蜂鳴器一響，他就給狗施加電擊。狗因為逃不了所以在籠子裡狂奔，驚恐哀叫。經過多次電擊後，當蜂鳴器響起時，狗已經不會狂奔了，只是趴在地上哀叫。到了實驗最後，實驗者把籠子打開，狗也不會逃跑，而是趴在地上發抖哀叫。<br><br>
+<pre>
+<code>
 
-通過實驗，賽利格曼提出了「習得性失助」的概念。表示人們在過去的經歷中，發現努力也無法改變現狀時，會形成一種「自己的行為無法改變結果」的態度，並長期處在無望與無可奈何的心理狀態。<b>即使日後有機會改變現狀，也不再選擇嘗試。</b><br><br>
+function onMapClick(e) {
+    // 顯示點擊區域的經緯度
+    alert("You clicked the map at " + e.latlng);
+}
 
-這種心理狀態是不是很容易見到？<br><br>
+mymap.on('click', onMapClick);
 
-尤其是在學生時期，在學校一板一眼的教學模式下，你已經放棄對世界的好奇心，而是受到學校、同儕、家庭影響，成為大家想要看到的模樣。即使出了社會，狀況依舊沒有改變。身旁的朋友相繼到公司上班，讓你以為，成年以後的生活，就只有賺錢養家、買車買房而已，沒有別條道路可以選擇。<br><br>
+</code>
+</pre>
+<br>
 
-為了對比成年人和小孩的心態，作者說了下面一段話：<br><br>
+如果想加標記，也很容易：<br><br>
 
-<b>「我相信，每個五歲小孩的世界都是如此斑斕，認為自己有價值、高貴，並且個性十足。五歲的孩子就是一個這樣的貴族，他追尋自己的真理、自我完善與卓越，卻從不計算成本。不在乎金錢和家裡的存款，他給世人的感覺就是，他是一名百萬富翁。」</b><br><br>
+<pre>
+<code>
 
-你我都曾經是這樣的一位貴族，一個個性十足的百萬富翁。我們只是被社會磨平了稜角而已。<br><br>
+var marker = L.marker([51.5, -0.09]).addTo(map);
 
-<h3 class="article-h1-color">對生命的執著</h3><br>
+</code>
+</pre>
+<br>
 
-這本書，是作者對人生的一則叩問，積極想回答人生的意義是什麼？這也是每個人心中的疑問。<br><br>
+最後分享一個 Web 原生定位 API watchPosition：<br><br>
 
-作者曾經認為的答案是「受苦」，當人經歷完所有苦痛後，生命就會結束。<br><br>
+<pre>
+<code>
 
-爾後作者才意識到，<b>人生其實是沒有意義的。</b>所有的意義都是被人附加上去的，我們和動物一樣，只是為了繁衍而生存。意識到這點後，作者鬆了一口氣，不再緊追虛無飄渺的目標，而是緩下來傾聽內心的聲音，找尋自己真正想做的事。<br><br>
+var id, target, options;
 
-雖然如此，但是經濟壓力仍然存在，每個人都害怕當自己年老失去工作能力，若有意外發生需要醫療費時，沒錢怎麼辦？<br><br>
+function success(pos) {
+    var crd = pos.coords;
+    console.log(pos)
+    // 取得經緯度
+    console.log(pos.coords.latitude)
+    console.log(pos.coords.longitude)
 
-作者的朋友瀟灑的回覆，令我震驚。他說：「<b>既然沒有錢，那就不用治啦！</b>」<br><br>
+    if (target.latitude === crd.latitude && target.longitude === crd.longitude) {
+        console.log('Congratulations, you reached the target');
+        navigator.geolocation.clearWatch(id);
+    }
+}
 
-我忽然驚覺，<b>如果要我一輩子過著不喜歡的生活，只為了延續生命的話，那我不如把生活過得精采，在人生的最後一刻瀟灑走去。</b>想到這裡，很多對生命執著的事物，似乎都可以放下了。<br><br>
+function error(err) {
+    console.warn('ERROR(' + err.code + '): ' + err.message);
+}
+
+target = {
+    latitude : 0,
+    longitude: 0
+};
+
+options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+};
+
+id = navigator.geolocation.watchPosition(success, error, options);
+
+</code>
+</pre>
+<br>
 
 <h3 class="article-h1-color">結語</h3><br>
 
-《斜槓青年》作者的文筆非常好，也喜歡引經據典，讓文字更具說服力。<br><br>
-
-例如作者針對創業成功的定義，用倖存者偏差的觀點，來為成功的容易度打上一個問號。<br><br>
-
-作者也引用「內聖外王」的比喻，說明自己將克己修身當作最重要的個人目標，外部的生活，只不過是內在思考的一種體現。<br><br>
-
-在世界快速變遷下，這本書仍不顯過時，依舊適合有志朝向斜槓之路的你讀過一回。<br><br>
+我猜 leaflet 的定位方式，是用原生語法 watchPosition 製作而成的，如果單純只需取得使用者定位，可能連 leaflet 也不需使用，只要原生語法就行了。<br><br>
 
 
 <br><br><br>
@@ -372,15 +436,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20200408/" data-toggle="tooltip" data-placement="top" title="周哈里窗：知道自己很難溝通嗎？">&larr;
+                        <a href="/post/20200409/" data-toggle="tooltip" data-placement="top" title="斜槓人生：你敢用自己的方式活著嗎？">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20200410/" data-toggle="tooltip" data-placement="top" title="Leaflet 開源地圖：即時定位與距離計算">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
