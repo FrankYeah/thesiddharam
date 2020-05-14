@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://siddharam.com.tw/post/20200513/</loc>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20200512/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -790,7 +795,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/post/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -837,7 +842,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1115,7 +1120,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/tags/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1193,7 +1198,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/categories/%E6%85%A2%E6%85%A2%E6%83%B3/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1307,7 +1312,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/tags/%E6%9B%B8%E8%A9%95/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1319,7 +1324,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/tags/%E6%9C%AA%E4%BE%86%E5%B1%A5%E6%AD%B7%E6%9B%B8/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1445,7 +1450,7 @@
   
   <url>
     <loc>https://siddharam.com.tw/tags/%E8%87%AA%E7%94%B1%E5%B7%A5%E4%BD%9C%E8%80%85/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
