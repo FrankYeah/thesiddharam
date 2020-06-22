@@ -1209,6 +1209,15 @@
     </item>
     
     <item>
+      <title>訂閱</title>
+      <link>https://siddharam.com.tw/top/subscribe/</link>
+      <pubDate>Wed, 24 Apr 2019 15:09:57 +0800</pubDate>
+      
+      <guid>https://siddharam.com.tw/top/subscribe/</guid>
+      <description>訂閱： (function(m,a,i,l,e,r){ m[&#39;MailerLiteObject&#39;]=e;function f(){ var c={ a:arguments,q:[]};var r=this.push(c);return &#34;number&#34;!=typeof r?r:f.bind(c.q);} f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i); var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+&#39;?v&#39;+(~~(new Date().getTime()/1000000)); _.parentNode.insertBefore(r,_);})(window, document, &#39;script&#39;, &#39;https://static.mailerlite.com/js/universal.js&#39;, &#39;ml&#39;); var ml_account = ml(&#39;accounts&#39;, &#39;2150544&#39;, &#39;z9e0c6d4c5&#39;, &#39;load&#39;);</description>
+    </item>
+    
+    <item>
       <title>關於</title>
       <link>https://siddharam.com.tw/top/about/</link>
       <pubDate>Wed, 24 Apr 2019 15:09:57 +0800</pubDate>
