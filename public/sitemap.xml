@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/post/20200723/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20200720/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
   </url>
@@ -1592,6 +1597,12 @@
   <url>
     <loc>https://siddharam.com.tw/tags/%E6%97%A5%E6%9C%88%E6%98%8E%E5%8A%9F/</loc>
     <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/%E6%99%AF%E6%B0%A3/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
