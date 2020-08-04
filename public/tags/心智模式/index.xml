@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>心智模式 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E5%BF%83%E6%99%BA%E6%A8%A1%E5%BC%8F/</link>
+    <description>Recent content in 心智模式 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E5%BF%83%E6%99%BA%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>問答測驗：你是什麼樣的人？</title>
+      <link>https://siddharam.com.tw/post/20200804/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20200804/</guid>
+      <description>文 / 西打藍 Siddharam 小測驗 問：你是公司員工，老闆透過作帳方式，讓公司少繳納幾十萬的稅金，連帶地幫員工加薪，這時你會？ A：雖然行為不好，但是讓公司存活</description>
+    </item>
+    
+  </channel>
+</rss>
