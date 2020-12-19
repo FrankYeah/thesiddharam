@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>憂鬱 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E6%86%82%E9%AC%B1/</link>
+    <description>Recent content in 憂鬱 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E6%86%82%E9%AC%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>最壞的結果不會發生</title>
+      <link>https://siddharam.com.tw/post/20201219/</link>
+      <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20201219/</guid>
+      <description>文 / 西打藍 Siddharam 這是憂鬱、失眠人的日常嗎？ 周末夜裡，我為了明天要上線的網站，和設計師開著 Zoom 遠端協作，一對一修改畫面直至半夜 1 點，而網站的線上支付</description>
+    </item>
+    
+  </channel>
+</rss>
