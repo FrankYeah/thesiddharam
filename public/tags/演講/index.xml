@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>演講 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E6%BC%94%E8%AC%9B/</link>
+    <description>Recent content in 演講 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E6%BC%94%E8%AC%9B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>演講後的反思</title>
+      <link>https://siddharam.com.tw/post/20210319/</link>
+      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20210319/</guid>
+      <description>文 / 西打藍 Siddharam 前幾天到中壢一所大學演講，我問台下 50 名研究生： 「理想、有錢、自由/未知的工作，你會選哪個？」 理想的工作，約有 4-5 票，自由/未知的工</description>
+    </item>
+    
+  </channel>
+</rss>
