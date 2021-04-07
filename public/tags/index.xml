@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Siddharam</title>
+    <title>Siddharam</title>
     <link>https://siddharam.com.tw/tags/</link>
-    <description>Recent content in Tags on Siddharam</description>
+    <description>Recent content on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate>
@@ -12,54 +12,34 @@
     
     
     <item>
-      <title></title>
-      <link>https://siddharam.com.tw/tags/</link>
+      <title>自由，是與自己的腳鏈共舞</title>
+      <link>https://siddharam.com.tw/post/20210405/</link>
       <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://siddharam.com.tw/tags/</guid>
-      <description></description>
+      <guid>https://siddharam.com.tw/post/20210405/</guid>
+      <description>文 / 西打藍 Siddharam 標題文字，是臉友的一段話。乍聽之下不合理，在細細理解後，我喜歡上它的道理。 我曾用陌生人的角度，觀察自己。發現自己是： 1：怕留給別</description>
     </item>
     
     <item>
-      <title>21天豐盛冥想旅程</title>
-      <link>https://siddharam.com.tw/tags/21%E5%A4%A9%E8%B1%90%E7%9B%9B%E5%86%A5%E6%83%B3%E6%97%85%E7%A8%8B/</link>
-      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
+      <title>為自己的生命化妝</title>
+      <link>https://siddharam.com.tw/post/20210305/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://siddharam.com.tw/tags/21%E5%A4%A9%E8%B1%90%E7%9B%9B%E5%86%A5%E6%83%B3%E6%97%85%E7%A8%8B/</guid>
-      <description></description>
+      <guid>https://siddharam.com.tw/post/20210305/</guid>
+      <description>文 / 西打藍 Siddharam 成年人的世界，每個人都上了一層精心準備的妝。最常見的，是禮貌妝。 禮貌妝，是和陌生人接觸時，能保護好自己的安全妝。 禮貌，讓你不用暴</description>
     </item>
     
     <item>
-      <title>Api</title>
-      <link>https://siddharam.com.tw/tags/api/</link>
-      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      <title>一場聚會中，我看見努力又上進的人們</title>
+      <link>https://siddharam.com.tw/post/20210220/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://siddharam.com.tw/tags/api/</guid>
-      <description></description>
+      <guid>https://siddharam.com.tw/post/20210220/</guid>
+      <description>文 / 西打藍 Siddharam 前幾天參加團隊聚會，十六人中，多數是靠行的專業工作者，只有我與少數人是自由工作者。 和大家熟識後，聽見大家的規劃，發現每個人都將生</description>
     </item>
     
-    <item>
-      <title>Avada</title>
-      <link>https://siddharam.com.tw/tags/avada/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://siddharam.com.tw/tags/avada/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Axios</title>
-      <link>https://siddharam.com.tw/tags/axios/</link>
-      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://siddharam.com.tw/tags/axios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bug</title>
-      <link>https://siddharam.com.tw/tags/bug/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+  </channel>
+</rss>0 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/bug/</guid>
       <description></description>
