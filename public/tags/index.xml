@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title></title>
       <link>https://siddharam.com.tw/tags/</link>
-      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/</guid>
       <description></description>
@@ -779,7 +779,7 @@
     <item>
       <title>在家工作</title>
       <link>https://siddharam.com.tw/tags/%E5%9C%A8%E5%AE%B6%E5%B7%A5%E4%BD%9C/</link>
-      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E5%9C%A8%E5%AE%B6%E5%B7%A5%E4%BD%9C/</guid>
       <description></description>
@@ -1421,6 +1421,15 @@
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E7%88%AC%E8%9F%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>獵人</title>
+      <link>https://siddharam.com.tw/tags/%E7%8D%B5%E4%BA%BA/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/%E7%8D%B5%E4%BA%BA/</guid>
       <description></description>
     </item>
     
