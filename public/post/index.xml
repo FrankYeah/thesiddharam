@@ -6,13 +6,22 @@
     <description>Recent content in Posts on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Oct 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>前端實戰接案作品：網站設計與製作</title>
+      <title>前端網站接案作品：標準官網案</title>
+      <link>https://siddharam.com.tw/post/20211008/</link>
+      <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20211008/</guid>
+      <description>文 / 西打藍 Siddharam 8/12（四），我過去在媒體業的同事敲我，請我幫他家人的子公司建立官方網站。我答應後，朋友便牽線讓我和負責人談。 8/14（六），</description>
+    </item>
+    
+    <item>
+      <title>前端實戰接案作品：策展網站設計與製作</title>
       <link>https://siddharam.com.tw/post/20211007/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
       
