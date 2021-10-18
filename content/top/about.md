@@ -11,8 +11,13 @@ draft: false
 
 <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
 
+
+
 <h3 class="article-h1-color">介紹</h3><br>
-工業管理系畢業後，在五間媒體產業待了三年，當過電視台網路編輯、新移 / 住民議題的月報記者、新媒體記者、人文歷史雜誌記者、科技線記者。在 2018 年末，轉職成為前端工程師，在一間新創公司工作。
+
+最推薦認識我的方式，就是來最新製作的<a href="https://siddharam.com/" target="_blank">個人網站</a>逛逛。<br><br>
+
+我從工業管理系畢業後，在五間媒體產業待了三年，當過電視台網路編輯、新移 / 住民議題的月報記者、新媒體記者、人文歷史雜誌記者、科技線記者。在 2018 年末，轉職成為前端工程師，在一間新創公司工作。
 <br><br>
 從大學開始，幾乎每年都會往國外跑。
 <br><br>
@@ -26,13 +31,13 @@ draft: false
 <br><br>
 跑科技線時，曾到舊金山採訪法國軟體大廠的用戶大會，見識了國外版的 COMPUTEX，訪問不少美國公司，也順道逛了好萊塢和聖塔莫尼卡。
 <br><br>
-後來去了 AppWorks School 學寫前端，也順利畢業，並到新創公司擔任前端工程師，截自 2020/03/09，已經當了一年三個月的 RD 了。
+後來去了 AppWorks School 學寫前端，也順利畢業，並到新創公司擔任前端工程師，截自 2020/03/09，已經當了一年三個月的軟體工程師。
 <br><br>
-日前剛離職，正找尋新的生活方式，有任何活動、案子、演講，都可以聯繫我。
-<br>
+從 2020 年離開新創公司至今，一直是自由接案的工作者，並經營著<a href="https://siddharam.com/" target="_blank">個人網站</a>。
+<br><br>
 <h3 class="article-h1-color">平常</h3><br>
 非常喜歡基隆的基隆人。
-<br>
+<br><br>
 <h3 class="article-h1-color">Siddharam 西打藍</h3><br>
 是我最愛的兩本書的合名，流浪者之歌（Siddhartha）、項塔蘭（Shantaram）。<br><br>
 <h3 class="article-h1-color">常說</h3><br>
@@ -40,20 +45,11 @@ draft: false
 <h3 class="article-h1-color">願景</h3><br>
 希望能找出人生更多的可能性，除了親自實現，也分享給全世界。<br><br>
 <h3 class="article-h1-color">作品</h3><br>
-完整作品，可以參考我的 <a href="https://www.cakeresume.com/me/aaa24295234" target="_blank">cakeresume</a>。<br><br>
+完整作品，可以參考我的<a href="https://siddharam.com/" target="_blank">個人網站</a>。<br><br>
 
-<a href="https://designyyi.com/index.html" target="_blank">室內設計公司網站</a><br><br>
-<a href="http://www.synergies.com.tw/index.html" target="_blank">Synergies 官方網站</a><br><br>
-<a href="http://aicollege.sis.ai/Student" target="_blank">智能學院培訓官方網站</a><br><br>
-<a href="https://frankyeah.github.io/Front-Enter/index.html" target='_blank'>部落格網站</a><br><br>
-<a href="https://stylish-cowork-nafy.firebaseapp.com/" target='_blank'>電商網站</a><br><br>
-<a href="https://www.ovenplus.com/" target='_blank'>一頁式烤爐網站</a><br><br>
-<a href="https://frankyeah.github.io/canvas-game/">打磚塊</a> (電腦版)<br><br>
 
-<a href="https://www.behance.net/SIANG-HUA?fbclid=IwAR1ZnMxo7gGab__tWCIF1GcTT14o7Vb6z-UkcWcA7GHO7jIgzvTCM57wqr8" target='_blank'>合作設計師的平面作品</a><br><br>
-現在所看的部落格也是自己架的。<br><br>
-如果想看更多作品，可以<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit" target="_blank">聯絡</a>我。<br><br>
-如果喜歡我的文章，也歡迎<a href="https://p.ecpay.com.tw/0167F" target="_blank">自由贊助</a>唷！<br><br>
+
+
 
 <br><br><br><br>
 
