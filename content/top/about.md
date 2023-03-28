@@ -57,7 +57,7 @@ draft: false
 
 <div >
     <a href="https://github.com/FrankYeah" target="_blank"><div style="cursor: pointer;" class="fab fa-github fa-3x"></div></a>
-    <a href="mailto:aaa24295234@gmail.com" target="_blank"><div style="padding-left:20px; cursor: pointer;" class="fas fa-envelope fa-3x"></div></a>
+    <a href="mailto:frank@siddharam.com" target="_blank"><div style="padding-left:20px; cursor: pointer;" class="fas fa-envelope fa-3x"></div></a>
 </div>
 
 </article>
