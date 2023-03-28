@@ -15,7 +15,7 @@ draft: false
 
 <h3 class="article-h1-color">介紹</h3><br>
 
-最推薦認識我的方式，就是來最新製作的<a href="https://siddharam.com/" target="_blank">個人網站</a>逛逛。<br><br>
+最推薦認識我的方式，是來我的 <a href="https://www.youtube.com/@siddblue" target="_blank">YouTube</a>、<a href="https://www.instagram.com/sidd.blue/" target="_blank">IG</a>、<a href="https://siddharam.com/" target="_blank">個人網站</a>逛逛。<br><br>
 
 我從工業管理系畢業後，在五間媒體產業待了三年，當過電視台網路編輯、新移 / 住民議題的月報記者、新媒體記者、人文歷史雜誌記者、科技線記者。在 2018 年末，轉職成為前端工程師，在一間新創公司工作。
 <br><br>
