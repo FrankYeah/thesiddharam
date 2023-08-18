@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg" />
+    
+
+    
+    <meta name="title" content="走捷徑的路，收穫最小" />
+    <meta property="og:title" content="走捷徑的路，收穫最小" />
+    <meta property="twitter:title" content="走捷徑的路，收穫最小" />
+    
+
+    
+    <meta name="description" content="...">
+    <meta property="og:description" content="..." />
+    <meta property="twitter:description" content="..." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content=", " name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常, 自由工作者, 自由接案, freelancer" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>走捷徑的路，收穫最小-Siddharam｜寫程式的文字人｜西打藍</title>
+
+    <link rel="canonical" href="/post/20230818/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit">有話對我說</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://www.instagram.com/sidd.blue/" target="_blank">IG</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="hhttps://www.instagram.com/oceanland_keelung/" target="_blank">與海有關</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    <li>
+                        <a href="https://siddharam.com.tw/tags/%E8%87%AA%E7%94%B1%E5%B7%A5%E4%BD%9C%E8%80%85%E6%97%A5%E5%B8%B8/">自由工作者日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%85%A2%E6%85%A2%E6%83%B3">慢慢想</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/" title="">
+                            
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> August 18, 2023</p>
+                    <h1>走捷徑的路，收穫最小</h1>
+                    <h3 class="subheading">我從走路學到的事</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / 西打藍 Siddharam<br><br>
+
+我錯了，錯了 30 年。<br><br>
+
+我身為理工直男，總是效率至上，越快達成目的越好，但是我可能錯了。<br><br>
+
+平常走在路上，我只朝著目的地，總是忽略路上風景，希望越快抵達目的地越好。<br><br>
+
+我終於知道，為什麼搭車、開車的人，多數時候是沈悶的，因為為了快速抵達目的地，我們選擇效率較高的車子，這段期間都是想快轉的時間。<br><br>
+
+以前看《命運好好玩》電影時，總是嘲笑主角那麼傻，怎麼把許多日常時光快轉掉。<br><br>
+
+但卻發現，自己也正做著相同的事：<br><br>
+
+快轉所有通勤時間。<br><br>
+
+快轉吃完一頓餐的時間。<br><br>
+
+快轉某些社交聚會。<br><br>
+
+我於是自問：「有哪些時光，是我想要越慢越好，越長越好的呢？」<br><br>
+
+我發現這些「越沒效率」的時光，反而在我記憶中刻畫得最深，甚至是能記憶一輩子的事。<br><br>
+
+在某些城市中，我永遠忘不了的路線，一定是我緩慢一步步走過，才會記住。<br><br>
+
+那些我用交通工具快速略過的路線，即使我經過數十次，也依舊模糊不清，無法打從心底建構路線。<br><br>
+
+<h3 class="article-h1-color"></h3><br>
+
+我今天在一座熟悉的城市「台北」，做了幾小時的徒步實驗。<br><br>
+
+從經過數百次的台北車站開始，慢慢走到西門町看電影。<br><br>
+
+我走得很慢很緩，幾乎所有人的步伐都超過我，我會很仔細看每間店，看向吸引我的聲音或氣味，走進我有興趣的每個街道。<br><br>
+
+我第一次發現，西門町捷運內有個通道，裡面有刷卡進出的智慧圖書館，好安靜舒服。<br><br>
+
+我第一次察覺，車站對街竟有超過數十間番茄、排骨口味的牛肉麵，多是老店家。<br><br>
+
+牆上的標語，百貨公司的手寫字，廁所的塗鴉，我都仔細閱讀，甚至拍了下來。<br><br>
+
+在地上自己玩牌的流浪漢，隨時注意客人需求的服務生，停在捷運旁化妝的年輕人，向我問路的亞洲女生。<br><br>
+
+以上這些，我從來注意過。<br><br>
+
+曾有位朋友分享，他去日本旅行時，沒有去太多景點與城市，而是每天去爬山。<br><br>
+
+他說：「我只想看看其他國家的山，有什麼不一樣。」<br><br>
+
+我終於，知道什麼叫好好生活了。<br><br>
+
+答案很簡單，就是放大所有的感官，移動速度越慢越好，體會每個當下湧向心裡的每一刻。<br><br>
+
+緩慢的速度，和記憶程度成正比。<br><br>
+
+當你想逃離某件事，例如通勤時，你會希望時間越快越好。<br><br>
+
+當你想回憶某個美好記憶時，你會停住身體，仔細想著它，直到它從心裡浮現。<br><br>
+
+我曾經覺得年紀大
+
+
+
+曾覺得老人家走很慢很可憐 但現在突然發現 是我的觀念問題 慢不是不好 不是快才好
+
+
+
+
+（日常生活與接案歷程分享都在 IG、限動：<a href="https://www.instagram.com/sidd.blue/" target="_blank">西打藍</a>）<br><br>
+
+<!-- <h3 class="article-h1-color"></h3><br> -->
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20230817/" data-toggle="tooltip" data-placement="top" title="自由工作者日常">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">聯絡與合作</h3><br>
+
+
+
+有文字採訪、網站開發，或是諮詢需求，皆可至<a href="https://siddharam.com/" target="_blank">個人網站</a>參考作品，並聯繫 <a href="https://www.instagram.com/sidd.blue/" target="_blank">IG</a>。<br><br>
+
+或是想分享心情、聊聊天、交朋友，可以來<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit" target="_blank">秘密通道</a>找我唷。<br><br>
+
+Email: frank@siddharam.com<br><br>
+
+<div style="text-align:center;">訂閱：</div><br>
+
+<div class="ml-form-embed"
+  data-account="2150544:z9e0c6d4c5"
+  data-form="2243816:o0w2k7">
+</div>
+
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '2150544', 'z9e0c6d4c5', 'load');
+</script>
+
+
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
