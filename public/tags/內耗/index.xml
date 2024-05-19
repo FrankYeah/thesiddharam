@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>內耗 on Siddharam</title>
+    <link>https://siddharam.com.tw/tags/%E5%85%A7%E8%80%97/</link>
+    <description>Recent content in 內耗 on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/tags/%E5%85%A7%E8%80%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>空想的每一刻都在內耗</title>
+      <link>https://siddharam.com.tw/post/20240519/</link>
+      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/post/20240519/</guid>
+      <description>文 / 西打藍 Siddharam 我有段期間想法很多，但內心卻很痛苦，因為沒有勇氣去做，只會空想。 我在剛學會寫程式後，一直很想做個課程網站。 每天都在思考要有哪些功</description>
+    </item>
+    
+  </channel>
+</rss>
