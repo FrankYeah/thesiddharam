@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siddharam.com.tw/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title></title>
       <link>https://siddharam.com.tw/tags/</link>
-      <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/</guid>
       <description></description>
@@ -1664,6 +1664,15 @@
       <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://siddharam.com.tw/tags/%E6%A1%88%E6%BA%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>業務</title>
+      <link>https://siddharam.com.tw/tags/%E6%A5%AD%E5%8B%99/</link>
+      <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharam.com.tw/tags/%E6%A5%AD%E5%8B%99/</guid>
       <description></description>
     </item>
     
