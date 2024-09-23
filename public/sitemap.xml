@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://siddharam.com.tw/post/20240919/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://siddharam.com.tw/post/20240917/</loc>
     <lastmod>2024-09-17T00:00:00+00:00</lastmod>
   </url>
@@ -2595,6 +2600,12 @@
   <url>
     <loc>https://siddharam.com.tw/tags/</loc>
     <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siddharam.com.tw/tags/2024%E5%B9%B4/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
