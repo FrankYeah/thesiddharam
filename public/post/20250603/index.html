@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg" />
+    
+
+    
+    <meta name="title" content="我不再費力經營自媒體了" />
+    <meta property="og:title" content="我不再費力經營自媒體了" />
+    <meta property="twitter:title" content="我不再費力經營自媒體了" />
+    
+
+    
+    <meta name="description" content="過了很多年才體認到，接案能比較輕鬆找到客戶，其中一部分原因，是因為自媒體...">
+    <meta property="og:description" content="過了很多年才體認到，接案能比較輕鬆找到客戶，其中一部分原因，是因為自媒體..." />
+    <meta property="twitter:description" content="過了很多年才體認到，接案能比較輕鬆找到客戶，其中一部分原因，是因為自媒體..." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="自媒體" name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常, 自由工作者, 自由接案, freelancer" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>我不再費力經營自媒體了-Siddharam｜寫程式的文字人｜西打藍</title>
+
+    <link rel="canonical" href="/post/20250603/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://siddharam.com/" target="_blank">官方網站</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://www.instagram.com/sidd.blue/" target="_blank">IG</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    <li>
+                        <a href="https://siddharam.com.tw/tags/%E8%87%AA%E7%94%B1%E5%B7%A5%E4%BD%9C%E8%80%85%E6%97%A5%E5%B8%B8/">自由工作者日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%85%A2%E6%85%A2%E6%83%B3">慢慢想</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E8%87%AA%E5%AA%92%E9%AB%94" title="自媒體">
+                            自媒體
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> June 3, 2025</p>
+                    <h1>我不再費力經營自媒體了</h1>
+                    <h3 class="subheading">推薦的短中長期策略</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / 西打藍 Siddharam<br><br>
+
+5 年前，<br>
+是我第一次開社群帳號寫文。<br><br>
+
+我那時很單純，<br>
+只想記錄接案日常。<br><br>
+
+想不到一寫就是 5 年，<br>
+接案也沒停過。<br><br>
+
+過了很多年才體認到，<br>
+接案能比較輕鬆找到客戶，<br>
+其中一部分原因，是因為自媒體。<br><br>
+
+這篇文，<br>
+想分享 3 個經營自媒體的階段，<br>
+以及我接下來的策略組合。<br><br>
+
+最後，<br>
+我也會分享給新手的經營小建議。<br><br>
+
+
+<h3 class="article-h1-color">階段一、頻繁更新</h3><br>
+
+我剛創帳號寫文時，<br>
+心裡沒有自媒體概念，<br>
+就只當成記錄簿，<br>
+寫想寫的文字。<br><br>
+
+那時我的靈感大爆發，<br>
+一週寫 4 篇文，<br>
+分享在臉書粉專及社團。<br><br>
+
+慢慢的，<br>
+看文的人漸增，<br>
+我也抓到社群語感。<br><br>
+
+後來發現這份技能，<br>
+到任何平台都適用。<br><br>
+
+
+<h3 class="article-h1-color">階段二、嘗試全部平台</h3><br>
+
+大概在 3 年前，<br>
+我在 IG 開了新帳號，<br>
+把平常在臉書分享的文字，<br>
+做成字卡放上去。<br><br>
+
+IG 應該是最多人認識我的地方，<br>
+後來，我還玩了 YouTube、短影片，<br>
+甚至 Dcard、Threads 都碰。<br><br>
+
+會碰的原因，<br>
+是想認識不同載體特性，<br>
+竟發現邏輯幾乎都是一樣的。<br>
+接著來到現階段。<br><br>
+
+
+<h3 class="article-h1-color">階段三、選高複利</h3><br>
+
+經營自媒體的核心素材，<br>
+永遠是文字。<br><br>
+
+有沒有一些方法，<br>
+可以讓每一次的累積，<br>
+不會白費？<br><br>
+
+我最後選擇中、長文為核心。<br><br>
+
+有完整脈絡的長文，<br>
+可以放電子報、IG 字卡，<br>
+也能精煉放 Threads。<br><br>
+
+如果有餘裕，<br>
+未來還能拍成 YouTube 長影片，<br>
+或當作短影片素材。<br><br>
+
+因此，<br>
+我現在大多時候，<br>
+都在寫中、長文放電子報，<br>
+這是現階段的大方向。<br><br>
+
+對於不同品牌的狀態，<br>
+我有一些方向提議：<br><br>
+
+
+<h3 class="article-h1-color">▎需要流量時</h3><br>
+
+如果你現在有流量需求，<br>
+最好的方式，<br>
+就是寫 Threads。<br><br>
+
+等累積一定讀者後，<br>
+就能開始拍短影片，<br>
+兩者都是能快速曝光的方法。<br><br>
+
+另外，<br>
+你也能發文到 Dcard，<br>
+或是臉書社團。<br><br>
+
+這些都是在沒有讀者基礎下，<br>
+仍有機會破圈的社群。<br><br>
+
+
+<h3 class="article-h1-color">▎需要存量時</h3><br>
+
+如果你經營一段時間了，<br>
+就能減少大量曝光，<br>
+轉而深耕和資深讀者的關係。<br><br>
+
+例如 YouTube、電子報、Podcast，<br>
+或是難度較高的 Line 私域，<br>
+都是能深化讀者關係的平台。<br><br>
+
+這個過程非常漫長，<br>
+但這會是你品牌的護城河，<br>
+是你發展事業的核心。<br><br>
+
+而我接下來會怎麼做？<br><br>
+
+
+<h3 class="article-h1-color">▎我的策略組合</h3><br>
+
+我的核心一直都是文字，<br>
+電子報是重心。<br><br>
+
+而 Threads 用來引流，<br>
+IG 則是跟讀者對話。<br><br>
+
+如果將來有餘裕，<br>
+我會重新拍 YouTube 影片，<br>
+深化讀者信任。<br><br>
+
+如果你是新手，<br>
+我也分享一些適合的方向。<br><br>
+
+
+<h3 class="article-h1-color">▎新手的小提議</h3><br>
+
+如果你剛開始經營，<br>
+請先累積一些流量，<br>
+用 Threads、短影片都很好，<br>
+目的是培養手感。<br><br>
+
+等你有 500-1000 名讀者基礎後，<br>
+再來考慮難度更高的方向。<br>
+例如電子報、私域、YouTube，<br>
+都很不錯。<br><br>
+
+在做自媒體的過程，<br>
+別忘了還要打造服務，或是產品，<br>
+才不會浪費每一次的努力。<br><br>
+
+至於要怎麼打造？<br>
+之後再分享。<br>
+你可以從累積流量，開始嘗試。<br><br>
+
+
+<!-- 
+<!-- 案例 > 證明案例 > 好處 / 壞處 > 怎麼改變（列步驟） > 結語總結金句 / 對自己說一句話 -->
+
+
+（日常生活與接案歷程分享都在 IG、限動：<a href="https://www.instagram.com/sidd.blue/" target="_blank">西打藍</a>）<br><br>
+
+<!-- <h3 class="article-h1-color">▎</h3><br> -->
+
+
+
+
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20250531/" data-toggle="tooltip" data-placement="top" title="我的工作日常：分享 10 個片段">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">聯絡與合作</h3><br>
+
+訂閱電子報，領<a href="https://siddharam.systeme.io/join-newsletter" target="_blank">「我當前 10+ 以上收入源有哪些」</a>一文。<br><br>
+
+有文字採訪、網站開發，或是諮詢需求，皆可至<a href="https://siddharam.com/" target="_blank">個人網站</a>參考作品，並聯繫 <a href="https://www.instagram.com/sidd.blue/" target="_blank">IG</a>。<br><br>
+
+或是想分享心情、聊聊天、交朋友，可以來<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit" target="_blank">秘密通道</a>找我唷。<br><br>
+
+Email: frank@siddharam.com<br><br>
+
+
+<div class="ml-form-embed"
+  data-account="2150544:z9e0c6d4c5"
+  data-form="2243816:o0w2k7">
+</div>
+
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '2150544', 'z9e0c6d4c5', 'load');
+</script>
+
+
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
