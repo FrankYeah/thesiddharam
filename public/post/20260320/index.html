@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Siddharam">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg">
+    <meta property="twitter:image" content="https://siddharam.com.tw/img/index-head-photo-new.jpg" />
+    
+
+    
+    <meta name="title" content="我 6 年沒上班，後來自己開了公司" />
+    <meta property="og:title" content="我 6 年沒上班，後來自己開了公司" />
+    <meta property="twitter:title" content="我 6 年沒上班，後來自己開了公司" />
+    
+
+    
+    <meta name="description" content="我是西打，一個已經 6 年沒上班的人。過去，我也曾是上班族，當過 3 年文字記者，1.5 年的軟體工程師...">
+    <meta property="og:description" content="我是西打，一個已經 6 年沒上班的人。過去，我也曾是上班族，當過 3 年文字記者，1.5 年的軟體工程師..." />
+    <meta property="twitter:description" content="我是西打，一個已經 6 年沒上班的人。過去，我也曾是上班族，當過 3 年文字記者，1.5 年的軟體工程師..." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+    <meta content="" name="keywords">
+    <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常, 自由工作者, 自由接案, freelancer" name="keyword"  >
+    <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
+
+    <title>我 6 年沒上班，後來自己開了公司-Siddharam｜寫程式的文字人｜西打藍</title>
+
+    <link rel="canonical" href="/post/20260320/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    
+    <link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128179606-2"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      
+      var config = {
+        apiKey: "AIzaSyB1lb_E2MwXy02t0IHy7Mf1KvERDslywqc",
+        authDomain: "siddharam-6bb77.firebaseapp.com",
+        databaseURL: "https://siddharam-6bb77.firebaseio.com",
+        projectId: "siddharam-6bb77",
+        storageBucket: "siddharam-6bb77.appspot.com",
+        messagingSenderId: "631312526279"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128179606-2');
+    </script>
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/">Siddharam</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="/top/about">關於</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://siddharam.com/" target="_blank">官方網站</a>
+            <a style="font-size:12px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; color: #949898; font-weight: 400;" class="navbar-brand" href="https://www.instagram.com/sidd.blue/" target="_blank">IG</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;" class="nav navbar-nav navbar-right">
+
+                    
+                    <li>
+                        <a href="https://siddharam.com.tw/tags/%E8%87%AA%E7%94%B1%E5%B7%A5%E4%BD%9C%E8%80%85%E6%97%A5%E5%B8%B8/">自由工作者日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%97%A5%E5%B8%B8">工程師日常</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%85%A2%E6%85%A2%E6%83%B3">慢慢想</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98">技術筆記</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E6%B5%AA%E6%B5%81%E5%9F%BA%E9%9A%86">浪流基隆</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/%E9%83%BD%E5%B8%82%E9%9C%A7%E9%9B%A8">都市霧雨</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+      
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/" title="">
+                            
+                        </a>
+                        
+                    </div>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> March 20, 2026</p>
+                    <h1>我 6 年沒上班，後來自己開了公司</h1>
+                    <h3 class="subheading">你會經歷 2 大階段、6 大課題</h3>
+                    <span class="meta">
+			
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+                
+                
+                <article style="font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; font-weight: 300;">
+
+<br>文 / 西打藍 Siddharam<br><br>
+
+我是西打，一個已經 6 年沒上班的人。<br><br>
+
+過去，我也曾是上班族，當過 3 年文字記者，1.5 年的軟體工程師。<br><br>
+
+直到 2020/2，我受不了基隆台北來回通勤，以及要放棄心愛的文字採訪工作，只能靠寫程式賺錢。於是我決定離職，全職當自由工作者。<br><br>
+
+這份決定，影響我的一生。在寫這篇文的當下，我有 1 間獨資公司，2 間合夥公司，做著多種完全不同的事業。同時，我還有個破萬追蹤的 IG 帳號，以及約 3000 人訂閱的電子報。<br><br>
+
+我走在一條前方沒有路徑的道路，一切靠自己探索，也沒人跟我走一樣的路，這條路名為：自己。<br><br>
+
+如果你也想嘗試接案，未來幾年，你會經歷 2 大階段、6 大課題。我用自己的經歷舉例：<br><br>
+
+
+<h3 class="article-h1-color">▎一、全能力提升階段</h3><br>
+
+剛開始接案，你有很多能力要補齊，而專業技能只是其一，包含：<br><br>
+
+
+<h3 class="article-h1-color">▎1.獲案能力</h3><br>
+
+你想接到案子，需要有明確的服務項目與報價。當潛在客戶出現時，你才能順勢提出方案，進而成交。<br><br>
+
+同時，你不僅要能完成案子，還得學習開發案源，例如透過網路社群、親朋好友、接案社團拿案。<br><br>
+
+接著，你要問出對方需求與預算，進而提出方案，嘗試成交。<br><br>
+
+我最初有 2 個核心接案項目：文字採訪、網站架設，多數是朋友介紹案源，少數靠社群開發。<br><br>
+
+一開始，我沒有作品集，慢慢才有公司官方網站，以及多個客戶見證。接案幾年後，客戶會介紹客戶，讓我持續有案源。<br><br>
+
+
+<h3 class="article-h1-color">▎2.穩定執行的心態</h3><br>
+
+這 6 年來，很多同期跟我一起接案的朋友，都回去上班了。<br><br>
+
+其中很大原因，是他們缺乏正確的接案方法，導致久久沒有案子出現。於是自認不適合接案，選擇回去上班。<br><br>
+
+然而，即使你知道接案方法，但若缺乏執行力，或因為焦慮而無法行動，都可能在接案這條路上失敗。<br><br>
+
+我有超過 100 位學生，詢問我怎麼接案？我發現，能堅持接案下去的人，都有極高執行力。當他獲得接案方法後，會主動執行，不需別人催。<br><br>
+
+
+<h3 class="article-h1-color">▎3.市場向技能</h3><br>
+
+最後一項初期接案的剛需技能是：「市場向技能」。<br><br>
+
+我過去在公司寫程式時，需要寫複雜程式碼。但平時接的網站案，需要有網頁架構規劃的能力，這是市場真正需要的技能。<br><br>
+
+職場分工很細，而接案則全靠自己，因此需要培養更廣泛的技能。<br><br>
+
+例如要接網站案，你還需要懂網站設計、SEO、文案等，才能滿足客戶需求。<br><br>
+
+而下一個階段，是我接案 3 年後，才走到的新狀態。<br><br>
+
+
+<h3 class="article-h1-color">▎二、擴大外包階段</h3><br>
+
+有天我自問：「難道這輩子，都要這樣接案嗎？」為什麼這麼問？<br><br>
+
+因為我每天醒來，打開手機就是工作。直到晚上睡前，有超過一半時間都在做事、回訊息、經營社群。<br><br>
+
+我當時年收入已經超過百萬，但我一整年，沒有一天電腦是闔上的。就連出門玩、出國，筆電永遠不離身。<br><br>
+
+我知道，是時候跳脫「一切自己來」的階段，該走向新模式：外包。<br><br>
+
+
+<h3 class="article-h1-color">▎1.識別人才</h3><br>
+
+想外包，需要有識別人才的能力。我有 3 個評估準則：<br><br>
+
+首先，對方的時間管理能力要好，能準時開會、準時交付產品，不需人催；<br><br>
+
+第二，他的專業能力要足夠好，至少能達成委託目標；<br><br>
+
+最後，則要有基礎溝通能力，知道網路禮儀，以及能明確說明工作細節。<br><br>
+
+這些年，我外包次數已經數不清，再一次次識人過程中，我淘汰許多不適任的人。但留下的，都是能陪我接案一輩子的夥伴。<br><br>
+
+如果你不知道人才在哪，可以請值得信任、有外包經驗的朋友推薦。<br><br>
+
+下一點，則有關自身心態的轉換。<br><br>
+
+
+<h3 class="article-h1-color">▎2.學會信任</h3><br>
+
+外包，除了委託不熟悉的專業給對方，也會將過往最擅長的工作，交給另一個人。<br><br>
+
+這時你會想：「我這樣做會不會退步？對方能做的跟我一樣好嗎？」<br><br>
+
+當你外包過往專業給人時，你要學習放下「自己最好」的心態，授權信任另一個人，並給予犯錯機會。<br><br>
+
+我第一次外包程式夥伴時，我有一種失去自我的感受，仿佛親手丟掉過往數年的專業。<br><br>
+
+但後來發現，當你信任夥伴時，他是有機會在你的管理下，做出比你原本更好的成果。此後，我才漸漸放手，到現在幾乎不親手寫程式。<br><br>
+
+最後，你要慢慢學習當一位合格管理者。<br><br>
+
+
+<h3 class="article-h1-color">▎3.成為管理者</h3><br>
+
+在新階段，你需要放下日常的執行工作，只做業務開發、案源及夥伴管理，這是一人公司管理者的職責。<br><br>
+
+我在外包後，工作量突然少了很多，心裡總覺得不踏實，會想追問夥伴進度，頻繁關心。<br><br>
+
+這個「關心」舉動，會傷害夥伴間的信任，也降低對方的工作主動性。我是經歷幾個專案後，才漸漸學會用合約、制度管理，成為合格的管理者。<br><br>
+
+接案，很難。但它是改變我職涯的一條路，我非常推薦每個人都試試看。<br><br>
+
+
+<h3 class="article-h1-color">▎接案、上班，都很好</h3><br>
+
+我早上起床，被陽光曬醒。我可以自由決定今天要做什麼，什麼時候休息、幾點吃飯。<br><br>
+
+我不用假日出遊人擠人，可以平日來個隨性小旅行。最棒的是：終於不用通勤了。<br><br>
+
+同時，我沒有穩定月薪，不努力工作就沒錢，時常焦慮與拖延，有很多困難要突破。<br><br>
+
+上班與接案，都有美好與不美好之處。我推薦你都嘗試看看。等看過不同風景後，再做決定。<br><br>
+
+有人曾問我：「如果重來一次，你會避免什麼？」<br><br>
+
+我說：「沒有一件事，是我想避開的。它們是讓我走到現在的養分。」<br><br>
+
+接案最困難的，不是怎麼談案、執行案件，而是穩定心態，相信自己能解決眼前難關。<br><br>
+
+我是突破好多難關後，才走到現在這一條，我好喜歡的人生道路。每一天每個時刻，都是我主動選擇的，並享受其中。<br><br>
+
+歡迎你一起來當接案同行。若接案遇到卡關，歡迎敲我。<br><br>
+
+
+
+
+<!-- 六月號的線上專題將以「職涯探索」為主題，其中，我們希望有一篇文章，能邀請您從個人的生命經驗出發，與社會新鮮人分享您對接案工作vs.在職員工vs.斜槓工作的看法。以下也列出一些我們覺得可以談及的面向供您參考：
+1.接案與受僱狀態下，收入結構與風險承擔方式，以及不同職涯發展需要在意的事情（ex：履歷、面試、制度、人脈、平台、信任）
+2.接案工作者所面臨的權益與保障問題
+3.斜槓工作者／接案工作者如何建立個人品牌（作品集、溝通、報價、提案能力）
+4.AI加入，是否能夠提高工作效率 -->
+
+
+<!-- 
+
+<h3 class="article-h1-color">▎</h3><br>
+
+
+我有個熟人，
+
+單親家庭，金店朋友，從國小到高中就很好，我很常去他家玩，
+但有一件事，我永遠不明白：
+「什麼是完整的家庭？」
+
+直到高中，我才有自主權，會找媽媽。
+寫的真難過，但不是為自己，而是為媽媽的辛苦。
+
+離開時，大概才 30 多歲，那麼的年輕，
+從小就在家裡，培養什麼技能賺錢呢？
+他當汽車銷售業務，超級會賣；自己擺攤賣滷肉飯。
+後來開牛排館，還曾經開直播賣童裝，
+
+想起來，他在我爸家時，賣做雞肉，
+做過很吃手腕生意，撞球間也做過。
+服飾店。
+
+現在自己開店做生意，超級會賺錢。
+
+那個熟人，是我媽。
+母親節快樂。
+
+//
+
+
+
+1. 列點文（Listicle）
+目標： 讓讀者覺得「內容超豐富，先收藏再說」。
+
+架構：
+
+吸睛標題： [數字] + [特定族群] + [渴望的成果/解決的痛點]。
+
+開場導言： 點出目前大家遇到的困難，並承諾這份清單能省下多少時間。
+
+核心清單： * 小標題（必須帶有動詞或具體好處）。
+
+短評（1-2 句解釋為什麼這個點很重要）。
+
+彩蛋/總結： 清單結束後，多給一個「進階建議」或「最強的一個點」。
+
+CTA： 詢問「你最喜歡哪一個？」或「還有什麼是你推薦的？」。
+
+
+
+2. 打臉文（Counter-Intuitive）
+目標： 戳破讀者幻想，重建權威感。
+
+架構：
+
+陳述平庸觀點： 寫出大家普遍相信的「溫情屁話」（例：努力就會成功）。
+
+暴力否定： 用一句話直接推翻（例：這是我聽過最危險的謊言）。
+
+揭露殘酷真相： 透過數據、案例或大師觀點，解釋為什麼舊觀點行不通。
+
+提出新邏輯： 給出一套更現實、更有競爭力的替代方案。
+
+收尾： 提醒讀者，清醒才是變強的開始。
+
+
+
+3. 教學文 / 攻略文（How-to Guide）
+目標： 建立「專家」形象，讓讀者產生「照著做也會成功」的錯覺。
+
+架構：
+
+成果展示： 先放上亮眼的成績單（例：我如何用一個月達成...）。
+
+工具/環境準備： 列出達成此成果所需的硬體或心態。
+
+SOP 拆解： 將複雜過程切分為 3-5 個清晰步驟。（重點：步驟要夠具體）
+
+避坑指南： 告訴讀者我在哪裡失敗過，幫他們避開那些坑。
+
+鼓勵行動： 告訴讀者「現在就開始」，別只看不做。
+
+
+
+4. 故事文 / 側寫文（Storytelling）
+目標： 透過人物代入感，偷偷植入你要銷售的價值觀。
+
+架構：
+
+人物登場： 介紹一個具備特定屬性的人（例：我的特助、那個 SEO 專家）。
+
+衝突/誤解： 我原本對他的看法，或是他遇到的巨大挑戰。
+
+關鍵轉折： 發生了一件事（或一段對話），徹底改變了局勢。
+
+價值提煉： 透過這個故事，我悟出了什麼樣的商業/人生道理。
+
+情感對接： 將這個道理連結到讀者的生活。
+
+
+
+5. 觀點評論（Curated Opinion）
+目標： 借用別人的流量，建立自己的品味。
+
+架構：
+
+熱點引入： 提到最近最火的影片、新聞或大師觀點。
+
+重點摘錄： 幫讀者做功課，整理出 3 個最有價值的金句或論點。
+
+個人解讀： 這是最重要的部分。你怎麼看這些論點？在你的領域如何應用？
+
+落地應用： 告訴讀者這對「現在的你」有什麼實際影響。
+
+互動誘餌： 「你認同這個觀點嗎？在下面留言告訴我。」
+
+
+
+
+//
+
+
+
+【我有一個問題/觀察】：我有偏見、我要徵人、我很好奇。
+
+【我用某個理論/專業手段去測試】：買書、看簽證、設計面試題。
+
+【我發現了一個驚人的反差事實】：她是巨人、她不是不穩、他比想像中更強。
+
+【這件事帶給我的商業/人生啟發】：熱潮搭上她、反脆弱穩定、把話說清楚。
+
+
+//
+
+
+
+
+🚀 故事銷售文章：萬用五段式架構
+第一階段：【極致衝突與自黑】—— 鉤子（The Hook）
+心法： 承認一個令你丟臉、焦慮或感到挫敗的瞬間。這能瞬間拉近讀者距離，打破「大師」的隔閡。
+
+寫作要點：
+
+開場第一句就拋出巨大的損失或尷尬的失敗。
+
+承認自己的偏見（如：我覺得吳淡如很犀利、我覺得數位遊牧不穩）。
+
+金句範例： 「我以為我懂管理，直到我被自己的特助當場上了一課。」
+
+
+
+第二階段：【意外的發現】—— 震撼（The Shock）
+心法： 透過一個具體的行動（買書、面試、看影片、辦簽證），發現一個與原先認知完全相反的事實。
+
+寫作要點：
+
+使用大量數據或硬核細節（140本書、0件急事、德國藝術家簽證）。
+
+營造「物理性」的震撼感（包裹堆滿屋、手機完全失聯）。
+
+金句範例： 「當我翻開那張表格，我才發現我引以為傲的產出，竟然不到人家的 1%。」
+
+
+
+第三階段：【底層邏輯拆解】—— 覺醒（The Insight）
+心法： 引用一位「世界級權威」或「科學理論」來解釋這個震撼事實。
+
+寫作要點：
+
+引入外部權威（Alex Hormozi, Naval, 馬斯克, 賈伯斯）。
+
+提出一個視覺化的隱喻（一碗彈珠、穿黑皮衣、剝洋蔥）。
+
+重新定義成功：成功不是因為做了什麼，而是因為「拒絕」了什麼。
+
+金句範例： 「真正的強者不是搭上熱潮，而是他一直在那裡，等熱潮搭上他。」
+
+
+
+第四階段：【建立防火牆機制】—— 落地（The Solution）
+心法： 告訴讀者這不只是觀念，而是一套可以執行的「機制」。
+
+寫作要點：
+
+強調**「外包/工具/制度」**的重要性（AI、特助、拒絕溝通、思考週）。
+
+對抗「酸民/雜音」：承認身邊人會反對，但你要站在「主場」思考。
+
+金句範例： 「把醜話說清楚，是為了保護後面的自由。」
+
+
+
+第五階段：【收尾與行動導引】—— 昇華（The CTA）
+心法： 不直接求買單，而是展現一種「嚮往的生活型態」，並留下互動誘餌。
+
+寫作要點：
+
+用一個哲學高度的金句收尾。
+
+P.S. 區域：指派一個具體任務或身分（如：我的特助會回你）來引發互動。
+
+金句範例： 「殺掉平庸的機會，只留那一件事。專注，就是解答。」
+
+
+
+
+//
+
+1. 目標、2. 阻礙、3. 努力、4. 結果、5. 意外、6. 轉彎、7. 結局
+
+<!-- 案例 / 故事開場 > 案例說明了什麼？ > 怎麼改變（列步驟） > 好處 / 壞處 > 結語總結金句 / 對自己說一句話 -->
+
+<!-- 核心觀點（直接提出結論）
+痛點描寫（讓讀者有共鳴）
+解法提出（具體方法＋案例）
+理由支持（資源稀缺、對比其他方案）
+價值觀升華（態度與哲學層面）
+收尾強化（回扣主題＋願景描繪） 
+
+
+ <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+
+  <h3 class="article-h1-color">▎</h3><br>
+
+
+-->
+
+
+
+（日常生活與接案歷程分享都在 IG、限動：<a href="https://www.instagram.com/sidd.blue/" target="_blank">西打藍</a>）<br><br>
+
+<!-- <h3 class="article-h1-color">▎</h3><br> -->
+
+
+
+
+
+<br><br><br>
+
+</article>
+
+<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
+  閱讀量<span id="busuanzi_value_page_pv"></span>次
+</div>
+
+<script src="../../js/post.js"></script>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/20260314/" data-toggle="tooltip" data-placement="top" title="影響人生最重大的事件">&larr;
+                            上一篇</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/20260321/" data-toggle="tooltip" data-placement="top" title="習慣，是你人生的天花板">新的一篇
+                             &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<br><br><br>
+<h3 class="article-h1-color">聯絡與合作</h3><br>
+
+訂閱電子報，領<a href="https://siddharam.systeme.io/join-newsletter" target="_blank">「我當前 10+ 以上收入源有哪些」</a>一文。<br><br>
+
+有文字採訪、網站開發，或是諮詢需求，皆可至<a href="https://siddharam.com/" target="_blank">個人網站</a>參考作品，並聯繫 <a href="https://www.instagram.com/sidd.blue/" target="_blank">IG</a>。<br><br>
+
+或是想分享心情、聊聊天、交朋友，可以來<a href="https://docs.google.com/forms/d/1yV_PjrZe4m6Vd23-4a49PlBueBLLQXH34dhqME-00GA/edit" target="_blank">秘密通道</a>找我唷。<br><br>
+
+Email: frank@siddharam.com<br><br>
+
+
+<div class="ml-form-embed"
+  data-account="2150544:z9e0c6d4c5"
+  data-form="2243816:o0w2k7">
+</div>
+
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '2150544', 'z9e0c6d4c5', 'load');
+</script>
+
+
+<br><br>
+
+
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Siddharam" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                </ul>
+		
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
